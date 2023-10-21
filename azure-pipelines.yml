@@ -6,6 +6,15 @@
 trigger:
 - main
 
+
+variables:
+  # Azure Resource Manager connection created during pipeline creation
+  azureSubscription: '73c5753e-9466-428b-9502-3d83a32611dd'
+
+  # Root folder under which your composer.json file is available.
+  rootFolder: $(System.DefaultWorkingDirectory)
+
+
 pool:
   vmImage: 'ubuntu-latest'
 
