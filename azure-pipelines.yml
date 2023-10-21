@@ -73,7 +73,7 @@ stages:
               appType: 'webAppLinux'
               appName: 'angularwithazure'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
-              runtimeStack: 'NODE|16-lts'
+              runtimeStack: 'NODE|18-lts'
 
 - stage: Acceptance
   dependsOn: [ Development ]
