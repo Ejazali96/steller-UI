@@ -64,7 +64,7 @@ stages:
             inputs:
               azureSubscription: '73c5753e-9466-428b-9502-3d83a32611dd'
               appType: 'webAppLinux'
-              appName: 'angularwithazure'
+              appName: 'StellerWebsiteUIProd'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               runtimeStack: 'NODE|18-lts'
 
