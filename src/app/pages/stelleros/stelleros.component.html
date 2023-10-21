@@ -1,0 +1,72 @@
+<app-main-header [title]="'top_stellar' | translate" [boldTitle]="'operating_system' | translate"></app-main-header>
+
+<!-- about area start -->
+<div class="about_wrapper">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 text-center mt_50">
+        <div class="Stellar_box">
+          <div class="coming_text">
+            <h5 class="head_two">{{'coming_soon' | translate}}</h5>
+            <span>{{'open_source' | translate}}</span>
+          </div>
+          <img class="img-fluid operating_img" src="../../../assets/img/operating_img.svg" alt="operating_img">
+          <div class="available_text">
+            <p>{{'available_with' | translate}}</p>
+            <div>
+              <a href="#"><img class="img-fluid" src="../../../assets/img/product_icon03.svg" alt="product_icon03"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 mt_50">
+        <div>
+          <p>{{'stellar_os_description' | translate}}</p>
+          <p class="mt_30">{{'research_and_development' | translate}}</p>
+          <p class="mt_30">{{'improves_privacy_security' | translate}}</p>
+          <p class="mt_30">{{'sandbox_fortified' | translate}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- about area end -->
+
+<!-- private area start -->
+<div class="private_wrapper">
+  <img class="img-fluid position-absolute private_shape01" src="../../../assets/img/private_shape01.svg" alt="private_shape01">
+  <img class="img-fluid position-absolute private_shape02" src="../../../assets/img/private_shape02.svg" alt="private_shape02">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+        <h2 class="head_text">{{'private_and' | translate}}<span> {{'secure_os' | translate}}</span></h2>
+      </div>
+      <div class="col-md-6">
+        <div class="private_img text-center mt_30">
+          <img class="img-fluid private_android" src="../../../assets/img/private_android.svg" alt="private_android">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="private_text mt_30 text-center">
+          <img class="img-fluid private_logo" src="../../../assets/img/private_logo.svg" alt="private_logo">
+          <p>{{'private_and_secure_os_description' | translate}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- private area end -->
+
+
+  <!-- section customer start end -->
+
+  <app-customer-section></app-customer-section>
+
+  <!-- section customer area end -->
+
+
+  <!-- section security area end -->
+
+<app-security-section></app-security-section>
+
+  <!-- section security area end -->

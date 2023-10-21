@@ -1,0 +1,36 @@
+<app-main-header title="Activate your" boldTitle="Stellar Phone" ></app-main-header>
+
+<!-- form area start -->
+<div class="form_wrapper">
+    <form class="form_box mt_50">
+        <p class="form_para"><span>{{ 'activation_form_heading_span' | translate }}</span>{{ 'activation_form_heading' | translate }}</p>
+        <label for="a" class="form_label mt_25">{{ 'activation_id_label' | translate }}</label>
+        <input id="a" class="input_info mt_5" type="text" placeholder="{{ 'add_activation_id' | translate }}">
+        <label for="b" class="form_label mt_15">{{ 'activation_code_label' | translate }}</label>
+        <div class="input_info input_box mt_5">
+            <input id="b" class="input_info" type="text" placeholder="{{ 'add_activation_code' | translate }}">
+            <button class="activation_icon"><img src="./../../../assets/img/activation_icon.svg" alt="activation_icon"></button>
+        </div>
+        <button type="submit" class="nav_btn form_btn mt_20">{{ 'activate_stellar_phone_button' | translate }} <img class="img-fluid" src="./../../../assets/img/lock_icon.svg" alt="activation_icon"></button>
+        <p class="form_border mt_25">{{ 'activation_system_message' | translate }}</p>
+        <p class="form_border mt_25">{{ 'encryption_hashing_message' | translate }}</p>
+        <div class="text-center mt_20">
+            <p><img class="mr_10" src="./../../../assets/img/footer_lock.svg" alt="footer_lock"> {{ 'footer_encrypted_message' | translate }}</p>
+        </div>
+    </form>
+    <div class="form_width">
+        <div class="mt_30">
+            <p class="footer700">{{ 'reach_us_message' | translate }}</p>
+            <p class="mt_30">{{ 'response_time_message' | translate }}</p>
+        </div>
+        <div class="footer_social mt_30">
+            <p>{{ 'signal_contact' | translate }}</p>
+            <p>{{ 'email_contact' | translate }}</p>
+        </div>
+    </div>
+</div>
+
+<!-- form area end -->
+
+
+  <!-- form area end -->

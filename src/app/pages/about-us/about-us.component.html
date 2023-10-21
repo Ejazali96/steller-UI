@@ -1,0 +1,74 @@
+<app-main-header title="{{ 'about' | translate }}" boldTitle="{{ 'stellar_security' | translate }}"></app-main-header>
+
+<div class="about_wrapper">
+  <div class="container">
+      <div class="row align-items-center">
+          <div class="col-lg-6  mt_50 text-center">
+              <img class="img-fluid about_img" src="./../../../assets/img/about_img.svg" alt="about_img">
+          </div>
+          <div class="col-lg-6 mt_50">
+              <div>
+                  <p>{{ 'about_description_1' | translate }}</p>
+                  <p class="mt_30">{{ 'about_description_2' | translate }}</p>
+                  <p class="mt_30">{{ 'about_description_3' | translate }}</p>
+                  <p class="mt_30">{{ 'about_description_4' | translate }}</p>
+                  <p class="mt_30">{{ 'about_description_5' | translate }}</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- choose area start -->
+<div class="areas_wrapper choose_wrapper">
+  <div class="container">
+     <div class="row justify-content-center">
+         <div class="col-12 text-center">
+             <h2 class="head_text">{{ 'reasons_to' | translate }} <span>{{ 'choose_us' | translate }}</span></h2>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+             <div class="areas_item text-center">
+                 <h3 class="head_two">{{ 'anonymity' | translate }}</h3>
+                 <img class="img-fluid" src="./../../../assets/img/choose_icon01.svg" alt="areas_icon01">
+                 <p>{{ 'anonymity_description' | translate }}</p>
+             </div>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+             <div class="areas_item text-center">
+                 <h3 class="head_two">{{ 'security' | translate }}</h3>
+                 <img class="img-fluid" src="./../../../assets/img/choose_icon02.svg" alt="choose_icon02">
+                 <p>{{ 'security_description' | translate }}</p>
+             </div>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+             <div class="areas_item text-center">
+                 <h3 class="head_two">{{ 'fast_shipping' | translate }}</h3>
+                 <img class="img-fluid" src="./../../../assets/img/choose_icon03.svg" alt="choose_icon03">
+                 <p>{{ 'fast_shipping_description' | translate }}</p>
+             </div>
+         </div>
+         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+             <div class="areas_item text-center">
+                 <h3 class="head_two">{{ 'support' | translate }}</h3>
+                 <img class="img-fluid" src="./../../../assets/img/choose_icon04.svg" alt="choose_icon04">
+                 <p>{{ 'support_description' | translate }}</p>
+             </div>
+         </div>
+     </div>
+  </div>
+</div>
+<!-- choose area area end -->
+
+   <!-- choose area area end -->
+  <!-- section customer start end -->
+
+  <app-customer-section></app-customer-section>
+
+  <!-- section customer area end -->
+
+
+  <!-- section security area end -->
+
+<app-security-section></app-security-section>
+
+  <!-- section security area end -->

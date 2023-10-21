@@ -1,0 +1,47 @@
+<!-- header start -->
+<header>
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-12">
+        <nav class="d-flex align-items-center justify-content-between">
+          <div class="logo">
+            <a href="/">
+              <img class="img-fluid" src="./../../../assets/img/logo.svg" alt="logo">
+            </a>
+          </div>
+          <ul class="menu_item">
+            <li><a class="menuopen" href="#">{{'products'|translate}}</a></li>
+            <li><a href="/activate-phone">{{'activatePhone'|translate}}</a></li>
+            <li><a href="https://wipe.stellarsecurity.com">{{'remoteWipe'|translate}}</a></li>
+          </ul>
+          <a *ngIf="buttonType == 'privacy'" class="privacy_matter" href="/privacy-page">{{'privacyMatter'|translate}}</a>
+          <a *ngIf="buttonType == 'buy'" class="nav_btn" style="background-color: #60D38E;" href="/checkout-page">{{'buyStellarPhone'|translate}} <img src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+          <a *ngIf="buttonType == ''" class="nav_btn" href="/stellar-phone">{{'getStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>
+        </nav>
+        <div class="hamburger_menu">
+          <span class="line_top"></span>
+          <span class="line_center"></span>
+          <span class="line_bottom"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- header end -->
+
+<!-- offcanvas menu start -->
+<div class="offcavas_menu">
+  <ul class="menu_item">
+    <li><a class="active" href="#">{{'offcanvasProducts'|translate}}</a></li>
+  </ul>
+  <a href="/stellar-phone" style="cursor: pointer;" ><img src="./../../../assets/img/menu_icon01.svg" alt="menu_icon01"> {{'stellarPhone'|translate}}</a>
+  <a href="/stellar-antivirus"><img src="./../../../assets/img/menu_icon02.svg" alt="menu_icon02"> {{'stellarAntivirus'|translate}}</a>
+  <a href="/stellar-vpn"><img src="./../../../assets/img/menu_icon03.svg" alt="menu_icon03"> {{'stellarVpn'|translate}}</a>
+  <a href="/contact-us"><img src="./../../../assets/img/menu_icon04.svg" alt="menu_icon04"> {{'stellarSupport'|translate}}</a>
+  <ul class="menu_item mt_15">
+    <li><a href="activate_page.html">{{'offcanvasActivatePhoneLink'|translate}}</a></li>
+    <li><a href="https://wipe.stellarsecurity.com/">{{'offcanvasRemoteWipeLink'|translate}}</a></li>
+  </ul>
+  <a class="nav_btn" href="phone_page.html">{{'offcanvasGetStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>
+</div>
+<!-- offcanvas menu end -->
