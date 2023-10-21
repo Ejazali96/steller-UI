@@ -68,14 +68,6 @@ stages:
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               runtimeStack: 'NODE|18-lts'
 
-- stage: Acceptance
-  dependsOn: [ Development ]
-  displayName: 'Deploy to Acceptance'
-  jobs:
-    - job:  DeployToAcceptance
-      displayName: 'DeployAcceptance'
-      steps:
-      - script: echo Deploying to Acceptance
 - stage: Production
   dependsOn: [ Acceptance ]
   displayName: 'Deploy to Production'
