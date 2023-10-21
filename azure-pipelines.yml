@@ -69,7 +69,6 @@ stages:
               runtimeStack: 'NODE|18-lts'
 
 - stage: Production
-  dependsOn: [ Acceptance ]
   displayName: 'Deploy to Production'
   jobs:
     - deployment: DeployProduction
