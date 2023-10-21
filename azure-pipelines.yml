@@ -19,7 +19,7 @@ stages:
     steps:
       - task: NodeTool@0
         inputs:
-          versionSpec: '16.x'
+          versionSpec: '18.x'
         displayName: 'Install Node.js 16.x'
 
       - script: |
@@ -69,7 +69,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy App Service'
             inputs:
-              azureSubscription: 'Inform-your-subscription'
+              azureSubscription: '73c5753e-9466-428b-9502-3d83a32611dd'
               appType: 'webAppLinux'
               appName: 'angularwithazure'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
@@ -96,4 +96,3 @@ stages:
           deploy:
             steps:
             - script: echo Deploying to Production
-     
