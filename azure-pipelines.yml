@@ -40,12 +40,12 @@ stages:
           npm install
           ng build --configuration production
         displayName: 'npm install and build'
-        workingDirectory: $(rootFolder)
+        workingDirectory: '$(Build.SourcesDirectory)'
 
       - task: ArchiveFiles@2
         displayName: 'Archive files'
         inputs:
-          rootFolderOrFile: $(rootFolder)
+          rootFolderOrFile: $(System.DefaultWorkingDirectory)
           includeRootFolder: false
           archiveType: zip
           archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
