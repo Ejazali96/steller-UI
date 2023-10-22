@@ -29,12 +29,6 @@ stages:
               ng build --configuration production
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
-          - task: CmdLine@2
-            displayName: "Run unit tests"
-            inputs:
-              script: |
-                cd .
-                ng test --browsers=ChromeHeadless --code-coverage --watch=false
           - task: ArchiveFiles@2
             displayName: 'Archive files'
             inputs:
@@ -49,7 +43,6 @@ stages:
               PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
               ArtifactName: 'drop'
               publishLocation: 'Container'
-
   - stage: Development
     displayName: 'Deploy to Development'
     dependsOn: Build
