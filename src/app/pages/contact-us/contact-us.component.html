@@ -3,20 +3,20 @@
 <!-- Contact Form Start -->
 
 <div class="form_wrapper">
-  <form class="form_box mt_50">
+  <div class="form_box mt_50">
       <p class="form_para"><span>{{ 'contact_form_heading' | translate }}</span></p>
       <label for="a" class="form_label mt_25">{{ 'name_label' | translate }}</label>
-      <input id="a" class="input_info mt_5" type="text" placeholder="{{ 'add_your_full_name' | translate }}">
+      <input id="a" [(ngModel)]="name" class="input_info mt_5" type="text" placeholder="{{ 'add_your_full_name' | translate }}">
       <label for="b" class="form_label mt_15">{{ 'email_label' | translate }}</label>
-      <input id="b" class="input_info mt_5" type="text" placeholder="{{ 'add_your_email' | translate }}">
+      <input id="b" [(ngModel)]="email"  class="input_info mt_5" type="text" placeholder="{{ 'add_your_email' | translate }}">
       <label for="b" class="form_label mt_15">{{ 'message_label' | translate }}</label>
-      <textarea class="input_info txetarea_info" placeholder="{{ 'message_placeholder' | translate }}"></textarea>
-      <button type="submit" class="nav_btn form_btn mt_20">{{ 'send_message_button' | translate }}</button>
+      <textarea [(ngModel)]="message"  class="input_info txetarea_info" placeholder="{{ 'message_placeholder' | translate }}"></textarea>
+      <button (click)="send()" type="submit" class="nav_btn form_btn mt_20" >{{ 'send_message_button' | translate }}</button>
       <p class="form_border mt_25">{{ 'response_time_message' | translate }}</p>
       <div class="text-center mt_20">
           <p><img class="mr_10" src="../../../assets/img/footer_lock.svg" alt="footer_lock"> {{ 'encrypted_security_message' | translate }}</p>
       </div>
-  </form>
+  </div>
 </div>
 
 <!-- Contact Form End -->
