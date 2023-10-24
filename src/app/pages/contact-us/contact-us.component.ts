@@ -20,7 +20,7 @@ export class ContactUsComponent {
         { name: this.name, email: this.message, message: this.message })
         .subscribe(data => {})
 
-    alert('Thanks for the message. It has been sent and we will reply soon. Stellar Security.');
+    alert('Thanks for the message. It has been sent and we will reply soon. Regards, Stellar Security.');
 
     this.name = "";
     this.email = "";
