@@ -207,7 +207,7 @@
   "remote_wipe": "Remote Wipe",
   "remote_wipe_description": "You have the option to perform a remote wipe of your phone at",
   "remote_wipe_description_link":"wipe.stellarsecurity.com",
-  "remote_wipe_description2":"wipe.stellarsecurity.com. This action will erase all content on your device. If you require assistance with the wipe function, please don't hesitate to reach out to us, and we'll be glad to assist you.",
+  "remote_wipe_description2":"This action will erase all content on your device. If you require assistance with the wipe function, please don't hesitate to reach out to us, and we'll be glad to assist you.",
   "strong_passwords": "Strong passwords",
   "strong_passwords_description": "Our software assists you in crafting exceptionally secure passwords. Employing a strong password stands as your foremost defense against hackers, significantly complicating data extraction. To enhance security even further, our phones are equipped with encrypted chips named M1 and M2, providing an additional layer of protection against data extraction.",
   "operating_system": "Operating System",
