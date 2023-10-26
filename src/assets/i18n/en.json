@@ -214,7 +214,7 @@
   "operating_system": "Operating System",
   "coming_soon": "COMING SOON",
   "stellar_os_description": "StellarOS is a new open source privacy and security focused mobile OS with Android app compatibility currently in development at Stellar Security.",
-  "research_and_development": "It's focused on the research and development of privacy and security technology including substantial improvements to sandboxing, exploit mitigations, and the permission model.",
+  "research_and_development": "It's focused on the research and development of privacy and security technology including substantial improvements to sandboxing, exploit mitigations, and the permission model. With Protect integrated to its core, it has security-feautures no other OS offers.",
   "improves_privacy_security": "StellarOS improves the privacy and security of the OS from the bottom up. It deploys technologies to mitigate whole classes of vulnerabilities and make exploiting the most common sources of vulnerabilities substantially more difficult. It improves the security of both the OS and the apps running on it.",
   "sandbox_fortified": "The app sandbox and other security boundaries are fortified. StellarOS tries to avoid impacting the user experience with the privacy and security features.",
   "private_and": "The private and",
