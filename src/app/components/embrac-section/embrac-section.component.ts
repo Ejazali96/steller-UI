@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class EmbracSectionComponent {
 
+  public showVideo = false;
+
+  public showVideoClick() {
+    this.showVideo = !this.showVideo;
+  }
+
 }
