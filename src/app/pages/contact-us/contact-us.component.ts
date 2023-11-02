@@ -17,7 +17,7 @@ export class ContactUsComponent {
   public send() {
 
     this.http.post<any>('https://stellaruiwebsiteapiprod.azurewebsites.net/api/v1/contactformcontroller/contact',
-        { name: this.name, email: this.message, message: this.message })
+        { name: this.name, email: this.email, message: this.message })
         .subscribe(data => {})
 
     alert('Thanks for the message. It has been sent and we will reply soon. Regards, Stellar Security.');
