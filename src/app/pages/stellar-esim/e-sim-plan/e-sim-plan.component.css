@@ -92,6 +92,9 @@ background-color: #F7F6FC;
         padding-top: 4rem !important;
         padding: 0;
     }
+    .plan-tabs span{
+        font-size: 14px !important;
+    }
 }
 @media (max-width:1125px) {
     .app-right-section{
