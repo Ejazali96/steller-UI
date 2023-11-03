@@ -2,7 +2,7 @@
 <header>
   <div class="container-fluid">
     <div class="row align-items-center">
-      <div class="col-12">
+      <div class="col-12 p-0">
         <nav class="d-flex align-items-center justify-content-between">
           <div class="logo">
             <a href="/">
@@ -35,10 +35,11 @@
   <ul class="menu_item">
     <li><a class="active" href="#">{{'offcanvasProducts'|translate}}</a></li>
   </ul>
-  <a href="/stellar-phone" style="cursor: pointer;" ><img src="./../../../assets/img/menu_icon01.svg" alt="menu_icon01"> {{'stellarPhone'|translate}}</a>
-  <a href="/stellar-antivirus"><img src="./../../../assets/img/menu_icon02.svg" alt="menu_icon02"> {{'stellarAntivirus'|translate}}</a>
-  <a href="/stellar-vpn"><img src="./../../../assets/img/menu_icon03.svg" alt="menu_icon03"> {{'stellarVpn'|translate}}</a>
-  <a href="/contact-us"><img src="./../../../assets/img/menu_icon04.svg" alt="menu_icon04"> {{'stellarSupport'|translate}}</a>
+  <a routerLink="/stellar-esim" routerLinkActive="active" style="cursor: pointer; text-transform: inherit;" ><img src="./../../../assets/img/stellar-esim.svg" alt="menu_icon01"> {{'stellarESim'|translate}}</a>
+  <a routerLink="/stellar-phone" routerLinkActive="active" style="cursor: pointer;" ><img src="./../../../assets/img/menu_icon01.svg" alt="menu_icon01"> {{'stellarPhone'|translate}}</a>
+  <a routerLink="/stellar-antivirus" routerLinkActive="active"><img src="./../../../assets/img/menu_icon02.svg" alt="menu_icon02"> {{'stellarAntivirus'|translate}}</a>
+  <a routerLink="/stellar-vpn" routerLinkActive="active"><img src="./../../../assets/img/menu_icon03.svg" alt="menu_icon03"> {{'stellarVpn'|translate}}</a>
+  <a routerLink="/contact-us" routerLinkActive="active"><img src="./../../../assets/img/menu_icon04.svg" alt="menu_icon04"> {{'stellarSupport'|translate}}</a>
   <ul class="menu_item mt_15">
     <li><a href="/activate-phone">{{'offcanvasActivatePhoneLink'|translate}}</a></li>
     <li><a href="https://wipe.stellarsecurity.com/">{{'offcanvasRemoteWipeLink'|translate}}</a></li>

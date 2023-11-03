@@ -258,7 +258,9 @@ header {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-
+header nav{
+    padding: 8px 16px;
+}
 header.sticky {
     -webkit-box-shadow: 0 0.8rem 2ren 0 rgba(0, 0, 0, .1);
             box-shadow: 0 0.8rem 2ren 0 rgba(0, 0, 0, .1);
@@ -303,7 +305,7 @@ header.sticky {
 }
 
 .menu_item li a {
-	padding: 1.3rem 2rem;
+    padding: 14px 20px;
 	background: #FFFFFF;
 	border-radius: 0.8rem;
 	font-size: 1.2rem;
@@ -332,16 +334,12 @@ header.sticky {
     z-index: 999;
     position: fixed;
     top: 6rem;
-    width: 100%;
-    background: -webkit-gradient(linear, left bottom, left top, from(#F7F6FC), to(#F7F6FC)), -webkit-gradient(linear, left bottom, left top, from(#FFFFFF), to(#FFFFFF));
-    background: -o-linear-gradient(bottom, #F7F6FC, #F7F6FC), -o-linear-gradient(bottom, #FFFFFF, #FFFFFF);
-    background: linear-gradient(0deg, #F7F6FC, #F7F6FC), linear-gradient(0deg, #FFFFFF, #FFFFFF);
-    border-top: 0.2rem solid #FFFFFF;
+    width: calc(100% - 4px);
+    background: #F7F6FC;
     text-align: center;
-    display: none;
-    -webkit-transition: .3s;
-    -o-transition: .3s;
     transition: .3s;
+    margin: 0 3px;
+    border-top: 2px solid #fff;
 }
 
 .offcavas_menu.open {
@@ -357,7 +355,7 @@ header.sticky {
 }
 
 .offcavas_menu a {
-    width: 27rem;
+    width: 24.8rem;
     height: 4rem;
     border-radius: 0.8rem;
     background: #ffffff;
@@ -375,13 +373,13 @@ header.sticky {
     font-family: silka-bold;
     color: #0B1319;
     text-transform: uppercase;
-    margin: 1rem 1.5rem;
+    margin: 0.8rem 0.6rem;
     -webkit-transition: .3s;
     -o-transition: .3s;
     transition: .3s;
 }
 
-.offcavas_menu a:hover {
+.offcavas_menu a:hover, .offcavas_menu a.active{
 	 border: 0.1rem solid #4364FA;
 	 color: #4364FA;
 }

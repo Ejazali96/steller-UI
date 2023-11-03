@@ -1,0 +1,38 @@
+.color-purple{
+    color: #4364FA;
+}
+.nav_btn{
+    padding: 1.3rem 2rem;
+    font-size: 1.4rem;
+    font-family: silka-regular;
+}
+.green-btn{
+    background: #60D38E;
+}
+.green-btn:hover{
+    background: #148c44;
+}
+.head_two{
+    font-family: 'silka-regular';
+}
+.pb-100{
+    padding-bottom: 10rem;
+}
+.pt-100{
+    padding-top: 10rem;
+}
+.mt-100{
+    margin-top: 10rem;
+}
+@media (max-width:520px) {
+  .nav_btn{
+width: 100%;
+justify-content: center;
+   }
+   .head_text{
+    text-align: center;
+   }
+   .pd-42{
+    padding: 2.5rem !important;
+   }
+}

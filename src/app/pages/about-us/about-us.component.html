@@ -19,6 +19,30 @@
   </div>
 </div>
 
+
+<h1 i18n="User welcome|An introduction header for this sample@@introductionHeader">
+    Hello!
+  </h1>
+  <ng-container i18n>I cannot translate everything</ng-container>
+  <br />
+  <img [src]="logo" i18n-title title="OpenRecipe logo" alt="OpenRecipe logo"/>
+  <br>
+  
+  <button type="button" (click)="inc(1)">+</button> <button type="button" (click)="inc(-1)">-</button>
+  <span i18n>Counter updated {minutes, plural, =0 {just now} =1 {one minute ago} other {{{minutes}} minutes ago}}</span>
+  ({{minutes}})
+  <br><br>
+  
+  <button type="button" (click)="male()">&#9794;</button> <button type="button" (click)="female()">&#9792;</button> <button type="button" (click)="other()">&#9895;</button>
+  <span i18n>The reader is {gender, select, male {male} female {female} other {other}}</span>
+  <br><br>
+  
+  <span i18n>Updated: {minutes, plural,
+    =0 {just now}
+    =1 {one minute ago}
+    other {{{minutes}} minutes ago by {gender, select, male {male} female {female} other {other}}}}
+  </span>
+
 <!-- choose area start -->
 <div class="areas_wrapper choose_wrapper">
   <div class="container">

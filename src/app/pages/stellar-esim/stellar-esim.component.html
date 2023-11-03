@@ -1,0 +1,76 @@
+    <div class="pt-100">
+        <app-main-header title="{{'esim_main_title' | translate}}" [isDifferentColor]="true" [boldBlue]="'esim_main_bold_purple' | translate" [boldBlack]="'esim_main_bold_black' | translate"></app-main-header>
+    <!-- Stellar phone area start -->
+    <div class="phone_wrapper position-relative">
+      <!-- <img class="phone_shape position-absolute" src="./../../../assets/img/phone_shape.svg" alt="phone_shape"> -->
+      <div class="container">
+        <div class="row mt_50 align-items-center justify-content-between">
+          <div class="col-lg-5">
+            <div class="text-center">
+                <div class="position-relative">
+                    <img class="img-fluid" src="./../../../assets/img/what_esim.svg" alt="sim">
+                    <img class="img-fluid esim-image-border" src="./../../../assets/img/what-esim-border.svg" alt="sim-border">
+                    <img class="img-fluid esim-image-planet" src="./../../../assets/img/planet.svg" alt="planet">
+                </div>
+        
+              <p class="mt_20">{{ 'available_with' | translate }}</p>
+              <a href="#"><img class="img-fluid mt_10 mr-3" src="./../../../assets/img/android_icon.svg" alt="android_icon"> <img class="img-fluid mt_10" src="./../../../assets/img/apple_icon.svg" alt="apple_icon"></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="">
+                <div class="head_text">{{ 'esim_title_light' | translate}} <span class="color-purple">{{'esim_title_bold' | translate}}</span></div>
+                <div class="mt_25">
+                    <p class="">{{'esim_para_1' | translate}}</p>
+                    <p class="mt_25">{{'esim_para_2' | translate}}</p>
+                    <p class="mt_25">{{'esim_para_3' | translate}}</p>
+                </div>
+              <a  href="/contact-us" class="nav_btn green-btn mt_25">{{ 'buy_esim_btn' | translate }} <img class="img-fluid" src="./../../../assets/img/simcard-white.svg" alt="sim_icon"></a>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-e-sim-benifits></app-e-sim-benifits>
+
+    <div class="mt-100 light-gray-bg position-relative overflow-hidden">
+        <img class="background-shape position-absolute" src="./../../../assets/img/stellar_phone_shape.svg" alt="phone_shape">
+        <div class="container">
+          <div class="row mt_50 align-items-center justify-content-between">
+            <div class="col-lg-5">
+              <div class="text-center">
+                  <div class="position-relative">
+                      <img class="img-fluid" src="./../../../assets/img/security-card.svg" alt="sim-border">
+                  </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="py-84">
+                  <div class="head_text"><span class="color-purple">{{'esim_goal_main_bold_purple' | translate}}</span> {{ 'esim_goal_main_title' | translate}} </div>
+                  <div class="mt_25">
+                      <p class="">{{'esim_para_1' | translate}}</p>
+                      <p class="mt_25">{{'esim_para_2' | translate}}</p>
+                      <p class="mt_25">{{'esim_para_3' | translate}}</p>
+                  </div>
+                <a  href="/contact-us" class="nav_btn green-btn mt_25">{{ 'buy_esim_btn' | translate }} <img class="img-fluid" src="./../../../assets/img/simcard-white.svg" alt="sim_icon"></a>
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-e-sim-plan></app-e-sim-plan>
+      <app-become-seller></app-become-seller>
+      <div class="position-relative overflow-hidden">
+        <div class="question-section pt-100 pb-100 text-center">
+            <div class="head_text">{{ 'esim_question_main_title' | translate}} </div>
+            <p>{{ 'esim_question_para' | translate}}</p>
+            <a class="nav_btn green-btn text-white">{{'esim_question_contact_btn' | translate}}</a>
+            
+          </div>
+          <img src="./../../../assets/img/security_big_img.svg" class="footer-bg" alt="footer image">
+      </div>
+      
+</div>
+    

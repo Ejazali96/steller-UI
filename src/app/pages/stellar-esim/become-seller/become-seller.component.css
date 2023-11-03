@@ -1,0 +1,7 @@
+@import '../stellar-esim-common.css';
+
+@media (max-width:767px) {
+    .flex-sm-dir{
+        flex-direction: column-reverse;
+    }
+}

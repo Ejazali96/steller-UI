@@ -1,0 +1,101 @@
+@import '../stellar-esim-common.css';
+.e-sim-plans {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.e-sim-plans .plans-item {
+    width: 370px;
+}
+h3.plan-days {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+h1.plan-size {
+    font-size: 4.8rem;
+    line-height: 4.5rem;
+    font-weight: 700;
+    font-family: 'silka-bold';
+    margin-top: 1.6rem;
+}
+.e-sim-plans .plans-item p {
+    font-size: 16px;
+    color: #6E7286;
+    margin-top: 1.6rem;
+}
+.areas_item{
+    padding: 3.2rem;
+}
+.e-sim-plans .plans-item .nav_btn{
+    margin-top: 3rem;
+}
+.popuplar-item{
+    border: 1px solid #4364FA;
+}
+.most-popular{
+    Padding:2px 12px 2px 12px;
+    background-color: #ECEFFF;
+    border-radius: 6px;
+    display: inline-block;
+    color: #4364FA;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+}
+.plan-tabs {
+    background: #F7F6FC;
+    border-radius: 8px;
+    padding: 2px;
+    margin: 3rem 0;
+}
+.plan-tabs span {
+    padding: 9px 25px;
+    color: #CACACA;
+    display: inline-block;
+    font-size: 16px;
+    width: 168px;
+    text-align: center;
+}
+span.active {
+    background-color: #4364FA;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    border-radius: 8px;
+    color: #fff !important;
+    
+    font-family: 'silka-bold';
+}
+
+/* app section css */
+.app-section{
+border-radius: 10px;
+background-color: #F7F6FC;
+}
+.app-right-section{
+    position: absolute;
+    max-width: 592px;
+    right: 0;
+    text-align: left;
+    padding: 4.2rem;
+}
+.app-right-section p{
+    margin: 3rem 0;
+}
+.pd-42{
+    padding: 4.2rem;
+}
+
+@media (max-width:425px) {
+    .e-sim-plans .plans-item{
+        width: 90%;
+    }
+    .app-right-section{
+        padding-top: 4rem !important;
+        padding: 0;
+    }
+}
+@media (max-width:1125px) {
+    .app-right-section{
+        width: 100%;
+        position: relative !important;
+    }
+}
