@@ -27,6 +27,8 @@ img.esim-image-border {
 .question-section{
     max-width: 658px;
     margin: auto;
+    position: relative;
+    z-index: 1;
 
 }
 .question-section p{
