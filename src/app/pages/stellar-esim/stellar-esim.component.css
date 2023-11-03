@@ -41,3 +41,6 @@ img.esim-image-border {
     filter: grayscale(1);
     opacity: 0.3;
 }
+.top-padding{
+    padding-top: 22px;
+}
