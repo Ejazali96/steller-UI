@@ -15,8 +15,8 @@ img.esim-image-border {
 }
 .esim-image-planet{
     position: absolute;
-    top: 7rem;
-    right: 0rem;
+    top: 6rem;
+    right: -2rem;
 }
 .light-gray-bg{
     background-color: #F7F6FC;
