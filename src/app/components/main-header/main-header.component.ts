@@ -6,7 +6,10 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./main-header.component.css']
 })
 export class MainHeaderComponent {
+  @Input() isDifferentColor:boolean = false
   @Input() title:string = '';
   @Input() boldTitle:string = '';
+  @Input() boldBlue:string = '';
+  @Input() boldBlack:string = '';
 
 }

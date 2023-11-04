@@ -1,7 +1,10 @@
     <!-- big head start -->
     <div class="big_headwrap">
       <div class="container text-center">
-          <h1>{{title}}<br> <span>{{boldTitle}}</span></h1>
+          <h1>{{title}}<br> 
+            <span *ngIf="!isDifferentColor">{{boldTitle}}</span>
+            <span *ngIf="isDifferentColor"><span style="color: #4364FA;">{{boldBlue}} </span> <span>{{boldBlack}}</span></span>
+        </h1>
       </div>
   </div>
   <!-- big head end -->
