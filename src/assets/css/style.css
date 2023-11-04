@@ -188,7 +188,7 @@ button:focus, input:focus, textarea:focus {
     right: 1.5rem;
     display: none;
     z-index: 999;
-    top: 0rem;
+    top: 0.85rem;
 }
 
 .hamburger_menu span {
@@ -339,6 +339,7 @@ header.sticky {
     text-align: center;
     transition: .3s;
     margin: 0 3px;
+    display: none;
     border-top: 2px solid #fff;
 }
 

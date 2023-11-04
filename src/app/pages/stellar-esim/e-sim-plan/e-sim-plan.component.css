@@ -53,18 +53,38 @@ h1.plan-size {
     color: #CACACA;
     display: inline-block;
     font-size: 16px;
-    width: 168px;
     text-align: center;
+    width: 168px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
 }
 span.active {
+    color: #fff !important;
+    font-family: 'silka-bold';
+}
+.nav__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3px;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+.nav__slider-item {
+    height: 100%;
+    transition: transform 0.4s;
+    width: 1;
     background-color: #4364FA;
     box-shadow: 0px 1px 2px 0px #0000000D;
     border-radius: 8px;
     color: #fff !important;
-    
-    font-family: 'silka-bold';
+    width: 168px;
 }
-
 /* app section css */
 .app-section{
 border-radius: 10px;
@@ -83,7 +103,65 @@ background-color: #F7F6FC;
 .pd-42{
     padding: 4.2rem;
 }
+.usage{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    top: 31px;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: auto;
+    left: 92px;
+    width: 369px;
+    justify-content: space-around;
+    transform: rotate(-20deg);
+    color: #4364FA;
+}
+.usage h2{
+   font-family: 'silka-medium';
+   font-size: 54px;
+   line-height: 40px;
+}
 
+
+@media (max-width:1125px) {
+    .app-right-section{
+        width: 100%;
+        position: relative !important;
+    }
+    .usage{
+        top: -278px;
+    bottom: 0;
+    top: 31px;
+    left: 70px;
+    width: 353px;
+    }
+    
+}
+
+@media (max-width:767.98px) {
+    .image{
+        position: relative;
+    }
+    .usage{
+        position: absolute;
+        display: flex;
+        bottom: 0;
+        top: -31px !important;
+        height: -moz-fit-content;
+        height: fit-content;
+        margin: auto;
+        left: 0;
+        width: 187px !important;
+        justify-content: space-around;
+        transform: rotate(0) !important;
+        color: #4364FA;
+        right: 0;
+    }
+    .usage h2{
+      font-size: 27px !important;
+    }
+}
 @media (max-width:425px) {
     .e-sim-plans .plans-item{
         width: 90%;
@@ -98,10 +176,20 @@ background-color: #F7F6FC;
     .top-padding{
         padding-top: 0 inherit;
     }
+    .usage{
+        top: -24px !important;
+        width: 164px !important;
+    }
+    .usage h2{
+      font-size: 19px !important
+    }
 }
-@media (max-width:1125px) {
-    .app-right-section{
-        width: 100%;
-        position: relative !important;
+@media (max-width:342px){
+    .usage{
+        top: -24px !important;
+        width: 137px !important;
+    }
+    .usage h2{
+      font-size: 17px !important
     }
 }

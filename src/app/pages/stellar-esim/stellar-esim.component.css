@@ -15,8 +15,8 @@ img.esim-image-border {
 }
 .esim-image-planet{
     position: absolute;
-    top: 7rem;
-    right: 0rem;
+    top: 6rem;
+    right: -2rem;
 }
 .light-gray-bg{
     background-color: #F7F6FC;
@@ -27,6 +27,8 @@ img.esim-image-border {
 .question-section{
     max-width: 658px;
     margin: auto;
+    position: relative;
+    z-index: 1;
 
 }
 .question-section p{

@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./e-sim-plan.component.css']
 })
 export class ESimPlanComponent {
+  activeTab:number = 1;
+  translaValue:number = 0;
 
+  changePlanType(index:number){
+    this.activeTab = index;
+    this.translaValue = this.activeTab===1?0:100
+  }
 }
