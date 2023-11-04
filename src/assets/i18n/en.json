@@ -227,11 +227,13 @@
   "esim_main_title":"Stay connected",
   "esim_main_bold_purple":"wherever",
   "esim_main_bold_black":"you are",
+
   "esim_title_light":"What is",
   "esim_title_bold":"e-Sim",
   "esim_para_1":"eSIM, short for \"embedded Subscriber Identity Module,\" is a technology that is transforming the way mobile devices connect to cellular networks.",
   "esim_para_2":"Unlike traditional physical SIM cards, which you can remove and replace in your phone or other mobile devices, eSIM is embedded directly into the device during manufacturing.",
   "esim_para_3":" At Stellar Security we only use the latest technologies, which is the reason for, we only sell E-sims. Our E-sim works in Europe and globally.",
+
   "buy_esim_btn":"Buy e-Sim",
   "esim_benifit_title":"Why",
   "esim_benifit_bold":"e-Sim",
@@ -244,7 +246,9 @@
   "esim_installation":"Easy installation",
   "esim_installation_para":"Order a e-Sim, get the QR-code and scan. Thats it!",
   "esim_goal_main_title":"is to provide you with complete protection",
+
   "esim_goal_main_bold_purple":"Stellar E-sim",
+
   "esim_plan_main_title":"Our",
   "esim_plan_main_bold_purple":"Plans",
   "esim_plan1_days":"30 days",
