@@ -7,7 +7,15 @@
                     <p class="mt_20">{{ 'stellar_protect_watch_video' | translate }}  </p>
                 </div>
                 <div class="image position-relative mt_25">
-                    <img class="img-fluid corner_icon01" src="./../../../assets/img/protected_video_security.svg" alt="corner_icon01">
+                    <div class="play-pause-video" (click)="playVideo()" >
+                        <img *ngIf="!this.isPause" src="./../../../assets/img/play_video.svg">
+                    </div>
+                   
+                    <video #myVideo id="intro-video" class="w-100" poster="./../../../assets/img/protected_video_security.svg">
+                        <source src="./../../../assets/img/video/StellarSecurity-Protect.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <!-- <img class="img-fluid corner_icon01" src="./../../../assets/img/protected_video_security.svg" alt="corner_icon01"> -->
                   </div>
                
             </div>
