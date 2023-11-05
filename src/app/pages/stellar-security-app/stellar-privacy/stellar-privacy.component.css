@@ -1,0 +1,10 @@
+@import '../security-common.css';
+.your-privacy-section{
+    background: #F7F6FC;
+    border-radius: 24px;
+    padding: 24px;
+}
+.app-left-section{
+    text-align: start;
+    max-width: 537px;
+}

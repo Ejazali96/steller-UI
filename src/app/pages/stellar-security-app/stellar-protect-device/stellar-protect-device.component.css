@@ -1,0 +1,5 @@
+@import '../security-common.css';
+.protect-title{
+    max-width: 800px;
+    margin: auto;
+}
