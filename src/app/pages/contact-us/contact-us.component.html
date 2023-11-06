@@ -6,6 +6,11 @@
   <div class="form_box mt_50">
       <p class="form_para"><span>{{ 'contact_form_heading' | translate }}</span></p>
       <br>
+
+      <div *ngIf="sent" class="success">
+        <span class="text-lg-center">Thanks for the message. It has been sent and we will reply soon. Regards, Stellar Security.</span>
+      </div>
+
       <strong>{{ 'signal' | translate }}</strong> <a href="tel:+59173436721">+591 73 43 67 21</a><br>
       <strong>Telegram:</strong>  <a href="https://telegram.me/Stellar_Security"> Stellar_Security</a><br>
 
