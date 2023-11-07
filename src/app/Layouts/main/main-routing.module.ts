@@ -14,6 +14,7 @@ const routes: Routes = [
       { path: 'stellar-phone', loadChildren: () => import('../../pages/stellar/stellar.module').then(m => m.StellarModule) },
       { path: 'stellar-antivirus', loadChildren: () => import('../../pages/stellar-antivirus/stellar-antivirus.module').then(m => m.StellarAntivirusModule) },
       { path: 'stellar-esim', loadChildren: () => import('../../pages/stellar-esim/stellar-esim.module').then(m => m.StellarESimModule) },
+      { path: 'stellar-protect', loadChildren: () => import('../../pages/stellar-security-app/stellar-security-app.module').then(m => m.StellarSecurityAppModule) },
       { path: 'contact-us', loadChildren: () => import('../../pages/contact-us/contact-us.module').then(m => m.ContactUsModule) },
       { path: 'stellar-vpn', loadChildren: () => import('../../pages/stellar-vpn/stellar-vpn.module').then(m => m.StellarVPNModule) },
       { path: 'about-us', loadChildren: () => import('../../pages/about-us/about-us.module').then(m => m.AboutUsModule) },

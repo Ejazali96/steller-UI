@@ -342,7 +342,9 @@ header.sticky {
     display: none;
     border-top: 2px solid #fff;
 }
-
+.top-padding{
+    padding-top: 2.2rem;
+}
 .offcavas_menu.open {
 	 display: block;
 }

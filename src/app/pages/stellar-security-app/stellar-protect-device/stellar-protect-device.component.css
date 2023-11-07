@@ -1,0 +1,17 @@
+@import '../security-common.css';
+.protect-title{
+    max-width: 800px;
+    margin: auto;
+}
+a.play_protect_video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: fit-content;
+}
+.protect-device-section video{
+    border-radius: 10px;
+}
