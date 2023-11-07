@@ -7,14 +7,23 @@
                     <p class="mt_20">{{ 'stellar_protect_watch_video' | translate }}  </p>
                 </div>
                 <div class="image position-relative mt_25">
-                    <div class="play-pause-video" (click)="playVideo()" >
+                    <iframe  class="position-relative mt_30" *ngIf="showVideo" style="width: 100%" height="615" src="https://www.youtube.com/embed/-pC9rrJDvaY?si=M30s9TNtaPRCO37C&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   
+
+                    <div (click)="showVideoClick()" *ngIf="!showVideo" class="position-relative mt_30">
+                       
+                        <img class="img-fluid w-100" src="./../../../assets/img/protected_video_security.svg" alt="video_security">
+                        <a class="play_protect_video" href="javascript:void(0)"><img class="img-fluid" src="./../../../assets/img/play_video.svg" alt="play_video"></a>
+                    </div>
+
+                    <!-- <div class="play-pause-video" (click)="playVideo()" >
                         <img *ngIf="!this.isPause" src="./../../../assets/img/play_video.svg">
                     </div>
                    
                     <video #myVideo id="intro-video" class="w-100" poster="./../../../assets/img/protected_video_security.svg">
                         <source src="./../../../assets/img/video/StellarSecurity-Protect.mp4" type="video/mp4">
                         Your browser does not support the video tag.
-                    </video>
+                    </video> -->
                     <!-- <img class="img-fluid corner_icon01" src="./../../../assets/img/protected_video_security.svg" alt="corner_icon01"> -->
                   </div>
                
