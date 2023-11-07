@@ -1,0 +1,21 @@
+@import '../../stellar-security-app/security-common.css';
+.amount_duration{
+    font-size: 18px;
+    font-family: silka-medium;
+}
+.amount_price{
+    font-size: 30px;
+    font-family: silka-medium;
+}
+ul.stellar-protected-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+/* .main-mobile-img{
+    max-width: 307px;
+} */
+.protected-icon{
+    max-width: 554px;
+}

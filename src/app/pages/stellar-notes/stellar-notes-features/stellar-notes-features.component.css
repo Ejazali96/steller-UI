@@ -1,0 +1,10 @@
+@import '../../stellar-security-app/security-common.css';
+.stellar-track-section{
+    background: #F7F6FC;
+    border-radius: 10px;
+    padding: 6rem;
+}
+img.bg-image {
+    position: absolute;
+    bottom: -5px;
+}
