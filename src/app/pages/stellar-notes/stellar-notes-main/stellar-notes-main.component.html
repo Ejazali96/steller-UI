@@ -1,0 +1,52 @@
+
+<div class="top-padding security-app-wrapper">
+    <div class="d-flex align-items-center justify-content-center">
+       
+        <img class="protected-icon" src="./../../../assets/img/stellar-notes-logo.png" alt="protected-icon">
+        
+    </div>
+    
+    <div class="phone_wrapper position-relative">
+        <img class="phone_shape position-absolute" src="./../../../assets/img/phone_shape.svg" alt="phone_shape">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center mt_50">
+                <img class="img-fluid" src="./../../../assets/img/stellar-notes-mobile.svg" alt="phone">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="phone_box mt_50">
+                <div class="text-center text-md-left">
+                    <div class="head_text head_two">{{ 'stellar_notes_welcome_title' | translate}}</div>
+                </div>
+                <p class="mt_25"> {{ 'stellar_notes_welcome_description' | translate }}</p>
+                <ul class="stellar-protected-list mt_25">
+                    <li>
+                        <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
+                        <span>{{'stellar_notes_welcome_list_1' | translate}}</span>
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
+                        <span>{{'stellar_notes_welcome_list_2' | translate}}</span>
+                    </li>
+                    <li>
+                        <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
+                        <span>{{'stellar_notes_welcome_list_3'  | translate}}</span>
+                    </li>
+                    
+                  </ul>
+                  <div class="mt_25">
+                    <img class="img-fluid" src="./../../../assets/img/Google-store.svg" alt="check mark"><br>
+                    <br>
+                    {{'available_app_in_other_stores' | translate}}
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <app-stellar-create-notes></app-stellar-create-notes>
+      <app-stellar-notes-features></app-stellar-notes-features>
+</div>
