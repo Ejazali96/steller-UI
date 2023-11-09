@@ -8,6 +8,7 @@ import { MainModule } from './Layouts/main/main.module';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -16,6 +17,7 @@ export function createTranslateLoader(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

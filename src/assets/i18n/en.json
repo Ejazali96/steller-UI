@@ -367,6 +367,9 @@
   "stellar_notes_feature_security":"security settings",
   "stellar_notes_feature_security_description":"Notes offers bruteforce protection and much more!",
   "stellar_secure_notes_with_password_title":"Stellar Notes is secure and safe",
-  "stellar_secure_notes_with_password_description":"Works for all iOS and Android (AOSP-projects). Brute-force protection makes sure, your password can defend. Encrypted notes makes sure, that your notes are stored securely on your device with AES-256 encryption."
+  "stellar_secure_notes_with_password_description":"Works for all iOS and Android (AOSP-projects). Brute-force protection makes sure, your password can defend. Encrypted notes makes sure, that your notes are stored securely on your device with AES-256 encryption.",
+  "error_page_title":"Page not found",
+  "error_page_description":"Lorem ipsum dolor sit amet consectetur. Mattis mattis ultricies ultrices massa leo diam. Molestie donec condimentum sodales praesent tellus nibh.",
+  "error_page_button":"Go Home"
 }
 

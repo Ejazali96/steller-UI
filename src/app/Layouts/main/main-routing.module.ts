@@ -4,11 +4,13 @@ import { MainComponent } from './main.component';
 import { TermsPageComponent } from './../../pages/terms-page/terms-page.component';
 import { PrivacyPageComponent } from './../../pages/privacy-page/privacy-page.component';
 import { CheckoutPageComponent } from './../../pages/checkout-page/checkout-page.component';
+import { NotFoundComponent } from 'src/app/components/not-found/not-found.component';
 
 const routes: Routes = [
   {
     path: '',
     component: MainComponent,
+    
     children:[
       { path: '', loadChildren: () => import('../../pages/home/home.module').then(m => m.HomeModule) },
       { path: 'stellar-phone', loadChildren: () => import('../../pages/stellar/stellar.module').then(m => m.StellarModule) },
@@ -24,9 +26,11 @@ const routes: Routes = [
       { path: 'privacy-page', component:PrivacyPageComponent},
       { path: 'checkout-page', component:CheckoutPageComponent},
       { path: 'stelleros', loadChildren: () => import('../../pages/stelleros/stelleros.module').then(m => m.StellerosModule) },
-
+      {path: '**', component: NotFoundComponent}
     ]
-  }
+  },
+
+ 
 ];
 
 @NgModule({
