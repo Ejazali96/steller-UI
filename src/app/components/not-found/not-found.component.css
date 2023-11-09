@@ -1,0 +1,16 @@
+.app-left-section {
+    max-width: 621px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.app-left-section .nav_btn{
+    width: 100%;
+    justify-content: center;
+    max-width: 300px;
+}
+@media (max-width:520px) {
+    .pb-100{
+        padding-bottom: 50px;
+    }
+}
