@@ -311,7 +311,7 @@
   "esim_question_contact_btn":"Contact us",
   "stellar_safeguard_title":"Protect safeguards and defends your phone",
   "stellar_safeguard_description":"Stellar Protect lets you remotely wipe your phone and automatically initiates a wipe if left unlocked for a while. It also locks upon detecting falls and can identify and respond to strong shakes.",
-  "stellar_safeguard_description_works":"Stellar Protect works for all Android and AOSP-projects.",
+  "stellar_safeguard_description_works":"Stellar Protect works for all Android and AOSP-projects. This includes GrapheneOS, LineageOS, CalyxOS and so on.",
   "stellar_safeguard_amount":"7,99 €",
   "stellar_safeguard_amount_duration":"monthly",
   "stellar_safeguard_amount_list_1":"Remote wipe option if the phone gets lost.",
@@ -319,6 +319,7 @@
   "stellar_safeguard_amount_list_3":"Shake detector that locks the phone.",
   "stellar_safeguard_amount_list_4":"Auto wipe after twenty fail password attempts.",
   "stellar_safeguard_amount_list_5":"Auto wipe after a certain time of inactivity.",
+  "stellar_safeguard_amount_list_6":"USB-data extraction detector, that wipes the phone if data extraction is detected.",
   "stellar_your_privacy_main_title_before":"Because",
   "stellar_your_privacy_bold_purple_title":"your privacy",
   "stellar_your_privacy_main_title_after":"matters the most",
@@ -337,7 +338,7 @@
   "first_class_time_detector":"TIME detector",
   "first_class_time_detector_description":"If your phone havent been locked up for a couple of days — it will wipe itself. Its a great protection if your phone is lost.",
   "first_class_usb_protection":"USB - PROTECTION",
-  "first_class_usb_protection_description":"Protect can detects if somebody is trying to extract data from your phone and wipe itself.",
+  "first_class_usb_protection_description":"Protect can detect if somebody is trying to extract data from your phone and wipe itself.",
   "stellar_track_account_title":"Always keep track of your account",
   "stellar_track_account_description": "Protect allows you to choose which security functions you want to be enabled. But it also gives a overview of your subscription info.",
   "security_seller_main_title":"Become",
@@ -369,7 +370,7 @@
   "stellar_secure_notes_with_password_title":"Stellar Notes is secure and safe",
   "stellar_secure_notes_with_password_description":"Works for all iOS and Android (AOSP-projects). Brute-force protection makes sure, your password can defend. Encrypted notes makes sure, that your notes are stored securely on your device with AES-256 encryption.",
   "error_page_title":"Page not found",
-  "error_page_description":"Lorem ipsum dolor sit amet consectetur. Mattis mattis ultricies ultrices massa leo diam. Molestie donec condimentum sodales praesent tellus nibh.",
+  "error_page_description":"This page does not exist.",
   "error_page_button":"Go Home"
 }
 
