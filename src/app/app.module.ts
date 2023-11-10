@@ -28,7 +28,6 @@ export function createTranslateLoader(http: HttpClient) {
         deps: [HttpClient]
       }
     }),
-    SharedModule,
     MainModule
   ],
   providers: [],
