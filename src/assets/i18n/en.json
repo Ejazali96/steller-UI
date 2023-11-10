@@ -319,6 +319,7 @@
   "stellar_safeguard_amount_list_3":"Shake detector that locks the phone.",
   "stellar_safeguard_amount_list_4":"Auto wipe after twenty fail password attempts.",
   "stellar_safeguard_amount_list_5":"Auto wipe after a certain time of inactivity.",
+  "stellar_safeguard_amount_list_6":"USB-data extraction detector, that wipes the phone if data extraction is detected.",
   "stellar_your_privacy_main_title_before":"Because",
   "stellar_your_privacy_bold_purple_title":"your privacy",
   "stellar_your_privacy_main_title_after":"matters the most",
