@@ -320,7 +320,7 @@
   "stellar_safeguard_amount_list_4":"Auto wipe after twenty fail password attempts.",
   "stellar_safeguard_amount_list_5":"Auto wipe after a certain time of inactivity.",
   "stellar_safeguard_amount_list_6":"USB-data extraction detector, that wipes the phone if data extraction is detected.",
-  "stellar_safeguard_amount_list_7":"Protect can detect if your phone has been stolen and if its unlocked Protect will automatically lock the phone with your password.",
+  "stellar_safeguard_amount_list_7":"Protect can detect if your phone has been stolen while unlocked and will automatically lock the phone with your password.",
   "stellar_your_privacy_main_title_before":"Because",
   "stellar_your_privacy_bold_purple_title":"your privacy",
   "stellar_your_privacy_main_title_after":"matters the most",
