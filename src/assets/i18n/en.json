@@ -343,6 +343,10 @@
 
 
   "first_class_screen_alive": "Screen alive Protect",
+  "first_class_screen_alive_description": "If someone takes your phone while it is unlocked, Protect will automatically lock the phone after 15 minutes with your password even if they keep the screen-alive.",
+
+
+
   "stellar_track_account_title":"Always keep track of your account",
   "stellar_track_account_description": "Protect allows you to choose which security functions you want to be enabled. But it also gives a overview of your subscription info.",
   "security_seller_main_title":"Become",
