@@ -5,11 +5,13 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { SharedModule } from './../../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { StellarHomeCardsComponent } from './stellar-home-cards/stellar-home-cards.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    StellarHomeCardsComponent
   ],
   imports: [
     CommonModule,
