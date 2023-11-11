@@ -1,7 +1,43 @@
-<app-main-header [title]="'big_head_text'| translate" [boldTitle]="'stellar_security' | translate" ></app-main-header>
+<div class="top-main-section position-relative">
+  <img class="stellar-main-glow img-fluid" src="./../../../assets/img/main-glow.png" alt="stellar-main-glow">
+  <app-main-header [title]="'big_head_text'| translate" [boldTitle]="'stellar_security' | translate" ></app-main-header>
+   <div class="container pd-top-100">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="./../../../assets/img/stellar-security-main.svg" class="img-fluid" alt="stellar-security-main">
+      </div>
+    <div class="col-lg-6 py-5 py-lg-0 text-center text-lg-left">
+      <h2 class="head_text head_two">{{'home_page_main_phone_title1' | translate}} <span class="color-purple">{{'home_page_main_phone_title2' | translate}}</span></h2>
+      <p class="mt_20 font-size-24">{{'home_page_main_phone_description' | translate}}</p>
+      <div class="d-flex mt_20 py-2 justify-content-center justify-content-lg-start">
+        <span>{{'home_page_main_phone_availability' | translate}} </span><span class="ml-3"><img src="./../../../assets/img/android_icon.svg" alt="android-icon"></span>
+      </div>
+      <div class="d-flex mt_30 justify-content-center justify-content-lg-start">
+        <a class="nav_btn" href="">{{'home_page_main_phone_button1' | translate}} <img src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+        <a  href="" class="make_btn ml-3">{{'home_page_main_phone_button2' | translate}} </a>
+        
+      </div>
+    </div>
+    </div>
+   </div>
+</div>
+<div class="stellar-home-card-list pd-top-100">
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_protect_title1'" [stellarCardheading2]="'home_stellar_protect_title2'" [stellarCarddescription]="'home_stellar_protect_description'" [stellarCardheadingIcon]="'stellar-ptotect-card-Icon.svg'" [stellarCardmainImage]="'card-protect.svg'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_protect_button'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_antivirus_title1'" [stellarCardheading2]="'home_stellar_antivirus_title2'" [stellarCarddescription]="'home_stellar_antivirus_description'" [stellarCardheadingIcon]="'stellar-antivirus-card-Icon.svg'" [stellarCardmainImage]="'card-antivirus.svg'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_antivirus_button'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_vpn_title1'" [stellarCardheading2]="'home_stellar_vpn_title2'" [stellarCarddescription]="'home_stellar_vpn_description'" [stellarCardheadingIcon]="'stellar-vpn-card-Icon.svg'" [stellarCardmainImage]="'card-vpn.svg'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_vpn_button'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_esim_title1'" [stellarCardheading2]="'home_stellar_esim_title2'" [stellarCarddescription]="'home_stellar_esim_description'" [stellarCardheadingIcon]="'stellar-esim-card-Icon.svg'" [stellarCardmainImage]="'card-esim.svg'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_esim_button'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_notes_title1'" [stellarCardheading2]="'home_stellar_notes_title2'" [stellarCarddescription]="'home_stellar_notes_description'" [stellarCardheadingIcon]="'stellar-notes-card-Icon.svg'" [stellarCardmainImage]="'card-notes.svg'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_notes_button'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_support_title1'" [stellarCardheading2]="'home_stellar_support_title2'" [stellarCarddescription]="'home_stellar_support_description'" [stellarCardheadingIcon]="'stellar-support-card-Icon.svg'" [stellarCardmainImage]="'card-support.svg'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_support_button'"></app-stellar-home-cards>
+
+</div>
 
     <!-- section areas area start -->
-    <div class="areas_wrapper">
+    <div class="areas_wrapper d-none">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 text-center">

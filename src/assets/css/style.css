@@ -1504,3 +1504,9 @@ main {
 .back-to-top i {
 	color: #ffffff;
 }
+.pd-top-100{
+    padding-top: 10rem;
+}
+.pd-bottom-100{
+    padding-bottom: 10rem;
+}
