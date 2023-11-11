@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {AfterViewInit, Component, Renderer2} from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -13,4 +13,5 @@ export class AppComponent {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
   }
+
 }
