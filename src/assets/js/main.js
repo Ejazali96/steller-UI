@@ -24,14 +24,6 @@
 
     $(document).ready(function () {
 
-        //02. smooth scroll start
-        function smoothScroolInit() {
-            $('.back-to-top').smoothScroll({
-                speed: 1000
-            });
-        }
-        smoothScroolInit();
-
         //03. sticky header start
         function sticky_header(){
             var wind = $(window);
