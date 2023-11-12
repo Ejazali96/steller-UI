@@ -48,15 +48,6 @@
             }
         });
 
-        //05. animate scroll start
-        $('.back-to-top').on('click', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: 0,
-            }, 1500);
-        });
-
         //06. hamburger menu start
         $('.hamburger_menu, .menuopen').on('click', function (event) {
             event.preventDefault();
