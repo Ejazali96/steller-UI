@@ -1,0 +1,23 @@
+.font-size-24{
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-family: silka-regular;
+}
+.color-purple {
+    color: #4364fa;
+}
+.stellar-main-glow{
+    position:absolute;
+    bottom: 0;
+}
+.stellar-home-card-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(46%,1fr));
+    gap: 30px;
+}
+
+@media (max-width:991.98px) {
+    .stellar-home-card-list{
+        grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
+    }
+}

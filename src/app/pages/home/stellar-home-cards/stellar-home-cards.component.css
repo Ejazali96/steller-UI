@@ -1,0 +1,52 @@
+.home-card-wrapper {
+    padding: 6.2rem;
+    border: 2px solid #F7F6FC;
+    background: #ffffff;
+    border-radius: 8px;
+    padding-bottom: 25.84rem;
+    overflow: hidden;
+}
+.home-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+.home-card-body{
+    z-index: 2;
+}
+.font-size-24{
+    font-size: 2.4rem;
+    line-height: 3.4rem;
+    font-family: silka-regular;
+}
+.card-glow-img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+img.stellar-product-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+}
+.btm-neg{
+    bottom: -34px !important;
+    right: 0 !important;
+    left: auto !important;
+}
+.right-side-card img.card-glow-img {
+    transform: scaleX(-1);
+    right: 0;
+    left: auto !important;
+}
+.color-purple {
+    color: #4364fa;
+}
+@media (max-width:767.98px) {
+    .home-card-wrapper {
+        padding: 2.2rem 2.2rem 25.84rem !important;
+    }
+
+}

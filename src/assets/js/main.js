@@ -24,14 +24,6 @@
 
     $(document).ready(function () {
 
-        //02. smooth scroll start
-        function smoothScroolInit() {
-            $('.back-to-top').smoothScroll({
-                speed: 1000
-            });
-        }
-        smoothScroolInit();
-
         //03. sticky header start
         function sticky_header(){
             var wind = $(window);
@@ -54,15 +46,6 @@
             } else {
                 //$('.back-to-top').fadeOut(200);
             }
-        });
-
-        //05. animate scroll start
-        $('.back-to-top').on('click', function (event) {
-            event.preventDefault();
-
-            $('html, body').animate({
-                scrollTop: 0,
-            }, 1500);
         });
 
         //06. hamburger menu start

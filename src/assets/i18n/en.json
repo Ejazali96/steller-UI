@@ -158,7 +158,7 @@
   "no_public_sharing": "We don't share any personally identifying information publicly or with third parties, except when required to by law.",
   "external_links_disclaimer": "Our website may link to external sites that are not operated by us. Please be aware that we have no control over the content and practices of these sites and cannot accept responsibility or liability for their respective privacy policies.",
   "refuse_personal_info": "You are free to refuse our request for your personal information, with the understanding that we may be unable to provide you with some of your desired services.",
-  "continued_use_acceptance": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us.",
+  "continued_use_acceptance": "Your continued use of our website will be regarded as acceptance of our practices around privacy and personal information. If you have any questions about how we handle user data and personal information, feel free to contact us. Stellar Security is located in Norway and Denmark.",
   "effective_date": "This policy is effective as of 30 July 2023.",
   "products": "Products",
   "activatePhone": "Activate Phone",
@@ -320,6 +320,7 @@
   "stellar_safeguard_amount_list_4":"Auto wipe after twenty fail password attempts.",
   "stellar_safeguard_amount_list_5":"Auto wipe after a certain time of inactivity.",
   "stellar_safeguard_amount_list_6":"USB-data extraction detector, that wipes the phone if data extraction is detected.",
+  "stellar_safeguard_amount_list_7":"Protect can detect if your phone has been stolen while unlocked and will automatically lock the phone with your password.",
   "stellar_your_privacy_main_title_before":"Because",
   "stellar_your_privacy_bold_purple_title":"your privacy",
   "stellar_your_privacy_main_title_after":"matters the most",
@@ -339,6 +340,13 @@
   "first_class_time_detector_description":"If your phone havent been locked up for a couple of days — it will wipe itself. Its a great protection if your phone is lost.",
   "first_class_usb_protection":"USB - PROTECTION",
   "first_class_usb_protection_description":"Protect can detect if somebody is trying to extract data from your phone and wipe itself.",
+
+
+  "first_class_screen_alive": "Screen alive Protect",
+  "first_class_screen_alive_description": "If someone takes your phone while it is unlocked, Protect will automatically lock the phone after 15 minutes with your password even if they keep the screen-alive.",
+
+
+
   "stellar_track_account_title":"Always keep track of your account",
   "stellar_track_account_description": "Protect allows you to choose which security functions you want to be enabled. But it also gives a overview of your subscription info.",
   "security_seller_main_title":"Become",
@@ -371,6 +379,36 @@
   "stellar_secure_notes_with_password_description":"Works for all iOS and Android (AOSP-projects). Brute-force protection makes sure, your password can defend. Encrypted notes makes sure, that your notes are stored securely on your device with AES-256 encryption.",
   "error_page_title":"Page not found",
   "error_page_description":"This page does not exist.",
-  "error_page_button":"Go Home"
+  "error_page_button":"Go Home",
+  "home_page_main_phone_title1":"STELLAR",
+  "home_page_main_phone_title2":"PHONE",
+  "home_page_main_phone_description":"A smooth design, a high quality OS and built on solid hardware. The Stellar Phone is slick and packed with just the right security features.",
+  "home_page_main_phone_button1":"Buy the Stellar",
+  "home_page_main_phone_availability":"available on only",
+  "home_page_main_phone_button2":"Read More",
+  "home_stellar_protect_title1":"Stellar",
+  "home_stellar_protect_title2":"Protect",
+  "home_stellar_protect_description":"Enable remote phone wipe and auto-wipe for prolonged unlock. Activates lock on detecting falls, responds to strong shakes, and more. Protect defends your device in a way no other have done before. ",
+  "home_stellar_protect_button":"Read More",
+  "home_stellar_antivirus_title1":"Stellar",
+  "home_stellar_antivirus_title2":"Antivirus",
+  "home_stellar_antivirus_description":"An active antivirus used to prevent, detect, and remove malware while protecting your device at all times.",
+  "home_stellar_antivirus_button":"Read More",
+  "home_stellar_vpn_title1":"Stellar",
+  "home_stellar_vpn_title2":"Vpn",
+  "home_stellar_vpn_description":"VPN that gets you a solidified Virtual Private Network keeping all communication end-to-end encrypted.",
+  "home_stellar_vpn_button":"Read More",
+  "home_stellar_esim_title1":"Stellar",
+  "home_stellar_esim_title2":"e-sim",
+  "home_stellar_esim_description":"Stellar Security exclusively offers E-sims, using the latest technologies, compatible in Europe and globally.",
+  "home_stellar_esim_button":"Read More",
+  "home_stellar_notes_title1":"Stellar",
+  "home_stellar_notes_title2":"Notes",
+  "home_stellar_notes_description":"The most secure and user-friendly notes app on the market. Your notes are encrypted and can only be accessed by you.",
+  "home_stellar_notes_button":"Read More",
+  "home_stellar_support_title1":"Stellar",
+  "home_stellar_support_title2":"Support",
+  "home_stellar_support_description":"In case you need assistance or have any queries, you can reach us by writing. Explore the available contact options.",
+  "home_stellar_support_button":"Read More"
 }
 
