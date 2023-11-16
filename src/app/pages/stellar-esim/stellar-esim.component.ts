@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stellar-esim.component.css']
 })
 export class StellarEsimComponent {
-
+  metaDescription:string = 'Meta discription here for about';
+  metaTitle:string = 'Srellar About';
+  metaKeywords:string = 'Stellar about, stellar security, and so on';
 }

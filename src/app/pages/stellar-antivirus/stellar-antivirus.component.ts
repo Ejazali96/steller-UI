@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./stellar-antivirus.component.css']
 })
 export class StellarAntivirusComponent {
+  metaDescription:string = 'Meta discription here for antvirus';
+  metaTitle:string = 'Srellar antvirus';
+  metaKeywords:string = 'Stellar antvirus, stellar security, and so on';
 
 }

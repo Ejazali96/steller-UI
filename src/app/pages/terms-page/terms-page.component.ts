@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./terms-page.component.css']
 })
 export class TermsPageComponent {
-
+  metaDescription:string = 'Meta discription here for Term';
+  metaTitle:string = 'Srellar Term';
+  metaKeywords:string = 'Stellar Term, stellar security, and so on';
 }

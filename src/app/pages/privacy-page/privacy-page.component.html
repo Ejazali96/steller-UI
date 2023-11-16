@@ -1,6 +1,7 @@
 <app-main-header title="{{ 'privacy_policy' | translate }}" boldTitle="{{ 'policy' | translate }}"></app-main-header>
 
-<div class="form_wrapper">
+<div class="form_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords"
+>
   <div class="mt_50">
       <p><span class="font_700"></span></p>
       <p><span class="font_700">{{ 'your_privacy_important' | translate }}</span></p>

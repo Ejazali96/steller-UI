@@ -7,6 +7,9 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
+  metaDescription:string = 'Meta discription here for Contact us';
+  metaTitle:string = 'Srellar Contact';
+  metaKeywords:string = 'Stellar Contact, stellar security, and so on';
 
   public sent = false;
   public loading = false;

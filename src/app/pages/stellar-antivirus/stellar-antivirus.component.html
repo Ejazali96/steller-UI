@@ -1,7 +1,7 @@
 <app-main-header title="{{ 'top_stellar_antivirus' | translate }}" boldTitle="{{ 'antivirus' | translate }}"></app-main-header>
 
 <!-- about area start -->
-<div class="about_wrapper">
+<div class="about_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
   <div class="container">
       <div class="row align-items-center">
           <div class="col-lg-6  mt_50 text-center">

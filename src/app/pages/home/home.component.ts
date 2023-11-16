@@ -8,6 +8,9 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
+  metaDescription:string = 'Meta discription here for Home';
+  metaTitle:string = 'Srellar Home';
+  metaKeywords:string = 'Stellar Home, stellar security, and so on';
   constructor(private meta: Meta) {
   }
   ngOnInit(){

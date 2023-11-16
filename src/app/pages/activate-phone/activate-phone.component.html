@@ -1,7 +1,7 @@
 <app-main-header title="Activate your" boldTitle="Stellar Phone"></app-main-header>
 
 <!-- form area start -->
-<div class="form_wrapper">
+<div class="form_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
     <form class="form_box mt_50">
         <p class="form_para"><span>{{ 'activation_form_heading_span' | translate }}</span>{{ 'activation_form_heading' | translate }}</p>
         <label for="a" class="form_label mt_25">{{ 'activation_id_label' | translate }}</label>
