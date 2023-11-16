@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class StellarComponent {
   metaDescription:string = 'Stellar Phone: Cutting-edge tech, sleek design. Experience power, stunning display, and advanced security in one. Redefine innovation on the go';
-  metaTitle:string = 'StellarSecurity - Stellar Phone';
+  metaTitle:string = 'Stellar Security - Stellar Phone';
   metaKeywords:string = 'Stellar Security, secure phone, stellar phone';
   public chosen_phone_subscription = 6;
 

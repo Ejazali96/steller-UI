@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class TermsPageComponent {
   metaDescription:string = 'Read our terms & conditions at Stellar Security';
-  metaTitle:string = 'StellarSecurity - terms & conditions';
+  metaTitle:string = 'Stellar Security - terms & conditions';
   metaKeywords:string = 'Stellar Term, stellar security, and so on';
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class StellerosComponent {
   metaDescription:string = 'StellarOS is the most private & secure OS designed to protect your data and privacy.';
-  metaTitle:string = 'StellarSecurity - StellarOS';
+  metaTitle:string = 'Stellar Security - StellarOS';
   metaKeywords:string = 'Stellar stellaros, stellar security, and so on';
 }

@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class StellarVPNComponent {
   metaDescription:string = 'Experience seamless online privacy with Stellar VPN. Secure your digital world with fast, reliable connections. Browse anonymously and protect your data today.';
-  metaTitle:string = 'StellarSecurity.com - Stellar VPN';
+  metaTitle:string = 'Stellar Security - Stellar VPN';
   metaKeywords:string = 'Stellar VPN, stellar security, and so on';
 }
