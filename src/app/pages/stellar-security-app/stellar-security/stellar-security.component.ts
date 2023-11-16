@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stellar-security.component.css']
 })
 export class StellarSecurityComponent {
-  metaDescription:string = 'Meta discription here for protect';
-  metaTitle:string = 'Srellar Protect';
+  metaDescription:string = 'Protect is the most advanced security app that protects your device in a way no other can do.';
+  metaTitle:string = 'Stellar Security - Stellar Protect';
   metaKeywords:string = 'Stellar Protect, stellar security, and so on';
 }

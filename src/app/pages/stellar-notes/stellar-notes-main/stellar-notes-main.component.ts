@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stellar-notes-main.component.css']
 })
 export class StellarNotesMainComponent {
-  metaDescription:string = 'Meta discription here for notes';
-  metaTitle:string = 'Srellar Notes';
+  metaDescription:string = 'The most secure and user-friendly notes app on the market. Your notes are encrypted and can only be accessed by you.';
+  metaTitle:string = 'Stellar Security - Stellar Notes';
   metaKeywords:string = 'Stellar Notes, stellar security, and so on';
 }

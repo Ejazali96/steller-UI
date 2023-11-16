@@ -8,8 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
-  metaDescription:string = 'Meta discription here for Home';
-  metaTitle:string = 'Srellar Home';
+  metaDescription:string = 'Experience stellar security solutions that safeguard your digital assets. Our cutting-edge technology ensures protection against cyber threats. Explore peace of mind today!';
+  metaTitle:string = 'Stellar Security - Because your privacy matters';
   metaKeywords:string = 'Stellar Home, stellar security, and so on';
   constructor(private meta: Meta) {
   }

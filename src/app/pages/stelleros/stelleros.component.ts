@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stelleros.component.css']
 })
 export class StellerosComponent {
-  metaDescription:string = 'Meta discription here for stellaros';
-  metaTitle:string = 'Srellar stellaros';
+  metaDescription:string = 'StellarOS is the most private & secure OS designed to protect your data and privacy.';
+  metaTitle:string = 'StellarSecurity - StellarOS';
   metaKeywords:string = 'Stellar stellaros, stellar security, and so on';
 }

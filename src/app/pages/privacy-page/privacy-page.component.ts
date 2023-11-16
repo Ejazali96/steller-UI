@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./privacy-page.component.css']
 })
 export class PrivacyPageComponent {
-  metaDescription:string = 'Meta discription here for about';
-  metaTitle:string = 'Srellar About';
+  metaDescription:string = 'Read our privacy for Steller Security';
+  metaTitle:string = 'Stellar Security - Privacy';
   metaKeywords:string = 'Stellar about, stellar security, and so on';
 }
