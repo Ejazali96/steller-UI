@@ -17,6 +17,7 @@ import { TermsPageComponent } from '../pages/terms-page/terms-page.component';
 import { PrivacyPageComponent } from '../pages/privacy-page/privacy-page.component';
 import { CheckoutPageComponent } from '../pages/checkout-page/checkout-page.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { MetaTagsDirective } from '../directives/meta-tags.directive';
 
 
 
@@ -37,7 +38,7 @@ import { TranslateModule } from '@ngx-translate/core';
     TermsPageComponent,
     PrivacyPageComponent,
     CheckoutPageComponent,
-
+    MetaTagsDirective
   ],
   exports:[
     HeaderComponent,
@@ -53,6 +54,7 @@ import { TranslateModule } from '@ngx-translate/core';
     FeatureSectionComponent,
     YourDevicesSectionComponent,
     TranslateModule,
+    MetaTagsDirective
   ],
   imports: [
     CommonModule,
