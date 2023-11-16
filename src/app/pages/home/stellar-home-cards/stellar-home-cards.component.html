@@ -6,7 +6,10 @@
    </div>
    <div class="home-card-body position-relative">
         <p class="mt_20 font-size-24">{{stellarCarddescription | translate}}</p>
-        <a  [href]="stellarCardbuttonLink" class="make_btn mt_20">{{stellarCardbuttonText | translate}}</a>
+        <div class="d-flex align-items-center"> 
+          <a  [href]="stellarCardbuttonLink" class="make_btn mt_20">{{stellarCardbuttonText | translate}}</a>
+          <a  [href]="stellarCardbuttonLink" class="make_btn mt_20 ml-3">{{'home_stellar_card_common_buyNow_btn' | translate}}</a>
+        </div>
    </div>
    <img [src]="'./../../../assets/img/'+stellarCardmainImage" [class]="stellarCardmainImage=='card-vpn.svg'?'stellar-product-image img-fluid btm-neg':'stellar-product-image img-fluid'" alt="stellar-product-image">
 </div>
