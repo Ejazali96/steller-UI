@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./stellar-vpn.component.css']
 })
 export class StellarVPNComponent {
-  metaDescription:string = 'Meta discription here for VPN';
-  metaTitle:string = 'Srellar VPN';
+  metaDescription:string = 'Experience seamless online privacy with Stellar VPN. Secure your digital world with fast, reliable connections. Browse anonymously and protect your data today.';
+  metaTitle:string = 'StellarSecurity.com - Stellar VPN';
   metaKeywords:string = 'Stellar VPN, stellar security, and so on';
 }
