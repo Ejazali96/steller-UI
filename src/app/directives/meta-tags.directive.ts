@@ -1,5 +1,7 @@
 import { Directive, Input, OnInit, OnDestroy } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
+import { Title } from '@angular/platform-browser';
+
 
 @Directive({
   selector: '[appMetaTags]'
@@ -10,7 +12,7 @@ export class MetaTagsDirective implements OnInit, OnDestroy {
   @Input() ogTitle: string;
   @Input() keywords: string;
 
-  constructor(private meta: Meta) { }
+  constructor(private meta: Meta,private titleService: Title) { }
 
   ngOnInit() {
     debugger
@@ -28,6 +30,7 @@ export class MetaTagsDirective implements OnInit, OnDestroy {
 
     if (this.ogTitle) {
       this.meta.addTag({ property: 'og:title', content: this.ogTitle });
+      this.titleService.setTitle(this.ogTitle);
     }
     if (this.keywords) {
       this.meta.addTag({ property: 'keywords', content: this.keywords });
