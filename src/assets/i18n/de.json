@@ -425,5 +425,11 @@
   "home_stellar_support_title2":"Support",
   "home_stellar_support_description":"Falls Sie Hilfe benötigen oder Fragen haben, können Sie uns schriftlich erreichen. Informieren Sie sich über die verfügbaren Kontaktmöglichkeiten.",
   "home_stellar_support_button":"Mehr lesen",
-  "home_stellar_card_common_buyNow_btn":"Jetzt kaufen"
+  "home_stellar_card_common_buyNow_btn":"Jetzt kaufen",
+
+
+  "stellarStore": "Store",
+  "stellar_store_open_info": "Im Jahr 2024 wird Stellar Security eigene Stores in Europa eröffnen, in denen Kunden unsere Produkte ausprobieren und kaufen können.",
+  "stellar_store_now_text": "Derzeit ist es möglich, unsere Produkte über unsere Website oder bei unseren Wiederverkäufern zu erwerben.",
+  "stellar_store_button": "Nach Hause gehen"
 }
