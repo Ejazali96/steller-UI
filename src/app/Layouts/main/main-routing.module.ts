@@ -22,6 +22,7 @@ const routes: Routes = [
       { path: 'stellar-vpn', loadChildren: () => import('../../pages/stellar-vpn/stellar-vpn.module').then(m => m.StellarVPNModule) },
       { path: 'about-us', loadChildren: () => import('../../pages/about-us/about-us.module').then(m => m.AboutUsModule) },
       { path: 'activate-phone', loadChildren: () => import('../../pages/activate-phone/activate-phone.module').then(m => m.ActivatePhoneModule) },
+      { path: 'stellar-store', loadChildren: () => import('../../pages/stellar-store/stellar-store.module').then(m => m.StellarStoreModule) },
       { path: 'terms-page', component:TermsPageComponent},
       { path: 'privacy-page', component:PrivacyPageComponent},
       { path: 'checkout-page', component:CheckoutPageComponent},
