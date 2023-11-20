@@ -9,9 +9,13 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'stellar-security';
   constructor(private translate: TranslateService) {
-    this.translate.addLangs(['en']);
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
+
+    let language = navigator.language;
+
+    language = language.substring(0, 2);
+
+    this.translate.addLangs(['en', 'de', 'da']);
+    this.translate.use(language);
   }
 
 }
