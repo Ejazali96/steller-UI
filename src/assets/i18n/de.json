@@ -12,10 +12,10 @@
   "vpn_description": "VPN, das Ihnen ein solides Virtuelles Privates Netzwerk verschafft, das die gesamte Kommunikation Ende-zu-Ende verschlüsselt.",
   "support_description": "Falls Sie Hilfe benötigen oder Fragen haben, können Sie uns schriftlich erreichen. Informieren Sie sich über die verfügbaren Kontaktmöglichkeiten.",
   "customer_head_text": "Verwendet von einer Vielzahl von",
-                                              "customers":"Kunden",
+  "customers":"Kunden",
   "government": "Regierung",
   "military_defence": "Militär",
-  "bankers": "Bänkern",
+  "bankers": "Banken",
   "lawyers": "Anwälten",
   "corporates": "Unternehmen",
   "general_public": "Allgemeine Öffentlichkeit",
@@ -403,7 +403,7 @@
   "home_page_main_phone_button2":"Mehr lesen",
   "home_stellar_protect_title1":"Stellar",
   "home_stellar_protect_title2":"Protect",
-  "home_stellar_protect_description":"EAktivieren Sie die Fernlöschung des Telefons und die automatische Wischfunktion für längeres Entsperren. Aktiviert die Sperre bei der Erkennung von Stürzen, reagiert auf starke Erschütterungen und mehr. Protect schützt Ihr Gerät auf eine Art und Weise, wie es kein anderes zuvor getan hat. ",
+  "home_stellar_protect_description":"Aktivieren Sie die Fernlöschung des Telefons und die automatische Wischfunktion für längeres Entsperren. Aktiviert die Sperre bei der Erkennung von Stürzen, reagiert auf starke Erschütterungen und mehr. Protect schützt Ihr Gerät auf eine Art und Weise, wie es kein anderes zuvor getan hat. ",
   "home_stellar_protect_button":"Mehr lesen",
   "home_stellar_antivirus_title1":"Stellar",
   "home_stellar_antivirus_title2":"Antivirus",
@@ -419,12 +419,11 @@
   "home_stellar_esim_button": "Mehr lesen",
   "home_stellar_notes_title1":"Stellar",
   "home_stellar_notes_title2":"Notes",
-  "home_stellar_notes_description":"ie sicherste und benutzerfreundlichste Notizen-App auf dem Markt. Ihre Notizen sind verschlüsselt und können nur von Ihnen eingesehen werden.",
+  "home_stellar_notes_description":"Die sicherste und benutzerfreundlichste Notizen-App auf dem Markt. Ihre Notizen sind verschlüsselt und können nur von Ihnen eingesehen werden.",
   "home_stellar_notes_button":"Mehr lesen",
   "home_stellar_support_title1":"Stellar",
   "home_stellar_support_title2":"Support",
   "home_stellar_support_description":"Falls Sie Hilfe benötigen oder Fragen haben, können Sie uns schriftlich erreichen. Informieren Sie sich über die verfügbaren Kontaktmöglichkeiten.",
   "home_stellar_support_button":"Mehr lesen",
-  "home_stellar_card_common_buyNow_btn": "Kaufe jetzt"
+  "home_stellar_card_common_buyNow_btn":"Jetzt kaufen"
 }
-
