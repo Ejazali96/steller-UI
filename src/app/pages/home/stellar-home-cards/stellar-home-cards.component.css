@@ -30,11 +30,15 @@ img.stellar-product-image {
     bottom: 0;
     left: 0;
     z-index: 0;
+    width: calc(100% - 78px);
+    min-width: 300px;
 }
 .btm-neg{
-    bottom: -34px !important;
+    /* bottom: -34px !important; */
     right: 0 !important;
     left: auto !important;
+    width: calc(100% - 250px) !important;
+    max-width: 544px;
 }
 .right-side-card img.card-glow-img {
     transform: scaleX(-1);
