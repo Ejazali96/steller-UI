@@ -9,7 +9,6 @@ import { TranslateService } from '@ngx-translate/core';
 export class AppComponent {
   title = 'stellar-security';
   constructor(private translate: TranslateService) {
-    console.log(navigator.language);
 
     let language = navigator.language;
 
