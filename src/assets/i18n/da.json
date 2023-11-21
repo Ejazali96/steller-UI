@@ -425,5 +425,11 @@
   "home_stellar_support_title2":"Support",
   "home_stellar_support_description":"Hvis du har brug for assistance eller har nogle spørgsmål, så kan du kontakte os ved at skrive. Se de tilgængelige kontaktmuligheder.",
   "home_stellar_support_button":"Læs mere",
-  "home_stellar_card_common_buyNow_btn":"Køb nu"
+  "home_stellar_card_common_buyNow_btn":"Køb nu",
+
+
+  "stellarStore": "Vores butikker",
+  "stellar_store_open_info":"I 2024 åbner Stellar Security vores egne butikker i Europa, hvor kunder kan prøve og købe vores produkter.",
+  "stellar_store_now_text":"For nu er det muligt at købe vores produkter via vores hjemmeside eller af vores forhandlere.",
+  "stellar_store_button":"Gå hjem"
 }
