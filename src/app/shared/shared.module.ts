@@ -18,6 +18,7 @@ import { PrivacyPageComponent } from '../pages/privacy-page/privacy-page.compone
 import { CheckoutPageComponent } from '../pages/checkout-page/checkout-page.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { MetaTagsDirective } from '../directives/meta-tags.directive';
+import {CustomerReviewsComponent} from "../components/customer-reviews/customer-reviews.component";
 
 
 
@@ -38,6 +39,7 @@ import { MetaTagsDirective } from '../directives/meta-tags.directive';
     TermsPageComponent,
     PrivacyPageComponent,
     CheckoutPageComponent,
+    CustomerReviewsComponent,
     MetaTagsDirective
   ],
   exports:[
@@ -53,6 +55,7 @@ import { MetaTagsDirective } from '../directives/meta-tags.directive';
     EmbracSectionComponent,
     FeatureSectionComponent,
     YourDevicesSectionComponent,
+    CustomerReviewsComponent,
     TranslateModule,
     MetaTagsDirective
   ],
