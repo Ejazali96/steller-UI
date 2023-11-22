@@ -429,6 +429,8 @@
   "home_stellar_card_common_buyNow_btn":"Buy Now",
   "stellar_store_open_info":"In 2024 Stellar Security will open our own stores in Europe where customers can try, and buy our products.",
   "stellar_store_now_text":"For now, it is possible to purchase our products through our website or by our resellers.",
-  "stellar_store_button":"Go Home"
+  "stellar_store_button":"Go Home",
+  "customer_reviews_head_text": "reviews",
+  "customer": "Customers"
 }
 

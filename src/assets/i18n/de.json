@@ -431,5 +431,8 @@
   "stellarStore": "Store",
   "stellar_store_open_info": "Im Jahr 2024 wird Stellar Security eigene Stores in Europa eröffnen, in denen Kunden unsere Produkte ausprobieren und kaufen können.",
   "stellar_store_now_text": "Derzeit ist es möglich, unsere Produkte über unsere Website oder bei unseren Wiederverkäufern zu erwerben.",
-  "stellar_store_button": "Nach Hause gehen"
+  "stellar_store_button": "Nach Hause gehen",
+
+  "customer_reviews_head_text": "Kundenbewertungen",
+  "customer": ""
 }
