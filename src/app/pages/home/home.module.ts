@@ -17,7 +17,7 @@ import {AppModule} from "../../app.module";
     imports: [
         CommonModule,
         TranslateModule.forChild(),
-        HomeRoutingModule, SharedModule, AppModule
+        HomeRoutingModule, SharedModule
     ]
 })
 export class HomeModule { }
