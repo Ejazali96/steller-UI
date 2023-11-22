@@ -12,7 +12,7 @@ export class AppComponent {
 
     let language = navigator.language;
 
-    language = language.substring(0, 2);
+    language = "da";
 
     this.translate.addLangs(['en', 'de', 'da']);
     this.translate.use(language);
