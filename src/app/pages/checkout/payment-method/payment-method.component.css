@@ -37,7 +37,6 @@ label span{
     display: flex;
     justify-content: space-between;
     column-gap: 128px;
-    align-items: center;
 }
 .left_section{
     flex: 2;
