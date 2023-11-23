@@ -1,0 +1,77 @@
+<div class="shipping_detail_wrapper mt_25">
+    <div class="shipping_detail_crumb mt_18 font-xs-16">
+        <span>
+            <img src="./../../../assets/img/shipping-detail.svg" alt="shipping-detail">
+            {{'shipping_detail_bread_1' | translate}}
+        </span>
+        <span class="bar-center"></span>
+        <span class="text_muted">
+            <img src="./../../../assets/img/shipping-payment.svg" alt="shipping-payment">
+            {{'shipping_detail_bread_2' | translate}}
+        </span>
+    </div>
+    <div class="shipping_detail_form mt_25 flex-sm-wrap">
+        <div class="left_section">
+            <h3 class="head_text">{{ 'shipping_detail_title' | translate}}</h3>
+            <form class="personal_ifo mt_18">
+                <h2 class="font-18-head font-xs-16">{{ 'shipping_detail_info_form_title' | translate}}</h2>
+                <div class="row">
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_fname_label' | translate}} <span>*</span></label>
+                        <input type="text" id="lname" name="lname"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_fname_placeholder' | translate}}" />
+                    </div>
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_lname_label' | translate}} <span>*</span></label>
+                        <input type="text" id="fname" name="fname"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_lname_placeholder' | translate}}" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_street_label' | translate}} <span>*</span></label>
+                        <input type="text" id="stree" name="street"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_street_placeholder' | translate}}" />
+                    </div>
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_suite_label' | translate}}</label>
+                        <input type="text" id="suite" name="suite"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_suite_placeholder' | translate}}" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt_12">
+                        <label>{{ 'shipping_detail_info_form_city_label' | translate}} <span>*</span></label>
+                        <input type="text" id="city" name="city"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_city_placeholder' | translate}}" />
+                    </div>
+                    <div class="col-lg-4 mt_12">
+                        <label>{{ 'shipping_detail_info_form_state_label' | translate}} <span>*</span></label>
+                        <select id="state" name="state" class="input_info">
+                            <option value="Florida">{{ 'shipping_detail_info_form_state_option1' | translate}}</option>
+                            <option value="Fransisco">{{ 'shipping_detail_info_form_state_option2' | translate}}</option>
+                            <option value="Alabam">{{ 'shipping_detail_info_form_state_option3' | translate}}</option>
+                            <option value="Florida" selected>{{ 'shipping_detail_info_form_state_option1' | translate}}</option>
+                          </select>
+                    </div>
+                    <div class="col-lg-4 mt_12">
+                        <label>{{ 'shipping_detail_info_form_zip_label' | translate}} <span>*</span></label>
+                        <input type="text" id="zipCode" name="zipCode"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_zip_placeholder' | translate}}" />
+                    </div>
+                </div>
+            </form>
+            <form class="personal_ifo mt_25">
+                <h2 class="font-18-head font-xs-16">{{ 'shipping_detail_contact_form_title' | translate}}</h2>
+                <div class="row">
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_contact_form_email_label' | translate}} <span>*</span></label>
+                        <input type="text" id="email" name="email"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_email_placeholder' | translate}} " />
+                    </div>
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_contact_form_phone_label' | translate}} <span>*</span></label>
+                        <input type="text" id="phone" name="phone"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_phone_placeholder' | translate}}" />
+                    </div>
+                </div>
+                <a type="submit" routerLink="/checkout/payment-method" class="nav_btn mt_18" style="background-color: #60D38E;">{{'shipping_detail_button' | translate}}</a>
+            </form>
+        </div>
+        <div class="right_section mt_25">
+            <app-order-summary></app-order-summary>
+        </div>
+    </div>
+</div>

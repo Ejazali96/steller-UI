@@ -1,0 +1,51 @@
+<div class="shipping_method_wrapper mt_25">
+    <h3 class="head_text text-center">{{ 'shipping_method_title' | translate}}</h3>
+    <div class="method_tabs mt_40">
+        <a class="method_tabs_item font-xs-14" routerLink="/checkout/shipping-method" routerLinkActive="active">
+            <img src="./../../../assets/img/delivered-icon.svg" alt="delivered">
+            <span>{{'shipping_method_delivered_tab' | translate}}</span>
+        </a>
+        <a class="method_tabs_item font-xs-14"  routerLinkActive="active">
+            <img src="./../../../assets/img/pickup-icon.svg" alt="delivered">
+            <span>{{'shipping_method_pickup_tab' | translate}}</span>
+        </a>
+    </div>
+    <div class="zip_code d-flex align-items-center flex-column mt_40">
+        <ng-container *ngIf="!isZipcodeValid">
+            <h4 class="font-xs-16">{{'shipping_method_zipcode_title' | translate}}</h4>
+       
+        <form #zipForm="ngForm" class="input_field">
+            <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode" (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{5}" class="input_info" placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
+            <button type="button" (click)="showStockDetail()" [class]="zipForm.form.invalid?'apply_btn disable':'apply_btn'">{{'shipping_method_zipcode_button' | translate}}</button>
+        </form>
+        </ng-container>
+        <div class="near_store" *ngIf="isZipcodeValid">
+            <span>Showing stores near: </span> <span class="store_list">Warner Robins, GA <img class="img-fluid ml-3" src="./../../../assets/img/back-arrow.svg" alt="sim"></span>
+        </div>
+    </div>
+    <ng-container *ngIf="isZipcodeValid">
+        <hr>
+        <div class="stock_list mt_25">
+            <h4 class="stock_list_head font-xs-20">{{'shipping_method_stock_title' | translate}}</h4>
+            <div class="stock_item">
+                <img src="./../../../assets/img/phone.svg" width="47" alt="stock_item">
+                <div class="item_info">
+                    <div class="item_head font-xs-16">{{'shipping_method_stock_item_title' | translate}}</div>
+                    <div class="item_desc">{{'shipping_method_stock_item_description' | translate}}.</div>
+                </div>
+            </div>
+        </div>
+        <div class="delivery_method mb_25">
+            <p>{{'shipping_method_delivery_title' | translate}}</p>
+            <div class="delivery_method_item">
+                <div>
+                    <h4>{{'shipping_method_delivery_time' | translate}}</h4>
+                    <span>{{'shipping_method_delivery_type' | translate}}</span>
+                </div>
+                <div class="delivery_type">{{'shipping_method_delivery_status' | translate}}</div>
+            </div>
+        </div>
+        <hr>
+        <a routerLink="/checkout/shipping-detail" class="nav_btn" style="background-color: #60D38E;">{{'shipping_method_continue_button' | translate}}</a>
+    </ng-container>
+</div>

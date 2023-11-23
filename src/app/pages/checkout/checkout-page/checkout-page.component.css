@@ -1,0 +1,10 @@
+.checkout_back {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    line-height: 38px;
+    font-size: 18px;
+    font-family: 'silka-medium';
+    border-bottom: 1px solid #E5E7EB;
+    cursor: pointer;
+}

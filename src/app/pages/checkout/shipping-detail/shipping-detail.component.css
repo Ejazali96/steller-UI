@@ -1,0 +1,50 @@
+.mt_18{
+    margin-top: 18px;
+}
+.shipping_detail_crumb {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-family: 'silka-medium';
+    gap: 10px;
+}
+span.bar-center {
+    height: 1px;
+    width: 24px;
+    background: gainsboro;
+}
+span.text_muted {
+    color: #CACACA;
+}
+h3.head_text{
+    font-family: 'silka-medium';
+}
+.font-18-head{
+    font-size: 18px;
+    font-family: 'silka-medium';
+    line-height:27px
+}
+.mt_12{
+    margin-top: 12px;
+}
+label{
+    margin-bottom: 10px;
+}
+label span{
+    color: #FF0000;
+}
+.shipping_detail_form{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 128px;
+    align-items: center;
+}
+.left_section{
+    flex: 2;
+}
+.right_section{
+    flex: 1.1;
+}
+select:focus-visible{
+    outline: 0;
+}
