@@ -4,6 +4,8 @@ import { ShippingMethodComponent } from './shipping-method/shipping-method.compo
 import { CheckoutPageComponent } from './checkout-page/checkout-page.component';
 import { ShippingDetailComponent } from './shipping-detail/shipping-detail.component';
 import { PaymentMethodComponent } from './payment-method/payment-method.component';
+import { FindStoreComponent } from './find-store/find-store.component';
+import { PickupDetailComponent } from './pickup-detail/pickup-detail.component';
 
 const routes: Routes = [
   {path: '', pathMatch: 'full', redirectTo: 'shipping-method'},
@@ -14,6 +16,8 @@ const routes: Routes = [
       {path: 'shipping-method', component: ShippingMethodComponent},
       {path: 'shipping-detail', component: ShippingDetailComponent},
       {path: 'payment-method', component: PaymentMethodComponent},
+      {path: 'find-store', component: FindStoreComponent},
+      {path: 'pickup-detail', component: PickupDetailComponent},
     ],
   },
 ];

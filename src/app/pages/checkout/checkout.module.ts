@@ -10,6 +10,8 @@ import { ShippingDetailComponent } from './shipping-detail/shipping-detail.compo
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
 import { PaymentMethodComponent } from './payment-method/payment-method.component';
 import { ThankYouComponent } from '../thank-you/thank-you.component';
+import { FindStoreComponent } from './find-store/find-store.component';
+import { PickupDetailComponent } from './pickup-detail/pickup-detail.component';
 
 
 @NgModule({
@@ -19,7 +21,9 @@ import { ThankYouComponent } from '../thank-you/thank-you.component';
     ShippingDetailComponent,
     OrderSummaryComponent,
     PaymentMethodComponent,
-    ThankYouComponent
+    ThankYouComponent,
+    FindStoreComponent,
+    PickupDetailComponent
   ],
   imports: [
     CommonModule,
