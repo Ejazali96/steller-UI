@@ -25,6 +25,7 @@ const routes: Routes = [
       { path: 'activate-phone', loadChildren: () => import('../../pages/activate-phone/activate-phone.module').then(m => m.ActivatePhoneModule) },
       { path: 'stellar-store', loadChildren: () => import('../../pages/stellar-store/stellar-store.module').then(m => m.StellarStoreModule) },
       { path: 'checkout', loadChildren: () => import('../../pages/checkout/checkout.module').then(m => m.CheckoutModule) },
+      { path: 'bag', loadChildren: () => import('../../pages/bag/bag.module').then(m => m.BagModule) },
       { path: 'terms-page', component:TermsPageComponent},
       { path: 'privacy-page', component:PrivacyPageComponent},
       { path: 'checkout-page', component:CheckoutPageComponent},

@@ -212,7 +212,7 @@
 /*Small devices (landscape phones, 575px and down)*/
 @media (max-width: 575px) {
 
-	header nav .menu_item, header .nav_btn {
+	header nav .menu_item, header .nav_btn,header .bag_btn {
 		display: none;
 	}
 
@@ -362,6 +362,9 @@
 		font-size: 14px !important;
 	}
 	.font-xs-16{
+		font-size: 16px !important;
+	}
+	.font-xs-18{
 		font-size: 16px !important;
 	}
 	.font-xs-20{
