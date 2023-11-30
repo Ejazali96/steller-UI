@@ -11,10 +11,9 @@ export class AppComponent {
   constructor(private translate: TranslateService) {
 
     let language = navigator.language;
+    language = language.substr(0, 2);
 
-    language = "da";
-
-    this.translate.addLangs(['en', 'de', 'da']);
+    this.translate.addLangs(['en', 'de', 'da', 'se']);
     this.translate.use(language);
   }
 
