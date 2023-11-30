@@ -195,7 +195,7 @@ button:focus, input:focus, textarea:focus {
     right: 1.5rem;
     display: none;
     z-index: 999;
-    top: 0.85rem;
+    top: 1.1rem;
 }
 
 .hamburger_menu span {
