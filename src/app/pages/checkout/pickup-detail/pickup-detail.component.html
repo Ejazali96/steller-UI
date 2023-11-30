@@ -1,0 +1,111 @@
+<div class="mainPickUp">
+    <div class="shipping_detail_crumb mt_18 font-xs-16">
+        <span>
+            <img src="./../../../assets/img/shipping-detail.svg" alt="shipping-detail">
+            {{'shipping_detail_bread_1' | translate}}
+        </span>
+        <span class="bar-center"></span>
+        <span class="text_muted">
+            <img src="./../../../assets/img/shipping-payment.svg" alt="shipping-payment">
+            {{'shipping_detail_bread_2' | translate}}
+        </span>
+    </div>
+    <h1 class="head_text font_medium mt_25">{{'pickup_detail_title' | translate}}</h1>
+    <h2 class="font_24 font_medium mt_40">{{'pickup_detail_picker_title' | translate}}</h2>
+
+   
+
+    <div class="tab-content pickUpContent" id="myTabContent">
+        <div class="row mt_30 align-items-end justify-content-between">
+            <div class="col-lg-7 max-w-672">
+                <ul class="nav nav-tabs pickUpTab" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active left-link font_medium font-xs-14" (click)="isElsePicker = false" id="delivered-tab" data-toggle="tab">{{'pickup_detail_picker_me' | translate}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded-0 font_medium font-xs-14" (click)="isElsePicker = true" id="elsepick-tab" data-toggle="tab">
+                            {{'pickup_detail_picker_else' | translate}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link right-link font_medium font-xs-14" id="pickitup-tab" data-toggle="tab">
+                            {{'pickup_detail_picker_anonymous' | translate}}
+                        </a>
+                    </li>
+                </ul>
+                <div class="row mb-4 mt_18">
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_fname_label' | translate}} <span>*</span></label>
+                        <input type="text" id="lname" name="lname"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_fname_placeholder' | translate}}" />
+                    </div>
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_info_form_lname_label' | translate}} <span>*</span></label>
+                        <input type="text" id="fname" name="fname"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_lname_placeholder' | translate}}" />
+                    </div>
+
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_contact_form_email_label' | translate}} <span>*</span></label>
+                        <input type="text" id="email" name="email"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_email_placeholder' | translate}} " />
+                    </div>
+                    <div class="col-lg-6 mt_12">
+                        <label>{{ 'shipping_detail_contact_form_phone_label' | translate}} <span>*</span></label>
+                        <input type="text" id="phone" name="phone"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_phone_placeholder' | translate}}" />
+                    </div>
+                </div>  
+            </div>
+            <div class="col-lg-5">
+                <p class="font-weight-bold mb-3" style="font-size: 16px;">{{'pickup_detail_picker_detail_title' | translate}}
+                </p>
+                <ng-container *ngIf="!isElsePicker">
+                    <ul class="pickupInfoList">
+                        <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_point1' | translate}}</li>
+                        <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_point2' | translate}}</li>
+                    </ul>
+                    <p class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_desc1' | translate}}</p>
+
+                    <p class="pickUpInfoParag mb-3">
+                        {{'pickup_detail_picker_detail_me_desc2' | translate}}
+                    </p>
+
+                    <p class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_desc3' | translate}}</p>
+                </ng-container>
+                <ng-container *ngIf="isElsePicker">
+                    <ul class="pickupInfoList">
+                        <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_point1' | translate}}</li>
+                        <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_point2' | translate}}</li>
+                    </ul>
+                    <p class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_desc1' | translate}}</p>
+                </ng-container>
+            </div>
+            <div class="choose_adress d-flex align-items-center" *ngIf="isElsePicker">
+                <input type="checkbox" checked name="address">
+                <label class="mb-0 ml-3">{{'pickup_detail_pickup_notification' | translate}}</label>
+            </div>
+            
+        </div>
+        <hr />
+        <div class="row mt_25 align-items-end" *ngIf="isElsePicker">
+            <h2 class="font_24 font_medium col-12">{{'pickup_detail_who_pick_order' | translate}}</h2>
+            <div class="col-lg-7">
+
+            <div class="row">
+                <div class="col-lg-6 mt_12">
+                    <label>{{ 'shipping_detail_contact_form_email_label' | translate}} <span>*</span></label>
+                    <input type="text" id="email" name="email"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_email_placeholder' | translate}} " />
+                </div>
+                <div class="col-lg-6 mt_12">
+                    <label>{{ 'shipping_detail_contact_form_phone_label' | translate}} <span>*</span></label>
+                    <input type="text" id="phone" name="phone"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_phone_placeholder' | translate}}" />
+                </div>
+            </div>
+            </div>
+            <div class="col-lg-5">
+                <p class="pickUpInfoParag">{{'pickup_detail_picker_detail_else_desc2' | translate}}
+                    <p class="pickUpInfoParag">{{'pickup_detail_picker_detail_else_desc3' | translate}}</p>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <a routerLink="/checkout/payment-method" class="nav_btn" style="background-color: #60D38E;">{{'shipping_detail_button' | translate}}</a>
+</div>

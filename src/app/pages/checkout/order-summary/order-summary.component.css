@@ -1,0 +1,32 @@
+.order_summary_card{
+    font-size: 16px;
+    font-family: 'silka-medium';
+    line-height: 25px;
+    background-color: #F7F6FC;
+    border-radius: 16px;
+}
+.summary_card_header{
+    padding: 8px 16px;
+    border-bottom: 1px solid #E5E7EB;
+}
+.total_item,.summary_invoice{
+    border-bottom: 1px solid #E5E7EB;
+}
+.summary_card_body{
+    padding: 16px;
+}
+.summary_card_body .items{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 8px 0;
+    line-height: 25px;
+}
+.summary_invoice .items{
+    color: #6E7286;
+}
+.total_item.items a{
+    color: #4364FA;
+    cursor: pointer;
+}
