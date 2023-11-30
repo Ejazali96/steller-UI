@@ -212,10 +212,12 @@
 /*Small devices (landscape phones, 575px and down)*/
 @media (max-width: 575px) {
 
-	header nav .menu_item, header .nav_btn,header .bag_btn {
+	header nav .menu_item, header .nav_btn {
 		display: none;
 	}
-
+	header .bag_btn{
+		margin-right: 3rem;
+	}
 	.menu_item li a {
 	    margin: 0 0 2rem 0;
 	}
