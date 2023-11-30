@@ -1517,3 +1517,21 @@ main {
 .pd-bottom-100{
     padding-bottom: 10rem;
 }
+.mt_18{
+    margin-top: 18px;
+}
+.mb_8{
+    margin-bottom: 8px;
+}
+.font_16{
+    font-size: 16px;
+}
+.font_18{
+    font-size: 18px;
+}
+.font_24{
+    font-size: 24px;
+}
+.font_medium{
+    font-family: 'silka-medium';
+}

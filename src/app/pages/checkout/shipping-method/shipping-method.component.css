@@ -1,0 +1,139 @@
+.method_tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0B1319;
+}
+.method_tabs_item {
+    padding: 22px;
+    font-size: 18px;
+    font-family: 'silka-medium';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px solid #E5E7EB;
+    min-width: 240px;
+    color: #0B1319;
+    transition: 0.3s ease all;
+}
+a.method_tabs_item.active,.method_tabs_item:hover {
+    border-color: #4364FA;
+}
+.method_tabs .method_tabs_item:first-child {
+    border-radius: 16px 0px 0px 16px;
+}
+.method_tabs .method_tabs_item:last-child {
+    border-radius: 0px 16px 16px 0px;
+}
+.mt_40{
+    margin-top: 40px;
+}
+.shipping_method_wrapper h3.head_text{
+    font-family: 'silka-medium';
+}
+.input_field{
+    max-width: 360px;
+    position: relative;
+    width: 100%;
+}
+.input_field input{
+    padding-right: 6rem;
+}
+.zip_code h4{
+    font-size: 18px;
+    font-family: 'silka-medium';
+    line-height: 27px;
+    margin-bottom: 1rem;
+}
+.apply_btn {
+    font-size: 16px;
+    font-family: 'silka-medium';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: fit-content;
+    color: #4364FA;
+    background: transparent;
+    border: 0;
+}
+.apply_btn.disable{
+ color: #CACACA;
+ pointer-events: none;
+}
+h4.stock_list_head {
+    font-size: 24px;
+    font-family: 'silka-medium';
+    line-height: 38px;
+    margin-bottom: 18px;
+}
+.stock_item {
+    display: flex;
+    align-items: center;
+    max-width: 250px;
+    gap: 12px;
+}
+.item_head {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 8px;
+}
+.item_desc {
+    font-size: 14px;
+    line-height: 20px;
+    color: #6E7286;
+}
+.delivery_method_item {
+    border: 2px solid #4364FA;
+    border-radius: 16px;
+    padding: 16px;
+    max-width: 544px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.delivery_type {
+    font-size: 16px;
+    color: #6E7286;
+    text-transform: uppercase;
+}
+.delivery_method_item h4{
+    font-size: 18px;
+    font-family: 'silka-medium';
+    margin-bottom: 8px;
+}
+.delivery_method_item span{
+    font-size: 16px;
+    color: #6E7286;
+}
+.delivery_method > p{
+    font-size: 18px;
+    line-height: 27px;
+    margin: 18px 0;
+}
+.mb_25{
+    margin-bottom: 25px;
+}
+.near_store {
+    font-size: 18px;
+    font-family: 'silka-medium';
+}
+.near_store img{
+    transform: rotate(-90deg);
+}
+.store_list{
+    color: #4364FA;
+}
+
+@media (max-width:575px) {
+    .method_tabs_item {
+        padding: 14px 8px !important;
+        gap: 6px !important;
+        min-width: 156px !important;
+    }
+    .method_tabs_item span{
+        white-space: nowrap;
+    }
+}

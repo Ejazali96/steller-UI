@@ -11,7 +11,7 @@ export class HeaderComponent {
   buttonType:string = ''
   constructor(private renderer: Renderer2, private el: ElementRef ,private activerouter:Router) {
     console.log(this.activerouter.url);
-    if(this.activerouter.url.includes('stellar-phone'))
+    if(this.activerouter.url.includes('stellar-phone') || this.activerouter.url.includes('checkout'))
     {
       this.buttonType = 'buy'
     }else

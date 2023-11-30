@@ -204,13 +204,15 @@
 	    padding: 1.2vh 2vw;
 	    margin-top: 1.6vh;
 	}
-
+	.flex-sm-wrap{
+		flex-wrap: wrap !important;
+	}
 }
 
 /*Small devices (landscape phones, 575px and down)*/
 @media (max-width: 575px) {
 
-	header nav .menu_item, header .nav_btn {
+	header nav .menu_item, header .nav_btn,header .bag_btn {
 		display: none;
 	}
 
@@ -356,6 +358,17 @@
 	.security_big_img {
 		display: none;
 	}
-
+	.font-xs-14{
+		font-size: 14px !important;
+	}
+	.font-xs-16{
+		font-size: 16px !important;
+	}
+	.font-xs-18{
+		font-size: 16px !important;
+	}
+	.font-xs-20{
+		font-size: 20px !important;
+	}
 }
 

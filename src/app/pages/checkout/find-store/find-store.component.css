@@ -1,0 +1,35 @@
+@import '../shipping-method/shipping-method.component.css';
+
+.mainPickUp .pickUpContent {
+    margin-top: 40px;
+}
+
+.pickUpStoreTab .nav-item {
+    display: block;
+    width: 100%;
+}
+.pickUpStoreTab .nav-link {
+    border: 2px solid;
+    border-color: #E5E7EB !important;
+    padding: 16px;
+    border-radius: 16px;
+}
+.pickUpStoreTab .nav-link.active {
+    border-color: #4364FA !important;
+}
+.storeTabParag {
+    color: #6E7286;
+}
+
+.gap_5{
+    gap: 5px;
+}
+.pickUpHR {
+    margin: 24px 0px;
+}
+.green-text {
+    color: #60D38E !important;
+}
+.item_head{
+    color:#0b1319;
+}
