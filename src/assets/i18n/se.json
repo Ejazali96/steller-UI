@@ -1,0 +1,828 @@
+{
+
+  "big_head_text": "Maximalt skydd med",
+
+  "stellar_security": "Stellar security",
+
+  "security_head_text": "En ny nivå av",
+
+  "säkerhet": "säkerhet",
+
+  "stellar_phone": "Stellar Phone",
+
+  "phone": "Telefon",
+
+  "stellar": "Stellar",
+
+  "stellar_antivirus": "Stellar Antivirus",
+
+  "phone_description": "En smidig design, högkvalitativ stellarOS och bra hårdvara. Stellar Phone är snygg och packad med säkerhetsfunktioner.",
+
+  "antivirus_description": "Ett aktivt antivirus som används för att förhindra, upptäcka och ta bort skadlig programvara samtidigt som du skyddar din Stellar Phone hela tiden.",
+
+  "vpn_description": "VPN som ger dig ett solidifierat virtuellt privat nätverk som håller all kommunikation krypterad från ände till ände.",
+
+  "support_description": "Om du behöver hjälp eller har några frågor kan du nå oss genom att skriva till oss. Utforska de tillgängliga kontaktalternativen.",
+
+  "customer_head_text": "Används av en mängd olika",
+
+  "kunder":"kunder",
+
+  "government": "Staten",
+
+  "military_defence": "Militären och försvar",
+
+  "bankers": "Banker",
+
+  "lawyers": "Advokater",
+
+  "corporates": "Företag",
+
+  "general_public": "Allmänheten",
+
+  "security_unparalleled": "Oöverträffad",
+
+  "constant_protection": "Konstant aktivt skydd 24/7",
+
+  "daily_monitoring": "Daglig systemövervakning",
+
+  "complete_security_privacy": "Fullständig säkerhet och integritet",
+
+  "encrypted_message_storage": "Krypterad lagring av meddelanden",
+
+  "and_much_more": "och mycket mer",
+
+  "get_stellar_phone": "Köp en Stellar Phone",
+
+  "footer_link_phone_page": "Telefonsida",
+
+  "footer_link_antivirus_page": "Antivirussida",
+
+  "footer_link_vpn_page": "VPN-sida",
+
+  "footer_link_contact_us": "Kontakta oss",
+
+  "read_more":"Läs mer",
+
+  "stellar_phone_head_text": "Stellar Phone",
+
+  "phone_price": "999,99 €",
+
+  "phone_3_month_price": "759,99 €",
+
+  "phone_description_stellar_phone": "Vi presenterar Stellar Phone – ",
+
+  "phone_description_stellar_phone2": "ett av de senaste tilläggen till världen av säkra smartphones. Tillsammans med den smidiga designen, det högkvalitativa operativsystemet och den solida hårdvaran är telefonen packad med säkerhetsfunktioner. På marknaden för säkra smartphones är Stellar Phone den bästa som finns idag, och säkert många år framåt.",
+
+  "choose_subscription": "Välj prenumeration",
+
+  "subscription_3_months": "+ 3 månaders licens",
+
+  "subscription_6_months": "+ 6 månaders licens",
+
+  "phone_includes": "Inkluderar – Stellar Phone med en mängd säkerhetsfunktioner, förinstallerade appar, E-SIM-kort, Antivirus, VPN, rensa på avstånd med Stellar Protect, telefonnummer redo för Signal, Telegram, whatsapp och mycket mer. ",
+
+  "buy_phone_button": "Köp Stellar Phone",
+
+  "payment_methods": "Betalningsmetoder",
+
+  "secured_by_stellar_security": "Krypterad, säkrad och skyddad av Stellar Security.",
+
+  "security_package":"säkerhetspaket",
+
+  "security_package_head_text": "Hur ditt",
+
+  "security_package_head_text2": "ser ut",
+
+  "stellar_phone_description": "Stellar Phone har en elegant design, ett förstklassigt operativsystem och robust hårdvara. Dess enkla look kombinerar form och funktion utan ansträngning, medan det användarvänliga operativsystemet och den kraftfulla hårdvaran säkerställer en smidig upplevelse. Avancerade säkerhetsfunktioner förbättrar dess övergripande överklagande.",
+
+  "esim_card": "E-SIM-KORT",
+
+  "stellar_esim_description": "Omdefinierar anslutningsmöjligheter med global åtkomst, säkerhet på toppnivå och enkel nätverkshantering. Inga fysiska SIM-kort behövs – bara sömlösa, privata anslutningar över hela världen med vårt E-Sim som ingår.",
+
+  "stellar_protect": "Stellar Protect",
+
+  "stellar_protect_description": "Stellar Protect låter dig radera din telefon på avstånd och initierar automatiskt en radering om den lämnas olåst för länge. Den låser sig även vid upptäckt av fall och kan identifiera och reagera på kraftiga skakningar. Fjärradering kan göras direkt på vår webbplats eller genom att kontakta oss.",
+
+  "stellar_vpn_description": "En VPN säkerställer säkra, krypterade anslutningar genom att maskera din IP-adress och skydda data från hot. Det är viktigt för online integritet och åtkomst till begränsat innehåll.",
+
+  "stellar_antivirus_description": "Ett aktivt antivirus för din Stellar Phone förhindrar, upptäcker och tar bort skadlig programvara. Det skannar i realtid, använder AI-algoritmer och ger kontinuerligt skydd genom uppdateringar.",
+
+  "install_apps_head_text": "Kommer med topprankade",
+
+  "install_apps_span": "förinstallerade appar",
+
+  "aptoide": "Aptoide",
+
+  "antivirus": "Antivirus",
+
+  "cryptool": "Cryptool",
+
+  "fdroid": "Fdroid",
+
+  "molly": "Molly",
+
+  "photo_vault": "Fotovalv",
+
+  "session": "Session",
+
+  "standard_notes": "Stellar Notes",
+
+  "telegram": "Telegram",
+
+  "threema": "Threema",
+
+  "vpn": "VPN",
+
+  "whatsapp": "WhatsApp",
+
+  "stellardata": "Stellar data",
+
+  "stellarsupport": "Stellar support",
+
+  "install_other_apps": "Vill du installera andra appar?",
+
+  "install_other_apps_description": "Med Aptoide och Fdroid har du friheten att installera alla appar du behöver. Utforska deras stora utbud och förbättra din enhets funktionalitet.",
+
+  "stellar_protect_video_text": "Stellar Protect försvarar din enhet på ett sätt som ingen annan har gjort tidigare.",
+
+  "watch_video_key": "Titta på videon för att se hur.",
+
+  "first_class_features": "Första klass",
+
+  "features":"Funktioner",
+
+  "self_destructing_messages": "Självförstörande meddelanden",
+
+  "self_destructing_messages_description": "Ställ in när ett meddelande ska självförstöra eller återkalla ett meddelande omedelbart.",
+
+  "group_broadcast_messages": "GRUPPSÄNDNINGSMEDDELANDE",
+
+  "group_broadcast_messages_description": "Skicka korta uppdateringar till kontaktgrupper med bara några få tryck.",
+
+  "full_featured_group_chat": "FULLSTÄNDIG GRUPPCHAT",
+
+  "full_featured_group_chat_description": "Håll alla synkroniserade, även stora grupper.",
+
+  "share_images_and_notes": "DELA BILDER OCH ANMÄRKNINGAR",
+
+  "share_images_and_notes_description": "Skicka anteckningar, bilder och kontakter med kontroll över nedladdningen.",
+
+  "secure_audio_messages": "SÄKRA LJUDMEDDELANDEN",
+
+  "secure_audio_messages_description": "Bifoga ett säkert ljudklipp till ett meddelande.",
+
+  "end_to_end_encryption": "End-to-end-kryptering",
+
+  "end_to_end_encryption_description": "Vi krypterar dina meddelanden och metadata och erbjuder den mest privata lösningen för meddelanden som finns tillgänglig.",
+
+  "top_stellar_antivirus": "Top Stellar",
+
+  "product_icon01_alt": "Produktikon 01",
+
+  "product_icon02_alt": "Produktikon 02",
+
+  "product_icon03_alt": "Produktikon 03",
+
+  "product_icon04_alt": "Produktikon 04",
+
+  "stellar_antivirus_description_1": "Med Stellar Antivirus kan du vara lugn med att veta att din data och integritet är i säkra händer. Vår avancerade realtidsskanningsteknik övervakar noggrant varje fil och applikation, vilket säkerställer omedelbar upptäckt och neutralisering av potentiella hot.",
+
+  "stellar_antivirus_description_2": "Från virus och trojaner till maskar och ransomware, skyddar Stellar Antivirus mot ett brett spektrum av skadlig programvara och håller dina enheter säkra och ditt digitala liv intakt. Appen kommer förinstallerad på våra enheter.",
+
+  "stellar_antivirus_performance": "På Stellar förstår vi att prestanda spelar roll. Det är därför vår antivirusprodukt är designad för minimal resursförbrukning, vilket säkerställer att dina enheter fungerar med toppprestanda även när de är säkra.",
+
+  "stellar_antivirus_subscription": "Vårt Stellar Antivirus är också tillgängligt som en fristående prenumerationsbaserad produkt.",
+
+  "protect_all_your_devices": "Skydda alla",
+
+  "your_devices": "dina enheter",
+
+  "windows_pc": "Windows PC",
+
+  "windows_pc_description": "Stellar Antivirusprogram för Windows PC / Windows 10-11.",
+
+  "mac_osx": "Mac OSX",
+
+  "mac_osx_description": "Stellar Antivirusprogram för Apple/Mac OSX.",
+
+  "android": "Android",
+
+  "android_description": "Stellar Antivirus-program för Android-telefoner.",
+
+  "ios": "iOS",
+
+  "ios_description": "Stellar Antivirusprogram för iPhones.",
+
+  "top_stellar": "Top stellar",
+
+  "available_with": "Tillgänglig med",
+
+  "stellar_vpn_description_1": "Vår Stellar VPN fungerar med nästan allt och är baserad och strukturerad på openVPN. Appen är förinstallerad på våra enheter och ger dig säker åtkomst och nätverksanslutning.",
+
+  "vpn_encryption_description": "VPN-krypteringen möjliggör ett säkert alternativ för att använda ett offentligt nätverk, maskera din IP-adress och kryptera all din enhets kommunikation.",
+
+  "vpn_technical_description": "Mer tekniskt sett upprättar VPN en tunnel mellan enheterna, krypterar all data som kommer in i tunneln och dekrypterar den i andra änden. VPN:s säkerhet, förutom ett par nycklar, förbättras med protokoll, ytterligare förstärkning av data med säkerhet för internetprotokoll eller generisk routinginkapsling.",
+
+  "stellar_vpn_stand_alone_description": "Stellar VPN är också tillgänglig som en fristående prenumerationsbaserad produkt.",
+
+  "contact": "Kontakt",
+
+  "contact_form_heading": "Om du har frågor, vänligen kontakta oss via formuläret.",
+
+  "name_label": "Namn *",
+
+  "email_label": "E-post *",
+
+  "message_label": "Meddelande *",
+
+  "add_your_full_name": "Lägg till ditt fullständiga namn",
+
+  "add_your_email": "Lägg till din e-post",
+
+  "message_placeholder": "Lägg till ditt meddelande",
+
+  "send_message_button": "Skicka ditt meddelande",
+
+  "response_time_message": "Vanligtvis strävar vi efter att svara inom några timmar, även om det finns tillfällen då vi kan svara omedelbart",
+
+  "encrypted_security_message": "Krypterad, säkrad och skyddad av Stellar Security",
+
+  "activate_your": "Aktivera din",
+
+  "activation_form_heading_span": "För att aktivera din Stellar Phone ",
+
+  "activation_form_heading":"och generera ett unikt lösenord, ange aktiverings-ID och aktiveringskod som ingår i paketet du har fått.",
+
+  "activation_id_label": "AKTIVERINGS-ID *",
+
+  "activation_code_label": "AKTIVERINGSKOD *",
+
+  "add_activation_id": "Lägg till ditt aktiverings-ID",
+
+  "add_activation_code": "Lägg till din aktiveringskod",
+
+  "activate_stellar_phone_button": "Aktivera Stellar Phone",
+
+  "activation_system_message": "Vårt aktiveringssystem garanterar exklusiv användning av Stellar Phone, vilket säkerställer att bara du har åtkomst.",
+
+  "encryption_hashing_message": "På grund av kryptering och hashprotokoll kan vi inte fastställa korrelationen mellan en Stellar Phone och dess respektive aktiverings-ID och kod. Dessutom förblir ditt unika genererade lösenord, som förlitar sig på den inkluderade koden för aktiverings-ID:t. dold, tillgänglig endast för dig.",
+
+  "reach_us_message": "Om du behöver hjälp eller har några frågor kan du nå oss genom att skriva.",
+
+  "signal_contact": "Signal: +591 73 43 67 21",
+
+  "email_contact": "E-post: info@stellarsecurity.com",
+
+  "about": "Om",
+
+  "about_description_1": "Stellar Security är en leverantör av nästa generations moderna teknik för att förbättra din kommunikation och enhet med avancerade säkerhets- och integritetslösningar.",
+
+  "about_description_2": "Stellar Security erbjuder inte bara heltidstjänster och support för säkerhetsapplikationer utan erbjuder också krypterade säkra smartphones på hög nivå.",
+
+  "about_description_3": "Vår filosofi är 'Eftersom din integritet är viktigast.' Skydda ditt företag eller din personliga konfidentialitet med starka krypteringsmetoder och teknik.",
+
+  "about_description_4": "Den moderna digitala världen expanderar och utvecklas runt oss varje dag, och med den, skadliga hot från hackare och datatjuvar.",
+
+  "about_description_5": "Säkra din väg framåt med Stellar Security.",
+
+  "reasons_to": "Skäl till",
+
+  "choose_us": "välj oss",
+
+  "anonymity": "Anonymitet",
+
+  "anonymity_description": "Var privat och säker med Stellar Security. Vi erbjuder maximalt skydd.",
+
+  "security_description": "Den högsta säkerhetsnivån möjlig med moderna, innovativa säkerhetslösningar för att skydda dina data.",
+
+  "fast_shipping": "Snabb leverans",
+
+  "fast_shipping_description": "Snabb och säker världsomspännande frakt- och leveranstjänst för att få din beställning till dig så snabbt som möjligt.",
+
+  "support": "Support",
+
+  "privacy_policy": "Sekretesspolicy",
+
+  "your_privacy_important": "Din integritet är viktig för oss.",
+
+  "policy_respect_privacy": "Det är en StellarSecurity.com policy att respektera din integritet angående all information vi kan samla in från dig på vår webbplats, https://stellarsecurity.com och andra webbplatser som vi äger och driver.",
+
+  "personal_info_needed": "Vi ber bara om personlig information när vi verkligen behöver den för att erbjuda dig en tjänst. Vi samlar in den på rättvisa och lagliga sätt, med din kunskap och ditt samtycke. Vi låter dig också veta varför vi samlar in den och hur den kommer att användas.",
+
+  "info_retention": "Vi behåller bara insamlad information så länge som det är nödvändigt för att ge dig den efterfrågade tjänsten. Vilken data vi lagrar kommer vi att skydda inom kommersiellt acceptabla metoder för att förhindra förlust och stöld, såväl som obehörig åtkomst, avslöjande, kopiering, användning eller modifiering.",
+
+  "no_public_sharing": "Vi delar inte någon personligt identifierande information offentligt eller med tredje part, förutom när det krävs enligt lag.",
+
+  "external_links_disclaimer": "Vår webbplats kan länka till externa webbplatser som inte drivs av oss. Var medveten om att vi inte har någon kontroll över innehållet och praxis på dessa webbplatser och kan inte ta ansvar för deras respektive integritetspolicyer.",
+
+  "refuse_personal_info": "Du är fri att avslå vår begäran om din personliga information, med förbehåll för att vi kanske inte kan erbjuda dig alla dina önskade tjänster.",
+
+  "continued_use_acceptance": "Din fortsatta användning av vår webbplats kommer att betraktas som ett godkännande av vår praxis kring integritet och personlig information. Om du har några frågor om hur vi hanterar användardata och personlig information är du välkommen att kontakta oss. Stellar Security finns i Norge och Danmark.",
+
+  "effective_date": "Denna policy gäller från och med 30 juli 2023.",
+
+  "products": "Produkter",
+
+  "activatePhone": "Aktivera telefon",
+
+  "remoteWipe": "Fjärradera",
+
+  "privacyMatter": "Eftersom din integritet är viktigast",
+
+  "buyStellarPhone": "Köp Stellar-telefonen",
+
+  "getStellarPhone": "Få en Stellar Phone",
+
+  "stellarPhone": "Stellar Phone",
+
+  "stellarProtect": "Stellar Protect",
+
+  "stellarESim": "STELLAR E-sim",
+
+  "stellarAntivirus": "Stellar Antivirus",
+
+  "stellarNotes": "Stellar Notes",
+
+  "stellarVpn": "Stellar VPN",
+
+  "stellarSupport": "Stellar Support",
+
+  "activatePhoneLink": "Aktivera telefon",
+
+  "remoteWipeLink": "Fjärradering",
+
+  "offcanvasProducts": "Produkter",
+
+  "offcanvasActivatePhone": "Aktivera telefon",
+
+  "offcanvasStellarPhone": "Stellar Phone",
+
+  "offcanvasStellarAntivirus": "Stellar Antivirus",
+
+  "offcanvasStellarVpn": "Stellar VPN",
+
+  "offcanvasStellarSupport": "Stellar Support",
+
+  "offcanvasActivatePhoneLink": "Aktivera telefon",
+
+  "offcanvasRemoteWipeLink": "Fjärrradering",
+
+  "offcanvasGetStellarPhone": "Köp en Stellar Phone",
+
+  "footerIntro": "Stellar Security är det första företaget som erbjuder maximalt skydd för varje enhet.",
+
+  "startSafelyConnecting": "Vi tror på öppen källkod.",
+
+  "usingGrapheneOS": "Vi använder",
+
+  "footerOptions": "ALTERNATIV",
+
+  "aboutUs": "Om oss",
+
+  "termsAndConditions": "Villkor",
+
+  "privacyPolicy": "Sekretesspolicy",
+
+  "footerHelp": "Hjälp",
+
+  "needAssistance": "Om du behöver hjälp eller har några frågor kan du nå oss genom att skriva.",
+
+  "instantReply": "Vanligtvis strävar vi efter att svara inom några timmar, även om det finns tillfällen då ett omedelbart svar är möjligt.",
+
+  "footerContact": "Kontakt",
+
+  "signal": "Signal: ",
+
+  "email": "E-post:",
+
+  "rightsReserved": "© 2023 – Alla rättigheter reserverade",
+
+  "phone_built_on": "En telefon byggd på",
+
+  "open_source": "Öppen källkod",
+
+  "graphene_os": "GrapheneOS",
+
+  "graphene_os_description": "Vi använder GrapheneOS som är vidareutvecklat med vår egen säkerhetsteknologi som gör din telefon ännu säkrare. Vi arbetar mot ett nytt opensource OS -",
+
+  "read_more_about_stellar_os":"StellarOS som du kan läsa mer om här.",
+
+  "vpn_built_on_openvpn": "VPN byggd på OpenVPN",
+
+  "vpn_description2": "Våra VPN-servrar ägs av oss. Vi lagrar ingen data om vilka appar du använder, vilka webbplatser du använder eller hur du använder internet.",
+
+  "antivirus_description2": "För ytterligare säkerhet kommer våra telefoner med antivirus som upptäcker skadlig programvara, spionprogram och andra typer av hot. Om några hot hittas kommer vår telefon att varna dig och blockera alla hot från din telefon.",
+
+  "headline": "Rubrik",
+
+  "headline_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec massa gravida, mollis nibh ac, gravida ipsum. In rhoncus nisl leo, sed malesuada diam malesuada in. Maecenas id augue sollicituen, sadingilla solliciteuen. ",
+
+  "before_first_unlock": "Före första upplåsning",
+
+  "before_first_unlock_description": "Om din telefon någonsin blir stulen, kan vår unika programvara aktivera ett tillstånd som kallas 'BFU', vilket gör det mycket osannolikt för någon att extrahera data från din enhet.",
+
+  "remote_wipe": "Fjärradering",
+
+  "remote_wipe_description": "Du har möjlighet att utföra en fjärradering av din telefon på",
+
+  "remote_wipe_description_link":"wipe.stellarsecurity.com",
+
+  "remote_wipe_description2":"Denna åtgärd kommer att radera allt innehåll på din enhet. Om du behöver hjälp med raderingsfunktionen, tveka inte att kontakta oss, så hjälper vi dig gärna.",
+
+  "strong_passwords": "Starka lösenord",
+
+  "strong_passwords_description": "Vår programvara hjälper dig att skapa exceptionellt säkra lösenord. Att använda ett starkt lösenord är ditt främsta försvar mot hackare, vilket avsevärt komplicerar datautvinningen. För att förbättra säkerheten ytterligare är våra telefoner utrustade med krypterade kretsar som heter M1 och M2, ger ett extra lager av skydd mot dataextraktion.",
+
+  "operating_system": "Operativsystem",
+
+  "coming_soon": "KOMMER SNART",
+
+  "stellar_os_description": "StellarOS är ett nytt mobiloperativsystem med fokus på säkerhet och öppen källkod med integritet. Operativsystemet har Android-appkompatibilitet som för närvarande utvecklas hos Stellar Security.",
+
+  "research_and_development": "Den är fokuserad på forskning och utveckling av integritets- och säkerhetsteknik inklusive avsevärda förbättringar av sandboxing, exploateringsbegränsningar och tillståndsmodellen. Med Protect integrerat i sin kärna har det säkerhetsfunktioner som inga andra operativsystem erbjuder.",
+
+  "improves_privacy_security": "StellarOS förbättrar integriteten och säkerheten för operativsystemet från botten och upp. Det distribuerar teknik för att mildra hela klasser av sårbarheter och göra det avsevärt svårare att utnyttja de vanligaste källorna till sårbarheter. Det förbättrar säkerheten för både operativsystemet och apparna som körs på den.",
+
+  "sandbox_fortified": "Appens sandlåda och andra säkerhetsgränser är förstärkta. StellarOS försöker undvika att påverka användarupplevelsen med integritets- och säkerhetsfunktionerna.",
+
+  "private_and": "Det privata och",
+
+  "secure_os": "säkert mobilt OS",
+
+  "private_and_secure_os_description": "StellarOS är ett anmärkningsvärt operativsystem för mobiler med öppen källkod designat för att prioritera integritet, säkerhet och sömlös användbarhet. StellarOS bygger på den solida grunden för Android Open Source Project (AOSP) och integrerar på sakkunnigt sätt förbättrade sekretess- och säkerhetsfunktioner utan att äventyra den starka säkerhetsmodellen tack vare Protect som är djupt integrerat i dess kärna.",
+
+
+
+  "esim_main_title":"Förbli uppkopplad",
+
+  "esim_main_bold_purple":"var du",
+
+  "esim_main_bold_black":"’än är",
+
+
+
+  "esim_plan_main_title":"Våra",
+
+  "esim_plan_main_bold_purple":"Planer",
+
+  "esim_euro_plan1_days":"30 dagar",
+
+  "esim_euro_plan1_size":"3 GB",
+
+  "esim_euro_plan1_price":" 16,99 EUR",
+
+  "esim_euro_plan2_days":"60 dagar",
+
+  "esim_euro_plan2_size":"6 GB",
+
+  "esim_euro_plan2_price":" 29,99 EUR",
+
+  "esim_euro_plan3_days":"90 dagar",
+
+  "esim_euro_plan3_size":"9 GB",
+
+  "esim_euro_plan3_price":" 59,99 EUR",
+
+  "esim_euro_popular_plan":"Mest populär",
+
+  "esim_global_plan1_days":"30 dagar",
+
+  "esim_global_plan1_size":"3 GB",
+
+  "esim_global_plan1_price":" 16,99 EUR",
+
+  "esim_global_plan2_days":"60 dagar",
+
+  "esim_global_plan2_size":"6 GB",
+
+  "esim_global_plan2_price":" 29,99 EUR",
+
+  "esim_global_plan3_days":"90 dagar",
+
+  "esim_global_plan3_size":"9 GB",
+
+  "esim_global_plan3_price":" 59,99 EUR",
+
+  "esim_global_popular_plan":"Mest populär",
+
+  "esim_euro_plan_button":"Kom igång",
+
+  "esim_global_plan_button":"Kom igång",
+
+  "plan_tab_1":"Europa",
+
+  "plan_tab_2":"Global",
+
+
+
+  "esim_title_light":"Vad är",
+
+  "esim_title_bold":"e-Sim",
+
+  "what_is_esim_para_1":"eSIM, förkortning för \"embedded Subscriber Identity Module,\" är en teknik som förändrar hur mobila enheter ansluter till mobilnät.",
+
+  "what_is_esim_para_2":"Till skillnad från traditionella fysiska SIM-kort, som du kan ta bort och ersätta i din telefon eller andra mobila enheter, är eSIM inbäddat direkt i enheten under tillverkningen.",
+
+  "what_is_esim_para_3":" På Stellar Security använder vi bara de senaste teknologierna, vilket är anledningen till att vi bara säljer e-simmar. Vår e-sim fungerar i Europa och globalt.",
+
+
+
+  "esim_our_goal_para_1": "Till skillnad från traditionella SIM-kort, som kan tas bort och potentiellt förloras eller stjälas, är eSIM inbäddat direkt i enhetens hårdvara under tillverkningen. Denna fysiska integration gör det svårare för obehöriga att komma åt, manipulera eller klona med e-SIM.",
+
+  "esim_our_goal_para_2": "",
+
+  "esim_our_goal_para_3": "",
+
+
+
+  "buy_esim_btn":"Köp e-Sim",
+
+  "esim_benifit_title":"Varför",
+
+  "esim_benifit_bold":"e-Sim",
+
+  "esim_comfortable":"bekvämt",
+
+  "esim_comfortable_para":"Med e-Sim kan ditt simkort inte förloras. Du kan alltid skanna QR-koden.",
+
+  "esim_simply":"helt enkelt",
+
+  "esim_simply_para":"Skanna en QR-kod vi tillhandahåller och e-Sim installeras på din telefon.",
+
+  "esim_protected":"skyddad",
+
+  "esim_protected_para":"Ditt e-Sim är inbäddat i hårdvaran och är inte fysiskt vilket skyddar det från att bli stulet och klonat.",
+
+  "esim_installation":"Enkel installation",
+
+  "esim_installation_para":"Beställ ett e-Sim, hämta QR-koden och skanna. Enklare än så blir det inte!",
+
+  "esim_goal_main_title":"är att ge dig fullständigt skydd",
+
+
+
+  "esim_goal_main_bold_purple":"Stellar e-Sim",
+
+
+
+  "esim_plan_main_title":"Våra",
+
+  "esim_plan_main_bold_purple":"Planer",
+
+  "esim_plan1_days":"30 dagar",
+
+  "esim_plan1_size":"3 GB",
+
+  "esim_plan1_price":" 21,99 EUR",
+
+  "esim_plan2_days":"60 dagar",
+
+  "esim_plan2_size":"6 GB",
+
+  "esim_plan2_price":" 39,99 EUR",
+
+  "esim_plan3_days":"90 dagar",
+
+  "esim_plan3_size":"9 GB",
+
+  "esim_plan3_price":" 59,99 EUR",
+
+  "esim_popular_plan":"Mest populär",
+
+  "esim_plan_button":"Kom igång",
+
+  "plan_tab_1":"Europa",
+
+  "plan_tab_2":"Global",
+
+  "esim_app_main_title":"Ladda ner",
+
+  "esim_app_main_title2":"för att enkelt hantera ditt e-SIM",
+
+  "esim_app_main_bold_purple":"Stellar data",
+
+  "esim_app_para":"På Stellar Security har vi utvecklat vår egen data-app som låter dig hantera din e-Sim. Se användning, täckning och mycket mer. Appen fungerar för alla AOSP-projekt, Android och iOS.",
+
+  "esim_seller_main_title":"Bli",
+
+  "esim_seller_main_bold_purple":"Återförsäljare",
+
+  "esim_seller_para_1":"Att bli återförsäljare av eSIM-tjänster kan vara en lukrativ affärsmöjlighet, särskilt eftersom eSIM-tekniken blir mer utbredd och konsumenter och företag söker bekväma, flexibla anslutningsalternativ.",
+
+  "esim_seller_para_2":"Stellar Security gör det enkelt att vara återförsäljare. Klicka på knappen nedan för att komma igång.",
+
+  "esim_seller_contact_btn":"Kontakta",
+
+  "esim_question_main_title":"Har du en fråga?",
+
+  "esim_question_para":"Lorem ipsum dolor sit amet consectetur. Nec volutpat dignissim elementum volutpat bibendum vestibulum arcu ornare. At iaculis sit arcu lectus tortor eget pulvinar aenean. Platea nec vel nibh tortor ute consenteur",
+
+  "esim_question_contact_btn":"Kontakta oss",
+
+  "stellar_safeguard_title":"Protect skyddar och försvarar din telefon",
+
+  "stellar_safeguard_description":"Stellar Protect låter dig fjärradera din telefon och initierar automatiskt en radering om den lämnas olåst för länge. Den låser sig även vid upptäckt av fall och kan identifiera och reagera på kraftiga skakningar.",
+
+  "stellar_safeguard_description_works":"Stellar Protect fungerar för alla Android- och AOSP-projekt. Detta inkluderar GrapheneOS, LineageOS, CalyxOS och så vidare.",
+
+  "stellar_safeguard_amount":"7,99 €",
+
+  "stellar_safeguard_amount_duration":"månadsvis",
+
+  "stellar_safeguard_amount_list_1":"Fjärrraderingsalternativ om telefonen tappas bort.",
+
+  "stellar_safeguard_amount_list_2":"Tappad telefondetektor som låser telefonen.",
+
+  "stellar_safeguard_amount_list_3":"Skakdetektor som låser telefonen.",
+
+  "stellar_safeguard_amount_list_4":"Automatisk radering efter tjugo misslyckade lösenordsförsök.",
+
+  "stellar_safeguard_amount_list_5":"Automatisk radering efter en viss tids inaktivitet.",
+
+  "stellar_safeguard_amount_list_6":"USB-dataextraktionsdetektor, som raderar telefonen om dataextraktion upptäcks.",
+
+  "stellar_safeguard_amount_list_7":"Protect kan upptäcka om din telefon har blivit stulen medan den är olåst och låser automatiskt telefonen med ditt lösenord.",
+
+  "stellar_your_privacy_main_title_before":"För att",
+
+  "stellar_your_privacy_bold_purple_title":"din integritet",
+
+  "stellar_your_privacy_main_title_after":"betyder mest",
+
+  "stellar_your_privacy_description":"Stellar Protect är en revolutionerande applikation som erbjuder ett brett utbud av funktioner som syftar till att säkerställa användarnas säkerhet och integritet. Det finns ingen annan app som skyddar din enhet som Protect gör.",
+
+  "stellar_protect_device_title":"Stellar Protect försvarar din enhet på ett sätt som ingen annan har gjort tidigare.",
+
+  "stellar_protect_watch_video":"Titta på videon för att se hur.",
+
+  "first_class_title":"Förstklassiga säkerhetsfunktioner",
+
+  "first_class_fall_detector":"FALLDETEKTOR",
+
+  "first_class_fall_detector_description":"Om någon försöker stjäla din telefon medan den är olåst, och om den faller till marken kommer den att låsa sig med telefonens lösenord.",
+
+  "first_class_shake_detector":"Skakdetektor",
+
+  "first_class_shake_detector_description":"Om du skakar telefonen hårt kommer den att låsa sig med telefonens lösenord. Ett utmärkt val om någon försöker ta din telefon.",
+
+  "first_class_remote_wipe":"Fjärradering",
+
+  "first_class_remote_wipe_description":"Med Protect är fjärradering aktiverad. Gå bara till https://wipe.stellarsecurity.com och radera din telefon på bara en sekund. ",
+
+  "first_class_force_detector":"BRUTE-FORCE DETEKTOR",
+
+  "first_class_force_detector_description":"Protect kan upptäcka brute force försök. Om den upptäcker brute forces mot din telefons lösenord kommer den att radera sig själv.",
+
+  "first_class_time_detector":"TIDSdetektor",
+
+  "first_class_time_detector_description":"Om din telefon inte har varit låst på ett par dagar — kommer den att radera sig själv. Det är ett utmärkt skydd om din telefon tappas bort.",
+
+  "first_class_usb_protection":"USB - SKYDD",
+
+  "first_class_usb_protection_description":"Protect kan upptäcka om någon försöker extrahera data från din telefon och radera sig själv.",
+
+
+
+
+
+  "first_class_screen_alive": "Screen alive Protect",
+
+  "first_class_screen_alive_description": "Om någon tar din telefon medan den är olåst, kommer Protect automatiskt låsa telefonen efter 15 minuter med ditt lösenord även om de håller skärmen igång.",
+
+
+
+
+
+
+
+  "stellar_track_account_title":"Håll alltid koll på ditt konto",
+
+  "stellar_track_account_description": "Protect låter dig välja vilka säkerhetsfunktioner du vill ska aktiveras. Men det ger också en översikt över din prenumerationsinformation.",
+
+  "security_seller_main_title":"Bli",
+
+  "security_seller_main_bold_purple":"Återförsäljare",
+
+  "security_seller_para_1":"Återförsäljning av Stellar Protect kan vara en lukrativ affärsmöjlighet för dem som är intresserade av marknaden för säkerhets- och integritetsprogram. När du säljer vidare Stellar Protect fungerar du i huvudsak som en mellanhand mellan programvaruleverantören och slutanvändarna, vilket tillför värde genom marknadsföring , försäljning och kundsupport",
+
+  "available_app_in_other_stores":"Tillgänglig i Aptoide, APKPure, Single APK och andra butiker.",
+
+  "security_seller_para_2":"Klicka på knappen och få mer information.",
+
+  "security_seller_contact_btn":"Kontakta",
+
+  "stellar_notes_welcome_title":"Välkommen till Stellar Notes!",
+
+  "stellar_notes_welcome_description":"Detta är den säkraste och mest användarvänliga anteckningsappen på marknaden. Dina anteckningar är krypterade med AES-256 och kan endast nås av dig med ditt lösenord.",
+
+  "stellar_notes_welcome_list_1":"Skapa och redigera textanteckningar",
+
+  "stellar_notes_welcome_list_2":"Krypterade anteckningar lagrade på din telefon",
+
+  "stellar_notes_welcome_list_3":"Lägg till ett lösenord för appen",
+
+  "stellar_create_notes_title_before":"Skapa",
+
+  "stellar_create_notes_bold_purple_title":"anteckningar",
+
+  "stellar_create_notes_title_after":"när du vill",
+
+  "stellar_create_notes_description":"Stellar Notes är en banbrytande, användarvänlig applikation utformad för att skydda dina anteckningar och idéer från nyfikna ögon. Oavsett om du är en professionell som hanterar känslig affärsinformation, en student som gör anteckningar om klassprojekt eller bara en individ som värdesätter sin integritet, har Stellar Notes det du söker.\n\n",
+
+  "stellar_notes_feature_title_before":"Enkelt och",
+
+  "stellar_notes_feature_title_purple":"säkerhet",
+
+  "stellar_notes_feature_title_after":"funktioner",
+
+  "stellar_notes_feature_text":"Skapa textanteckningar",
+
+  "stellar_notes_feature_text_description":"Skapa krypterade anteckningar lagrade på din telefon.",
+
+  "stellar_notes_feature_encrypt":"krypterade anteckningar",
+
+  "stellar_notes_feature_encrypt_description":"Alla anteckningar som skapas är krypterade med AES-256-kryptering.",
+
+  "stellar_notes_feature_password":"lösenordsskydd",
+
+  "stellar_notes_feature_password_description":"Skydda alla dina anteckningar genom att lägga till ett lösenord för appen.",
+
+  "stellar_notes_feature_security":"säkerhetsinställningar",
+
+  "stellar_notes_feature_security_description":"Notes erbjuder bruteforce-skydd och mycket mer!",
+
+  "stellar_secure_notes_with_password_title":"Stellar Notes är säkert och tryggt",
+
+  "stellar_secure_notes_with_password_description":"Fungerar för alla iOS och Android (AOSP-projekt). Brute-force-skydd säkerställer, ditt lösenord kan skyddas. Krypterade anteckningar ser till att dina anteckningar lagras säkert på din enhet med AES-256-kryptering." ,
+
+  "error_page_title":"Sidan hittades inte",
+
+  "error_page_description":"Denna sida finns inte.",
+
+  "error_page_button":"Gå hem",
+
+  "home_page_main_phone_title1":"STELLAR",
+
+  "home_page_main_phone_title2":"PHONE",
+
+  "home_page_main_phone_description":"En smidig design, ett högkvalitativt operativsystem och byggd på solid hårdvara. Stellar Phone är snygg och packad med precis rätt säkerhetsfunktioner.",
+
+  "home_page_main_phone_button1":"Köp Stellar",
+
+  "home_page_main_phone_availability":"endast tillgängligt på",
+
+  "home_page_main_phone_button2":"Läs mer",
+
+  "home_stellar_protect_title1":"Stellar",
+
+  "home_stellar_protect_title2":"Skydda",
+
+  "home_stellar_protect_description":"Aktivera fjärradering av telefon och auto-radering för långvarig upplåsning. Aktiverar lås för att detektera fall, reagerar på kraftiga skakningar och mer. Protect försvarar din enhet på ett sätt som ingen annan har gjort tidigare.",
+
+  "home_stellar_protect_button":"Läs mer",
+
+  "home_stellar_antivirus_title1":"Stellar",
+
+  "home_stellar_antivirus_title2":"Antivirus",
+
+  "home_stellar_antivirus_description":"Ett aktivt intelligent antivirus som används för att förhindra, upptäcka och ta bort skadlig programvara, spionprogram och andra typer av hot. Med realtidsskydd är din enhet säkrad 24/7.",
+
+  "home_stellar_antivirus_button":"Läs mer",
+
+  "home_stellar_vpn_title1":"Stellar",
+
+  "home_stellar_vpn_title2":"Vpn",
+
+  "home_stellar_vpn_description":"VPN, en digital täckmantel för integritet online, krypterar din internetaktivitet från nyfikna ögon, vilket säkerställer säker och anonym surfning i ett globalt nätverk.",
+
+  "home_stellar_vpn_button":"Läs mer",
+
+  "home_stellar_esim_title1":"Stellar",
+
+  "home_stellar_esim_title2":"e-sim",
+
+  "home_stellar_esim_description":"Stellar Security erbjuder exklusivt E-sim, med den senaste tekniken, kompatibla i Europa och globalt med snabb internethastighet. E-sim är framtiden.",
+
+  "home_stellar_esim_button":"Läs mer",
+
+  "home_stellar_notes_title1":"Stellar",
+
+  "home_stellar_notes_title2":"Notes",
+
+  "home_stellar_notes_description":"Den säkraste och mest användarvänliga anteckningsappen på marknaden. Dina anteckningar är krypterade och kan bara nås av dig.",
+
+  "home_stellar_notes_button":"Läs mer",
+
+  "home_stellar_support_title1":"Stellar",
+
+  "home_stellar_support_title2":"Support",
+
+  "home_stellar_support_description":"Om du behöver hjälp eller har några frågor kan du nå oss genom att skriva. Utforska de tillgängliga kontaktalternativen.",
+
+  "home_stellar_support_button":"Läs mer"
+
+}
+
+
+
