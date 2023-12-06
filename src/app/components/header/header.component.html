@@ -10,7 +10,7 @@
             </a>
           </div>
           <ul class="menu_item">
-            <li><a class="menuopen" href="#">{{'products'|translate}}</a></li>
+            <li><a class="menuopen" (click)="isProductMenuOpen = !isProductMenuOpen">{{'products'|translate}}</a></li>
             <!--<li><a href="/activate-phone">{{'activatePhone'|translate}}</a></li>-->
             <li><a href="https://wipe.stellarsecurity.com">{{'remoteWipe'|translate}}</a></li>
             <li><a href="/contact-us">Reseller</a></li>
@@ -23,7 +23,7 @@
           <a class="p-3 ml-4 bag_btn" href="/bag"><img src="./../../../assets/img/shopping-bag.svg" alt="bag_icon"></a>
          </div>
         </nav>
-        <div class="hamburger_menu">
+        <div class="hamburger_menu" (click)="isProductMenuOpen = !isProductMenuOpen">
           <span class="line_top"></span>
           <span class="line_center"></span>
           <span class="line_bottom"></span>
@@ -35,7 +35,7 @@
 <!-- header end -->
 
 <!-- offcanvas menu start -->
-<div class="offcavas_menu">
+<div [class]="isProductMenuOpen?'offcavas_menu open':'offcavas_menu'">
   <ul class="menu_item">
     <li><a class="active" href="#">{{'offcanvasProducts'|translate}}</a></li>
   </ul>
