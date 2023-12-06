@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/stellar-security/browser",
+            "outputPath": "dist/stellar-security",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -113,60 +113,6 @@
               "src/assets/js/main.js"
             ]
           }
-        },
-        "server": {
-          "builder": "@angular-devkit/build-angular:server",
-          "options": {
-            "outputPath": "dist/stellar-security/server",
-            "main": "server.ts",
-            "tsConfig": "tsconfig.server.json"
-          },
-          "configurations": {
-            "production": {
-              "outputHashing": "media"
-            },
-            "development": {
-              "buildOptimizer": true,
-              "optimization": true,
-              "sourceMap": true,
-              "extractLicenses": false,
-              "vendorChunk": true
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "serve-ssr": {
-          "builder": "@nguniversal/builders:ssr-dev-server",
-          "configurations": {
-            "development": {
-              "browserTarget": "stellar-security:build:development",
-              "serverTarget": "stellar-security:server:development"
-            },
-            "production": {
-              "browserTarget": "stellar-security:build:production",
-              "serverTarget": "stellar-security:server:production"
-            }
-          },
-          "defaultConfiguration": "development"
-        },
-        "prerender": {
-          "builder": "@nguniversal/builders:prerender",
-          "options": {
-            "routes": [
-              "/"
-            ]
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "stellar-security:build:production",
-              "serverTarget": "stellar-security:server:production"
-            },
-            "development": {
-              "browserTarget": "stellar-security:build:development",
-              "serverTarget": "stellar-security:server:development"
-            }
-          },
-          "defaultConfiguration": "production"
         }
       }
     }
