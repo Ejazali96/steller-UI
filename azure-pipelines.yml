@@ -25,7 +25,8 @@ stages:
           - script: |
               cd .
               npm install -g @angular/cli
-              npm install
+              npm install --force
+              npm run build:ssr
               ng build --configuration production
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
