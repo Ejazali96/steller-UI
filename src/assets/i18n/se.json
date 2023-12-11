@@ -716,6 +716,8 @@
   
   "stellar_circle_welcome_title":"Circle-appen låter dig torka dina vänners telefon.",
 
+  "stellar_circle_welcome_description": "Yorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.",
+
   "stellar_circle_welcome_list1":"Alla kontakter lagras endast på din telefon. ",
 
   "stellar_circle_welcome_list2":"Fjärrtorka alla kontakter med ett klick. ",
@@ -737,6 +739,8 @@
   "stellar_circle_feature_wipe": "Torka av kompisens telefon",
 
   "stellar_circle_feature_wipe_description": "Fjärrtorka alla kontakter med ett klick.",
+
+  "stellar_wipe_phone_description": "Lorem ipsum dolor sit amet consectetur. Nec volutpat dignissim elementum volutpat bibendum vestibulum arcu ornare. At iaculis sit arcu lectus tortor eget pulvinar aenean. Platea nec vel nibh tortor consectetur praesent vitae est ut",
 
   "stellar_circle_feature_storage": "offlinelagring",
 
