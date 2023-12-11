@@ -385,7 +385,7 @@
   "stellar_circle_feature_add_description": "Use Wipe Token for adding your contacts to Circle app",
   "stellar_circle_feature_wipe": "Wipe friend’s phone",
   "stellar_circle_feature_wipe_description": "Remote wipe any contact with one click.",
-  "stellar_wipe_phone_description": "Lorem ipsum dolor sit amet consectetur. Nec volutpat dignissim elementum volutpat bibendum vestibulum arcu ornare. At iaculis sit arcu lectus tortor eget pulvinar aenean. Platea nec vel nibh tortor consectetur praesent vitae est ut",
+  "stellar_circle_wipe_phone_description": "Lorem ipsum dolor sit amet consectetur. Nec volutpat dignissim elementum volutpat bibendum vestibulum arcu ornare. At iaculis sit arcu lectus tortor eget pulvinar aenean. Platea nec vel nibh tortor consectetur praesent vitae est ut",
   "stellar_circle_feature_storage": "offline storage",
   "stellar_circle_feature_storage_description": "All contacts are only stored on your phone.",
   "stellar_video_title": "Stellar Circle in action",
