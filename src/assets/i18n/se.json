@@ -344,6 +344,8 @@
 
   "stellarNotes": "Stellar Notes",
 
+  "stellarCircle": "Circle",
+
   "stellarVpn": "Stellar VPN",
 
   "stellarSupport": "Stellar Support",
@@ -711,6 +713,27 @@
   "security_seller_para_2":"Klicka på knappen och få mer information.",
 
   "security_seller_contact_btn":"Kontakta",
+
+  "stellar_circle_welcome_title": "Circle-appen låter dig radera din väns telefon.",
+  "stellar_circle_welcome_description": "Stellar Circle samlar alla dina kontakter i en app. Appen låter dig fjärrradera en kontakts telefon med ett klick.",
+  "stellar_circle_welcome_list1": "Alla kontakter sparas endast på din telefon.",
+  "stellar_circle_welcome_list2": "Fjärrradera vilken kontakt som helst med ett klick.",
+  "stellar_create_circle_title_before": "Radera din väns telefon",
+  "stellar_create_circle_bold_purple_title": "med ett klick.",
+  "stellar_circle_because": "För att",
+  "stellar_circle_privacy": " integritet ",
+  "stellar_circle_matter": " är det viktigaste",
+  "stellar_circle_feature_add": "Lägg till kontakter enkelt",
+  "stellar_circle_feature_add_description": "Använd Wipe Token för att lägga till dina kontakter i Circle-appen",
+  "stellar_circle_feature_wipe": "Radera väns telefon",
+  "stellar_circle_feature_wipe_description": "Fjärrradera vilken kontakt som helst med ett klick.",
+  "stellar_circle_wipe_phone_description": "Stellar Circle ger dig kontrollen! Vår Circle-app låter dig radera din väns telefon med bara ett klick, vilket gör integritet till en lek. Håll det enkelt, håll det säkert – ta kontroll över dina digitala anslutningar smidigt med Stellar Circle!",
+  "stellar_circle_feature_storage": "offline lagring",
+  "stellar_circle_feature_storage_description": "Alla kontakter sparas endast på din telefon.",
+  "stellar_video_title": "Stellar Circle i aktion",
+  "stellar_secure_circle_wipe_title": "Enkelt radera din väns telefon",
+
+
 
   "stellar_notes_welcome_title":"Välkommen till Stellar Notes!",
 
