@@ -1,0 +1,11 @@
+@import '../../stellar-security-app/security-common.css';
+.your-privacy-section{
+    background: #F7F6FC;
+    border-radius: 24px;
+    padding: 0 5px;
+}
+.app-left-section{
+    text-align: start;
+    max-width: 537px;
+    padding: 36px;
+}

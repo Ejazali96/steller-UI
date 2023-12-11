@@ -344,6 +344,8 @@
 
   "stellarNotes": "Stellar Notes",
 
+  "stellarCircle": "Circle",
+
   "stellarVpn": "Stellar VPN",
 
   "stellarSupport": "Stellar Support",
@@ -711,6 +713,38 @@
   "security_seller_para_2":"Klicka på knappen och få mer information.",
 
   "security_seller_contact_btn":"Kontakta",
+  
+  "stellar_circle_welcome_title":"Circle-appen låter dig torka dina vänners telefon.",
+
+  "stellar_circle_welcome_list1":"Alla kontakter lagras endast på din telefon. ",
+
+  "stellar_circle_welcome_list2":"Fjärrtorka alla kontakter med ett klick. ",
+
+  "stellar_create_circle_title_before": "Torka av din väns telefon",
+
+  "stellar_create_circle_bold_purple_title": "med ett klick.",
+
+  "stellar_circle_because": "Därför att",
+
+  "stellar_circle_privacy": " Integritet ",
+
+  "stellar_circle_matter": " betyder mest",
+
+  "stellar_circle_feature_add": "Lägg enkelt till kontakter",
+
+  "stellar_circle_feature_add_description": "Använd Wipe Token för att lägga till dina kontakter i Circle-appen",
+
+  "stellar_circle_feature_wipe": "Torka av kompisens telefon",
+
+  "stellar_circle_feature_wipe_description": "Fjärrtorka alla kontakter med ett klick.",
+
+  "stellar_circle_feature_storage": "offlinelagring",
+
+  "stellar_circle_feature_storage_description": "Alla kontakter lagras endast på din telefon.",
+
+  "stellar_secure_circle_wipe_title": "Rensa enkelt din väns telefon",
+
+  "stellar_video_title": "Stellar Circle i aktion",
 
   "stellar_notes_welcome_title":"Välkommen till Stellar Notes!",
 
