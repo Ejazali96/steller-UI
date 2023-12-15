@@ -1,10 +1,11 @@
 <div class="container">
     <div class="row flex-column-reverse flex-lg-row">
         <div class="col-lg-6">
-            <div class="d-lg-block d-none">
+            <div class="d-lg-block d-none" *ngIf="product">
                 <p class="text-danger semi">Stellar products</p>
-                <h4 class="product-name my-3">{{product?.title}}</h4>
-                <p class="product-price text-success">{{product?.price}} €</p>
+                
+                <h4 class="product-name my-3" >{{product.description.name}}</h4>
+                <p class="product-price text-success">{{product.price}} €</p>
             </div>
             <h5 class="font_18 mt-4 fw-5 d-flex align-items-end gap-2"> <i>
                     <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19" fill="none">
@@ -53,10 +54,10 @@
             </div>
         </div>
         <div class="col-lg-6">
-            <div class="d-lg-none">
+            <div class="d-lg-none" *ngIf="product">
                 <p class="text-danger semi">Stellar products</p>
-                <h4 class="product-name my-3" >Stellar Phone</h4>
-                <p class="product-price text-success">999,00 €</p>
+                <h4 class="product-name my-3" >{{product.description.name}}</h4>
+                <p class="product-price text-success">{{product.price}}€</p>
             </div>
             <div class="d-flex flex-column h-100 gap-3 align-items-center p-3 p-sm-0">
                 <div class="product-display flex-grow-1">

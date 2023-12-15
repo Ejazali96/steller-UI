@@ -26,6 +26,7 @@ const routes: Routes = [
       { path: 'stellar-store', loadChildren: () => import('../../pages/stellar-store/stellar-store.module').then(m => m.StellarStoreModule) },
       { path: 'checkout', loadChildren: () => import('../../pages/checkout/checkout.module').then(m => m.CheckoutModule) },
       { path: 'bag', loadChildren: () => import('../../pages/bag/bag.module').then(m => m.BagModule) },
+      { path: 'physical-store', loadChildren: () => import('./../../pages/physical-store/physical-store.module').then(m => m.PhysicalStoreModule) },
       { path: 'terms-page', component:TermsPageComponent},
       { path: 'privacy-page', component:PrivacyPageComponent},
       { path: 'checkout-page', component:CheckoutPageComponent},

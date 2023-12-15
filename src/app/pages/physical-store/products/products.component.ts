@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Route } from '@angular/router';
-import { Product } from 'src/app/constants/models/product';
+import { Product, ProductDto } from 'src/app/constants/models/product';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -9,29 +9,27 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-product:Product
+product:ProductDto
 productId:any
-products:Product[]
+
 
 constructor(private productService:ProductService, private route:ActivatedRoute) {
 
   
 }
-ngOnInit(): void {
-  this.route.paramMap.subscribe({
-    next: (param) => {
-      this.productId = param.get("id")
-        if (this.productId != null) {
-          this.productService.getAllProduct().subscribe(x => {
-            this.products = x.products
-            this.product = this.products.filter(x=> x.id == parseInt(this.productId))[0]
-            console.log(this.product);
-            this.productPreview = this.product.thumbnail
-          })
-      }
-    }
-  })
+async ngOnInit() {
+ 
+  await this.loadComponentData()
+}
 
+async loadComponentData(){
+  this.productId = this.route.snapshot.paramMap.get('id');
+  if (this.productId !== null) {
+    this.productService.getProductById(this.productId).subscribe(x => {
+      this.product = x.product
+      console.log(this.product);
+    })
+}
 }
 
   fetchSingleProduct(id:number){
