@@ -8,5 +8,5 @@ export const productApi = {
     searchByCategory:"api/v1/storecontroller/home?category_ids=",
     sortingBy:"api/v1/storecontroller/home?order_by=",
     addToCart:"api/v1/storecontroller/cart/add",
-    cartOverview:"cart/overview/",
+    cartOverview:"api/v1/storecontroller/cart/overview/",
 }
