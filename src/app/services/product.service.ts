@@ -1,8 +1,8 @@
 import { baseUrl, productApi } from './../constants/api/product.api';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ProductDto } from '../constants/models/product';
+import { ProductDto, addCartDto } from '../constants/models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -33,5 +33,11 @@ export class ProductService {
   }
   sortingBy(sort:string) : Observable<any>{
     return this.http.get<any>(baseUrl + productApi.sortingBy + sort)
+  }
+  cartOverview(token_id:any) : Observable<any>{
+    return this.http.get<any>(baseUrl + productApi.cartOverview + token_id)
+  }
+  addToCart(data:addCartDto) : Observable<any>{
+    return  this.http.post<any>(baseUrl + productApi.addToCart, data)
   }
 }

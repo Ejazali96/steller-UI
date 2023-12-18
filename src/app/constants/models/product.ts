@@ -45,3 +45,9 @@ export interface ProductDto{
     count:number
     select:boolean
   }
+  export interface addCartDto{
+    token_id:string,
+    user_id: number,
+    product_id:string,
+    quantity:number
+  }
