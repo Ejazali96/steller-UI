@@ -20,7 +20,9 @@
           <!--<a *ngIf="buttonType == 'privacy'" class="privacy_matter" href="/privacy-page">{{'privacyMatter'|translate}}</a>
           <a *ngIf="buttonType == 'buy'" class="nav_btn" style="background-color: #60D38E;" href="/checkout-page">{{'buyStellarPhone'|translate}} <img src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
           <a *ngIf="buttonType == ''" class="nav_btn" href="/stellar-phone">{{'getStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>-->
-          <a class="p-3 ml-4 bag_btn" href="/bag"><img src="./../../../assets/img/shopping-bag.svg" alt="bag_icon"></a>
+          <a class="p-3 ml-4 bag_btn" href="/bag"><img src="./../../../assets/img/shopping-bag.svg" alt="bag_icon">
+              <div class="bag-amount">0</div>
+          </a>
          </div>
         </nav>
         <div class="hamburger_menu" (click)="isProductMenuOpen = !isProductMenuOpen">
@@ -55,3 +57,4 @@
   <a class="nav_btn" href="phone_page.html">{{'offcanvasGetStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>
 </div>
 <!-- offcanvas menu end -->
+

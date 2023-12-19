@@ -44,15 +44,16 @@ onAddToCart(){
     token_id:this.token_id,
     user_id: 0,
     product_id:this.product.id,
-    quantity:2
+    quantity:1
   };
-
 
   this.productService.addToCart(this.addToCartObj).subscribe(
     (response) => {
+      window.location.href = '/bag';
       console.log('API Response:', response);
     },
     (error) => {
+      alert('Error, could not add the product to your cart.');
       console.error('API Error:', error);
     }
   );
