@@ -9,74 +9,83 @@ import { v4 as uuidv4 } from 'uuid';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-product:ProductDto
-addToCartObj:addCartDto
-productId:any
-token_id:any
+  product:ProductDto
+  addToCartObj:addCartDto
+  productId:any
+  token_id:any
 
-constructor(private productService:ProductService, private route:ActivatedRoute) {
+  public addingToCartLoading = false;
 
-  
-}
-async ngOnInit() {
- 
-  await this.loadComponentData()
-}
 
-async loadComponentData(){
-  this.productId = this.route.snapshot.paramMap.get('id');
-  if (this.productId !== null) {
-    this.productService.getProductById(this.productId).subscribe(x => {
-      this.product = x.product
-      console.log(this.product);
-    })
-}
-}
+  constructor(private productService:ProductService, private route:ActivatedRoute) {
 
-onAddToCart(){
-  if(!this.token_id){
-    this.generateUUID()
+
   }
-  else{
-    this.token_id= localStorage.getItem('token_id')
-  }
-  this.addToCartObj = {
-    token_id:this.token_id,
-    user_id: 0,
-    product_id:this.product.id,
-    quantity:1
-  };
+  async ngOnInit() {
 
-  this.productService.addToCart(this.addToCartObj).subscribe(
-    (response) => {
-      window.location.href = '/bag';
-      console.log('API Response:', response);
-    },
-    (error) => {
-      alert('Error, could not add the product to your cart.');
-      console.error('API Error:', error);
+    await this.loadComponentData()
+  }
+
+  async loadComponentData(){
+    this.productId = this.route.snapshot.paramMap.get('id');
+    if (this.productId !== null) {
+      this.productService.getProductById(this.productId).subscribe(x => {
+        this.product = x.product
+        console.log(this.product);
+      })
+  }
+  }
+
+  onAddToCart(){
+
+    if(!this.token_id) {
+      this.generateUUID()
+    } else{
+      this.token_id= localStorage.getItem('token_id')
     }
-  );
- 
-}
 
-generateUUID() {
-  // Generate a new UUID
-  const tokenId = uuidv4();
-  localStorage.setItem('token_id', tokenId);
-  this.token_id = tokenId
-}
+    this.addToCartObj = {
+      token_id:this.token_id,
+      user_id: 0,
+      product_id:this.product.id,
+      quantity:1
+    };
 
-  productImages:string[] =[
-    "image1.svg",
-    "image2.svg",
-    "image3.svg",
-    "image4.svg",
-    "image5.svg",
-  ]
-  
-  productPreview:string = this.productImages[0]
-  viewThis(src:string){
-    this.productPreview = src
+    this.addingToCartLoading = true;
+
+    this.productService.addToCart(this.addToCartObj).subscribe(
+      (response) => {
+        window.location.href = '/bag';
+        this.addingToCartLoading = false;
+        console.log('API Response:', response);
+      },
+      (error) => {
+        this.addingToCartLoading = false;
+
+        alert('Error, could not add the product to your cart.');
+        console.error('API Error:', error);
+      }
+    );
+
   }
+
+  generateUUID() {
+    // Generate a new UUID
+    const tokenId = uuidv4();
+    localStorage.setItem('token_id', tokenId);
+    this.token_id = tokenId
+  }
+
+    productImages:string[] =[
+      "image1.svg",
+      "image2.svg",
+      "image3.svg",
+      "image4.svg",
+      "image5.svg",
+    ]
+
+    productPreview:string = this.productImages[0]
+    viewThis(src:string){
+      this.productPreview = src
+    }
 }
