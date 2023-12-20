@@ -23,6 +23,11 @@ export interface ProductDescriptionDto {
     created_at: string
     updated_at: string
 }
+export interface totalDto{
+shipping_cost:number
+sub_total:number
+total:number
+}
 export interface ProductImagesDto {
     id :null
     product_id :string,
@@ -51,3 +56,9 @@ export interface ProductDto{
     product_id:string,
     quantity:number
   }
+
+  export interface bagsItemDto {
+    Products: ProductDto[]
+    total:totalDto[],
+  }
+  
