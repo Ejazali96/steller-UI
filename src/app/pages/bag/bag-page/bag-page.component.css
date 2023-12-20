@@ -31,3 +31,14 @@
         font-size: 14px !important;
     }
 }
+
+.loading-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.checkout-btn {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
