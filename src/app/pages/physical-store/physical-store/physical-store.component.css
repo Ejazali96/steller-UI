@@ -167,3 +167,12 @@ h1.store_head_text {
     border-color: #4364fa;
     background-color: #4364fa;
 }
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
+}
+
+.spinner-loader {
+    width: 64px;
+    height: 64px;
+}

@@ -9,10 +9,12 @@ import { v4 as uuidv4 } from 'uuid';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  product:ProductDto
-  addToCartObj:addCartDto
-  productId:any
-  token_id:any
+  product:ProductDto;
+  addToCartObj:addCartDto;
+  productId:any;
+  token_id:any;
+
+  public loading : boolean;
 
   public addingToCartLoading = false;
 
@@ -28,9 +30,11 @@ export class ProductsComponent implements OnInit {
 
   async loadComponentData(){
     this.productId = this.route.snapshot.paramMap.get('id');
+    this.loading = true;
     if (this.productId !== null) {
       this.productService.getProductById(this.productId).subscribe(x => {
         this.product = x.product
+        this.loading = false;
         console.log(this.product);
       })
   }

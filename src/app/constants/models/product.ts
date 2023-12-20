@@ -46,8 +46,8 @@ export interface ProductDto{
     
   }
   export interface categoryDto{
+    id: number,
     name:string
-    count:number
     select:boolean
   }
   export interface addCartDto{

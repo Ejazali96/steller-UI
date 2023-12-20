@@ -11,6 +11,7 @@ export class StellarStoreComponent implements OnInit {
   products: Product[] = []
   fullshow: boolean = true;
   hideFilter: boolean = false
+  public loading = true;
   constructor(private productservice: ProductService) {
 
   }
@@ -36,6 +37,10 @@ export class StellarStoreComponent implements OnInit {
     },
     {
       name: "Phone",
+      count: 2
+    },
+    {
+      name: "Privacy screens",
       count: 2
     },
     {

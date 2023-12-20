@@ -11,40 +11,26 @@ import { ProductService } from 'src/app/services/product.service';
 export class PhysicalStoreComponent implements AfterViewInit {
   allProducts: ProductDto[] = []
   categoryfilter: string[] = [];
-  hideFilter: boolean = false
+  hideFilter: boolean = false;
+
+  isLoading = false;
+
+  public category: categoryDto[] = [];
+
   @ViewChild("searchProduct") searchProduct: ElementRef
 
   constructor(private productservice: ProductService) { }
-  category: categoryDto[] = [
-    {
-      name: "All",
-      count: 14,
-      select: false,
-    },
-    {
-      name: "Sim cards",
-      count: 4,
-      select: false,
-    },
-    {
-      name: "Accessories",
-      count: 6,
-      select: false,
-    },
-    {
-      name: "Phone",
-      count: 2,
-      select: false,
-    },
-    {
-      name: "Services",
-      count: 2,
-      select: false,
-    },
-  ]
+
   ngOnInit(): void {
+    this.getProducts();
+  }
+
+  private getProducts() {
+    this.isLoading = true;
     this.productservice.getAllProducts().subscribe(x => {
-      this.allProducts = x.products
+      this.isLoading = false;
+      this.allProducts = x.products;
+      this.category = x.categories;
     })
   }
 
