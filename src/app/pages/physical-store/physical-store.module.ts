@@ -5,6 +5,7 @@ import { PhysicalStoreRoutingModule } from './physical-store-routing.module';
 import { PhysicalStoreComponent } from './physical-store/physical-store.component';
 import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './products/products.component';
+import {LaddaModule} from "angular2-ladda";
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { ProductsComponent } from './products/products.component';
     CommonModule,
     PhysicalStoreRoutingModule,
     FormsModule,
+    LaddaModule
   ]
 })
 export class PhysicalStoreModule { }

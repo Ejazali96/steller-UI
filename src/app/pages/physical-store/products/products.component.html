@@ -29,11 +29,13 @@
                 </i>
                 Pickup :
             </h5>
+
+
             <ul class="pl-5 d-flex flex-column gap-2">
                 <li class="color-purple fw-5">Check availability</li>
             </ul>
             <div class="col-md-7 pt-4  px-0">
-                <button (click)="onAddToCart()" class="w-100 btn fs-2 btn-stellar btn btn-blue d-flex align-items-end justify-content-center gap-2">
+                <button [ladda]="addingToCartLoading" (click)="onAddToCart()" class="w-100 btn fs-2 btn-stellar btn btn-blue d-flex align-items-end justify-content-center gap-2">
                     Add to bag
                     <i>
                         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21" fill="none">
