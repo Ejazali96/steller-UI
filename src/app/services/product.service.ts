@@ -15,11 +15,11 @@ export class ProductService {
   getAllProduct(): Observable<any> {
     return this.http.get<any>(this.url);
   }
+
   getAllProducts(): Observable<any> {
     return this.http.get<any>(baseUrl + productApi.getAllProduct);
-
-    
   }
+
   getProductById(id: string) : Observable<any> {
     return this.http.get<any>(baseUrl + productApi.getProductById + id)
   }
@@ -40,4 +40,9 @@ export class ProductService {
   addToCart(data:addCartDto) : Observable<any>{
     return  this.http.post<any>(baseUrl + productApi.addToCart, data)
   }
+
+  minicart(token_id: any) {
+    return this.http.get<any>(baseUrl + productApi.minicart + token_id)
+  }
+
 }
