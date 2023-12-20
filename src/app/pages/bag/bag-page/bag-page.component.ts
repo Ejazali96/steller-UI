@@ -14,16 +14,19 @@ export class BagPageComponent implements OnInit {
   metaKeywords:string = 'Stellar bag, stellar security, and so on';
   token_id:any
   bagsItems:any
+  loading: boolean;
   constructor(private productService:ProductService) {
 
   
   }
 ngOnInit() {
-this.token_id = localStorage.getItem('token_id')
+this.token_id = localStorage.getItem('token_id');
+this.loading = true;
   if (this.token_id !== null) {
     this.productService.cartOverview(this.token_id).subscribe(x => {
       
-      this.bagsItems = x
+      this.bagsItems = x;
+      this.loading = false;
       console.log('bag items',this.bagsItems)
       this.isBagHaveItems = true
     })

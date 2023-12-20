@@ -79,9 +79,10 @@
         </div>
     <hr>
 
-    {{product.description.description}}
 
-        <hr class="mt-5">
+    <div [innerHtml]="product.description.description"></div>
+
+       <!-- <hr class="mt-5">
         <section class="mt-5 pt-5">
             <h6 class="session-title text-center py-5">Product information</h6>
             <div class="d-flex flex-wrap flex-md-nowrap gap-3">
@@ -209,6 +210,6 @@
 
 
             </div>
-        </section>
+        </section>-->
     </div>
 </div>

@@ -13,6 +13,12 @@ span.bar-center {
     width: 24px;
     background: gainsboro;
 }
+
+.place_order {
+    padding: 16px;
+    font-size: 16px;
+}
+
 span.text_muted {
     color: #CACACA;
 }
