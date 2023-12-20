@@ -7,11 +7,11 @@
     </div>
 
     <!-- loading.. -->
-    <div align="center"  *ngIf="isLoading">
+    <!-- <div align="center"  *ngIf="isLoading">
         <img src="/assets/img/ajax-loader.gif" class="spinner-loader"><br><br>
-    </div>
+    </div> -->
 
-    <div class="row" *ngIf="!isLoading">
+    <div class="row" >
         <div class="col-lg-3 pt-lg-5">
             <div class="card category-card mt-lg-5" [ngClass]="hideFilter?'':'hide-filter'">
                 <div class="card-header bg-whitep-4 d-flex justify-content-between bg-whiteF p-4 p-lg-3 ">
@@ -19,7 +19,13 @@
                     <span  class="font_18 pointer d-lg-none">&times;</span>
                 </div>
                 <div class="card-body p-4 p-sm-4">
-                    <div class="form-check d-flex align-items-center gap-1 mb-3   "
+                    <ng-container *ngIf="isLoading">
+                        <div class="skeleton-loader small-h"></div>
+                        <div class="skeleton-loader small-h"></div>
+                        <div class="skeleton-loader small-h"></div>
+                    </ng-container>
+                    <ng-container *ngIf="!isLoading">
+                        <div class="form-check d-flex align-items-center gap-1 mb-3   "
                         *ngFor="let item of category;let i=index;">
                         <input [(ngModel)]="item.select" class="form-check-input mb-2" type="checkbox" [value]="item.name" (change)="filterByCategory()" id="category{{i}}">
                         <label class="form-check-label semi flex-grow-1 ml-sm-2 ml-3" for="category{{i}}">
@@ -27,6 +33,8 @@
                         </label>
                         <!--<span class="text-lightgray">{{item.count}}</span>-->
                     </div>
+                    </ng-container>
+                  
                     <button class="btn btn-stellar d-lg-none btn-blue mt-3 fs-2 w-100" (click)="filterByCategory(true)">Apply </button>
                     <button class="btn btn-stellar btn-blue-primary mt-3 fs-2 w-100" (click)="clearCategory()">Clear filter</button>
                 </div>
@@ -63,8 +71,16 @@
 
 
             <div class="product-wrapper">
-                <ng-container *ngFor="let item of allProducts; let i = index">
-                    <div class="product-card card">
+                <ng-container *ngIf="isLoading">
+                    <div class="skeleton-card card" *ngFor="let item of [].constructor(6)">
+                        <div class="cover-image-skeleton"></div>
+                        <div class="skeleton-loader"></div>
+                        <div class="skeleton-loader small"></div> <!-- Second skeleton loader -->
+                        <div class="skeleton-loader"></div> <!-- Third skeleton loader -->
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="!isLoading">
+                    <div *ngFor="let item of allProducts; let i = index" class="product-card card">
                         <div class="product-images">
                             <img class="w-100" [src]="item.images[0].image" [alt]="item.images[0].image" >
                         </div>

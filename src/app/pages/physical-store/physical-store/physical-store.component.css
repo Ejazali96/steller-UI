@@ -1,3 +1,8 @@
+:root {
+    --loader-background-color: #EEEEEE;
+    --loader-highlight-color: #DEDEDE;
+}
+
 h1.store_head_text {
     font-size: 24px;
     font-weight: 500;
@@ -60,6 +65,7 @@ h1.store_head_text {
 .product-card img {
     height: 200px;
     object-fit: contain;
+    transition: 0.25s ease all;
 }
 
 .cart-footer {
@@ -175,4 +181,45 @@ h1.store_head_text {
 .spinner-loader {
     width: 64px;
     height: 64px;
+}
+
+.skeleton-card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all ease .4s;
+    border: 1px solid #F7F6FC!important;
+    padding: 16px;
+}
+.skeleton-loader .small{
+    max-width: 150px;
+    margin-left: auto;
+}
+.skeleton-loader {
+    width: 100%;
+    height: 28px;
+    background: linear-gradient(90deg, #EEEEEE 25%, #EEEEEE 50%, #DEDEDE 75%);
+    background-size: 200% 100%;
+    animation: loading 2s infinite ease-in-out;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+
+.cover-image-skeleton {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(90deg, #DEDEDE 25%, #EEEEEE 50%, #DEDEDE 75%);
+    background-size: 200% 100%;
+    animation: loading 2s infinite ease-in-out;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
 }
