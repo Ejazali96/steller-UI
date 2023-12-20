@@ -15,7 +15,7 @@
             <h4 class="font-xs-16">{{'shipping_method_zipcode_title' | translate}}</h4>
        
         <form #zipForm="ngForm" class="input_field">
-            <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode" (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{5}" class="input_info" placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
+            <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode" (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{4}" class="input_info" placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
             <button type="button" (click)="showStockDetail()" [class]="zipForm.form.invalid?'apply_btn disable':'apply_btn'">{{'shipping_method_zipcode_button' | translate}}</button>
         </form>
         </ng-container>
