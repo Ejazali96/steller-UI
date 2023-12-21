@@ -12,3 +12,7 @@ export const productApi = {
     deleteCartItem:"api/v1/storecontroller/cart/delete",
     minicart:"api/v1/storecontroller/cart/minicart?token_id=",
 }
+export const checkoutApi = {
+    toDelivered:"api/v1/storecontroller/cart/shipping/method?token_id=",
+   toPickup:"api/v1/storecontroller/cart/shipping/method/pickup?token_id=",
+}

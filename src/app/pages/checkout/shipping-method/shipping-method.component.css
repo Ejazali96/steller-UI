@@ -72,8 +72,9 @@ h4.stock_list_head {
 .stock_item {
     display: flex;
     align-items: center;
-    max-width: 250px;
+    max-width: 300px;
     gap: 12px;
+    margin-bottom: 12px;
 }
 .item_head {
     font-size: 18px;
@@ -84,6 +85,11 @@ h4.stock_list_head {
     font-size: 14px;
     line-height: 20px;
     color: #6E7286;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .delivery_method_item {
     border: 2px solid #4364FA;
