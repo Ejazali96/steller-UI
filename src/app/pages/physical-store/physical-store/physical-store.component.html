@@ -82,7 +82,7 @@
                 <ng-container *ngIf="!isLoading">
                     <div *ngFor="let item of allProducts; let i = index" class="product-card card">
                         <div class="product-images">
-                            <img class="w-100" [src]="item.images[0].image" [alt]="item.images[0].image" >
+                            <img routerLink="product/{{item.id}}" class="w-100" [src]="item.images[0].image" [alt]="item.images[0].image" >
                         </div>
                         <div class="p-3 product-content flex-grow-1 d-flex flex-column">
                             <p class="product-name flex-grow-1">{{item.description.name}}</p>
