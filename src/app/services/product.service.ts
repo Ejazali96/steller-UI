@@ -37,6 +37,16 @@ export class ProductService {
   cartOverview(token_id:any) : Observable<any>{
     return this.http.get<any>(baseUrl + productApi.cartOverview + token_id)
   }
+
+  /**
+   * Will remove a item from the users cart.
+   * @param token_id
+   * @param string
+   */
+  deletecart(token_id: any, id: string) : Observable<any>{
+    return this.http.delete<any>(baseUrl + productApi.deleteCartItem + "?token_id=" + token_id + "&id=" + id)
+  }
+
   addToCart(data:addCartDto) : Observable<any>{
     return  this.http.post<any>(baseUrl + productApi.addToCart, data)
   }

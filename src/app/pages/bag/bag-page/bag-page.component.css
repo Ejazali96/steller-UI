@@ -42,3 +42,12 @@
     padding-top: 16px;
     padding-bottom: 16px;
 }
+
+.item-remove {
+    color: blue;
+}
+
+.item-remove:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

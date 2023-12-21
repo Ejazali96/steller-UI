@@ -8,7 +8,7 @@
 <div *ngIf="!loading" class="bag_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
         
         <div class="container pd-top-100 pd-bottom-100">
-            <ng-container *ngIf="!bagsItems">
+            <ng-container *ngIf="bagsItems.products.length == 0">
                 <div class="empty_bag_wrapper d-flex align-items-center justify-content-center flex-column">
                     <h2 class="head_text font_medium">{{'empty_bag_title' | translate}}</h2>
                     <h4 class="font_24 font_medium mt_30">{{'empty_bag_delivery' | translate}}</h4>
@@ -16,13 +16,13 @@
                     <a class="nav_btn mt_50" (click)="showBagItems()" style="background-color: #60D38E; color: #fff;cursor: pointer;">{{'empty_bag_shopping_btn' | translate}}</a>
                 </div>
             </ng-container>
-            <ng-container *ngIf="bagsItems">
+            <ng-container *ngIf="bagsItems.products.length > 0">
                 <div class="bag_item_wrapper">
                   <div class="bag_heading mb_48">
                     <h2 class="head_text font_medium">{{'bag_title' | translate}}</h2>
                     <p class="mt-4" style="color: #6E7286;">{{'bag_description' | translate}}</p>
                   </div>
-                    <app-bag-items *ngFor="let products of bagsItems.products">
+                    <app-bag-items *ngFor="let products of bagsItems.products; index as i">
                         <ng-container item-image>
                             <img width="155" src="{{products.images[0].image}}">
                           </ng-container>
@@ -32,6 +32,7 @@
                           </ng-container>
                           <ng-container item-price>
                             <h2 class="font_28 font-xs-18 font_medium line-h-44">{{products.total}}</h2>
+                            <span class="item-remove" (click)="removeItem(products.id, i)">Remove</span>
                           </ng-container>
                           <!--<ng-container subs-name>
                             <div class="d-flex align-items-center">

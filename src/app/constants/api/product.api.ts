@@ -9,5 +9,6 @@ export const productApi = {
     sortingBy:"api/v1/storecontroller/home?order_by=",
     addToCart:"api/v1/storecontroller/cart/add",
     cartOverview:"api/v1/storecontroller/cart/overview/",
+    deleteCartItem:"api/v1/storecontroller/cart/delete",
     minicart:"api/v1/storecontroller/cart/minicart?token_id=",
 }

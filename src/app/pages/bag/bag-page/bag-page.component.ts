@@ -19,20 +19,35 @@ export class BagPageComponent implements OnInit {
 
   
   }
-ngOnInit() {
-this.token_id = localStorage.getItem('token_id');
-this.loading = true;
-  if (this.token_id !== null) {
-    this.productService.cartOverview(this.token_id).subscribe(x => {
-      
-      this.bagsItems = x;
-      this.loading = false;
-      console.log('bag items',this.bagsItems)
-      this.isBagHaveItems = true
-    })
-}
-}
-  showBagItems(){
-    this.isBagHaveItems = true
+  ngOnInit() {
+    this.token_id = localStorage.getItem('token_id');
+    this.getBagItems();
   }
+
+  private getBagItems() {
+    this.loading = true;
+    if (this.token_id !== null) {
+      this.productService.cartOverview(this.token_id).subscribe(x => {
+
+        this.bagsItems = x;
+        this.loading = false;
+        console.log('bag items',this.bagsItems);
+        this.isBagHaveItems = true;
+      })
+    }
+  }
+
+  showBagItems(){
+    this.isBagHaveItems = true;
+  }
+
+  removeItem(id: string, index: number) {
+    console.log(id);
+
+    this.productService.deletecart(this.token_id, id).subscribe(x => {
+      this.getBagItems();
+    })
+
+  }
+
 }
