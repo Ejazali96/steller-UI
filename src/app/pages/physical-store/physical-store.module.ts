@@ -4,20 +4,18 @@ import { CommonModule } from '@angular/common';
 import { PhysicalStoreRoutingModule } from './physical-store-routing.module';
 import { PhysicalStoreComponent } from './physical-store/physical-store.component';
 import { FormsModule } from '@angular/forms';
-import { ProductsComponent } from './products/products.component';
-import {LaddaModule} from "angular2-ladda";
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
   declarations: [
-    PhysicalStoreComponent,
-    ProductsComponent
+    PhysicalStoreComponent
   ],
   imports: [
     CommonModule,
     PhysicalStoreRoutingModule,
     FormsModule,
-    LaddaModule
+    SharedModule
   ]
 })
 export class PhysicalStoreModule { }

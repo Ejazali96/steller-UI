@@ -1,16 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { PhysicalStoreComponent } from './physical-store/physical-store.component';
-import { ProductsComponent } from './products/products.component';
 
 const routes: Routes = [
   {
     path:"",
     component:PhysicalStoreComponent
-  },
-  {
-    path:"product/:id",
-    component:ProductsComponent
   }
 ];
 
