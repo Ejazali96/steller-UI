@@ -26,6 +26,7 @@ stages:
               cd .
               npm install -g @angular/cli
               npm install @nguniversal/express-engine --skip-confirmation
+              ng update @nguniversal/express-engine —next
               npm install --force
               npm run build:ssr
             displayName: 'npm install and build'
