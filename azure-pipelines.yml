@@ -2,7 +2,7 @@
 # Build a Node.js project that uses Angular.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
- 
+
 trigger:
   - main
 
@@ -25,8 +25,8 @@ stages:
           - script: |
               cd .
               npm install -g @angular/cli
-              npm install
-              ng build --configuration production
+              npm install --force
+              ng run stellar-security:build:production
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
