@@ -26,9 +26,7 @@ stages:
               cd .
               npm install -g @angular/cli
               npm install --force
-              ng add @nguniversal/express-engine
               npm update
-              npm run build:ssr
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
@@ -67,3 +65,4 @@ stages:
                     appName: 'StellerWebsiteUIProd'
                     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
                     runtimeStack: 'NODE|18-lts'
+                    StartupCommand: 'npm install && npm run build:ssr && npm start'
