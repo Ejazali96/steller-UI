@@ -24,9 +24,6 @@ stages:
 
           - script: |
               cd .
-              npm install -g @angular/cli
-              npm install --force
-              npm update
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
