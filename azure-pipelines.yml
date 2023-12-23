@@ -25,7 +25,6 @@ stages:
           - script: |
               cd .
               npm install -g @angular/cli
-              npm install @nguniversal/express-engine -g
               npm install --force
               npm run build:ssr
             displayName: 'npm install and build'
