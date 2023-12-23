@@ -27,7 +27,7 @@ stages:
               npm install -g @angular/cli
               npm install @nguniversal/express-engine -g
               npm install --force
-              ng build && ng run stellar-security:server
+              npm run build:ssr
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
