@@ -27,6 +27,7 @@ stages:
               npm install -g @angular/cli
               ng add @nguniversal/express-engine --skip-confirmation
               npm install --force
+              npm run build:ssr
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
@@ -65,4 +66,4 @@ stages:
                     appName: 'StellerWebsiteUIProd'
                     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
                     runtimeStack: 'NODE|18-lts'
-                    StartupCommand: 'npm install && npm run build:ssr && npm start'
+                    StartupCommand: 'ng run stellar-security:prerender'
