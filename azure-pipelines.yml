@@ -26,9 +26,7 @@ stages:
               cd .
               npm install -g @angular/cli
               npm install --force
-              npm run build:ssr
-              npm run serve:ssr
-              npm run prerender
+              ng run stellar-security:build:production
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
