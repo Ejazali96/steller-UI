@@ -66,3 +66,4 @@ stages:
                     appName: 'StellerWebsiteUIProd'
                     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
                     runtimeStack: 'NODE|18-lts'
+                    StartupCommand: 'npm install && npm run build:ssr && npm start'
