@@ -25,9 +25,8 @@ stages:
           - script: |
               cd .
               npm install -g @angular/cli
-              npm install @nguniversal/express-engine --save
+              npm install @nguniversal/express-engine -g
               npm install --force
-              ng run stellar-security:build:production
               ng build && ng run stellar-security:server
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
