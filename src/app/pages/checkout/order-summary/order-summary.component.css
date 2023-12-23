@@ -5,6 +5,12 @@
     background-color: #F7F6FC;
     border-radius: 16px;
 }
+
+.bag-loading {
+    width: 64px;
+    height: 64px;
+}
+
 .summary_card_header{
     padding: 8px 16px;
     border-bottom: 1px solid #E5E7EB;

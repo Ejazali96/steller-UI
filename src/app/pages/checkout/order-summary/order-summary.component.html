@@ -1,10 +1,13 @@
-<div class="order_summary_card">
+<div *ngIf="loading">
+    <img src="/assets/img/ajax-loader.gif" class="bag-loading">
+</div>
+<div class="order_summary_card" *ngIf="!loading">
     <div class="summary_card_header">
         <span>{{'order_summary_title' | translate}}</span>
     </div>
     <div class="summary_card_body pt-0">
         <div class="total_item items">
-            <span>{{'order_summary_item' | translate}}</span><a>{{'order_summary_item_edit' | translate}}</a>
+            <span>{{'order_summary_item' | translate}}</span><!--<a>{{'order_summary_item_edit' | translate}}</a>-->
         </div>
         <div class="summary_invoice">
             <div class="items">
