@@ -9,9 +9,9 @@ steps:
 - task: NodeTool@0
 inputs:
   versionSpec: '18.x'
-  displayName: 'Install Node.js'
-
-- script: |
+  displayName: 'Install Node.js 18.x'
+  
+  - script: |
   npm install -g @angular/cli
   ng add @nguniversal/express-engine --skip-confirmation
 
