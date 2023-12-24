@@ -1,23 +1,23 @@
 <div *ngIf="loading">
     <img src="/assets/img/ajax-loader.gif" class="bag-loading">
 </div>
-<div class="order_summary_card" *ngIf="!loading">
+<div class="order_summary_card" *ngIf="!loading && bagsItems">
     <div class="summary_card_header">
         <span>{{'order_summary_title' | translate}}</span>
     </div>
     <div class="summary_card_body pt-0">
         <div class="summary_invoice">
             <div class="items">
-                <span>{{'order_summary_subtotal_label' | translate}}</span><span>{{'order_summary_subtotal_value' | translate}}</span>
+                <span>{{'order_summary_subtotal_label' | translate}}</span><span>{{bagsItems.total.sub_total}}</span>
             </div>
             <div class="items">
-                <span>{{'order_summary_shipping_label' | translate}}</span><span>{{'order_summary_shipping_value' | translate}}</span>
+                <span>{{'order_summary_shipping_label' | translate}}</span><span>{{bagsItems.total.shipping_cost}}</span>
             </div>
         </div>
         <div class="summary_total">
             <div class="items">
                 <span>{{'order_summary_total_label' | translate}}</span>
-                <span>{{'order_summary_total_value' | translate}}</span>
+                <span>{{bagsItems.total.total}}</span>
             </div>
         </div>
     </div>

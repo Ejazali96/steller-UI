@@ -8,7 +8,7 @@ import {ProductService} from "../../../services/product.service";
 })
 export class OrderSummaryComponent implements AfterViewInit  {
 
-  public loading = false;
+  public loading = true;
   private token_id:any
   public bagsItems:any
 
@@ -18,6 +18,8 @@ export class OrderSummaryComponent implements AfterViewInit  {
     this.token_id = localStorage.getItem('token_id');
     this.loading = true;
       this.productService.cartOverview(this.token_id).subscribe(x => {
+        console.log(20);
+        console.log(x);
         this.bagsItems = x;
         this.loading = false;
       })
