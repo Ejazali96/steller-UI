@@ -25,9 +25,8 @@ stages:
           - script: |
               cd .
               npm install -g @angular/cli
-              npm install pm2
               npm install --force
-              npm run build:ssr
+              npm run prerender
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
@@ -38,10 +37,6 @@ stages:
               archiveType: zip
               archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
               replaceExistingArchive: true
-          - task: Bash@3
-            inputs:
-              targetType: 'inline'
-              script: 'ss -tulwn | grep LISTEN'
 
           - task: PublishBuildArtifacts@1
             inputs:
@@ -70,5 +65,3 @@ stages:
                     appName: 'StellerWebsiteUIProd'
                     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
                     runtimeStack: 'NODE|18-lts'
-                    startUpCommand: 'pm2 restart stellar-security/server/main.js'
-                    appSettings: '-p 4000'
