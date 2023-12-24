@@ -56,7 +56,7 @@ stages:
           runOnce:
             deploy:
               steps:
-
+              
                 - task: AzureWebApp@1
                   displayName: 'Deploy App Service'
                   inputs:
@@ -65,3 +65,5 @@ stages:
                     appName: 'StellerWebsiteUIProd'
                     package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
                     runtimeStack: 'NODE|18-lts'
+
+   
