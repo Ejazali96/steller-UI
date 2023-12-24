@@ -32,7 +32,7 @@
                     <img *ngFor="let image of product?.images" src="{{image.image}}" width="47" alt="stock_item">
                     <div class="item_info">
                         <div class="item_head font-xs-16">{{product.description.name}}</div>
-                        <div class="item_desc">{{product.description.description}}</div>
+                        <div class="item_desc">Quantity: {{product.quantity}}</div>
                     </div>
                 </div>
             </div>
