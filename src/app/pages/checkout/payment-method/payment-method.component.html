@@ -94,17 +94,17 @@
                 </div>
                 <div class="payment_items mt_18" [class]="isItemOpen[1]?'payment_items mt_18 active':'payment_items mt_18'" (click)="showItemInfo(1)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_cash_title' | translate}}</span>
-                    
+
                 </div>
                 <div class="payment_items mt_18"  [class]="isItemOpen[2]?'payment_items mt_18 active':'payment_items mt_18'"  (click)="showItemInfo(2)">
-                    <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_card_title' | translate}}</span>
+                    <span class="payment_type font-18-head font-xs-16">{{'payment_method_crypto_title' | translate}}</span>
                     <img src="./../../../assets/img/payment-type-icons.svg" class="cred-cards" alt="payment">
                 </div>
                 <!--div class="payment_items mt_18">
                     <img src="./../../../assets/img/paypal.svg" width="150" alt="paypal">
                 </div>-->
 
-                <a routerLink="/thank-you" class="nav_btn place_order mt_18" style="background-color: #60D38E;">Place order</a>
+                <a href="javascript:void(0)" (click)="createOrder()" class="nav_btn place_order mt_18">Place order</a>
 
             </div>
 

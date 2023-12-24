@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./pickup-detail.component.css']
 })
 export class PickupDetailComponent {
-  isElsePicker:boolean = false
+  isElsePicker:number = 1;
 }

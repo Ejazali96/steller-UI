@@ -19,4 +19,9 @@ export class PaymentMethodComponent {
 
     this.isItemOpen[which] = !this.isItemOpen[which];
   }
+
+  public createOrder() {
+    alert(10);
+  }
+
 }

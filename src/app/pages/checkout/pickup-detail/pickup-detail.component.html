@@ -20,21 +20,21 @@
             <div class="col-lg-7 max-w-672">
                 <ul class="nav nav-tabs pickUpTab" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active left-link font_medium font-xs-14" (click)="isElsePicker = false" id="delivered-tab" data-toggle="tab">{{'pickup_detail_picker_me' | translate}}
+                        <a class="nav-link active left-link font_medium font-xs-14" (click)="isElsePicker = 1" id="delivered-tab" data-toggle="tab">{{'pickup_detail_picker_me' | translate}}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link rounded-0 font_medium font-xs-14" (click)="isElsePicker = true" id="elsepick-tab" data-toggle="tab">
+                        <a class="nav-link rounded-0 font_medium font-xs-14" (click)="isElsePicker = 2" id="elsepick-tab" data-toggle="tab">
                             {{'pickup_detail_picker_else' | translate}}
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link right-link font_medium font-xs-14" id="pickitup-tab" data-toggle="tab">
+                        <a class="nav-link right-link font_medium font-xs-14"  (click)="isElsePicker = 3" id="pickitup-tab" data-toggle="tab">
                             {{'pickup_detail_picker_anonymous' | translate}}
                         </a>
                     </li>
                 </ul>
-                <div class="row mb-4 mt_18">
+                <div class="row mb-4 mt_18" *ngIf="isElsePicker !== 3">
                     <div class="col-lg-6 mt_12">
                         <label>{{ 'shipping_detail_info_form_fname_label' | translate}} <span>*</span></label>
                         <input type="text" id="lname" name="lname"  required class="input_info" placeholder="{{ 'shipping_detail_info_form_fname_placeholder' | translate}}" />
@@ -52,12 +52,31 @@
                         <label>{{ 'shipping_detail_contact_form_phone_label' | translate}} <span>*</span></label>
                         <input type="text" id="phone" name="phone"  required class="input_info" placeholder="{{ 'shipping_detail_contact_form_phone_placeholder' | translate}}" />
                     </div>
-                </div>  
+                </div>
             </div>
+
+                <div *ngIf="isElsePicker == 3"><br>
+                    Please let us know, how we should contact you:
+                    <div class="row mb-4 mt_18">
+                        <div class="col-lg-6 mt_12">
+                            <label>Select Platform *</label>
+                            <select name="platform" class="input_info">
+                                <option value="Signal">Signal</option>
+                                <option value="Telegram">Telegram</option>
+                                <option value="Whatsapp">Whatsapp</option>
+                                <option value="Email">Email</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6 mt_12">
+                            <label>Contact info <span>*</span></label>
+                            <input type="text" id="fname" name="fname"
+                                   required class="input_info" placeholder="Contact info" />
+                        </div>
+                    </div>
+                </div>
             <div class="col-lg-5">
-                <p class="font-weight-bold mb-3" style="font-size: 16px;">{{'pickup_detail_picker_detail_title' | translate}}
-                </p>
-                <ng-container *ngIf="!isElsePicker">
+                <p class="font-weight-bold mb-3" *ngIf="isElsePicker != 3" style="font-size: 16px;">{{'pickup_detail_picker_detail_title' | translate}}</p>
+                <ng-container *ngIf="isElsePicker == 1">
                     <ul class="pickupInfoList">
                         <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_point1' | translate}}</li>
                         <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_point2' | translate}}</li>
@@ -70,7 +89,7 @@
 
                     <p class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_me_desc3' | translate}}</p>
                 </ng-container>
-                <ng-container *ngIf="isElsePicker">
+                <ng-container *ngIf="isElsePicker == 2">
                     <ul class="pickupInfoList">
                         <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_point1' | translate}}</li>
                         <li class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_point2' | translate}}</li>
@@ -78,14 +97,14 @@
                     <p class="pickUpInfoParag mb-3">{{'pickup_detail_picker_detail_else_desc1' | translate}}</p>
                 </ng-container>
             </div>
-            <div class="choose_adress d-flex align-items-center" *ngIf="isElsePicker">
+            <div class="choose_adress d-flex align-items-center" *ngIf="isElsePicker == 2">
                 <input type="checkbox" checked name="address">
                 <label class="mb-0 ml-3">{{'pickup_detail_pickup_notification' | translate}}</label>
             </div>
             
         </div>
         <hr />
-        <div class="row mt_25 align-items-end" *ngIf="isElsePicker">
+        <div class="row mt_25 align-items-end" *ngIf="isElsePicker == 2">
             <h2 class="font_24 font_medium col-12">{{'pickup_detail_who_pick_order' | translate}}</h2>
             <div class="col-lg-7">
 

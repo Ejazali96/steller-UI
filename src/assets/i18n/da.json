@@ -481,7 +481,7 @@
   "payment_method_card_form_title":"Enter your card information:",
   "payment_method_card_number_label":"Credit/Debit Card number",
   "payment_method_card_number_placeholder":"Card number",
-  "payment_method_card_expiry_label":"Expiration Sate",
+  "payment_method_expiry_number_label":"Expiration Date (MM/YY)",
   "payment_method_card_expiry_placeholder":"MM/YY",
   "payment_method_card_cvv_label":"CVV",
   "payment_method_card_cvv_placeholder":"CVV",
