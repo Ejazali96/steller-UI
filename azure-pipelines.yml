@@ -27,7 +27,7 @@ stages:
               npm install -g @angular/cli
               npm install --force
               npm run prerender
-              npm i pm2
+
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
