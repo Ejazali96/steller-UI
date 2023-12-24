@@ -714,6 +714,8 @@
 
   "security_seller_contact_btn":"Kontakta",
 
+  "stellar_circle_description_works":"Stellar Circle fungerar för alla Android- och AOSP-projekt. Detta inkluderar GrapheneOS, LineageOS, CalyxOS, etc.",
+
   "stellar_circle_welcome_title": "Circle-appen låter dig radera din väns telefon.",
   "stellar_circle_welcome_description": "Stellar Circle samlar alla dina kontakter i en app. Appen låter dig fjärrradera en kontakts telefon med ett klick.",
   "stellar_circle_welcome_list1": "Alla kontakter sparas endast på din telefon.",
