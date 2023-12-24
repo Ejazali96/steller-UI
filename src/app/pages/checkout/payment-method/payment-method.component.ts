@@ -7,11 +7,16 @@ import { Component } from '@angular/core';
 })
 export class PaymentMethodComponent {
   isChecked: boolean = true;
-  isItemOpen:boolean = false
+  isItemOpen = [false, false, false];
+
   onCheckboxChange() {
     this.isChecked = !this.isChecked;
   }
-  showItemInfo(){
-    this.isItemOpen = !this.isItemOpen
+  showItemInfo(which: number){
+    this.isItemOpen[0] = false;
+    this.isItemOpen[1] = false;
+    this.isItemOpen[2] = false;
+
+    this.isItemOpen[which] = !this.isItemOpen[which];
   }
 }

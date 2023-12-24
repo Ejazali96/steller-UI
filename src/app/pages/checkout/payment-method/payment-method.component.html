@@ -15,11 +15,11 @@
             <h3 class="head_text">{{'payment_method_title' | translate}}</h3>
 
             <div class="payment_list">
-                <div [class]="isItemOpen?'payment_items mt_18 active':'payment_items mt_18'" (click)="showItemInfo()">
+                <div [class]="isItemOpen[0]?'payment_items mt_18 active':'payment_items mt_18'" (click)="showItemInfo(0)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_card_title' | translate}}</span>
                     <span class="text_muted">{{'payment_method_credit_card_desc' | translate}}</span>
                 </div>
-                <div class="payment_card_container" *ngIf="isItemOpen">
+                <div class="payment_card_container" *ngIf="isItemOpen[0]">
                     <form class="personal_ifo mt_18 max_468">
                         <h2 class="font-18-head font-xs-16">{{'payment_method_card_form_title' | translate}}</h2>
                         <div class="row mt_12">
@@ -92,11 +92,11 @@
                         </div>
                     </form>
                 </div>
-                <div class="payment_items mt_18">
+                <div class="payment_items mt_18" [class]="isItemOpen[1]?'payment_items mt_18 active':'payment_items mt_18'" (click)="showItemInfo(1)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_cash_title' | translate}}</span>
                     
                 </div>
-                <div class="payment_items mt_18">
+                <div class="payment_items mt_18"  [class]="isItemOpen[2]?'payment_items mt_18 active':'payment_items mt_18'"  (click)="showItemInfo(2)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_card_title' | translate}}</span>
                     <img src="./../../../assets/img/payment-type-icons.svg" class="cred-cards" alt="payment">
                 </div>
