@@ -462,6 +462,7 @@
   "shipping_detail_info_form_city_label":"Town / City",
   "shipping_detail_info_form_city_placeholder":"Town / City",
   "shipping_detail_info_form_state_label":"State ",
+  "shipping_detail_info_form_country_label": "Country ",
   "shipping_detail_info_form_state_option1":"Florida",
   "shipping_detail_info_form_state_option2":"San Fransisco",
   "shipping_detail_info_form_state_option3":"Albama",
