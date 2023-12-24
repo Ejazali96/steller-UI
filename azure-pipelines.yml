@@ -27,7 +27,6 @@ stages:
               npm install -g @angular/cli
               npm install --force
               npm run prerender
-              lsof -i -P -n | grep LISTEN
             displayName: 'npm install and build'
             workingDirectory: '$(Build.SourcesDirectory)'
           - task: ArchiveFiles@2
