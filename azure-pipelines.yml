@@ -38,6 +38,10 @@ stages:
               archiveType: zip
               archiveFile: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
               replaceExistingArchive: true
+          - task: Bash@3
+            inputs:
+              targetType: 'inline'
+              script: 'ps -ef'
 
           - task: PublishBuildArtifacts@1
             inputs:
