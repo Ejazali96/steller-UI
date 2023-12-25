@@ -9,6 +9,10 @@ h1.store_head_text {
     margin-top: 20px;
 }
 
+.product-images {
+    cursor: pointer;
+}
+
 .stellar-store-section p {
     font-size: 18px;
     color: #6E7286;
