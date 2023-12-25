@@ -30,7 +30,7 @@
         <div class="row">
             <div class="col-lg-6">
                 <ul class="nav nav-tabs pickUpStoreTab border-0" id="storeTab" role="tablist">
-                    <ng-container *ngIf="pickupData?.pickups" >
+                    <ng-container *ngIf="pickupData?.pickups else pickupLoader " >
                         <li class="nav-item mt_18" *ngFor="let item of pickupData?.pickups">
                             <a class="nav-link left-link" id="tab1-tab" data-toggle="tab" href="#tab1"
                                 role="tab" aria-controls="tab1" aria-selected="true">
@@ -103,3 +103,18 @@
         <a routerLink="/checkout/pickup-detail" class="nav_btn" style="background-color: #60D38E;">{{'shipping_method_continue_button' | translate}}</a>
     </ng-container>
 </div>
+
+<ng-template #pickupLoader>
+    <li class="nav-item mt_18">
+    <div class="nav-link left-link d-flex justify-content-between gap-5p">
+        <div class="w-50">
+            <div class="sk sk-h"></div>
+            <div class="sk sk-p"></div>
+        </div>
+        <div class="w-25">
+            <div class="sk sk-h"></div>
+            <div class="sk sk-p"></div>
+        </div>
+    </div>
+</li>
+</ng-template>

@@ -143,3 +143,13 @@ h4.stock_list_head {
         white-space: nowrap;
     }
 }
+.sk-img{
+    height: 80px;
+    width: 110px;
+}
+.sk-cost{
+    max-width: 50px;
+}
+.gap-5p{
+    gap: 20%;
+}

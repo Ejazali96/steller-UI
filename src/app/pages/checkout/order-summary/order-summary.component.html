@@ -1,7 +1,5 @@
-<div *ngIf="loading">
-    <img src="/assets/img/ajax-loader.gif" class="bag-loading">
-</div>
-<div class="order_summary_card" *ngIf="!loading && bagsItems">
+
+<div class="order_summary_card" *ngIf="!loading else summaryLoader">
     <div class="summary_card_header">
         <span>{{'order_summary_title' | translate}}</span>
     </div>
@@ -22,3 +20,27 @@
         </div>
     </div>
 </div>
+<ng-template #summaryLoader>
+    <div class="order_summary_card" >
+        <div class="summary_card_header">
+            <div class="sk sk-h"></div>
+        </div>
+        <div class="summary_card_body pt-0">
+            <div class="total_item items">
+                <div class="sk sk-h"></div>
+            </div>
+            <div class="summary_invoice">
+                <div class="items" *ngFor="let item of [].constructor(2)">
+                    <div class="sk sk-p"></div>
+                </div>
+               
+            </div>
+            <div class="summary_total">
+                <div class="items d-flex justify-content-between ">
+                    <div class="sk sk-h w-50 "></div>
+                    <div class="sk sk-h w-25"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

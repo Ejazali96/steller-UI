@@ -105,3 +105,13 @@ font-family: 'silka-semibold';}
     width: 64px;
     height: 64px;
 }
+.sk-preview{
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 500px;
+}
+.sk-thamnail{
+    height: 70px;
+    width: 70px;
+}

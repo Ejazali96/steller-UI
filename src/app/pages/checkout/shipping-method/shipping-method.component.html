@@ -5,7 +5,7 @@
             <img src="./../../../assets/img/delivered-icon.svg" alt="delivered">
             <span>{{'shipping_method_delivered_tab' | translate}}</span>
         </a>
-        <a class="method_tabs_item font-xs-14"  routerLink="/checkout/find-store" routerLinkActive="active">
+        <a class="method_tabs_item font-xs-14" routerLink="/checkout/find-store" routerLinkActive="active">
             <img src="./../../../assets/img/pickup-icon.svg" alt="delivered">
             <span>{{'shipping_method_pickup_tab' | translate}}</span>
         </a>
@@ -13,14 +13,19 @@
     <div class="zip_code d-flex align-items-center flex-column mt_40">
         <ng-container *ngIf="!isZipcodeValid">
             <h4 class="font-xs-16">{{'shipping_method_zipcode_title' | translate}}</h4>
-       
-        <form #zipForm="ngForm" class="input_field">
-            <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode" (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{4,}" class="input_info" placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
-            <button type="button" (click)="showStockDetail()" [class]="zipForm.form.invalid?'apply_btn disable':'apply_btn'">{{'shipping_method_zipcode_button' | translate}}</button>
-        </form>
+
+            <form #zipForm="ngForm" class="input_field">
+                <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode"
+                    (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{4,}" class="input_info"
+                    placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
+                <button type="button" (click)="showStockDetail()"
+                    [class]="zipForm.form.invalid?'apply_btn disable':'apply_btn'">{{'shipping_method_zipcode_button' |
+                    translate}}</button>
+            </form>
         </ng-container>
         <div class="near_store" *ngIf="isZipcodeValid">
-            <span>Showing stores near: </span> <span class="store_list">Warner Robins, GA <!--<img class="img-fluid ml-3" src="./../../../assets/img/back-arrow.svg" alt="sim">--></span>
+            <span>Showing stores near: </span> <span class="store_list">Warner Robins, GA
+                <!--<img class="img-fluid ml-3" src="./../../../assets/img/back-arrow.svg" alt="sim">--></span>
         </div>
     </div>
     <ng-container *ngIf="isZipcodeValid">
@@ -28,28 +33,52 @@
         <div class="stock_list mt_25">
             <h4 class="stock_list_head font-xs-20">{{'shipping_method_stock_title' | translate}}</h4>
             <div>
-                <div class="stock_item" *ngFor="let product of deliveryData?.cart?.products">
-                    <img *ngFor="let image of product?.images" src="{{image.image}}" width="47" alt="stock_item">
-                    <div class="item_info">
-                        <div class="item_head font-xs-16">{{product.description.name}}</div>
-                        <div class="item_desc">Quantity: {{product.quantity}}</div>
+                <ng-container *ngIf="deliveryData?.cart?.products; else cartSkeleton">
+                    <div class="stock_item" *ngFor="let product of deliveryData?.cart?.products">
+                        <img *ngFor="let image of product?.images" src="{{image.image}}" width="47" alt="stock_item">
+                        <div class="item_info">
+                            <div class="item_head font-xs-16">{{product.description.name}}</div>
+                            <div class="item_desc">{{product.description.description}}</div>
+                        </div>
                     </div>
-                </div>
+                </ng-container>
             </div>
         </div>
         <div class="delivery_method mb_25">
             <p>{{'shipping_method_delivery_title' | translate}}</p>
-          <ng-container *ngIf="deliveryData?.shipping_methods" >
-            <div class="delivery_method_item"  *ngFor="let item of deliveryData?.shipping_methods">
-                <div>
-                    <h4>{{item.title }}</h4>
-                    <span>{{item.sub_title | translate}}</span>
+            <ng-container *ngIf="deliveryData?.shipping_methods; else shippingLoader">
+                <div class="delivery_method_item" *ngFor="let item of deliveryData?.shipping_methods">
+                    <div>
+                        <h4>{{item.title }}</h4>
+                        <span>{{item.sub_title | translate}}</span>
+                    </div>
+                    <div class="delivery_type">{{item.cost | translate}}</div>
                 </div>
-                <div class="delivery_type">{{item.cost | translate}}</div>
-            </div>
-          </ng-container>
+            </ng-container>
         </div>
         <hr>
-        <a routerLink="/checkout/shipping-detail" class="nav_btn" style="background-color: #60D38E;">{{'shipping_method_continue_button' | translate}}</a>
+        <a routerLink="/checkout/shipping-detail" class="nav_btn"
+            style="background-color: #60D38E;">{{'shipping_method_continue_button' | translate}}</a>
     </ng-container>
 </div>
+<ng-template #cartSkeleton>
+    <div class="stock_item " *ngFor="let item of [].constructor(3)">
+        <div class="sk sk-img"></div>
+        <div class="w-100">
+            <div class="sk sk-h"></div>
+            <div class="">
+                <div class="sk sk-p"></div>
+                <div class="sk sk-p"></div>
+            </div>
+        </div>
+    </div>
+</ng-template>
+<ng-template #shippingLoader>
+    <div class="delivery_method_item gap-5p">
+        <div class="w-100">
+            <div class="sk sk-h"></div>
+            <div class="sk sk-p"></div>
+        </div>
+        <div class="sk sk-p sk-cost"></div>
+    </div>
+</ng-template>

@@ -51,3 +51,9 @@
     text-decoration: underline;
     cursor: pointer;
 }
+.bag-img-item-loader{
+    width: 180px;
+    max-height: 180px;
+    height: 100%;
+
+}
