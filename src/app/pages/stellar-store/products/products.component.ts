@@ -18,6 +18,7 @@ export class ProductsComponent implements OnInit {
 
   public addingToCartLoading = false;
 
+  public productPreview = "";
 
   constructor(private productService:ProductService, private route:ActivatedRoute) {
 
@@ -34,8 +35,8 @@ export class ProductsComponent implements OnInit {
     if (this.productId !== null) {
       this.productService.getProductById(this.productId).subscribe(x => {
         this.product = x.product
+        this.productPreview = this.product.images[0].image;
         this.loading = false;
-        console.log(this.product);
       })
   }
   }
@@ -80,16 +81,9 @@ export class ProductsComponent implements OnInit {
     this.token_id = tokenId
   }
 
-    productImages:string[] =[
-      "image1.svg",
-      "image2.svg",
-      "image3.svg",
-      "image4.svg",
-      "image5.svg",
-    ]
 
-    productPreview:string = this.productImages[0]
-    viewThis(src:string){
-      this.productPreview = src
-    }
+  viewThis(src:string){
+    this.productPreview = src
+  }
+
 }
