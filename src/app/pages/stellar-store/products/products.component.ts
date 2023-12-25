@@ -26,6 +26,7 @@ export class ProductsComponent implements OnInit {
   }
   async ngOnInit() {
 
+    this.token_id = localStorage.getItem("token_id");
     await this.loadComponentData()
   }
 
