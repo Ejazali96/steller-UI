@@ -23,9 +23,10 @@
                     translate}}</button>
             </form>
         </ng-container>
-        <div class="near_store" *ngIf="isZipcodeValid">
-            <span>Showing stores near: </span> <span class="store_list">Warner Robins, GA
-                <!--<img class="img-fluid ml-3" src="./../../../assets/img/back-arrow.svg" alt="sim">--></span>
+        <div class="near_store font-xs-16" *ngIf="isZipcodeValid">
+            <span>Showing stores near: </span> <select class="store_list">
+                <option *ngFor="let item of deliveryData?.showing_near">{{item.name}}</option>
+                <!--<img class="img-fluid ml-3" src="./../../../assets/img/back-arrow.svg" alt="sim">--></select>
         </div>
     </div>
     <ng-container *ngIf="isZipcodeValid">
