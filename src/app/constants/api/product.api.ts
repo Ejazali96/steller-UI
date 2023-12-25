@@ -14,5 +14,6 @@ export const productApi = {
 }
 export const checkoutApi = {
     toDelivered:"api/v1/storecontroller/cart/shipping/method?token_id=",
-   toPickup:"api/v1/storecontroller/cart/shipping/method/pickup?token_id=",
+    toPickup:"api/v1/storecontroller/cart/shipping/method/pickup?token_id=",
+    createOrder:"api/v1/storecontroller/order/add",
 }

@@ -40,7 +40,7 @@
                         </div>
                       
                     </form>
-                    <form class="billing_info mt_12 ">
+                   <!-- <form class="billing_info mt_12 ">
                         <h2 class="font-18-head font-xs-16">{{'payment_method_billing_address_title' | translate}}</h2>
                         <div class="choose_adress d-flex align-items-center mt_18">
                             <input type="checkbox" checked name="address" (change)="onCheckboxChange()">
@@ -90,16 +90,19 @@
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    </form>-->
                 </div>
                 <div class="payment_items mt_18" [class]="isItemOpen[1]?'payment_items mt_18 active':'payment_items mt_18'" (click)="showItemInfo(1)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_credit_cash_title' | translate}}</span>
 
                 </div>
+
                 <div class="payment_items mt_18"  [class]="isItemOpen[2]?'payment_items mt_18 active':'payment_items mt_18'"  (click)="showItemInfo(2)">
                     <span class="payment_type font-18-head font-xs-16">{{'payment_method_crypto_title' | translate}}</span>
                     <img src="./../../../assets/img/payment-type-icons.svg" class="cred-cards" alt="payment">
                 </div>
+
+
                 <!--div class="payment_items mt_18">
                     <img src="./../../../assets/img/paypal.svg" width="150" alt="paypal">
                 </div>-->

@@ -16,4 +16,9 @@ export class CheckedoutService {
   pickup(token:string, query:any):Observable<any>{
     return this.http.get<any>(baseUrl+checkoutApi.toPickup+token+"&query="+query);
   }
+
+  createOrder(data: any):Observable<any>{
+    return this.http.post<any>(baseUrl+checkoutApi.createOrder, data);
+  }
+
 }

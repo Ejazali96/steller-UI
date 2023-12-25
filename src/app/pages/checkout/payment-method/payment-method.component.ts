@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {CheckedoutService} from "../../../services/checkedout.service";
 
 @Component({
   selector: 'app-payment-method',
@@ -8,6 +9,10 @@ import { Component } from '@angular/core';
 export class PaymentMethodComponent {
   isChecked: boolean = true;
   isItemOpen = [false, false, false];
+
+  constructor(private checkoutService:CheckedoutService) {
+
+  }
 
   onCheckboxChange() {
     this.isChecked = !this.isChecked;
@@ -21,7 +26,14 @@ export class PaymentMethodComponent {
   }
 
   public createOrder() {
-    alert(10);
+    this.checkoutService.createOrder([]).subscribe({
+      next:e => {
+        if(e.response_code === 451) {
+          alert("The order could not be created. Please ensure all info is filled out.");
+        }
+      },
+      error:e => console.log(e)
+    })
   }
 
 }
