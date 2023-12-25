@@ -16,7 +16,8 @@
 
             <form #zipForm="ngForm" class="input_field">
                 <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode"
-                    (keyup)="checkFormValidity(zipForm)" required pattern="[0-9]{4,}" class="input_info"
+                    (keyup)="checkFormValidity(zipForm)" required pattern="[a-zA-Z0-9]{4,}"
+                    minlength="4" class="input_info"
                     placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
                 <button type="button" (click)="showStockDetail()"
                     [class]="zipForm.form.invalid?'apply_btn disable':'apply_btn'">{{'shipping_method_zipcode_button' |
