@@ -3,8 +3,8 @@
 >
     <div class="d-flex align-items-center justify-content-center">
        
-        <img class="protected-icon" src="./../../../assets/img/stellar-notes-logo.png" alt="protected-icon">
-        
+        <!--<img class="protected-icon" src="./../../../assets/img/stellar-circle-logo.svg" alt="protected-icon" class="protected-icon">-->
+
     </div>
     
     <div class="phone_wrapper position-relative">
@@ -13,37 +13,34 @@
           <div class="row align-items-center">
             <div class="col-lg-6">
               <div class="text-center mt_50">
-                <img class="img-fluid" src="./../../../assets/img/stellar-notes-mobile.svg" alt="phone">
+                <img class="img-fluid" src="./../../../assets/img/stellar-circle-mobile.png" alt="phone">
               </div>
             </div>
             <div class="col-lg-6">
               <div class="phone_box mt_50">
                 <div class="text-center text-md-left">
-                    <div class="head_text head_two">{{ 'stellar_notes_welcome_title' | translate}}</div>
+                    <div class="head_text head_two">{{ 'stellar_circle_welcome_title' | translate}}</div>
+                    <div class="head_text head_three">
+                      {{ 'stellar_circle_because' | translate}}
+                      <span class="color-purple">{{ 'stellar_circle_privacy' | translate }}</span>
+                      {{ 'stellar_circle_matter' | translate }}
+                    </div>
                 </div>
-                <p class="mt_25"> {{ 'stellar_notes_welcome_description' | translate }}</p>
+                  <p class="mt_25"><strong>{{ 'stellar_circle_description_works' | translate }}</strong></p>
+                <p class="mt_25"> {{ 'stellar_circle_welcome_description' | translate }}</p>
                 <ul class="stellar-protected-list mt_25">
                     <li>
                         <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
-                        <span>{{'stellar_notes_welcome_list_1' | translate}}</span>
+                        <span>{{'stellar_circle_welcome_list1' | translate}}</span>
                     </li>
                     <li>
                         <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
-                        <span>{{'stellar_notes_welcome_list_2' | translate}}</span>
+                        <span>{{'stellar_circle_welcome_list2' | translate}}</span>
                     </li>
-                    <li>
-                        <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
-                        <span>{{'stellar_notes_welcome_list_3'  | translate}}</span>
-                    </li>
-                    
                   </ul>
-
-                  <a href="javascript:void(0)" [ladda]="addingToCart" (click)="onAddToCart()" class="nav_btn mt_25">{{ 'buy_notes_button' | translate }} <img class="img-fluid" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
-
-
                   <div class="mt_25">
-
-                    {{'available_app_in_other_stores' | translate}}
+                    <!--<img class="img-fluid" src="./../../../assets/img/Google-store.svg" alt="check mark"><br>-->
+                    <br>
                   </div>
                 
               </div>
@@ -51,6 +48,6 @@
           </div>
         </div>
       </div>
-      <app-stellar-create-notes></app-stellar-create-notes>
-      <app-stellar-notes-features></app-stellar-notes-features>
+      <app-stellar-wipe-phone></app-stellar-wipe-phone>
+      <app-stellar-circle-features></app-stellar-circle-features>
 </div>

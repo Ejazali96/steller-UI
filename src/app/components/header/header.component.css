@@ -1,3 +1,4 @@
+
 .menuopen{
     cursor: pointer;
 }
@@ -20,3 +21,10 @@
     line-height: 1.5em !important;
 }
 
+
+
+.products_wrapper {
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+}

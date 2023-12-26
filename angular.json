@@ -153,7 +153,17 @@
           "builder": "@nguniversal/builders:prerender",
           "options": {
             "routes": [
-              "/"
+              "/",
+              "/activate-phone",
+              "/contact-us",
+              "/stellar-phone",
+              "/stellar-antiviru",
+              "/stellar-vpn",
+              "/stellar-protect",
+              "/stellar-antivirus",
+              "/stellar-esim",
+              "/stellar-notes",
+              "/stellar-store"
             ]
           },
           "configurations": {
