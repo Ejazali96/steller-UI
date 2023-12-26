@@ -1,4 +1,10 @@
 @import '../security-common.css';
+
+.phone_shape {
+    top: 0px !important;
+    transform: translateY(0%) !important;
+}
+
 .amount_duration{
     font-size: 18px;
     font-family: silka-medium;
