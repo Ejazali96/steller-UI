@@ -6,10 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./bag-items.component.css']
 })
 export class BagItemsComponent implements OnInit {
-@Input() productItem:any
+@Input() productType:number
 
 
 ngOnInit(): void {
-  console.log('current item',this.productItem)
+  console.log('current item',this.productType)
 }
 }
