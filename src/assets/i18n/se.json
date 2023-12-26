@@ -744,6 +744,8 @@
 
   "stellar_notes_welcome_title":"Välkommen till Stellar Notes!",
 
+  "stellar_notes_description_works":"Stellar Notes fungerar för alla Android- och AOSP-projekt. Detta inkluderar GrapheneOS, LineageOS, CalyxOS, etc.",
+
   "stellar_notes_welcome_description":"Detta är den säkraste och mest användarvänliga anteckningsappen på marknaden. Dina anteckningar är krypterade med AES-256 och kan endast nås av dig med ditt lösenord.",
 
   "stellar_notes_welcome_list_1":"Skapa och redigera textanteckningar",

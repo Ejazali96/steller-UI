@@ -396,6 +396,7 @@
   "stellar_video_title": "Stellar Circle i aktion",
   "stellar_secure_circle_wipe_title": "Fjernslet en kontakts telefon med blot ét klik",
   "stellar_notes_welcome_title":"Velkommen til Stellar Notes!",
+  "stellar_notes_description_works":"Stellar Notes virker for alle Android og AOSP projekter. Dette inkluderer GrapheneOS, LineageOS, CalyxOS osv.",
   "stellar_notes_welcome_description":"Den mest sikre og brugervenlige note-app på markedet. Dine noter er krypteret med AES-256 og kan kun blive tilgået af dig, med brug af dit password.",
   "stellar_notes_welcome_list_1":"Skab og rediger noter",
   "stellar_notes_welcome_list_2":"Krypterede noter opbevaret på telefonen",

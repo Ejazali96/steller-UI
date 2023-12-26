@@ -397,6 +397,8 @@
   "stellar_video_title": "Stellar Circle in action",
   "stellar_secure_circle_wipe_title": "Easily wipe your friend’s phone",
   "stellar_notes_welcome_title":"Welcome to Stellar Notes!",
+  "stellar_notes_description_works":"Stellar Notes works for all Android and AOSP projects. This includes GrapheneOS, LineageOS, CalyxOS, etc.",
+
   "stellar_notes_welcome_description":"This is the most secure and user-friendly notes app on the market. Your notes are encrypted with AES-256 and can only be accessed by you, using your password.",
   "stellar_notes_welcome_list_1":"Create and edit text notes",
   "stellar_notes_welcome_list_2":"Encrypted notes stored on your phone",

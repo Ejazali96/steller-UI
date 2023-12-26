@@ -395,6 +395,8 @@
   "stellar_secure_circle_wipe_title": "Wischen Sie ganz einfach das Telefon Ihres Freundes ab",
   "stellar_circle_wipe_phone_description": "Stellar Circle gibt dir die Kontrolle! Unsere Circle-App ermöglicht es dir, das Telefon deines Freundes mit nur einem Klick zu löschen und macht Datenschutz zum Kinderspiel. Halte es einfach, halte es sicher – übernimm mühelos die Kontrolle über deine digitalen Verbindungen mit Stellar Circle!\n",
   "stellar_notes_welcome_title":"Willkommen bei Stellar Notes!",
+  "stellar_notes_description_works":"Stellar Notes funktioniert für alle Android- und AOSP-Projekte. Dazu gehören GrapheneOS, LineageOS, CalyxOS usw.",
+
   "stellar_notes_welcome_description":"Dies ist die sicherste und benutzerfreundlichste Notizen-App auf dem Markt. Ihre Notizen werden mit AES-256 verschlüsselt und können nur von Ihnen mit Ihrem Passwort eingesehen werden.",
   "stellar_notes_welcome_list_1":"Erstellen und Bearbeiten von Textnotizen",
   "stellar_notes_welcome_list_2":"Verschlüsselte Notizen auf Ihrem Handy gespeichert",
