@@ -6,6 +6,7 @@ import { StellarCircleMainComponent } from './stellar-circle-main/stellar-circle
 import { StellarWipePhoneComponent } from './stellar-wipe-phone/stellar-wipe-phone.component';
 import { StellarCircleFeaturesComponent } from './stellar-circle-features/stellar-circle-features.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {LaddaModule} from "angular2-ladda";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     StellarCircleRoutingModule,
-    SharedModule
+    SharedModule,
+    LaddaModule
   ]
 })
 export class StellarCircleModule { }
