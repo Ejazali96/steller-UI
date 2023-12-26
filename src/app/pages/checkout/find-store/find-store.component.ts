@@ -21,11 +21,11 @@ export class FindStoreComponent {
   }
   showStockDetail(){
     let token = localStorage.getItem('token_id') || ''
+    console.log('zip',this.zipCodeInput);
     this.isZipcodeValid = true
     this.checkoutService.pickup(token,this.zipCodeInput).subscribe({
       next:e => {
         this.pickupData = e
-        console.log(e);
         
       },
       error:e => console.log(e)
