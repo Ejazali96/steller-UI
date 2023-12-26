@@ -20,7 +20,7 @@
                     <h2 class="head_text font_medium">{{'bag_title' | translate}}</h2>
                     <!--<p class="mt-4" style="color: #6E7286;">{{'bag_description' | translate}}</p>-->
                   </div>
-                  <app-bag-items *ngFor="let products of bagsItems.products; index as i">
+                  <app-bag-items *ngFor="let products of bagsItems.products; index as i" [productItem]="products">
                       <ng-container item-image>
                           <img width="155" src="{{products.images[0].image}}">
                         </ng-container>
