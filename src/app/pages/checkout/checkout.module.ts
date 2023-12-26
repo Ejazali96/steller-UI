@@ -12,6 +12,7 @@ import { PaymentMethodComponent } from './payment-method/payment-method.componen
 import { ThankYouComponent } from '../thank-you/thank-you.component';
 import { FindStoreComponent } from './find-store/find-store.component';
 import { PickupDetailComponent } from './pickup-detail/pickup-detail.component';
+import {LaddaModule} from "angular2-ladda";
 
 
 @NgModule({
@@ -29,7 +30,8 @@ import { PickupDetailComponent } from './pickup-detail/pickup-detail.component';
     CommonModule,
     CheckoutRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    LaddaModule
   ]
 })
 export class CheckoutModule { }

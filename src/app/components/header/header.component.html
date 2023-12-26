@@ -14,13 +14,15 @@
             <!--<li><a href="/activate-phone">{{'activatePhone'|translate}}</a></li>-->
             <li><a href="https://wipe.stellarsecurity.com">{{'remoteWipe'|translate}}</a></li>
             <li><a href="/contact-us">Reseller</a></li>
-            <li><a href="/stellar-store">{{'stellarStore' | translate}}</a></li>
+            <li><a href="/physical-store">{{'stellarStore' | translate}}</a></li>
           </ul>
          <div>
           <!--<a *ngIf="buttonType == 'privacy'" class="privacy_matter" href="/privacy-page">{{'privacyMatter'|translate}}</a>
           <a *ngIf="buttonType == 'buy'" class="nav_btn" style="background-color: #60D38E;" href="/checkout-page">{{'buyStellarPhone'|translate}} <img src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
           <a *ngIf="buttonType == ''" class="nav_btn" href="/stellar-phone">{{'getStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>-->
-          <a class="p-3 ml-4 bag_btn" href="/bag"><img src="./../../../assets/img/shopping-bag.svg" alt="bag_icon"></a>
+          <a class="p-3 ml-4 bag_btn" href="/bag"><img src="./../../../assets/img/shopping-bag.svg" alt="bag_icon">
+              <div class="bag-amount" *ngIf="cartTotalProducts > 0">{{cartTotalProducts}}</div>
+          </a>
          </div>
         </nav>
         <div class="hamburger_menu" (click)="isProductMenuOpen = !isProductMenuOpen">
@@ -51,10 +53,11 @@
   </div>
   <ul class="menu_item">
     <!--<li><a href="/activate-phone">{{'offcanvasActivatePhoneLink'|translate}}</a></li>-->
-    <li><a href="/stellar-store">{{'stellarStore' | translate}}</a></li>
+    <li><a href="/physical-store">{{'stellarStore' | translate}}</a></li>
     <li><a href="https://wipe.stellarsecurity.com/">{{'offcanvasRemoteWipeLink'|translate}}</a></li>
     <li><a href="/contact-us">Reseller</a></li>
   </ul>
   <a class="nav_btn" href="phone_page.html">{{'offcanvasGetStellarPhone'|translate}} <img src="./../../../assets/img/mobile_icon.svg" alt="mobile_icon"></a>
 </div>
 <!-- offcanvas menu end -->
+

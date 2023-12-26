@@ -1,0 +1,264 @@
+<div class="container">
+
+
+
+    <div>
+        <ng-container *ngIf="product else ProductDetail_loader">
+            <div class="row flex-column-reverse flex-lg-row">
+
+                <div class="col-lg-6">
+                    <div class="d-lg-block d-none" *ngIf="product">
+                        <!--<p class="text-danger semi">Stellar products</p>-->
+                        <h4 class="product-name my-3">{{product.description.name}}</h4>
+                        <p class="product-price text-success">{{product.price}} €</p>
+                    </div>
+                    <h5 class="font_18 mt-4 fw-5 d-flex align-items-end gap-2"> <i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="19" viewBox="0 0 22 19"
+                                fill="none">
+                                <path
+                                    d="M13 4.5H15.3373C15.5818 4.5 15.7041 4.5 15.8192 4.52763C15.9213 4.55213 16.0188 4.59253 16.1083 4.64736C16.2092 4.7092 16.2957 4.79568 16.4686 4.96863L20.5314 9.03137C20.7043 9.20432 20.7908 9.2908 20.8526 9.39172C20.9075 9.48119 20.9479 9.57873 20.9724 9.68077C21 9.79586 21 9.91815 21 10.1627V13C21 13.4659 21 13.6989 20.9239 13.8827C20.8224 14.1277 20.6277 14.3224 20.3827 14.4239C20.1989 14.5 19.9659 14.5 19.5 14.5M14.5 14.5H13M13 14.5V4.7C13 3.5799 13 3.01984 12.782 2.59202C12.5903 2.21569 12.2843 1.90973 11.908 1.71799C11.4802 1.5 10.9201 1.5 9.8 1.5H4.2C3.0799 1.5 2.51984 1.5 2.09202 1.71799C1.71569 1.90973 1.40973 2.21569 1.21799 2.59202C1 3.01984 1 3.5799 1 4.7V12.5C1 13.6046 1.89543 14.5 3 14.5M13 14.5H9M9 14.5C9 16.1569 7.65685 17.5 6 17.5C4.34315 17.5 3 16.1569 3 14.5M9 14.5C9 12.8431 7.65685 11.5 6 11.5C4.34315 11.5 3 12.8431 3 14.5M19.5 15C19.5 16.3807 18.3807 17.5 17 17.5C15.6193 17.5 14.5 16.3807 14.5 15C14.5 13.6193 15.6193 12.5 17 12.5C18.3807 12.5 19.5 13.6193 19.5 15Z"
+                                    stroke="#4364FA" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </i>Ships:</h5>
+                    <ul class="pl-5 d-flex flex-column gap-2 mt-3">
+                        <li class="text-gray-1">3-4 days</li>
+                        <li class="text-gray-1">Free Shipping</li>
+                        <!--<li class="color-purple fw-5">Get delivery dates</li>-->
+                    </ul>
+                    <!--<h5 class="font_18 mt-4 fw-5 d-flex align-items-end gap-2">
+                    <i>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23" fill="none">
+                            <path
+                                d="M14.0004 8.5V5.5C14.0004 3.29086 12.2095 1.5 10.0004 1.5C7.79123 1.5 6.00037 3.29086 6.00037 5.5V8.5M1.59237 9.85196L0.992373 16.252C0.821775 18.0717 0.736477 18.9815 1.03842 19.6843C1.30367 20.3016 1.76849 20.8121 2.35839 21.1338C3.0299 21.5 3.94374 21.5 5.77142 21.5H14.2293C16.057 21.5 16.9708 21.5 17.6423 21.1338C18.2322 20.8121 18.6971 20.3016 18.9623 19.6843C19.2643 18.9815 19.179 18.0717 19.0084 16.252L18.4084 9.85196C18.2643 8.31535 18.1923 7.54704 17.8467 6.96616C17.5424 6.45458 17.0927 6.04511 16.555 5.78984C15.9444 5.5 15.1727 5.5 13.6293 5.5L6.37142 5.5C4.82806 5.5 4.05638 5.5 3.44579 5.78984C2.90803 6.04511 2.45838 6.45458 2.15403 6.96616C1.80846 7.54703 1.73643 8.31534 1.59237 9.85196Z"
+                                stroke="#4364FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </i>
+                    Pickup :
+                </h5>-->
+
+
+                    <!--<ul class="pl-5 d-flex flex-column gap-2">
+                    <li class="color-purple fw-5">Check availability</li>
+                </ul>-->
+                    <div class="col-md-7 pt-4  px-0">
+                        <button [ladda]="addingToCartLoading" (click)="onAddToCart()"
+                            class="w-100 btn fs-2 btn-stellar btn btn-blue d-flex align-items-end justify-content-center gap-2">
+                            Add to bag
+                            <i>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+                                    fill="none">
+                                    <path
+                                        d="M5.66602 7.33317L9.66602 0.666504M12.3326 0.666504L16.3326 7.33317M1.93695 7.33317H20.0617C20.2113 7.33317 20.3326 7.45447 20.3326 7.6041V8.18912C20.3326 12.0104 19.4429 15.7793 17.734 19.1971C17.6923 19.2805 17.6071 19.3332 17.5138 19.3332H4.48481C4.39158 19.3332 4.30635 19.2805 4.26466 19.1971C2.55572 15.7793 1.66602 12.0104 1.66602 8.18912V7.6041C1.66602 7.45447 1.78732 7.33317 1.93695 7.33317Z"
+                                        stroke="white" stroke-width="2" />
+                                </svg>
+                            </i>
+                        </button>
+                    </div>
+                    <div class="col-md-9 p-0">
+                        <h4 class="text-gray-1 mb-3 mt-4 fs-3 fw-5">Payment Methods</h4>
+                        <p class="text-gray-1  fw-3">We accept: Cash, Crypto, Bank-transfer and Credit-cards</p>
+                        <hr>
+                        <p class="fs-4 fw-5">Need some help? <a href="/contact-us"><span class="color-purple">Contact
+                                    us</span></a></p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="d-lg-none" *ngIf="product">
+                        <p class="text-danger semi">Stellar products</p>
+                        <h4 class="product-name my-3">{{product.description.name}}</h4>
+                        <p class="product-price text-success">{{product.price}}€</p>
+                    </div>
+                    <div class="d-flex flex-column h-100 gap-3 align-items-center p-3 p-sm-0">
+                        <div class="product-display flex-grow-1">
+                            <img src="{{productPreview}}" class="product-image">
+                        </div>
+                        <div class="product-preview">
+                            <ng-container  *ngFor="let item of product.images">
+                                <img class="thumb-image" src="{{item.image}}"
+                                     (click)="(viewThis(item.image))">
+                            </ng-container>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+        <hr>
+
+
+        <div [innerHtml]="product?.description?.description"></div>
+
+        <!-- <hr class="mt-5">
+        <section class="mt-5 pt-5">
+            <h6 class="session-title text-center py-5">Product information</h6>
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3">
+                <div class="col-lg-3">
+                    <h4 class="feature-title head_two ws-0 ">Overview</h4>
+                    <hr class="my-3 d-block d-sm-none">
+                </div>
+                <div class="col-lg-9">
+                    <p class="   mb-5 mb-sm-0">
+                        Our software assists you in crafting exceptionally secure passwords. Employing a strong password
+                        stands
+                        as your foremost defense against hackers, significantly complicating data extraction. To enhance
+                        security even further, our phones are equipped with encrypted chips named M1 and M2, providing an
+                        additional layer of protection against data extraction.
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3 d-none d-sm-block">
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3">
+                <div class="col-lg-3">
+                    <h4 class="feature-title head_two ws-0 ">Highlights</h4>
+                    <hr class="d-block d-sm-none">
+                </div>
+                <div class="col-lg-9">
+                    <p class="   mb-5 mb-sm-0">
+                        Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. <br>
+                        Norem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+                        rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet
+                        lacinia. Aliquam in elementum tellus.
+                    </p>
+                </div>
+            </div>
+            <hr class="my-3 d-none d-sm-block">
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3">
+                <div class="col-lg-3">
+                    <h4 class="feature-title head_two ws-0 ">What’s in the Box</h4>
+                    <hr class="d-block d-sm-none">
+
+                </div>
+                <div class="col-lg-9">
+                    <ul class="mb-5 mb-sm-0 ">
+                        <li>Stellar phone</li>
+                        <li>Stellar adsfsd</li>
+                        <li>Stellar </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 d-none d-sm-block">
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3">
+                <div class="col-lg-3">
+                    <h4 class="feature-title head_two ws-0 ">Tech Specs</h4>
+                    <hr class="d-block d-sm-none">
+
+                </div>
+                <div class="col-lg-9">
+                    <p class="fs-2 fw-4">Other Features: Corem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <ul class="mb-5 mb-sm-0 ">
+                        <li>Height: 4.68 in. (118.8 mm)</li>
+                        <li>Length: 1.10 in. (28 mm)</li>
+                        <li>Width: 1.65 in. (41.8 mm) </li>
+                        <li>Weight: 5.33 oz. (151 g) </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3 d-none d-sm-block">
+            <div class="d-flex flex-wrap flex-md-nowrap gap-3">
+                <div class="col-lg-3">
+                    <h4 class="feature-title head_two ws-0 ">Manufacturer Information</h4>
+                    <hr class="d-block d-sm-none">
+
+                </div>
+                <div class="col-lg-9">
+                    <h6 class=" mb-3 sub-heading">Part number</h6>
+                    <p class="fs-2 fw-4 ">Mfr. Part Number: 961-000489</p>
+                    <p class="fs-2 fw-4 ">UPC or EAN No.: 097855155221</p>
+                    <h6 class="fs-4 sub-heading my-3">Part number</h6>
+                    <p class="fs-2 fw-4 ">Forem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                        aliquet odio mattis.</p>
+                    <p class="fs-2 fw-4 ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h6 class="fs-4 sub-heading my-3">Manufacturer Note</h6>
+                    <p class="mb-5 mb-sm-5">Forem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a,
+                        mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
+                        interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus. Class
+                        aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent
+                        auctor purus luctus enim egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
+                        rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis convallis diam sit amet
+                        lacinia. Aliquam in elementum tellus.
+                    </p>
+
+
+                </div>
+            </div>
+            <hr class="my-3 d-none d-sm-block">
+        </section>
+        <section class="mt-5 pt-5 pb-5">
+            <h6 class="session-title text-center py-5">You may also like</h6>
+            <div class="d-flex gap-3 justify-content-center">
+                <div class="card you-make-like">
+                    <img src="./assets/product-img/image1.svg" alt="">
+                    <p class="text-center font-18 product-name">Stellar e-Sim 3 GB</p>
+                    <p class="text-center price">19,99 €</p>
+                </div>
+                <div class="card you-make-like">
+                    <img src="./assets/product-img/image2.svg" alt="">
+                    <p class="text-center font-18 product-name">Type-C Charge/Data Cable</p>
+                    <p class="text-center price">19,99 €</p>
+                </div>
+                <div class="card you-make-like">
+                    <img src="./assets/product-img/image3.svg" alt="">
+                    <p class="text-center font-18 product-name">Phone case  </p>
+                    <p class="text-center price">19,99 €</p>
+                </div>
+                <div class="card you-make-like">
+                    <img src="./assets/product-img/image4.svg" alt="">
+                    <p class="text-center font-18 product-name">Type-C Charge/Data Cable</p>
+                    <p class="text-center price">19,99 €</p>
+                </div>
+
+
+
+            </div>
+        </section>-->
+    </div>
+</div>
+
+<ng-template #ProductDetail_loader>
+    <div class="row flex-column-reverse flex-lg-row">
+
+        <div class="col-lg-6">
+            <div class="d-lg-block d-none">
+                <div class="sk sk-h"></div>
+                <div class="sk sk-p"></div>
+            </div>
+            <div class="sk sk-h w-25"></div>
+
+            <ul class="pl-5 d-flex flex-column gap-2 mt-3">
+                <div class="sk sk-p w-25"></div>
+                <div class="sk sk-p w-25"></div>
+            </ul>
+            <div class="col-md-7 pt-4  px-0">
+                <div class="sk sk-btn"></div>
+
+            </div>
+            <div class="col-md-9 p-0">
+                <div class="sk sk-h"></div>
+                <div class="sk sk-p"></div>
+
+                <hr>
+                <div class="sk sk-p"></div>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="d-lg-none" *ngIf="product">
+                <div class="sk sk-p"></div>
+                <div class="sk sk-h"></div>
+                <div class="sk sk-p"></div>
+            </div>
+            <div class="d-flex flex-column h-100 gap-3 align-items-center p-3 p-sm-0">
+                <div class="sk sk-preview"></div>
+                
+                <div class="d-flex justify-content-between gap-3">
+                    <div class="sk sk-thamnail" *ngFor="let item of [].constructor(4)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</ng-template>

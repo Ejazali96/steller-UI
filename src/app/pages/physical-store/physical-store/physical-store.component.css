@@ -1,0 +1,27 @@
+h1.store_head_text {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'silka-semibold';
+    line-height: 26.5px;
+    max-width: 750px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.stellar-store-section p {
+    font-size: 18px;
+    color: #6E7286;
+}
+
+.py-100 {
+    padding: 100px 0;
+}
+
+.nav_btn {
+    min-width: 300px;
+}
+.product-name{
+    font-size: 18px ;
+    font-family: 'silka-semibold';
+    margin-bottom: 12px;
+}

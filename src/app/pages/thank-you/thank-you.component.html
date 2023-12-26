@@ -1,4 +1,4 @@
-<div class="thankyou_detail_wrapper mb_77">
+<div class="thankyou_detail_wrapper mb_77" *ngIf="order !== null">
     <div class="row justify-content-center m-0">
         <div class="stellerMain marginTop container">
             <div class="row justify-content-center">
@@ -11,7 +11,7 @@
                             <p class="stellerGrayText mb-0">{{'thank_you_order_label' | translate}}</p>
                         </div>
                         <div class="col-auto">
-                            <p class="stellerBlackText mb-0">{{'thank_you_order_value' | translate}}</p>
+                            <p class="stellerBlackText mb-0">{{ order.id }}</p>
                         </div>
                     </div>
                 </div>
@@ -29,31 +29,24 @@
                             <p class="stellerGrayText stellerTextMargin">{{'thank_you_order_date_label' | translate}}</p>
                         </div>
                         <div class="col-auto">
-                            <p class="stellerBlackText stellerTextMargin">{{'thank_you_order_date_value' | translate}}</p>
+                            <p class="stellerBlackText stellerTextMargin">{{ order.created_at }}</p>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col">
-                            <p class="stellerGrayText stellerTextMargin">{{'thank_you_customer_id_label' | translate}}</p>
-                        </div>
-                        <div class="col-auto">
-                            <p class="stellerBlackText stellerTextMargin">{{'thank_you_customer_id_value' | translate}}</p>
-                        </div>
-                    </div>
-                    <div class="row">
+
+                    <!--<div class="row">
                         <div class="col">
                             <p class="stellerGrayText stellerTextMargin">{{'thank_you_delivery_date_label' | translate}}</p>
                         </div>
                         <div class="col-auto">
                             <p class="stellerBlackText stellerTextMargin">{{'thank_you_delivery_date_value' | translate}}</p>
                         </div>
-                    </div>
+                    </div>-->
                     <div class="row">
                         <div class="col">
                             <p class="stellerGrayText mb-0">{{'thank_you_total_label' | translate}}</p>
                         </div>
                         <div class="col-auto">
-                            <p class="stellerBlackText mb-0">{{'thank_you_total_value' | translate}}</p>
+                            <p class="stellerBlackText mb-0">{{ order.total }}</p>
                         </div>
                     </div>
                 </div>
@@ -63,7 +56,7 @@
                 <div class="col-xl-8 col-lg-10 col-md-11">
                     <div class="text-center">
                         <p class="stellerGrayText marginBottom">{{'thank_you_contact_text' | translate}}
-                            <a href="#" style="text-decoration: underline;">{{'thank_you_contact_link' | translate}}</a>.
+                            <a href="/contact-us" style="text-decoration: underline;">{{'thank_you_contact_link' | translate}}</a>.
                         </p>
                         <img width="270" src="./../../../assets/img/logo.svg" />
                     </div>

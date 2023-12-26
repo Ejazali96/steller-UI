@@ -1,59 +1,63 @@
-<div class="bag_item d-flex">
-    <div class="item_image">
-      <!-- Content Projection for Title -->
-      <ng-content select="[item-image]"></ng-content>
-    </div>
-    <div class="item_info">
-      <!-- Content Projection for Body -->
-      <div class="item_header d-flex justify-content-between">
-        <div class="item_name">
-            <ng-content select="[item-name]"></ng-content>
-        </div>
-        <div class="item_price">
-            <ng-content select="[item-price]"></ng-content>
-        </div>
-        
+<div class="bag_item d-flex" style="margin-bottom: 35px;">
+  <div class="item_image">
+    <!-- Content Projection for Title -->
+    <ng-content select="[item-image]"></ng-content>
+  </div>
+  <div class="item_info">
+    <!-- Content Projection for Body -->
+    <div class="item_header d-flex justify-content-between">
+      <div class="item_name">
+        <ng-content select="[item-name]"></ng-content>
       </div>
-      <hr class="mt_18">
-      <div class="item_licence mt_18">
-        <div class="stellar_subs">
-            <div class="d-flex align-items-center justify-content-between">
-                <ng-content select="[subs-name]"></ng-content>
-                <ng-content select="[subs-price]"></ng-content>
-            </div>
-           <div class="stellar_subs_desc mt-3 dark_gray">
-            <ng-content select="[subs-desc]"></ng-content>
-           </div>
+      <div class="item_price">
+        <ng-content select="[item-price]"></ng-content>
+      </div>
+
+    </div>
+    <hr class="mt_18">
+    <div class="item_licence mt_18">
+      <div class="stellar_subs">
+        <div class="d-flex align-items-center justify-content-between">
+          <ng-content select="[subs-name]"></ng-content>
+          <ng-content select="[subs-price]"></ng-content>
         </div>
-        
-        <div class="licence_type mt_18">
-            <nav>
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <div class="stellar_subs_desc mt-3 dark_gray">
+          <ng-content select="[subs-desc]"></ng-content>
+        </div>
+      </div>
+
+      <div class="licence_type mt_18">
+        <nav>
+          <!--<div class="nav nav-tabs" id="nav-tab" role="tablist">
                   <button class="nav-link active" id="nav-home-tab" data-toggle="tab" data-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">{{'bag_item_licence_1' | translate}}</button>
                   <button class="nav-link" id="nav-profile-tab" data-toggle="tab" data-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">{{'bag_item_licence_2' | translate}}</button>
                  
-                </div>
-              </nav>
-              <div class="tab-content mt_18" id="nav-tabContent">
-                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                    <h2 class="shipment_heading font_18 font-xs-16 font_medium">{{'bag_item_shipment_detail' | translate}}</h2>
-                    <div class="shipment_detail font_16 font-xs-14">
-                        <img src="./../../../assets/img/shipment-blue-icon.svg" alt="shipment">
-                        <span class="ml-3">{{'bag_item_shipment_instock' | translate}}</span>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                  <h2 class="shipment_heading font_18 font-xs-16 font_medium">{{'bag_item_shipment_detail' | translate}}</h2>
-                  <div class="shipment_detail font_16 font-xs-14">
-                      <img src="./../../../assets/img/shipment-blue-icon.svg" alt="shipment">
-                      <span class="ml-3">{{'bag_item_shipment_instock' | translate}}</span>
-                  </div>
-                </div>
-              </div>
+                </div>-->
+        </nav>
+        <div class="tab-content mt_18" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+            <h2 class="shipment_heading font_18 font-xs-16 font_medium">{{'bag_item_shipment_detail' | translate}}</h2>
+            <div class="shipment_detail font_16 font-xs-14">
+              <img src="./../../../assets/img/shipment-blue-icon.svg" alt="shipment">
+              <span class="ml-3">{{'bag_item_shipment_instock' | translate}}</span>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <h2 class="shipment_heading font_18 font-xs-16 font_medium">{{'bag_item_shipment_detail' | translate}}</h2>
+            <div class="shipment_detail font_16 font-xs-14">
+              <img src="./../../../assets/img/shipment-blue-icon.svg" alt="shipment">
+              <span class="ml-3">{{'bag_item_shipment_instock' | translate}}</span>
+            </div>
+          </div>
         </div>
-      
       </div>
-      
+
     </div>
-   
+
+
+
   </div>
+
+
+</div>
+

@@ -1,5 +1,6 @@
 import { Component, Renderer2, AfterViewInit, ElementRef } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import {ProductService} from "../../services/product.service";
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class HeaderComponent {
   isProductMenuOpen:boolean = false
   buttonType:string = ''
-  constructor(private activerouter:Router) {
+
+  public cartTotalProducts = 0;
+
+  constructor(private activerouter:Router, private productService: ProductService) {
     console.log(this.activerouter.url);
     if(this.activerouter.url.includes('stellar-phone') || this.activerouter.url.includes('checkout'))
     {
@@ -22,9 +26,16 @@ export class HeaderComponent {
   }
 
 
+  private minicart() {
+    this.productService.minicart(localStorage.getItem('token_id')).subscribe(x => {
+      if(x.response_code == 200) {
+        this.cartTotalProducts = x.total_products;
+      }
+    })
+  }
+
   ngOnInit() {
-
-
+    this.minicart();
   }
 
   ngAfterViewInit() {

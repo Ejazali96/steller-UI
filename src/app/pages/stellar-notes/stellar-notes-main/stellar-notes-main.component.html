@@ -37,6 +37,10 @@
                     </li>
                     
                   </ul>
+
+                  <a href="javascript:void(0)" [ladda]="addingToCart" (click)="onAddToCart()" class="nav_btn mt_25">{{ 'buy_notes_button' | translate }} <img class="img-fluid" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+
+
                   <div class="mt_25">
 
                     {{'available_app_in_other_stores' | translate}}

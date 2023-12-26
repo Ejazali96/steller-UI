@@ -1,17 +1,110 @@
-<div class="app_wrapper py-100">
-    <div class="container pd-sm-0">
-        <div class="position-relative stellar-store-section overflow-hidden">
-            <div class="image position-relative col-lg-12 px-0 px-md-12 text-center">
-                <img class="img-fluid corner_icon01" src="./../../../assets/img/stellar-store.svg" alt="corner_icon01">
-              </div>
-              <div class="app-left-section big_headwrap m-auto text-center">
-                <h1 class="store_head_text">{{'stellar_store_open_info' | translate}}</h1>
-                <p class="mt_30">{{'stellar_store_now_text' | translate}}</p>
-                <a href="/" class="nav_btn mt_30 px-5 justify-content-center">{{'stellar_store_button' | translate}}</a>
+
+<div class="container margin-bottom-40">
+    <div>
+        <h2 class="head_text head_two text-center">Stellar <span class="color-purple">Store</span></h2>
+        <p class="text-center mb-5 mt-4">Security oriented accessories, simcards and more for every device you have.</p>
+    </div>
+
+    <!-- loading.. -->
+    <!-- <div align="center"  *ngIf="isLoading">
+        <img src="/assets/img/ajax-loader.gif" class="spinner-loader"><br><br>
+    </div> -->
+
+    <div class="row" >
+        <div class="col-lg-3 pt-lg-5">
+            <div class="card category-card mt-lg-5" [ngClass]="hideFilter?'':'hide-filter'">
+                <div class="card-header bg-whitep-4 d-flex justify-content-between bg-whiteF p-4 p-lg-3 ">
+                    <p class="py-lg-0 semi">Categories</p>
+                    <span  class="font_18 pointer d-lg-none">&times;</span>
+                </div>
+                <div class="card-body p-4 p-sm-4">
+                    <ng-container *ngIf="isLoading">
+                        <div class="skeleton-loader small-h"></div>
+                        <div class="skeleton-loader small-h"></div>
+                        <div class="skeleton-loader small-h"></div>
+                    </ng-container>
+                    <ng-container *ngIf="!isLoading">
+                        <div class="form-check d-flex align-items-center gap-1 mb-3   "
+                        *ngFor="let item of category;let i=index;">
+                        <input [(ngModel)]="item.select" class="form-check-input mb-2" type="checkbox" [value]="item.name" (change)="filterByCategory()" id="category{{i}}">
+                        <label class="form-check-label semi flex-grow-1 ml-sm-2 ml-3" for="category{{i}}">
+                            {{item.name}}
+                        </label>
+                        <!--<span class="text-lightgray">{{item.count}}</span>-->
+                    </div>
+                    </ng-container>
+                  
+                    <button class="btn btn-stellar d-lg-none btn-blue mt-3 fs-2 w-100" (click)="filterByCategory(true)">Apply </button>
+                    <button class="btn btn-stellar btn-blue-primary mt-3 fs-2 w-100" (click)="clearCategory()">Clear filter</button>
+                </div>
             </div>
-           
-          
+        </div>
+        <div class="col-lg-9">
+            <div class="d-flex gap-3 flex-column flex-lg-row">
+                <div class="flex-grow-1 position-relative">
+                    <input class="form-control staller-input" type="search" name="" #searchProduct placeholder="Search" >
+                    <span class="position-absolute search-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path
+                                d="M13 13L9.00007 9M10.3333 5.66667C10.3333 8.244 8.244 10.3333 5.66667 10.3333C3.08934 10.3333 1 8.244 1 5.66667C1 3.08934 3.08934 1 5.66667 1C8.244 1 10.3333 3.08934 10.3333 5.66667Z"
+                                stroke="#6E7286" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </div>
+                <div class="d-flex gap-2 align-items-center ">
+                    <button class="btn btn-blue btn-stellar d-flex align-items-center  gap-2 d-lg-none" (click)="showfilter()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="14" viewBox="0 0 21 14" fill="none">
+                            <path d="M4.5 7H16.5M1.5 1H19.5M7.5 13H13.5" stroke="white" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Filter
+                    </button>
+                    <label class="ws-0 fs-2 ml-lg-5 d-none d-sm-block">Sorted by</label>
+                    <select class="form-select select form-control staller-input" (change)="changeOrder($event)">
+                        <option selected value="popular">Popularity</option>
+                        <option value="price">Price</option>
+                        <option value="new">New</option>
+                    </select>
+                </div>
+            </div>
+
+
+            <div class="product-wrapper">
+                <ng-container *ngIf="isLoading">
+                    <div class="skeleton-card card" *ngFor="let item of [].constructor(6)">
+                        <div class="cover-image-skeleton"></div>
+                        <div class="skeleton-loader"></div>
+                        <div class="skeleton-loader small"></div> <!-- Second skeleton loader -->
+                        <div class="skeleton-loader"></div> <!-- Third skeleton loader -->
+                    </div>
+                </ng-container>
+                <ng-container *ngIf="!isLoading">
+                    <div *ngFor="let item of allProducts; let i = index" class="product-card card">
+                        <div class="product-images">
+                            <img routerLink="product/{{item.id}}" class="w-100" [src]="item.images[0].image" [alt]="item.images[0].image" >
+                        </div>
+                        <div class="p-3 product-content flex-grow-1 d-flex flex-column">
+                            <p class="product-name flex-grow-1">{{item.description.name}}</p>
+                            <p class="product-name text-right">{{item.price}} €</p>
+                            <div class=" justify-content-center view-product">
+                                <button routerLink="product/{{item.id}}" class="btn btn-blue w-100 fs-2 px-1 btn-stellar">View product</button>
+                            </div>
+                        </div>
+                        <div
+                            class="cart-footer d-flex align-items-sm-center justify-content-between p-3  flex-column flex-sm-row">
+                            <div>
+                                <span class="fa fa-check-circle text-primary"></span>
+                                <span class="fs-1 fs-sm-2 ml-2">In stock online</span>
+                            </div>
+                            <div>
+                                <span class="fa fa-check-circle text-primary"></span>
+                                <span class="fs-1 fs-sm-2 ml-2">In several stores</span>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
         </div>
     </div>
-  </div>
-
+</div>

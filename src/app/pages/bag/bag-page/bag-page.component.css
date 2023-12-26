@@ -31,3 +31,29 @@
         font-size: 14px !important;
     }
 }
+
+.loading-icon {
+    width: 64px;
+    height: 64px;
+}
+
+.checkout-btn {
+    font-size: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.item-remove {
+    color: blue;
+}
+
+.item-remove:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.bag-img-item-loader{
+    width: 180px;
+    max-height: 180px;
+    height: 100%;
+
+}

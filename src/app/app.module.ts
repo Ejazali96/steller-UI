@@ -9,7 +9,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CustomerReviewsComponent } from './components/customer-reviews/customer-reviews.component';
-
+import { LaddaModule } from 'angular2-ladda';
 export function createTranslateLoader(http: HttpClient) {
     return new TranslateHttpLoader(http, './../assets/i18n/', '.json');
 }
@@ -21,6 +21,7 @@ export function createTranslateLoader(http: HttpClient) {
         BrowserModule,
         AppRoutingModule,
         HttpClientModule,
+        LaddaModule,
         TranslateModule.forRoot({
             loader: {
                 provide: TranslateLoader,
