@@ -1,5 +1,6 @@
-export interface Order {
-    payment_firstname: string
+export class Order {
+    token_id: any
+    payment_firstname: any
     payment_lastname: any
     payment_address: any
     payment_city: any
@@ -9,8 +10,6 @@ export interface Order {
     payment_email: any
     payment_phone: any
     order_status_id: any
-    order_total: number
-    user_id: any
     order_type: number
     anonymously_contact_type: any
     anonymously_contact_info: any

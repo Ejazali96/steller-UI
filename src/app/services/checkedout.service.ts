@@ -10,6 +10,10 @@ export class CheckedoutService {
 
   constructor(private http:HttpClient) { }
 
+  thankyou(order_id: string):Observable<any>{
+    return this.http.get<any>(baseUrl+checkoutApi.thankyou + "?order_id=" + order_id);
+  }
+
   delivered(token:string, query:any):Observable<any>{
     return this.http.get<any>(baseUrl+checkoutApi.toDelivered+token+"&query="+query);
   }

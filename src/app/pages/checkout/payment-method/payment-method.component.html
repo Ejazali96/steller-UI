@@ -107,7 +107,7 @@
                     <img src="./../../../assets/img/paypal.svg" width="150" alt="paypal">
                 </div>-->
 
-                <a href="javascript:void(0)" (click)="createOrder()" class="nav_btn place_order mt_18">Place order</a>
+                <a href="javascript:void(0)" [ladda]="creatingOrder" (click)="createOrder()" class="nav_btn place_order mt_18">Place order</a>
 
             </div>
 

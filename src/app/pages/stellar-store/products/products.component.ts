@@ -35,9 +35,15 @@ export class ProductsComponent implements OnInit {
     this.loading = true;
     if (this.productId !== null) {
       this.productService.getProductById(this.productId).subscribe(x => {
-        this.product = x.product
-        this.productPreview = this.product.images[0].image;
-        this.loading = false;
+
+        if(x.product.redirect_to !== null) {
+          window.location.href = x.product.redirect_to;
+        } else {
+          this.product = x.product;
+          this.productPreview = this.product.images[0].image;
+          this.loading = false;
+        }
+
       })
   }
   }

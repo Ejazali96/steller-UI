@@ -6,6 +6,7 @@ import { StellarNotesMainComponent } from './stellar-notes-main/stellar-notes-ma
 import { StellarCreateNotesComponent } from './stellar-create-notes/stellar-create-notes.component';
 import { StellarNotesFeaturesComponent } from './stellar-notes-features/stellar-notes-features.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import {LaddaModule} from "angular2-ladda";
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     StellarNotesRoutingModule,
-    SharedModule
+    SharedModule,
+    LaddaModule
   ]
 })
 export class StellarNotesModule { }
