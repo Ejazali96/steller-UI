@@ -15,6 +15,7 @@ export class CheckedoutService {
   }
 
   delivered(token:string, query:any):Observable<any>{
+    console.log('query is ',query)
     return this.http.get<any>(baseUrl+checkoutApi.toDelivered+token+"&query="+query);
   }
   pickup(token:string, query:any):Observable<any>{

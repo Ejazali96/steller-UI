@@ -16,7 +16,7 @@
 
 
             <form #zipForm="ngForm" class="input_field">
-                <input type="text" id="zipCode" name="zipCode" [(ngModel)]="zipCode"
+                <input type="text" id="zipCodeInput" name="zipCodeInput" [(ngModel)]="zipCodeInput"
                     (keyup)="checkFormValidity(zipForm)" required pattern="[a-zA-Z0-9]{4,}"
                     minlength="4" class="input_info"
                     placeholder="{{'shipping_method_zipcode_placeholder' | translate}}" />
