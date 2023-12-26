@@ -84,6 +84,10 @@
 
   "buy_phone_button": "Köp Stellar Phone",
 
+  "buy_protect_button": "Köp Stellar Protect",
+  "buy_circle_button": "Köp Stellar Circle",
+  "buy_notes_button": "Köp Stellar Notes",
+
   "payment_methods": "Betalningsmetoder",
 
   "secured_by_stellar_security": "Krypterad, säkrad och skyddad av Stellar Security.",

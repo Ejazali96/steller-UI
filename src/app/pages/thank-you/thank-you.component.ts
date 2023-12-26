@@ -33,8 +33,7 @@ export class ThankYouComponent {
         }
         console.log(e);
 
-      },
-      error:e => console.log(e)
+      }
     })
 
   }
