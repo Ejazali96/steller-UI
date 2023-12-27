@@ -16,6 +16,7 @@
             <div class="phone_box mt_50">
               <div class="d-flex align-items-center justify-content-between">
                 <h2>{{ 'stellar_phone_head_text' | translate }}</h2>
+                <div class="skeleton-loader small" *ngIf="product === null"></div>
                 <h2 class="amount_text" *ngIf="product !== null">{{ product.formatted_price }}</h2>
               </div>
               <p class="mt_25 phone_border"><span class="phone_para">{{ 'phone_description_stellar_phone' | translate }}</span> {{ 'phone_description_stellar_phone2' | translate }}</p>

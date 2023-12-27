@@ -5,3 +5,25 @@
 .input_info {
     background-color: #fff;
 }
+
+.skeleton-card {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all ease .4s;
+    border: 1px solid #F7F6FC!important;
+    padding: 12px;
+}
+
+.skeleton-loader .small{
+    max-width: 150px;
+    margin-left: auto;
+}
+.skeleton-loader {
+    width: 100px;
+    height: 22px;
+    background: linear-gradient(90deg, #EEEEEE 25%, #EEEEEE 50%, #DEDEDE 75%);
+    background-size: 200% 100%;
+    animation: loading 2s infinite ease-in-out;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}

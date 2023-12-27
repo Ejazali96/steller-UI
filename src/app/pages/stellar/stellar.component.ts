@@ -12,8 +12,6 @@ export class StellarComponent implements OnInit {
   metaKeywords:string = 'Stellar Security, secure phone, stellar phone';
   public chosen_phone_subscription = 6;
 
-  public phone_price = "999,99";
-
   public product_id = "1083fd58-80a4-4ad1-af00-a78547ef82c1";
 
   public product_variant: any;
@@ -31,6 +29,7 @@ export class StellarComponent implements OnInit {
   }
 
   public async getProduct() {
+      this.product = null;
       this.productservice.getProductById(this.product_id).subscribe(x => {
           this.product = x.product;
       })
