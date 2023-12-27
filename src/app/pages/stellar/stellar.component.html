@@ -33,7 +33,8 @@
                 <a [class.active]="chosen_phone_subscription == 6" href="javascript:void(0)" (click)="setChoseSubscription(6)">{{ 'subscription_6_months' | translate }}</a>
               </div>
               <p class="phone_para_opacity mt_25">{{ 'phone_includes' | translate }}</p>
-              <a  href="/contact-us" class="nav_btn mt_25">{{ 'buy_phone_button' | translate }} <img class="img-fluid" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+              <a  href="javascript:void(0)" [ladda]="addingToCart" (click)="onAddToCart()" class="nav_btn mt_25">{{ 'buy_phone_button' | translate }}
+                  <img class="img-fluid" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
               <div class="payment_logo mt_30">
                 <img class="img-fluid" src="./../../../assets/img/payment_icon01.svg" alt="payment_icon01">
                 <img class="img-fluid" src="./../../../assets/img/payment_icon02.svg" alt="payment_icon02">

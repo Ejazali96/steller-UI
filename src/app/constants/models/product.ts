@@ -54,6 +54,7 @@ export interface ProductDto{
     token_id:string,
     user_id: number,
     product_id:string,
+    product_variant_id?: any,
     quantity:number
   }
 

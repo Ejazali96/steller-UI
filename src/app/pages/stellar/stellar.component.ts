@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductService} from "../../services/product.service";
+import {v4 as uuidv4} from "uuid";
+import {addCartDto} from "../../constants/models/product";
 
 @Component({
   selector: 'app-stellar',
@@ -18,19 +20,54 @@ export class StellarComponent implements OnInit {
 
   public product : any = null;
 
+  public addingToCart = false;
 
-  constructor(private productservice: ProductService) { }
+
+
+  constructor(private productService:ProductService) { }
 
 
   async ngOnInit() {
-    setTimeout(async () => {
-      await this.getProduct();
-    }, 1000);
+    await this.getProduct();
+  }
+
+  onAddToCart(){
+
+    this.addingToCart = true;
+
+    let token_ids: any = localStorage.getItem("token_id");
+
+    if(token_ids == null) {
+      token_ids = uuidv4();
+      localStorage.setItem('token_id', token_ids);
+    } else{
+      token_ids = localStorage.getItem('token_id');
+    }
+
+    let addToCartObj: addCartDto = {
+      token_id: token_ids,
+      user_id: 0,
+      product_variant_id: this.product_variant,
+      product_id: this.product_id,
+      quantity:1
+    };
+
+    this.productService.addToCart(addToCartObj).subscribe(
+        (response) => {
+          window.location.href = '/bag';
+          console.log('API Response:', response);
+        },
+        (error) => {
+          alert('Error, could not add the product to your cart.');
+          console.error('API Error:', error);
+        }
+    );
+
   }
 
   public async getProduct() {
       this.product = null;
-      this.productservice.getProductById(this.product_id, this.product_variant).subscribe(x => {
+      this.productService.getProductById(this.product_id, this.product_variant).subscribe(x => {
 
           console.log(x);
           x.product.formatted_price = x.product.variants[1].formatted_price;
