@@ -1,7 +1,3 @@
-
-
-
-
 <!-- form area start -->
 <div  class="bag_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
   <ng-container>
@@ -11,10 +7,10 @@
                     <h2 class="head_text font_medium">{{'empty_bag_title' | translate}}</h2>
                     <h4 class="font_24 font_medium mt_30">{{'empty_bag_delivery' | translate}}</h4>
                     <img class="empty_bag mt_50 py-5 img-fluid" src="./../../../assets/img/empty-bag.svg" alt="empty_bag">
-                    <a class="nav_btn mt_50" (click)="showBagItems()" style="background-color: #60D38E; color: #fff;cursor: pointer;">{{'empty_bag_shopping_btn' | translate}}</a>
+                    <a class="nav_btn mt_50" href="/stellar-store" (click)="showBagItems()" style="background-color: #60D38E; color: #fff;cursor: pointer;">{{'empty_bag_shopping_btn' | translate}}</a>
                 </div>
             </ng-container>
-            <ng-container *ngIf="bagsItems?.products else bagloader">
+            <ng-container *ngIf="bagsItems?.products.length > 0 else bagloader">
                 <div class="bag_item_wrapper">
                   <div class="bag_heading mb_48">
                     <h2 class="head_text font_medium">{{'bag_title' | translate}}</h2>
