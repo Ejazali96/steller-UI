@@ -20,8 +20,8 @@ export class ProductService {
     return this.http.get<any>(baseUrl + productApi.getAllProduct);
   }
 
-  getProductById(id: string) : Observable<any> {
-    return this.http.get<any>(baseUrl + productApi.getProductById + id)
+  getProductById(id: string, variant_id: string = "") : Observable<any> {
+    return this.http.get<any>(baseUrl + productApi.getProductById + id + "?variant_id=" + variant_id)
   }
   
   searchByQuery(query:string): Observable<any>{

@@ -14,7 +14,7 @@ export class StellarComponent implements OnInit {
 
   public product_id = "1083fd58-80a4-4ad1-af00-a78547ef82c1";
 
-  public product_variant: any;
+  public product_variant: any = "9bb4954a-e8a7-4b74-8475-a91e4f0ed792";
 
   public product : any = null;
 
@@ -30,13 +30,29 @@ export class StellarComponent implements OnInit {
 
   public async getProduct() {
       this.product = null;
-      this.productservice.getProductById(this.product_id).subscribe(x => {
+      this.productservice.getProductById(this.product_id, this.product_variant).subscribe(x => {
+
+          console.log(x);
+          x.product.formatted_price = x.product.variants[1].formatted_price;
+          this.product_variant = x.product.variants[1].id;
+
+          if(this.chosen_phone_subscription == 3) {
+            x.product.formatted_price = x.product.variants[0].formatted_price;
+            this.product_variant = x.product.variants[0].id;
+          }
+
           this.product = x.product;
       })
   }
 
   public setChoseSubscription(subscription: number) {
+    this.product_variant = this.product.variants[1].id;
+    if(subscription == 3) {
+      this.product_variant = this.product.variants[0].id;
+    }
+
     this.chosen_phone_subscription = subscription;
+    this.getProduct();
   }
 
 }
