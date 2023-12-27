@@ -4,6 +4,7 @@
 
 .input_info {
     background-color: #fff;
+    cursor: pointer;
 }
 
 .skeleton-card {
