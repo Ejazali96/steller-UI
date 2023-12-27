@@ -2,6 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {ProductService} from "../../services/product.service";
 import {v4 as uuidv4} from "uuid";
 import {addCartDto} from "../../constants/models/product";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-stellar',
@@ -24,10 +25,14 @@ export class StellarComponent implements OnInit {
 
 
 
-  constructor(private productService:ProductService) { }
+  constructor(private productService:ProductService,private route: ActivatedRoute) { }
 
 
   async ngOnInit() {
+    const product_id = this.route.snapshot.queryParamMap.get('product_id');
+    if(product_id !== null) {
+      this.product_id = product_id;
+    }
     await this.getProduct();
   }
 
