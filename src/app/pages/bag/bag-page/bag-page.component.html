@@ -62,14 +62,7 @@
                               <p class="stellerBlackText stellerTextMargin">{{bagsItems.total.shipping_cost}}</p>
                           </div>
                       </div>
-                      <!--<div class="row">
-                          <div class="col">
-                              <p class="stellerGrayText stellerTextMargin">{{'bag_invoice_tax_label' | translate}}</p>
-                          </div>
-                          <div class="col-auto">
-                              <p class="stellerBlackText stellerTextMargin">{{'bag_invoice_tax_value' | translate}}</p>
-                          </div>
-                      </div>-->
+
                       <hr class="mt_18" />
                       <div class="row mt_18">
                           <div class="col">
@@ -88,7 +81,7 @@
 
 
             <ng-template #bagloader>
-              <div class="container">
+              <div class="container" *ngIf="loading">
                 <div class="bag_item d-flex row px-lg-5 px-3 mb-3" *ngFor="let item of [].constructor(3)">
                   <div class="col-lg-3 item_image">
                     <div class="bag-img-item-loader sk"></div>
