@@ -19,11 +19,11 @@ export class StellarComponent implements OnInit {
 
   public product_variant: any = "9bb4954a-e8a7-4b74-8475-a91e4f0ed792";
 
+  public product_image = "https://stellarsecurity.com/assets/img/store/5A.png";
+
   public product : any = null;
 
   public addingToCart = false;
-
-
 
   constructor(private productService:ProductService,private route: ActivatedRoute) { }
 
@@ -83,6 +83,7 @@ export class StellarComponent implements OnInit {
             this.product_variant = x.product.variants[0].id;
           }
 
+          this.product_image = x.product.images[0].image;
           this.product = x.product;
       })
   }
