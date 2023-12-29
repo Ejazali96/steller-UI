@@ -34,6 +34,10 @@ export class BagPageComponent implements OnInit {
         console.log('bag items',this.bagsItems);
         this.isBagHaveItems = true;
       })
+    } else {
+      this.bagsItems = [];
+      this.loading = false;
+      this.isBagHaveItems = false;
     }
   }
 
