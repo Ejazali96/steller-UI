@@ -9,6 +9,9 @@ h1.store_head_text {
     margin-top: 20px;
 }
 
+.sub-title {
+    font-size: 18px;
+}
 
 .product-images {
     cursor: pointer;
