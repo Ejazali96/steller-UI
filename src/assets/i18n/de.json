@@ -616,5 +616,6 @@
   "bag_invoice_tax_value":"0 €",
   "bag_invoice_total_label":"Total",
   "bag_invoice_total_value":"999,99 €",
-  "bag_item_checkout_btn":"Checkout"
+  "bag_item_checkout_btn":"Checkout",
+  "or_contact_us_to_purchase": "Sie können direkt mit uns in Kontakt treten, um Ihre Bestellung aufgeben zu können."
 }
