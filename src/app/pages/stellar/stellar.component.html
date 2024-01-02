@@ -18,7 +18,7 @@
                 <h2 class="amount_text" *ngIf="product !== null">{{ product.formatted_price }}</h2>
               </div>
               <p class="mt_25 phone_border"><span class="phone_para">{{ 'phone_description_stellar_phone' | translate }}</span> {{ 'phone_description_stellar_phone2' | translate }}</p>
-                <p class="phone_para mt_25">{{ 'choose_phone_model' | translate }} -    <a href="#">{{ 'choose_phone_model_what_difference' | translate }}</a></p>
+                <p class="phone_para mt_25">{{ 'choose_phone_model' | translate }}</p>
                 <select name="model" class="input_info" [(ngModel)]="product_id" (change)="getProduct()">
                     <option value="1083fd58-80a4-4ad1-af00-a78547ef82c1">Stellar Phone - Pixel 5A</option>
                     <option value="4cdc0722-830d-4155-934c-9220efa8b7de">Stellar Phone - Pixel 6A</option>
