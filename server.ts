@@ -6,7 +6,7 @@ import * as express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
-const nocache = require("nocache");
+
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
@@ -20,7 +20,7 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', distFolder);
-  server.use(nocache());
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
@@ -36,18 +36,7 @@ export function app(): express.Express {
   return server;
 }
 
-
 function run(): void {
-  const express = require('express');
-const app = express();
-app.use((req:any, res:any, next:any) => {
-  if (req.headers.host.startsWith('www.')) {
-    const newHost = req.headers.host.slice(4); // Remove 'www.'
-    return res.redirect(301, `${req.protocol}://${newHost}${req.originalUrl}`);
-  }
-  next();
-});
-
   const port = process.env['PORT'] || 4000;
 
   // Start up the Node server
