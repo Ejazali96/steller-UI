@@ -36,12 +36,23 @@ export function app(): express.Express {
   return server;
 }
 
+
 function run(): void {
+  const express = require('express');
+const app = express();
+app.use((req:any, res:any, next:any) => {
+  if (req.headers.host.startsWith('www.')) {
+    const newHost = req.headers.host.slice(4); // Remove 'www.'
+    return res.redirect(301, `${req.protocol}://${newHost}${req.originalUrl}`);
+  }
+  next();
+});
+
   const port = process.env['PORT'] || 4000;
 
   // Start up the Node server
-  const server = app();
-  server.listen(port, () => {
+  // const server = app();
+  app.listen(port, () => {
     console.log(`Node Express server listening on http://localhost:${port}`);
   });
 }
