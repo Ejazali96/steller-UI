@@ -1,5 +1,6 @@
 {
 
+  "onlineStore": "Nätbutik",
   "big_head_text": "Maximalt skydd med",
 
   "stellar_security": "Stellar security",
@@ -76,6 +77,8 @@
 
   "choose_subscription": "Välj prenumeration",
 
+  "choose_phone_model": "Välj modell",
+
   "subscription_3_months": "+ 3 månaders licens",
 
   "subscription_6_months": "+ 6 månaders licens",
@@ -83,6 +86,10 @@
   "phone_includes": "Inkluderar – Stellar Phone med en mängd säkerhetsfunktioner, förinstallerade appar, E-SIM-kort, Antivirus, VPN, rensa på avstånd med Stellar Protect, telefonnummer redo för Signal, Telegram, whatsapp och mycket mer. ",
 
   "buy_phone_button": "Köp Stellar Phone",
+
+  "buy_protect_button": "Köp Stellar Protect",
+  "buy_circle_button": "Köp Stellar Circle",
+  "buy_notes_button": "Köp Stellar Notes",
 
   "payment_methods": "Betalningsmetoder",
 
@@ -398,7 +405,7 @@
 
   "email": "E-post:",
 
-  "rightsReserved": "© 2023 – Alla rättigheter reserverade",
+  "rightsReserved": "© 2024 – Alla rättigheter reserverade",
 
   "phone_built_on": "En telefon byggd på",
 
@@ -714,6 +721,8 @@
 
   "security_seller_contact_btn":"Kontakta",
 
+  "stellar_circle_description_works":"Stellar Circle fungerar för alla Android- och AOSP-projekt. Detta inkluderar GrapheneOS, LineageOS, CalyxOS, etc.",
+
   "stellar_circle_welcome_title": "Circle-appen låter dig radera din väns telefon.",
   "stellar_circle_welcome_description": "Stellar Circle samlar alla dina kontakter i en app. Appen låter dig fjärrradera en kontakts telefon med ett klick.",
   "stellar_circle_welcome_list1": "Alla kontakter sparas endast på din telefon.",
@@ -736,6 +745,8 @@
 
 
   "stellar_notes_welcome_title":"Välkommen till Stellar Notes!",
+
+  "stellar_notes_description_works":"Stellar Notes fungerar för alla Android- och AOSP-projekt. Detta inkluderar GrapheneOS, LineageOS, CalyxOS, etc.",
 
   "stellar_notes_welcome_description":"Detta är den säkraste och mest användarvänliga anteckningsappen på marknaden. Dina anteckningar är krypterade med AES-256 och kan endast nås av dig med ditt lösenord.",
 
@@ -843,7 +854,9 @@
 
   "home_stellar_support_description":"Om du behöver hjälp eller har några frågor kan du nå oss genom att skriva. Utforska de tillgängliga kontaktalternativen.",
 
-  "home_stellar_support_button":"Läs mer"
+  "home_stellar_support_button":"Läs mer",
+
+  "or_contact_us_to_purchase": "Du kan också kontakta oss direkt så kan vi ordna leverans till dig."
 
 }
 

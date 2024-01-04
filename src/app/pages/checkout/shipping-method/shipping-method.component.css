@@ -72,8 +72,9 @@ h4.stock_list_head {
 .stock_item {
     display: flex;
     align-items: center;
-    max-width: 250px;
+    max-width: 300px;
     gap: 12px;
+    margin-bottom: 12px;
 }
 .item_head {
     font-size: 18px;
@@ -84,6 +85,11 @@ h4.stock_list_head {
     font-size: 14px;
     line-height: 20px;
     color: #6E7286;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
 }
 .delivery_method_item {
     border: 2px solid #4364FA;
@@ -119,14 +125,23 @@ h4.stock_list_head {
 .near_store {
     font-size: 18px;
     font-family: 'silka-medium';
+    display: flex;
+    gap: 6px;
 }
 .near_store img{
     transform: rotate(-90deg);
 }
 .store_list{
     color: #4364FA;
+    border: 0;
+    width: 100%;
+    overflow: hidden!important;
+    text-overflow: ellipsis;
+    flex: 1;
 }
-
+.store_list:focus-visible{
+outline: 0;
+}
 @media (max-width:575px) {
     .method_tabs_item {
         padding: 14px 8px !important;
@@ -136,4 +151,17 @@ h4.stock_list_head {
     .method_tabs_item span{
         white-space: nowrap;
     }
+    .near_store{
+        flex-wrap: wrap;
+    }
+}
+.sk-img{
+    height: 80px;
+    width: 110px;
+}
+.sk-cost{
+    max-width: 50px;
+}
+.gap-5p{
+    gap: 20%;
 }

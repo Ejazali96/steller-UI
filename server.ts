@@ -6,13 +6,11 @@ import * as express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
-
+const nocache = require("nocache");
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  let distFolder = join(process.cwd(), "browser");if (!existsSync(distFolder)) {
-    distFolder = join(process.cwd(), "dist/stellar-security/browser");
-  }
+  const distFolder = join(process.cwd(), 'stellar-security/browser');
   const indexHtml = existsSync(join(distFolder, 'index.original.html')) ? 'index.original.html' : 'index';
 
   // Our Universal express-engine (found @ https://github.com/angular/universal/tree/main/modules/express-engine)
@@ -22,7 +20,7 @@ export function app(): express.Express {
 
   server.set('view engine', 'html');
   server.set('views', distFolder);
-
+  server.use(nocache());
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser

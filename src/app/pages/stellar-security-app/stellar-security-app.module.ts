@@ -9,6 +9,7 @@ import { StellarProtectDeviceComponent } from './stellar-protect-device/stellar-
 import { FirstClassSafetyComponent } from './first-class-safety/first-class-safety.component';
 import { StellarTrackAccountComponent } from './stellar-track-account/stellar-track-account.component';
 import { StellarSecuritySellerComponent } from './stellar-security-seller/stellar-security-seller.component';
+import {LaddaModule} from "angular2-ladda";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { StellarSecuritySellerComponent } from './stellar-security-seller/stella
   imports: [
     CommonModule,
     StellarSecurityAppRoutingModule,
-    SharedModule
+    SharedModule,
+    LaddaModule
   ]
 })
 export class StellarSecurityAppModule { }

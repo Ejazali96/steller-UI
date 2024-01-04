@@ -22,6 +22,13 @@
                     <div class="head_text head_two">{{ 'stellar_notes_welcome_title' | translate}}</div>
                 </div>
                 <p class="mt_25"> {{ 'stellar_notes_welcome_description' | translate }}</p>
+
+                  <br>
+                  <strong class="mt_25"> {{ 'stellar_notes_description_works' | translate }}</strong>
+                  <div class="text-center text-md-left">
+                      <div class="mt_25"><span class="amount_text amount_price">2.99€</span></div>
+                  </div>
+
                 <ul class="stellar-protected-list mt_25">
                     <li>
                         <img class="img-fluid" src="./../../../assets/img/check-mark.svg" alt="check mark">
@@ -37,6 +44,10 @@
                     </li>
                     
                   </ul>
+
+                  <a href="javascript:void(0)" [ladda]="addingToCart" (click)="onAddToCart()" class="nav_btn mt_25">{{ 'buy_notes_button' | translate }} <img class="img-fluid" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+
+
                   <div class="mt_25">
 
                     {{'available_app_in_other_stores' | translate}}

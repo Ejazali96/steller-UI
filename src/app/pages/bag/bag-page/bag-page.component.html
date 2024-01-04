@@ -1,45 +1,47 @@
-
 <!-- form area start -->
-<div class="bag_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
-        
-        <div class="container pd-top-100 pd-bottom-100">
-            <ng-container *ngIf="!isBagHaveItems">
+<div  class="bag_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
+  <ng-container>
+        <div class="container  pd-bottom-100">
+            <ng-container *ngIf="bagsItems?.products.length == 0">
                 <div class="empty_bag_wrapper d-flex align-items-center justify-content-center flex-column">
                     <h2 class="head_text font_medium">{{'empty_bag_title' | translate}}</h2>
                     <h4 class="font_24 font_medium mt_30">{{'empty_bag_delivery' | translate}}</h4>
                     <img class="empty_bag mt_50 py-5 img-fluid" src="./../../../assets/img/empty-bag.svg" alt="empty_bag">
-                    <a class="nav_btn mt_50" (click)="showBagItems()" style="background-color: #60D38E; color: #fff;cursor: pointer;">{{'empty_bag_shopping_btn' | translate}}</a>
+                    <a class="nav_btn mt_50" href="/stellar-store" (click)="showBagItems()" style="background-color: #60D38E; color: #fff;cursor: pointer;">{{'empty_bag_shopping_btn' | translate}}</a>
                 </div>
             </ng-container>
-            <ng-container *ngIf="isBagHaveItems">
+            <ng-container *ngIf="bagsItems?.products.length > 0 else bagloader">
                 <div class="bag_item_wrapper">
                   <div class="bag_heading mb_48">
                     <h2 class="head_text font_medium">{{'bag_title' | translate}}</h2>
-                    <p class="mt-4" style="color: #6E7286;">{{'bag_description' | translate}}</p>
+                    <!--<p class="mt-4" style="color: #6E7286;">{{'bag_description' | translate}}</p>-->
                   </div>
-                    <app-bag-items >
-                        <ng-container item-image>
-                            <img width="155" src="./../../../assets/img/phone.svg" alt="stellar phone">
-                          </ng-container>
-                          <ng-container item-name>
-                            <h2 class="font_28 font-xs-18 font_medium line-h-44">{{'bag_item_title' | translate}}</h2>
-                          </ng-container>
-                          <ng-container item-price>
-                            <h2 class="font_28 font-xs-18 font_medium line-h-44">{{'bag_item_price' | translate}}</h2>
-                          </ng-container>
-                          <ng-container subs-name>
-                            <div class="d-flex align-items-center">
-                                <img width="17" src="./../../../assets/img/menu_icon01.svg" alt="">
-                                <span class="font_18 font-xs-16 font_medium ml-3">{{'bag_item_subscription_title' | translate}}</span>
-                            </div>
-                          </ng-container>
-                          <ng-container subs-price>
-                            <span class="font_18 font-xs-16 font_medium">{{'bag_item_subscription_price' | translate}}</span>
-                          </ng-container>
-                          <ng-container subs-desc>
-                            <span>{{'bag_item_subscription_description' | translate}}</span>
-                          </ng-container>
-                    </app-bag-items>
+                  <app-bag-items *ngFor="let products of bagsItems.products; index as i" [productType]="products?.product_type">
+                      <ng-container item-image>
+                          <img width="155" src="{{products.images[0].image}}">
+                        </ng-container>
+                        <ng-container item-name>
+                          <h2 class="font_28 font-xs-18 font_medium line-h-44">{{products.description.name}}</h2>
+                            <h2 class="font_16 font-xs-18 font_medium line-h-44">Quantity: {{products.quantity}}</h2>
+                        </ng-container>
+                        <ng-container item-price>
+                          <h2 class="font_28 font-xs-18 font_medium line-h-44">{{products.total}}</h2>
+                          <span class="item-remove" (click)="removeItem(products.id, i)">Remove</span>
+                        </ng-container>
+                        <!--<ng-container subs-name>
+                          <div class="d-flex align-items-center">
+                              <img width="17" src="./../../../assets/img/menu_icon01.svg" alt="">
+                              <span class="font_18 font-xs-16 font_medium ml-3">{{'bag_item_subscription_title' | translate}}</span>
+                          </div>
+                        </ng-container>-->
+                        <!--<ng-container subs-price>
+                          <span class="font_18 font-xs-16 font_medium">{{'bag_item_subscription_price' | translate}}</span>
+                        </ng-container>-->
+                        <!--<ng-container subs-desc>
+                          <span>{{products.description.description}}</span>
+                        </ng-container>-->
+                  </app-bag-items>
+                  
                     <hr class="mt_30" />
                     <div class="bag_item_invoice d-flex mt_30">
                       <div class="flex_1"></div>
@@ -49,7 +51,7 @@
                               <p class="stellerGrayText stellerTextMargin">{{'bag_invoice_subtotal_label' | translate}}</p>
                           </div>
                           <div class="col-auto">
-                              <p class="stellerBlackText stellerTextMargin">{{'bag_invoice_subtotal_value' | translate}}</p>
+                              <p class="stellerBlackText stellerTextMargin">{{bagsItems.total.sub_total}}</p>
                           </div>
                       </div>
                       <div class="row">
@@ -57,33 +59,60 @@
                               <p class="stellerGrayText stellerTextMargin">{{'bag_invoice_shipping_label' | translate}}</p>
                           </div>
                           <div class="col-auto">
-                              <p class="stellerBlackText stellerTextMargin">{{'bag_invoice_shipping_value' | translate}}</p>
+                              <p class="stellerBlackText stellerTextMargin">{{bagsItems.total.shipping_cost}}</p>
                           </div>
                       </div>
-                      <div class="row">
-                          <div class="col">
-                              <p class="stellerGrayText stellerTextMargin">{{'bag_invoice_tax_label' | translate}}</p>
-                          </div>
-                          <div class="col-auto">
-                              <p class="stellerBlackText stellerTextMargin">{{'bag_invoice_tax_value' | translate}}</p>
-                          </div>
-                      </div>
+
                       <hr class="mt_18" />
                       <div class="row mt_18">
                           <div class="col">
                               <h2 class="total_label mb-0 head_text font_medium">{{'bag_invoice_total_label' | translate}}</h2>
                           </div>
                           <div class="col-auto">
-                              <h2 class="total_text mb-0 head_text font_medium">{{'bag_invoice_total_value' | translate}}</h2>
+                              <h2 class="total_text mb-0 head_text font_medium">{{bagsItems.total.total}}</h2>
                           </div>
                       </div>
-                      <a routerLink="/checkout" class="nav_btn mt_18" style="background-color: #60D38E;">{{'bag_item_checkout_btn' | translate}}</a>
+                      <a routerLink="/checkout" class="nav_btn checkout-btn mt_30" style="background-color: #60D38E; float: right">{{'bag_item_checkout_btn' | translate}}</a>
                       </div>
                     </div>
                     
                 </div>
             </ng-container>
-        </div>
 
+
+            <ng-template #bagloader>
+              <div class="container" *ngIf="loading">
+                <div class="bag_item d-flex row px-lg-5 px-3 mb-3" *ngFor="let item of [].constructor(3)">
+                  <div class="col-lg-3 item_image">
+                    <div class="bag-img-item-loader sk"></div>
+                  </div>
+                  <div class="item_info col-lg-9">
+                    <div class="item_header d-flex justify-content-between gap-3">
+                      <div class="item_name w-75">
+                        <div class="sk sk-btn"></div>
+                        <div class="sk sk-p"></div>
+                      </div>
+                      <div class="item_price w-25">
+                        <div class="sk sk-btn"></div>
+                      </div>
+                    </div>
+                    <hr class="mt_18">
+                    <div class="tab-content mt_18" id="nav-tabContent">
+                      <div class="sk sk-h w-50"></div>
+                      <div class="sk sk-p w-50"></div>
+                    </div>
+              
+                  </div>
+                </div>
+               
+              </div>
+              
+            </ng-template>
+        </div>
+        </ng-container> 
 </div>
+
+
+
+
 
