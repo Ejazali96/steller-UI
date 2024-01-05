@@ -1,15 +1,16 @@
 <div [class]="isRight?'home-card-wrapper position-relative right-side-card':'home-card-wrapper position-relative'">
-    <img loading="lazy" src="./../../../assets/img/card-glow.png" class="card-glow-img img-fluid"loading="lazy" >
-   <div class="home-card-header position-relative">
-        <h1 class="head_text head_two">{{stellarCardheading1 | translate}} <span class="color-purple">{{stellarCardheading2 | translate}}</span></h1>
-        <img [src]="'./../../../assets/img/'+stellarCardheadingIcon" alt="header-icon" loading="lazy">
-   </div>
-   <div class="home-card-body position-relative">
-        <p class="mt_20 font-size-24">{{stellarCarddescription | translate}}</p>
-        <div class="d-flex align-items-center"> 
-          <a  [href]="stellarCardbuttonLink" class="make_btn mt_20">{{stellarCardbuttonText | translate}}</a>
-          <a  *ngIf="stellarCardheading1 !== 'home_stellar_support_title1'" [href]="stellarCardbuttonLink" class="make_btn mt_20 ml-3">{{'home_stellar_card_common_buyNow_btn' | translate}}</a>
-        </div>
-   </div>
-   <img loading="lazy" [src]="'./../../../assets/img/'+stellarCardmainImage" [class]="stellarCardmainImage=='card-vpn.png'?'stellar-product-image img-fluid btm-neg':'stellar-product-image img-fluid'" alt="stellar-product-image" >
-</div>
+     <img loading="lazy" src="./../../../assets/img/card-glow.png" class="card-glow-img img-fluid">
+    <div class="home-card-header position-relative">
+         <h1 class="head_text head_two">{{stellarCardheading1 | translate}} <span class="color-purple">{{stellarCardheading2 | translate}}</span></h1>
+         <img [src]="'./../../../assets/img/'+stellarCardheadingIcon" alt="header-icon">
+    </div>
+    <div class="home-card-body position-relative">
+         <p class="mt_20 font-size-24">{{stellarCarddescription | translate}}</p>
+         <div class="d-flex align-items-center"> 
+           <a  [href]="stellarCardbuttonLink" class="make_btn mt_20">{{stellarCardbuttonText | translate}}</a>
+           <a  *ngIf="stellarCardheading1 !== 'home_stellar_support_title1'" [href]="stellarCardbuttonLink" class="make_btn mt_20 ml-3">{{'home_stellar_card_common_buyNow_btn' | translate}}</a>
+         </div>
+    </div>
+    <img loading="lazy" [src]="'./../../../assets/img/'+stellarCardmainImage" [class]="stellarCardmainImage=='card-vpn.png'?'stellar-product-image img-fluid btm-neg':'stellar-product-image img-fluid'" alt="stellar-product-image">
+ </div>
+ 

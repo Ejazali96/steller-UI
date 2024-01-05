@@ -1,104 +1,99 @@
-<ng-container *ngIf="getTranslation">
-  <div class="top-main-section position-relative" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
-    <img class="stellar-main-glow img-fluid" loading="lazy" src="./../../../assets/img/main-glow.png" alt="stellar-main-glow">
-    <app-main-header [title]="'big_head_text'| translate" [boldTitle]="'stellar_security' | translate" ></app-main-header>
-     <div class="container pd-top-100">
-      <h1>Maximum protection with</h1>
-      <div class="row align-items-center">
-        <div class="col-lg-6">
-          <img src="./../../../assets/img/stellar-security-main.svg" loading="lazy" class="img-fluid" alt="stellar-security-main">
-        </div>
-      <div class="col-lg-6 py-5 py-lg-0 text-center text-lg-left">
-        <h2 class="head_text head_two">{{'home_page_main_phone_title1' | translate}} <span class="color-purple">{{'home_page_main_phone_title2' | translate}}</span></h2>
-        <p class="mt_20 font-size-24">{{'home_page_main_phone_description' | translate}}</p>
-        <div class="d-flex mt_20 py-2 justify-content-center justify-content-lg-start">
-         <!-- <span>{{'home_page_main_phone_availability' | translate}} </span>-->
-            <!--<span class="ml-3"><img src="./../../../assets/img/android_icon.svg" alt="android-icon"></span>-->
-        </div>
-        <div class="d-flex mt_30 justify-content-center justify-content-lg-start">
-          <a href="/stellar-phone" class="nav_btn">{{'home_page_main_phone_button1' | translate}} <img loading="lazy" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
-          <a  href="/stellar-phone" class="make_btn ml-3">{{'home_page_main_phone_button2' | translate}} </a>
-        </div>
+<div class="top-main-section position-relative" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
+  <img class="stellar-main-glow img-fluid" loading="lazy" src="./../../../assets/img/main-glow.png" alt="stellar-main-glow">
+  <app-main-header [title]="'big_head_text'| translate" [boldTitle]="'stellar_security' | translate" ></app-main-header>
+   <div class="container pd-top-100">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <img src="./../../../assets/img/stellar-security-main.svg" loading="lazy" class="img-fluid" alt="stellar-security-main">
       </div>
+    <div class="col-lg-6 py-5 py-lg-0 text-center text-lg-left">
+      <h2 class="head_text head_two">{{'home_page_main_phone_title1' | translate}} <span class="color-purple">{{'home_page_main_phone_title2' | translate}}</span></h2>
+      <p class="mt_20 font-size-24">{{'home_page_main_phone_description' | translate}}</p>
+      <div class="d-flex mt_20 py-2 justify-content-center justify-content-lg-start">
+       <!-- <span>{{'home_page_main_phone_availability' | translate}} </span>-->
+          <!--<span class="ml-3"><img src="./../../../assets/img/android_icon.svg" alt="android-icon"></span>-->
       </div>
-     </div>
-  </div>
-  <div class="stellar-home-card-list pd-top-100">
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_protect_title1'" [stellarCardheading2]="'home_stellar_protect_title2'" [stellarCarddescription]="'home_stellar_protect_description'" [stellarCardheadingIcon]="'stellar-ptotect-card-Icon.svg'" [stellarCardmainImage]="'card-protect.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_protect_button'" [stellarCardbuttonLink]="'/stellar-protect'"></app-stellar-home-cards>
-  
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_antivirus_title1'" [stellarCardheading2]="'home_stellar_antivirus_title2'" [stellarCarddescription]="'home_stellar_antivirus_description'" [stellarCardheadingIcon]="'stellar-antivirus-card-Icon.svg'" [stellarCardmainImage]="'card-antivirus.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_antivirus_button'" [stellarCardbuttonLink]="'/stellar-antivirus'"></app-stellar-home-cards>
-  
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_vpn_title1'" [stellarCardheading2]="'home_stellar_vpn_title2'" [stellarCarddescription]="'home_stellar_vpn_description'" [stellarCardheadingIcon]="'stellar-vpn-card-Icon.svg'" [stellarCardmainImage]="'card-vpn.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_vpn_button'" [stellarCardbuttonLink]="'/stellar-vpn'"></app-stellar-home-cards>
-  
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_esim_title1'" [stellarCardheading2]="'home_stellar_esim_title2'" [stellarCarddescription]="'home_stellar_esim_description'" [stellarCardheadingIcon]="'stellar-esim-card-Icon.svg'" [stellarCardmainImage]="'card-esim.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_esim_button'" [stellarCardbuttonLink]="'/stellar-esim'"></app-stellar-home-cards>
-  
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_notes_title1'" [stellarCardheading2]="'home_stellar_notes_title2'" [stellarCarddescription]="'home_stellar_notes_description'" [stellarCardheadingIcon]="'stellar-notes-card-Icon.svg'" [stellarCardmainImage]="'card-notes.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_notes_button'" [stellarCardbuttonLink]="'/stellar-notes'"></app-stellar-home-cards>
-  
-      <app-stellar-home-cards [stellarCardheading1]="'home_stellar_support_title1'" [stellarCardheading2]="'home_stellar_support_title2'" [stellarCarddescription]="'home_stellar_support_description'" [stellarCardheadingIcon]="'stellar-support-card-Icon.svg'" [stellarCardmainImage]="'card-support.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_support_button'" [stellarCardbuttonLink]="'/contact-us'"></app-stellar-home-cards>
-  
-  </div>
-  
-      <!-- section areas area start -->
-      <div class="areas_wrapper d-none">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-12 text-center">
-              <h2 class="head_text">{{ 'security_head_text' | translate }} <span>{{ 'security' | translate }}</span></h2>
+      <div class="d-flex mt_30 justify-content-center justify-content-lg-start">
+        <a href="/stellar-phone" class="nav_btn">{{'home_page_main_phone_button1' | translate}} <img loading="lazy" src="./../../../assets/img/basket_icon.svg" alt="basket_icon"></a>
+        <a  href="/stellar-phone" class="make_btn ml-3">{{'home_page_main_phone_button2' | translate}} </a>
+      </div>
+    </div>
+    </div>
+   </div>
+</div>
+<div class="stellar-home-card-list pd-top-100">
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_protect_title1'" [stellarCardheading2]="'home_stellar_protect_title2'" [stellarCarddescription]="'home_stellar_protect_description'" [stellarCardheadingIcon]="'stellar-ptotect-card-Icon.svg'" [stellarCardmainImage]="'card-protect.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_protect_button'" [stellarCardbuttonLink]="'/stellar-protect'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_antivirus_title1'" [stellarCardheading2]="'home_stellar_antivirus_title2'" [stellarCarddescription]="'home_stellar_antivirus_description'" [stellarCardheadingIcon]="'stellar-antivirus-card-Icon.svg'" [stellarCardmainImage]="'card-antivirus.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_antivirus_button'" [stellarCardbuttonLink]="'/stellar-antivirus'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_vpn_title1'" [stellarCardheading2]="'home_stellar_vpn_title2'" [stellarCarddescription]="'home_stellar_vpn_description'" [stellarCardheadingIcon]="'stellar-vpn-card-Icon.svg'" [stellarCardmainImage]="'card-vpn.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_vpn_button'" [stellarCardbuttonLink]="'/stellar-vpn'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_esim_title1'" [stellarCardheading2]="'home_stellar_esim_title2'" [stellarCarddescription]="'home_stellar_esim_description'" [stellarCardheadingIcon]="'stellar-esim-card-Icon.svg'" [stellarCardmainImage]="'card-esim.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_esim_button'" [stellarCardbuttonLink]="'/stellar-esim'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_notes_title1'" [stellarCardheading2]="'home_stellar_notes_title2'" [stellarCarddescription]="'home_stellar_notes_description'" [stellarCardheadingIcon]="'stellar-notes-card-Icon.svg'" [stellarCardmainImage]="'card-notes.png'" [isRight]="false" [stellarCardbuttonText]="'home_stellar_notes_button'" [stellarCardbuttonLink]="'/stellar-notes'"></app-stellar-home-cards>
+
+    <app-stellar-home-cards [stellarCardheading1]="'home_stellar_support_title1'" [stellarCardheading2]="'home_stellar_support_title2'" [stellarCarddescription]="'home_stellar_support_description'" [stellarCardheadingIcon]="'stellar-support-card-Icon.svg'" [stellarCardmainImage]="'card-support.png'" [isRight]="true" [stellarCardbuttonText]="'home_stellar_support_button'" [stellarCardbuttonLink]="'/contact-us'"></app-stellar-home-cards>
+
+</div>
+
+    <!-- section areas area start -->
+    <div class="areas_wrapper d-none">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 text-center">
+            <h2 class="head_text">{{ 'security_head_text' | translate }} <span>{{ 'security' | translate }}</span></h2>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+            <div class="areas_item text-center">
+              <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'phone' | translate }}</span></h3>
+              <img class="img-fluid" src="./../../../assets/img/areas_icon01.svg" alt="areas_icon01">
+              <p>{{ 'phone_description' | translate }}</p>
+              <a class="make_btn" href="/stellar-phone">{{ 'read_more' | translate }}</a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-              <div class="areas_item text-center">
-                <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'phone' | translate }}</span></h3>
-                <img class="img-fluid" src="./../../../assets/img/areas_icon01.svg" alt="areas_icon01">
-                <p>{{ 'phone_description' | translate }}</p>
-                <a class="make_btn" href="/stellar-phone">{{ 'read_more' | translate }}</a>
-              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+            <div class="areas_item text-center">
+              <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'antivirus' | translate }}</span></h3>
+              <img class="img-fluid" src="./../../../assets/img/areas_icon02.svg" alt="areas_icon02">
+              <p>{{ 'antivirus_description' | translate }}</p>
+              <a class="make_btn" href="/stellar-antivirus" >{{ 'read_more' | translate }}</a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-              <div class="areas_item text-center">
-                <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'antivirus' | translate }}</span></h3>
-                <img class="img-fluid" src="./../../../assets/img/areas_icon02.svg" alt="areas_icon02">
-                <p>{{ 'antivirus_description' | translate }}</p>
-                <a class="make_btn" href="/stellar-antivirus" >{{ 'read_more' | translate }}</a>
-              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+            <div class="areas_item text-center">
+              <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'vpn' | translate }}</span></h3>
+              <img class="img-fluid" src="./../../../assets/img/areas_icon03.svg" alt="areas_icon03">
+              <p>{{ 'vpn_description' | translate }}</p>
+              <a class="make_btn" href="/stellar-vpn">{{ 'read_more' | translate }}</a>
             </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-              <div class="areas_item text-center">
-                <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'vpn' | translate }}</span></h3>
-                <img class="img-fluid" src="./../../../assets/img/areas_icon03.svg" alt="areas_icon03">
-                <p>{{ 'vpn_description' | translate }}</p>
-                <a class="make_btn" href="/stellar-vpn">{{ 'read_more' | translate }}</a>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-              <div class="areas_item text-center">
-                <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'support' | translate }}</span></h3>
-                <img class="img-fluid" src="./../../../assets/img/areas_icon04.svg" alt="areas_icon04">
-                <p>{{ 'support_description' | translate }}</p>
-                <a class="make_btn" href="/contact-us">{{ 'read_more' | translate }}</a>
-              </div>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
+            <div class="areas_item text-center">
+              <h3 class="head_two">{{ 'stellar' | translate }}<span> {{ 'support' | translate }}</span></h3>
+              <img class="img-fluid" src="./../../../assets/img/areas_icon04.svg" alt="areas_icon04">
+              <p>{{ 'support_description' | translate }}</p>
+              <a class="make_btn" href="/contact-us">{{ 'read_more' | translate }}</a>
             </div>
           </div>
         </div>
       </div>
-  
-  
-   <app-customer-reviews></app-customer-reviews>
-  
-    <!-- section areas area end -->
-  
-    <!-- section customer start end -->
-  
-    <app-customer-section></app-customer-section>
-  
-    <!-- section customer area end -->
-  
-  
-    <!-- section security area end -->
-  
-  <app-security-section></app-security-section>
-  
-    <!-- section security area end -->
-  
-  
-</ng-container>
+    </div>
+
+
+ <app-customer-reviews></app-customer-reviews>
+
+  <!-- section areas area end -->
+
+  <!-- section customer start end -->
+
+  <app-customer-section></app-customer-section>
+
+  <!-- section customer area end -->
+
+
+  <!-- section security area end -->
+
+<app-security-section></app-security-section>
+
+  <!-- section security area end -->
 

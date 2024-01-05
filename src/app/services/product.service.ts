@@ -3,7 +3,6 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { ProductDto, addCartDto } from '../constants/models/product';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 @Injectable({
   providedIn: 'root'
@@ -49,12 +48,10 @@ export class ProductService {
   }
 
   addToCart(data:addCartDto) : Observable<any>{
-    
     return  this.http.post<any>(baseUrl + productApi.addToCart, data)
   }
 
   minicart(token_id: any) {
-    console.log('data',token_id)
     return this.http.get<any>(baseUrl + productApi.minicart + token_id)
   }
 
