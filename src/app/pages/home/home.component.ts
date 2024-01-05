@@ -1,6 +1,8 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Meta } from '@angular/platform-browser';
 import { TranslateService } from '@ngx-translate/core';
+import { TranslatorService } from 'src/app/services/translator.service';
 
 @Component({
   selector: 'app-home',
@@ -8,15 +10,22 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent  {
+  getTranslation:any
   metaDescription:string = 'Experience stellar security solutions that safeguard your digital assets. Our cutting-edge technology ensures protection against cyber threats. Explore peace of mind today!';
   metaTitle:string = 'Stellar Security - Because your privacy matters';
   metaKeywords:string = 'Stellar Home, stellar security, and so on';
-  constructor(private meta: Meta) {
+  constructor(private translator: TranslatorService,private translate: TranslateService) {
+    if (typeof navigator !== 'undefined') {
+      this.translator.loadTranslations('./assets/i18n/').subscribe(res=>{
+        this.getTranslation = res
+      })
+ 
+    }
+   
   }
   ngOnInit(){
-    // this.meta.addTag({ name: 'description', content: 'This is the description for the page.' });
-    // this.meta.addTag({ property: 'og:title', content: 'My Page Title' });
-    // this.meta.addTag({ property: 'keywords', content: 'stellar Home, antivirus, security, protection, vpn' });
+    
+  
   }
 
   ngOnDestroy() {

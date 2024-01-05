@@ -1,26 +1,16 @@
-import {AfterViewInit, Component, Renderer2} from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-
+import {Component, OnInit} from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'stellar-security';
-  constructor(private translate: TranslateService) {
-    if (typeof navigator !== 'undefined') {
-      let language = navigator.language;
-      language = language.substr(0, 2);
-  
-  
-      this.translate.addLangs(['en', 'de', 'da', 'se']);
-  
-      this.translate.setDefaultLang('en');
-  
-      this.translate.use(language);
-    }
+  constructor() {
+    
    
   }
-
+  ngOnInit() {
+    
+}
 }
