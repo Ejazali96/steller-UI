@@ -19,6 +19,7 @@ import { CheckoutPageComponent } from '../pages/checkout-page/checkout-page.comp
 import { TranslateModule } from '@ngx-translate/core';
 import { MetaTagsDirective } from '../directives/meta-tags.directive';
 import {CustomerReviewsComponent} from "../components/customer-reviews/customer-reviews.component";
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -62,6 +63,7 @@ import {CustomerReviewsComponent} from "../components/customer-reviews/customer-
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     TranslateModule.forChild(),
   ]
 })

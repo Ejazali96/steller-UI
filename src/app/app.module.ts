@@ -10,7 +10,11 @@ import { HttpClient } from '@angular/common/http';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CustomerReviewsComponent } from './components/customer-reviews/customer-reviews.component';
 import { LaddaModule } from 'angular2-ladda';
-
+import { TranslatorService } from './services/translator.service';
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http);
+  }
+  
 @NgModule({
     declarations: [
         AppComponent,
@@ -20,10 +24,16 @@ import { LaddaModule } from 'angular2-ladda';
         AppRoutingModule,
         HttpClientModule,
         LaddaModule,
-        TranslateModule.forRoot(),
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: HttpLoaderFactory,
+                deps: [HttpClient],
+              },
+        }),
         MainModule
     ],
-    providers: [provideClientHydration() ],
+    providers: [provideClientHydration(),TranslatorService ],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
