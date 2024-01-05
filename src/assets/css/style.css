@@ -106,13 +106,13 @@ section {
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   background: #ffffff;
   color: #0b1319;
-  font-family: silka-regular;
+  font-family: silka-regular, sans-serif !important;
 }
-
 html {
   font-size: 62.5%;
 }
