@@ -343,6 +343,7 @@
   "stellar_safeguard_amount_list_5":"Automatisk sletning efter en specifik mængde inaktivitet.",
   "stellar_safeguard_amount_list_6":"USB-data udtrækningsopfanger, som rydder telefonen hvis dataudtrækning bliver opfanget.",
   "stellar_safeguard_amount_list_7":"Protect kan opfange hvis din telefon er blevet stjålet mens den er låst op og vil automatisk låse telefonen med dit password.",
+  "stellar_safeguard_amount_list_8":"Hvis du modtager en notifikation, som indeholder din Wipe token, så vil Protect slette din telefon.",
   "stellar_your_privacy_main_title_before":"Fordi",
   "stellar_your_privacy_bold_purple_title":"dit privatliv",
   "stellar_your_privacy_main_title_after":"betyder mest",

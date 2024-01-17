@@ -342,6 +342,7 @@
   "stellar_safeguard_amount_list_5":"Automatische Löschung nach einer bestimmten Zeit der Inaktivität.",
   "stellar_safeguard_amount_list_6":"USB-Datenextraktionsdetektor, der das Telefon löscht, wenn eine Datenextraktion festgestellt wird.",
   "stellar_safeguard_amount_list_7":"Protect kann erkennen, ob Ihr Telefon gestohlen wurde, während es nicht gesperrt war, und sperrt es automatisch mit Ihrem Passwort.",
+  "stellar_safeguard_amount_list_8": "Wenn Sie eine Benachrichtigung mit Ihrem Wipe-Token erhalten, löscht Protect Ihr Telefon.",
   "stellar_your_privacy_main_title_before":"Weil",
   "stellar_your_privacy_bold_purple_title":"Ihre Privatsphäre",
   "stellar_your_privacy_main_title_after":"das Wichtigste ist",
