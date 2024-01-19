@@ -11,8 +11,8 @@ import {addCartDto} from "../../../constants/models/product";
 })
 export class StellarSecurityComponent {
   metaDescription:string = 'Stellar Protect is the most advanced security app that protects your device in a way no other can do.';
-  metaTitle:string = 'Stellar Security - Stellar Protect';
-  metaKeywords:string = 'Stellar Protect, stellar security, and so on';
+  metaTitle:string = 'Stellar Protect - Stellar Security';
+  metaKeywords:string = 'Stellar Protect, protect, stellar security, and so on';
 
   public addingToCart = false;
 
