@@ -10,7 +10,7 @@ import { FirstClassSafetyComponent } from './first-class-safety/first-class-safe
 import { StellarTrackAccountComponent } from './stellar-track-account/stellar-track-account.component';
 import { StellarSecuritySellerComponent } from './stellar-security-seller/stellar-security-seller.component';
 import {LaddaModule} from "angular2-ladda";
-
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -25,7 +25,8 @@ import {LaddaModule} from "angular2-ladda";
     CommonModule,
     StellarSecurityAppRoutingModule,
     SharedModule,
-    LaddaModule
+    LaddaModule,
+    CarouselModule
   ]
 })
 export class StellarSecurityAppModule { }

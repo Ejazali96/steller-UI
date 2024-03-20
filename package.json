@@ -30,6 +30,7 @@
     "angular2-ladda": "^5.0.0",
     "express": "^4.15.2",
     "ladda": "^2.0.3",
+    "ngx-owl-carousel-o": "^17.0.0",
     "nocache": "^4.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
