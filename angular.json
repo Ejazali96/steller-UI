@@ -103,9 +103,7 @@
               "src/assets/css/style.css",
               "src/assets/css/responsive.css",
               "src/assets/css/owl.carousel.min.css",
-              "src/assets/css/magnific-popup.css",
-              "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.carousel.min.css",
-    "node_modules/ngx-owl-carousel-o/lib/styles/prebuilt-themes/owl.theme.default.min.css"
+              "src/assets/css/magnific-popup.css"
             ],
             "scripts": [
               "src/assets/js/jquery-3.4.1.min.js",

@@ -30,12 +30,84 @@
           </div>
 
           <div class="steller-button">
-            <button class="get-app">Get App</button>
-            <button class="subscribe-btn">Subscribe</button>
+            <button class="get-app" (click)="showAppModal = !showAppModal">Get App</button>
+            <button class="subscribe-btn" data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</button>
+            <div class="modal-cstm" id="getapp" *ngIf="showAppModal">
+              <div class="social-modal-dialog">
+                <div class="modal-body app-btn-img">
+                  <img src="../../../../assets/img/Aptoide_btn.png" alt="Aptoide-btn">
+                  <img src="../../../../assets/img/google-play.png" alt="play-store">
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
+        <!-- Modal for play store and app store-->
+
+
+<!-- Modal for subscribe-->
+<div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="subscribe" aria-hidden="true">
+  <div class="modal-dialog subscribe-modal">
+    <div class="modal-content">
+      <div class="modal-header p-0 border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      <div class="modal-body">
+        <div class="d-flex  align-items-center ">
+          <div class="steller-icon-get">
+            <img src="../../../../assets/img/users.png" alt="user">
+          </div>
+
+          <div class="steller-subscribtion">
+            <h3>Stellar Circle</h3>
+          </div>
+          
+        </div>
+        <div class="subscribe-modal-title-detail">
+          <h3>Pick the subscription</h3>
+          <p>Choose the subscription that best fits your</p>
+        </div>
+        <div class="selection-card">
+          <div class="d-flex align-items-center">
+            <p>Choose your charging plan</p>
+            <i class="fas fa-info-circle ms-2"></i>
+          </div>
+          <div class="d-flex mt-3 flex-gap">
+            <div class="plan-card">
+              <p>Monthly</p>
+              <strong>7,99 €</strong>
+            </div>
+            <div class="plan-card">
+              <p>Quarterly</p>
+              <strong>20,99 €</strong>
+            </div>
+            <div class="plan-card">
+              <p>Twice a Year</p>
+              <strong>39,99 €</strong>
+            </div>
+            <div class="plan-card">
+              <p>Annualy</p>
+              <strong>75.99 €</strong>
+            </div>
+          </div>
+        </div>
+          <div class="steller-button steller-continue w-100">
+            <button class="subscribe-btn">Continue</button>
+          </div>
+      </div>
+      <div class="subscribe-modal-footer">
+       <p>Or get from stores</p>
+       <div class=" app-btn-img subscribe-image">
+        <img src="../../../../assets/img/Aptoide_btn.png" alt="Aptoide-btn">
+        <img src="../../../../assets/img/google-play.png" class="ms-1" alt="play-store">
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
       <div class="d-flex justify-content-center align-items-center mb-5 pb-5 mobile-wrap">
         <div class="andriod-icon">
           <img src="../../../../assets/img/andriod-icon.png" alt="andriod icon">
@@ -95,8 +167,7 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/remote-wipe.png" alt="" class="img-1">
                 </div>
 
               </div>
@@ -116,8 +187,7 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/alive-proctect.png" alt="" class="img-1">
                 </div>
 
               </div>
@@ -137,8 +207,7 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/shake-detector.png" alt="" class="img-1">
                 </div>
 
               </div>
@@ -162,8 +231,7 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/drop-detector.png" alt="" class="img-1">
                 </div>
 
 
@@ -185,8 +253,7 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/usb-detection.png" alt="" class="img-1">
                 </div>
 
 
@@ -207,8 +274,27 @@
               </div>
               <div class="inner-image">
                 <div class="d-flex hover-img ">
-                  <img src="../../../../assets/img/steller-mobile.png" alt="" class="img-1">
-                  <img src="../../../../assets/img/test_image.png" alt="" class="img-2">
+                  <img src="../../../../assets/new-img/wipe-after-password.png" alt="" class="img-1">
+                </div>
+
+
+              </div>
+            </div>
+            <div class="play-icon">
+              <img src="../../../../assets/img/play_video.svg" alt="play">
+            </div>
+
+          </div>
+          <div class="card-detail fixed-height">
+            <h4>Wipe Phone after a certain time of inactivity</h4>
+            <p>The phone will be completely deleted if there is 20+ failed password attempts</p>
+            <div class="position-relative">
+              <div class="side-image">
+                <img src="../../../../assets/img/icons/live-detector.png" alt="">
+              </div>
+              <div class="inner-image">
+                <div class="d-flex hover-img ">
+                  <img src="../../../../assets/new-img/wipe-after-time.png" alt="" class="img-1">
                 </div>
 
 
@@ -224,30 +310,104 @@
       </div>
     </div>
   </div>
+
+    <section class="animation-card section_margin">
+    <div class="container">
+     
+      <!-- card-1 -->
+      <div class="promo-card mb-5 z-index-0 snubed-artist">
+        <div class="container">
+          <div class="card-flex">
+            <div class="mob-width">
+              <div class="innner-detail-circle">
+               
+              </div>
+            </div>
+            <div class=" mob-width">
+              <div class="promocard-detail">
+                <div class="innner-detail ">
+                  <h5>Get access to your account easy.</h5>
+                  <p>Get access to your account easy.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- card-2 -->
+      <div class="promo-card mb-5 z-index-0 Transfer-risk">
+        <div class="container">
+          <div class="card-flex">
+            <div class=" mob-width">
+              <div class="innner-detail-circle">
+               
+              </div>
+            </div>
+            <div class=" mob-width">
+              <div class="promocard-detail">
+                <div class="innner-detail ">
+                  <h5>Remote Lock & Wipe</h5>
+                  <p>Remotely lock and wipe your phone to keep your data safe in any situation.</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- card-3 -->
+      <div class="promo-card mb-5 z-index-0 navigation">
+        <div class="container">
+          <div class="card-flex">
+            <div class=" mob-width">
+              <div class="innner-detail-circle">
+               <img src="../../../../assets/new-img/track-your-account.png" alt="">
+              </div>
+            </div>
+            <div class="mob-width">
+              <div class="promocard-detail">
+                <div class="innner-detail ">
+                  <h5>Always keep track of your account</h5>
+                  <p>
+                    Protect allows you to choose which security functions you want to be enabled. But it also gives a overview of your subscription info.
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+      </div>
+   
+     
+    </div>
+  </section>
+
   <!-- Testimonial section -->
   <div class="testimonial">
     <div class="title">
       Testimonials
     </div>
-    <owl-carousel-o [options]="customOptions">
+    <owl-carousel-o [options]="customOptions" class="owl-side-effect">
       <ng-template carouselSlide>
         <div class="testimonial_card">
           <img src="../../../../assets/img/comma.png" alt="" class="comma">
-          <p class="mt-5">I recently lost my phone while traveling, and I was worried about my personal data falling
-            into the wrong
+          <img src="../../../../assets/img/comma-blue.png"  alt="" class="comma blue">
+          <p class="mt-5">I recently lost my phone while traveling, and I was worried about my personal data falling into the wrong
             hands. Thanks to Stellar Protect's remote wipe feature, I was able to erase all my data remotely and avoid a
             potential disaster!</p>
-          <div class="designation">
-            <p>David Stevens</p>
-            <p>SecureData Corp</p>
-          </div>
+            <div class="designation">
+              <p>David Stevens</p>
+              <p>SecureData Corp</p>
+            </div>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="testimonial_card">
           <img src="../../../../assets/img/comma.png" alt="" class="comma">
-          <p class="mt-5">I've tried other security apps before, but none of them compare to this one. Its comprehensive
-            set of
+          <img src="../../../../assets/img/comma-blue.png"  alt="" class="comma blue">
+          <p class="mt-5">I've tried other security apps before, but none of them compare to this one. Its comprehensive set of
             features, user-friendly interface, and affordable pricing make it the perfect choice for individuals and
             businesses alike</p>
           <div class="designation">
@@ -259,8 +419,8 @@
       <ng-template carouselSlide>
         <div class="testimonial_card">
           <img src="../../../../assets/img/comma.png" alt="" class="comma">
-          <p class="mt-5">I've tried several security apps in the past, but Stellar Protect is by far the best! Its
-            intuitive
+          <img src="../../../../assets/img/comma-blue.png"  alt="" class="comma blue">
+          <p class="mt-5">I've tried several security apps in the past, but Stellar Protect is by far the best! Its intuitive
             interface and powerful features make it a must-have for anyone concerned about online security</p>
           <div class="designation">
             <p>Sarah Miller</p>
@@ -271,21 +431,21 @@
       <ng-template carouselSlide>
         <div class="testimonial_card">
           <img src="../../../../assets/img/comma.png" alt="" class="comma">
-          <p class="mt-5">I recently lost my phone while traveling, and I was worried about my personal data falling
-            into the wrong
+          <img src="../../../../assets/img/comma-blue.png"  alt="" class="comma blue">
+          <p class="mt-5">I recently lost my phone while traveling, and I was worried about my personal data falling into the wrong
             hands. Thanks to Stellar Protect's remote wipe feature, I was able to erase all my data remotely and avoid a
             potential disaster!</p>
-          <div class="designation">
-            <p>David Stevens</p>
-            <p>SecureData Corp</p>
-          </div>
+            <div class="designation">
+              <p>David Stevens</p>
+              <p>SecureData Corp</p>
+            </div>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="testimonial_card">
           <img src="../../../../assets/img/comma.png" alt="" class="comma">
-          <p class="mt-5">I've tried other security apps before, but none of them compare to this one. Its comprehensive
-            set of
+          <img src="../../../../assets/img/comma-blue.png"  alt="" class="comma blue">
+          <p class="mt-5">I've tried other security apps before, but none of them compare to this one. Its comprehensive set of
             features, user-friendly interface, and affordable pricing make it the perfect choice for individuals and
             businesses alike</p>
           <div class="designation">
@@ -304,7 +464,7 @@
 <section class="counter-section">
   <div class="counter_title">
     <h3>The most convenient way to be maximum secured</h3>
-    <div class="d-flex counter-main">
+    <div class="d-flex counter-main"> 
       <div class="counter-card">
         <h1>{{ usersSaved }}</h1>
         <p>Users saved from data leaking</p>
@@ -319,6 +479,27 @@
       </div>
     </div>
 
+  </div>
+  <div class="get-steller-card shadow">
+    <div class="d-flex justify-content-between align-items-center w-100 get-bnt-mobile">
+
+      <div class="d-flex  align-items-center ">
+        <div class="steller-icon-get">
+          <img src="../../../../assets/img/Stellar_Protect_icon.svg" alt="">
+        </div>
+
+        <div class="steller-subscribtion">
+          <p>Subscribe to Stellar Protect</p>
+          <h3>Starting from <span> $7.99/mo</span></h3>
+        </div>
+      </div>
+
+      <div class="steller-button">
+        <button class="get-app" data-bs-toggle="modal" data-bs-target="#getapp">Get App</button>
+        <button class="subscribe-btn" data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</button>
+      </div>
+
+    </div>
   </div>
 </section>
 

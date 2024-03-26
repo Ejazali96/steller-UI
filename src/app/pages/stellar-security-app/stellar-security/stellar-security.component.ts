@@ -17,6 +17,7 @@ export class StellarSecurityComponent {
     "Stellar Protect, protect, stellar security, and so on";
   usersSaved: number = 0;
   purchases: number = 0;
+  showAppModal=false
   screensProtected: number = 0;
   public addingToCart = false;
 
@@ -86,7 +87,8 @@ export class StellarSecurityComponent {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
-    margin: 10,
+    margin: 32,
+    center: true,
     autoWidth: true,
     pullDrag: true,
     dots: false,
