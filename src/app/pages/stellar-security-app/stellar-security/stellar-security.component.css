@@ -673,6 +673,10 @@ ul.stellar-protected-list li {
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (max-width: 991.98px) {
+  .inner-image img {
+    height: 100%;
+    width: 100%;
+}
   .steller-title {
     margin-top: 25px !important;
     font-size: 30px;
@@ -682,17 +686,20 @@ ul.stellar-protected-list li {
   .steller-mobile {
     margin-top: 2rem;
   }
-  .steller-mobile img {
-    height: 100%;
-    width: 100%;
-  }
+.steller-card-title{
+  display: flex;
+  align-items: center;
+}
+.steller-card-title img {
+  height: 50px;
+}
   .protect-content {
     margin-top: 16px !important;
     font-size: 13px;
     width: 100%;
   }
   .get-steller-card {
-    width: 100%;
+    width: 90%;
     margin-top: 27px !important;
     height: 140px;
     border-radius: 24px;
@@ -720,14 +727,14 @@ ul.stellar-protected-list li {
     flex-wrap: wrap;
     width: 100%;
     padding-top: 30px;
-    gap: 20px;
+    gap: 8px;
   }
   .steller-card {
-    padding: 2.3rem;
-    width: 100%;
+    padding: 2rem;
+    width: 32%;
   }
   .steller-card-title h5 {
-    font-size: 18px;
+    font-size: 13px;
   }
   .steller-card p {
     margin-top: 0px;
@@ -771,7 +778,7 @@ ul.stellar-protected-list li {
     font-size: 17px;
   }
   ::ng-deep .owl-nav {
-    top: -35px;
+    top: -77px;
     right: 25px;
     gap: 8px;
   }
@@ -842,6 +849,16 @@ ul.stellar-protected-list li {
 }
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .steller-subscribtion h3 {
+    font-size: 14px;
+}
+.steller-subscribtion p {
+  font-size: 13px;
+}
+  .inner-image img {
+    height: 100%;
+    width: 100%;
+}
   .innner-detail-circle{
    height: 200px;
    width: 200px; 
@@ -927,14 +944,24 @@ ul.stellar-protected-list li {
     flex-wrap: wrap;
     width: 100%;
     padding-top: 30px;
-    gap: 20px;
+    gap: 14px;
+  }
+  .play-icon{
+    margin-top: 10px;
   }
   .steller-card {
     padding: 2.3rem;
     width: 100%;
   }
+  .steller-card-title{
+    flex-wrap: wrap;
+  }
   .steller-card-title h5 {
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 5px !important;
+    margin-bottom: 5px;
+    width: 100%;
+    margin-left: 0;
   }
   .steller-card p {
     margin-top: 0px;
@@ -968,23 +995,27 @@ ul.stellar-protected-list li {
     margin-bottom: 5.5rem;
   }
   ::ng-deep .testimonial .owl-next {
-    height: 27px;
-    width: 27px;
+    height: 35px;
+    width: 35px;
     font-size: 17px;
   }
   ::ng-deep .testimonial .owl-prev {
-    height: 27px;
-    width: 27px;
+    height: 35px;
+    width: 35px;
     font-size: 17px;
   }
   ::ng-deep .owl-nav {
-    top: -35px;
-    right: 25px;
-    gap: 8px;
+    bottom: -50px;
+    top: auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    right: auto;
+    gap: 12px;
   }
   .counter_title {
     width: 90%;
-    margin-top: 30px !important;
+    margin-top: 22px !important;
   }
   .counter_title h3 {
     font-size: 27px;

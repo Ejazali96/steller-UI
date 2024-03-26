@@ -243,6 +243,9 @@ textarea:focus {
         font-size: 16px !important;
         line-height: 28px !important;
     }
+    .remote-wipe{
+      display: none;
+    }
 }
 
 /*======================
@@ -258,7 +261,7 @@ textarea:focus {
 }
 
 .hamburger_menu span {
-  background: #4364fa;
+  background: white;
   width: 3rem;
   height: 0.3rem;
   display: block;
@@ -306,15 +309,29 @@ textarea:focus {
 /*======================
    04. header css
 ========================*/
+.remote-wipe{
+  background: transparent;
+    border: 1px solid white;
+    border-radius: 40px;
+    font-family: Poppins, sans-serif;
+    color: white;
+    text-transform: capitalize;
+    padding: 5px 20px;
+    transition: 0.4s
+}
+.remote-wipe:hover{
+  background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
+  box-shadow: rgba(0, 77, 255, 0.5) 0px 2px 16px;
+}
 header {
   position: fixed;
-  height: 6rem;
+  height: 7rem;
   z-index: 9999;
   width: 100%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: #f7f6fc;
+  background: #2965f9;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -368,11 +385,17 @@ header.sticky {
 
 .menu_item li {
   display: inline-block;
+  color: white;
+  transition: 0.4s;
+}
+.menu_item li:hover{
+  background: transparent;
+  color: rgb(0, 204, 255);
 }
 
 .menu_item li a {
   padding: 14px 20px;
-  background: #ffffff;
+  background: #2965f9;
   border-radius: 0.8rem;
   font-size: 1.2rem;
   line-height: 1.4rem;
@@ -381,20 +404,21 @@ header.sticky {
   display: inline-flex;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  color: #0b1319;
+  color: white;
+  font-family: Poppins, sans-serif;
   margin: 0 1rem;
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
   border: 0.2rem solid transparent;
+  font-size: 14px;
+    font-weight: 600;
 }
 
 .menu_item li a:hover,
 .menu_item li a.active {
   background: transparent;
-  color: #4364fa;
-  font-family: silka-semibold;
-  border: 0.2rem solid #4364fa;
+  color: rgb(0, 204, 255);
 }
 
 .offcavas_menu {
@@ -473,6 +497,12 @@ main {
 .big_headwrap h1 {
   font-size: 5.2rem;
   line-height: 6.2rem;
+}
+.bag_btn img{
+  filter: brightness(50);
+}
+.big_headwrap{
+  margin-top: 10rem;
 }
 
 .big_headwrap h1 span {

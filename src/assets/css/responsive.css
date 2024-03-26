@@ -237,6 +237,7 @@
 
 	.offcavas_menu .menu_item {
 		display: block;
+		margin-top: 2rem;
 	}
 
 	.offcavas_menu .nav_btn {
