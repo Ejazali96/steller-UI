@@ -1,0 +1,240 @@
+.footer_box{
+    background: white;
+    border-radius: 40px;
+    padding: 60px 50px;
+}
+.footer_box h3{
+    color: #0b0c19;
+    font-family: Poppins, sans-serif;
+    font-size: 32px;
+    width: 100%;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.footer-social h6{
+    color: #62626a;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}
+.social-box{
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #eaeaf0;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social p{
+    margin-top: 50px;
+    color: #62626a;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+}
+.product-name li{
+    list-style: none;
+    color: #0B0C19;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+    margin: 14px 0;
+}
+.subscription_btn-footer button{
+    height: 55px;
+    border: 1px solid #4364fa;
+    border-radius: 40px;
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+    padding: 0rem 3rem;
+    transition: .4s;
+    outline: none;
+    color: #4364fa;
+    background: transparent;
+}
+.subscription_btn-footer button:hover{
+    background-color: #4364fa;
+    color: white;
+}
+.footer-social  a{
+    list-style: none;
+    color: #0B0C19;
+    font-family: Poppins, sans-serif;
+    font-size: 14px;
+}
+.footer-container{
+    padding-bottom: 3rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.get-steller-card {
+    background: white;
+    border-radius: 80px;
+    height: 95px;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    margin-top: 47px !important;
+    margin: 0 auto;
+}
+.steller-subscribtion {
+    margin-left: 16px;
+  }
+  .steller-subscribtion h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0b0c19;
+    font-family: "Poppins", sans-serif;
+    line-height: 1.2;
+  }
+  .steller-subscribtion span {
+    color: #4364fa;
+  }
+  .steller-subscribtion p {
+    color: #0b0c19;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+  }
+.steller_wipe button {
+  border-radius: 40px;
+  height: 49px;
+  border: 1px solid #1b66f8;
+  outline: none;
+  color: #1b66f8;
+  background-color: transparent;
+  padding: 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.steller_wipe button:hover {
+  background-color: #1b66f8;
+  color: white;
+}
+.steller-icon-get {
+    height: 45px;
+    width: 45px;
+    background-color: #4364fa;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .steller-icon-get img {
+    filter: brightness(50.5);
+  }
+  .steller-button{
+    position: relative;
+  }
+  .social-modal-dialog {
+    border: 0;
+    position: absolute;
+    left: 0;
+    bottom: 77px;
+    background: #fff;
+    border-radius: 24px;
+    min-width: 196px;
+    box-shadow: 0 8px 32px #0000000d;
+}
+.social-modal-dialog .modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    gap: 16px;
+}
+.app-btn-img img{
+    cursor: pointer;
+}
+  .steller-button button {
+    height: 50px;
+    border: 1px solid #4364fa;
+    border-radius: 40px;
+    outline: none;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin: 0 10px 0 0;
+    padding: 0rem 2rem;
+    transition: 0.4s;
+  }
+  .subscribe-btn {
+    background-color: #4364fa;
+    color: white;
+  }
+  .subscribe-btn:hover {
+    background-color: transparent;
+    color: #4364fa;
+  }
+  .get-app {
+    background: transparent;
+    color: #4364fa;
+  }
+  .get-app:hover {
+    background-color: #4364fa;
+    color: white;
+  }
+  .footer_wrap {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .get-steller-card{
+        width: 80%;
+    }
+ }
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .footer_box h3 {
+		font-size: 18px;
+		margin-top: 13px;
+		margin-bottom: 13px;
+	}
+    .footer-social p {
+        margin-top: 25px;
+        font-size: 11px;
+    }
+    .product-name li {
+        margin: 3px 0;
+        line-height: 1.7;
+    }
+    .product-name{
+        width: 100%;
+    }
+    .get-steller-card {
+        width: 100%;
+        margin-top: 27px !important;
+        height: 140px;
+        border-radius: 24px;
+      }
+      .get-bnt-mobile {
+        flex-wrap: wrap;
+      }
+      .steller-button {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 8px;
+      }
+      .steller-button button {
+        width: 100%;
+      }
+      .mobile-wrap {
+        flex-wrap: wrap;
+      }
+      .steller-subscribtion h3 {
+        font-size: 14px;
+    }
+    .steller-subscribtion p {
+      font-size: 13px;
+    }
+ }
