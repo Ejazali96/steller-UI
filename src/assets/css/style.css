@@ -106,7 +106,7 @@ section {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1.4rem;
   line-height: 2.4rem;
   background: #ffffff;
@@ -234,18 +234,18 @@ textarea:focus {
 }
 
 @media (max-width: 575px) {
-    .head_two {
-        font-size: 18px !important;
-        line-height: 28px !important;
-    }
+  .head_two {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
 
-    .head_three {
-        font-size: 16px !important;
-        line-height: 28px !important;
-    }
-    .remote-wipe{
-      display: none;
-    }
+  .head_three {
+    font-size: 16px !important;
+    line-height: 28px !important;
+  }
+  .remote-wipe {
+    display: none;
+  }
 }
 
 /*======================
@@ -309,17 +309,17 @@ textarea:focus {
 /*======================
    04. header css
 ========================*/
-.remote-wipe{
+.remote-wipe {
   background: transparent;
-    border: 1px solid white;
-    border-radius: 40px;
-    font-family: Poppins, sans-serif;
-    color: white;
-    text-transform: capitalize;
-    padding: 5px 20px;
-    transition: 0.4s
+  border: 1px solid white;
+  border-radius: 40px;
+  font-family: Poppins, sans-serif;
+  color: white;
+  text-transform: capitalize;
+  padding: 5px 20px;
+  transition: 0.4s;
 }
-.remote-wipe:hover{
+.remote-wipe:hover {
   background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
   box-shadow: rgba(0, 77, 255, 0.5) 0px 2px 16px;
 }
@@ -342,7 +342,9 @@ header {
   align-items: center;
 }
 header nav {
-  padding: 8px 16px;
+  /* padding: 8px 16px; */
+  width: 90%;
+  margin: 0 auto;
 }
 header.sticky {
   -webkit-box-shadow: 0 0.8rem 2ren 0 rgba(0, 0, 0, 0.1);
@@ -388,7 +390,7 @@ header.sticky {
   color: white;
   transition: 0.4s;
 }
-.menu_item li:hover{
+.menu_item li:hover {
   background: transparent;
   color: rgb(0, 204, 255);
 }
@@ -412,7 +414,7 @@ header.sticky {
   transition: 0.4s;
   border: 0.2rem solid transparent;
   font-size: 14px;
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .menu_item li a:hover,
@@ -498,10 +500,10 @@ main {
   font-size: 5.2rem;
   line-height: 6.2rem;
 }
-.bag_btn img{
+.bag_btn img {
   filter: brightness(50);
 }
-.big_headwrap{
+.big_headwrap {
   margin-top: 10rem;
 }
 
@@ -1619,7 +1621,7 @@ main {
 }
 
 .mb_100 {
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 }
 
 .mt_85 {
@@ -1627,7 +1629,7 @@ main {
 }
 
 .mt_140 {
-    margin-top: 140px;
+  margin-top: 140px;
 }
 
 .font_16 {
