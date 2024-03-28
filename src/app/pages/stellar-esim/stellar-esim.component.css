@@ -3,6 +3,14 @@
   width: 90%;
   margin: 0 auto;
 }
+.subscribe-btn:hover{
+  color: #206af5 !important;
+}
+.mob-width{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
 .steller-esim-banner {
   background-color: #206af5;
   height: 700px;
@@ -58,4 +66,52 @@
 .width-90{
     margin-top: 100px !important;
     max-width: 90% !important;
+}
+.color-text{
+  color: #2152D4;
+}
+.flag_card{
+  border-radius: 40px;
+  height: 80px;
+  padding: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+.flag_card p{
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  color: #0B0C19;
+  font-size: 16px;
+  font-weight: 500;
+}
+.flag_card img{
+  height: 100%;
+  width: 70px;
+  object-fit: contain;
+}
+::ng-deep .owl-nav{
+  display: flex !important;
+}
+::ng-deep .second-slide .owl-nav{
+  display: none !important;
+}
+.view-btn:hover{
+ background-color: #2152D4 !important;
+ color: #fff !important;
+}
+.form-group{
+  position: relative;
+}
+.form-group input{
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  background-color: #EAEAF0;
+  color: #0B0C19;
+  font-family: "Poppins", sans-serif;
+  margin-top: 24px;
+  margin-bottom: 24px;
 }

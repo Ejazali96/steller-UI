@@ -69,32 +69,128 @@
     </div>
     <div class="promo-card mb-5 z-index-0 snubed-artist position-relative width-90">
       <div class="container">
-        <div class="card-flex">
           <div class="row">
             <div class="col-md-4">
-              <div class="mob-width">
                 <div class="innner-detail-circle">
                   <img src="../../../assets/img/esim/steller_protection.png" alt="mobile">
                 </div>
-              </div>
             </div>
             <div class="col-md-8">
-              <div class=" mob-width">
+              <div class=" mob-width ms-4">
                 <div class="promocard-detail">
                   <div class="innner-detail ">
-                    <h5>Get access to your account easy.</h5>
-                    <p>Get access to your account easy.</p>
+                    <h5>SimplyComplete protection </h5>
+                    <p class="mt-5 mb-5">Unlike traditional SIM cards, which can be removed and potentially lost or stolen, eSIM is embedded directly into the device's hardware during manufacturing. This physical integration makes it more difficult for unauthorized individuals to access, tamper or clone with e-SIM.</p>
+                    <div class="steller-button">
+                      <button class="subscribe-btn text-light">Buy eSIM</button>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-      
-        </div>
       </div>
     </div>
   </div>
+ <!-- Available Worldwide section -->
+ <div class="testimonial">
+  <div class="title">
+    Available <span class="color-text">Worldwide</span>
+  </div>
+  <owl-carousel-o [options]="customOptions" class="owl-side-effect">
+    <ng-template carouselSlide>
+      <div class="flag_card">
+        <img src="../../../assets/img/esim/germany.png" alt="" class="flag">
+        <p>Germany</p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="flag_card">
+        <img src="../../../assets/img/esim/finland.png" alt="" class="flag">
+        <p>Finland</p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="flag_card">
+        <img src="../../../assets/img/esim/belgium.png" alt="" class="belgium">
+        <p>Belgium</p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="flag_card">
+        <img src="../../../assets/img/esim/slovakia.png" alt="" class="flag">
+        <p>Slovakia</p>
+      </div>
+    </ng-template>
+    <ng-template carouselSlide>
+      <div class="flag_card ">
+        <img src="../../../assets/img/esim/switzerland.png" alt="" class="flag">
+        <p>Switzerland</p>
+      </div>
+    </ng-template>
 
+  </owl-carousel-o>
+  
+  <div class="second-slide mt-5">
+    <owl-carousel-o [options]="owlOptions" class="owl-side-effect">
+      <ng-template carouselSlide>
+        <div class="flag_card">
+          <img src="../../../assets/img/esim/belgium.png" alt="" class="belgium">
+          <p>Belgium</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="flag_card">
+          <img src="../../../assets/img/esim/slovakia.png" alt="" class="flag">
+          <p>Slovakia</p>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="flag_card">
+          <img src="../../../assets/img/esim/germany.png" alt="" class="flag">
+          <p>Germany</p>
+        </div>
+        
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="flag_card ">
+          <img src="../../../assets/img/esim/switzerland.png" alt="" class="flag">
+          <p>Switzerland</p>
+        </div>
+        
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="flag_card">
+          <img src="../../../assets/img/esim/finland.png" alt="" class="flag">
+          <p>Finland</p>
+        </div>
+      </ng-template>
+  
+    </owl-carousel-o>
+  </div>
+  <div class="steller-button text-center mt-5">
+    <button class="get-app bg-light view-btn" data-bs-toggle="modal" data-bs-target="#subscribe">View All</button>
+  </div>
+
+  <!-- Modal for subscribe-->
+<div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="subscribe" aria-hidden="true">
+  <div class="modal-dialog subscribe-modal">
+    <div class="modal-content">
+      <div class="modal-header p-0 border-0">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body steller-card-title">
+        <h5>Available Countries</h5>
+        <div class="form-group">
+          <input type="search" placeholder="Search for country" name="" id="">
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
+</section>
   <section class="animation-card section_margin d-none">
     <div class="container">
 
@@ -168,15 +264,7 @@
     </div>
   </section>
 
-  <!-- Testimonial section -->
-  <div class="testimonial">
-    <div class="title">
-      Testimonials
-    </div>
-
-
-  </div>
-</section>
+ 
 
 
 

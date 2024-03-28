@@ -3,7 +3,7 @@ import { ProductService } from "../../../services/product.service";
 import { ActivatedRoute } from "@angular/router";
 import { v4 as uuidv4 } from "uuid";
 import { addCartDto } from "../../../constants/models/product";
-import { OwlOptions } from "ngx-owl-carousel-o";
+import { OwlOptions } from "ngx-owl-carousel-o"; 
 @Component({
   selector: "app-stellar-security",
   templateUrl: "./stellar-security.component.html",
