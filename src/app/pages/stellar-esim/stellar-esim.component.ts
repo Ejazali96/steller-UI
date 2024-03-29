@@ -1,11 +1,50 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from "ngx-owl-carousel-o";
+
+interface Country {
+  name: string;
+  image: string;
+}
 @Component({
   selector: 'app-stellar-esim',
   templateUrl: './stellar-esim.component.html',
   styleUrls: ['./stellar-esim.component.css']
 })
 export class StellarEsimComponent {
+  searchText: string = '';
+  countries: Country[] = [
+    { name: 'Belgium', image: '../../../assets/img/esim/belgium.png' },
+    { name: 'Finland', image: '../../../assets/img/esim/finland.png' },
+    { name: 'Switzerland', image: '../../../assets/img/esim/switzerland.png' },
+    { name: 'Germany', image: '../../../assets/img/esim/germany.png' },
+    { name: 'Slovakia', image: '../../../assets/img/esim/slovakia.png' },
+    { name: 'Belgium', image: '../../../assets/img/esim/belgium.png' },
+    { name: 'Germany', image: '../../../assets/img/esim/germany.png'},
+    { name: 'Finland', image: '../../../assets/img/esim/finland.png'},
+    { name: 'Slovakia', image: '../../../assets/img/esim/slovakia.png'},
+    { name: 'Belgium', image: '../../../assets/img/esim/belgium.png' },
+    { name: 'Switzerland', image: '../../../assets/img/esim/switzerland.png' },
+    { name: 'Slovakia', image: '../../../assets/img/esim/slovakia.png' },
+    { name: 'Finland', image: '../../../assets/img/esim/finland.png'},
+    { name: 'Belgium', image: '../../../assets/img/esim/belgium.png' },
+    { name: 'Switzerland', image: '../../../assets/img/esim/switzerland.png' },
+  ];
+  filteredCountries: Country[] = [];
+
+  ngOnInit() {
+    this.filteredCountries = this.countries; 
+  }
+
+  filterCountries() {
+    if (this.searchText.trim() === '') {
+      this.filteredCountries = this.countries; 
+    } else {
+      this.filteredCountries = this.countries.filter(country =>
+        country.name.toLowerCase().includes(this.searchText.toLowerCase())
+      );
+    }
+  }
+// For owl
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,

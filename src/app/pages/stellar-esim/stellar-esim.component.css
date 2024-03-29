@@ -108,10 +108,64 @@
   outline: none;
   border: none;
   border-radius: 30px;
-  height: 40px;
+  height: 55px;
   background-color: #EAEAF0;
   color: #0B0C19;
   font-family: "Poppins", sans-serif;
   margin-top: 24px;
   margin-bottom: 24px;
+  padding: 0 55px;
+}
+.search-icon{
+  top: 40px;
+  left: 16px;
+}
+.search-result{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 34px;
+}
+.search-flag-card{
+  height: 65px !important;
+}
+.country_filter_modal{
+ 
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.country_filter_modal .modal-content{
+  height: 630px;
+  overflow-x: hidden;
+}
+/* .center-line::after{
+  content: '';
+  height: 100%;
+  width: 100%;
+  border: 1px solid #F0F0F0;
+  position: absolute;
+  border-top: 0;
+  left: 202px;
+} */
+.entairtanment-card{
+  background-color: #f6f6fd;
+}
+.inner-promo-detail{
+  justify-content: space-between;
+    width: 90%;
+    background: white;
+    border-radius: 30px;
+    height: 70px;
+    align-items: center;
+    padding: 0 7px;
+}
+.bar-img{
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+  width: 140px;
 }

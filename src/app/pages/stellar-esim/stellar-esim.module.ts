@@ -8,6 +8,7 @@ import { ESimBenifitsComponent } from "./e-sim-benifits/e-sim-benifits.component
 import { ESimPlanComponent } from "./e-sim-plan/e-sim-plan.component";
 import { BecomeSellerComponent } from "./become-seller/become-seller.component";
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FormsModule } from "@angular/forms";
 @NgModule({
   declarations: [
     StellarEsimComponent,
@@ -15,6 +16,6 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ESimPlanComponent,
     BecomeSellerComponent,
   ],
-  imports: [CommonModule, StellarESimRoutingModule, SharedModule, CarouselModule],
+  imports: [CommonModule, StellarESimRoutingModule, SharedModule, CarouselModule, FormsModule],
 })
 export class StellarESimModule {}
