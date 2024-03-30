@@ -45,7 +45,7 @@ export class StellarEsimComponent {
     }
   }
 // For owl
-  customOptions: OwlOptions = {
+  countryOptions: OwlOptions = {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
@@ -55,7 +55,7 @@ export class StellarEsimComponent {
     autoWidth: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 100,
     navText: [
       '<i class="fa fa-angle-left"></i>',
       '<i class="fa fa-angle-right"></i>',
@@ -87,7 +87,7 @@ export class StellarEsimComponent {
     autoWidth: true,
     pullDrag: true,
     dots: false,
-    navSpeed: 700,
+    navSpeed: 200,
     navText: [
       '<i class="fa fa-angle-left"></i>',
       '<i class="fa fa-angle-right"></i>',
@@ -108,5 +108,37 @@ export class StellarEsimComponent {
     },
     nav: true,
     rtl: true,
+  };
+
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    margin: 23,
+    center: true,
+    autoplay: true,
+    autoWidth: true,
+    pullDrag: true,
+    dots: false,
+    navSpeed: 700,
+    navText: [
+      '<i class="fa fa-angle-left"></i>',
+      '<i class="fa fa-angle-right"></i>',
+    ],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      740: {
+        items: 2,
+      },
+      940: {
+        items: 4,
+      },
+    },
+    nav: true,
   };
 }

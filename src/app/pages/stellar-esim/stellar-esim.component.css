@@ -3,6 +3,9 @@
   width: 90%;
   margin: 0 auto;
 }
+::ng-deep .owl-carousel .owl-stage {
+  transition: transform 0.7s ease;
+}
 .subscribe-btn:hover{
   color: #206af5 !important;
 }
@@ -139,6 +142,9 @@
   height: 630px;
   overflow-x: hidden;
 }
+.second-slide .flag_card{
+  flex-direction: row-reverse;
+}
 /* .center-line::after{
   content: '';
   height: 100%;
@@ -168,4 +174,282 @@
   align-items: center;
   height: 140px;
   width: 140px;
+}
+.plan-section{
+  background-color: #f6f6fd;
+}
+.plan-section ul{
+  background: #eaeaf0;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12%;
+  margin: 0 auto;
+  border-radius: 32px;
+  box-shadow: 0px 2px 3px 1px #acacaf;
+}
+.plan-section ul li button{
+  color: #62626A ;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+.plan-section .title{
+  margin-bottom: 50px;
+}
+.plan-section .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #fff;
+  background-color: white;
+  color: #0067f8;
+  height: 47px;
+  border-radius: 32px;
+  padding: 0px 29px;
+  /* margin-right: 11px; */
+}
+.popular-plan-card{
+  background-color: white;
+  border-radius: 40px;
+  padding: 22px 40px;
+  height: 320px;
+  width: 32%;
+  box-shadow: 0 1px 2px 1px #c3c3c8;
+  margin: 0 auto;
+  position: relative;
+
+}
+.plan-card-gap{
+  margin-top: 30px;
+}
+.popular-plan-card p{
+  font-family: "Poppins", sans-serif;
+  color: #62626A;
+  font-size: 16px;
+  margin-top: 8px;
+}
+.popular-plan-card h1{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+    color: #2761fc;
+    font-size: 40px;
+    margin: 12px 0 11px 0;
+}
+.popular-plan-card strong{
+  font-family: "Poppins", sans-serif;
+  color: #0B0C19;
+  font-size: 23px;
+  margin-top: 16px;
+}
+.popular-plan-card h4{
+  text-align: end;
+  background: #f6f6fd;
+  border-radius: 40px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0B0C19;
+  font-size: 16px;
+  padding: 0 30px;
+}
+.most-popular{
+  display: flex;
+  justify-content: end;
+}
+.popular-plan-card .steller-button{
+  position: absolute;
+  bottom: 40px;
+  width: 80%;
+  background-color: white;
+  margin: 0 auto;
+}
+.popular-plan-card .steller-button button:hover{
+  color: white !important;
+}
+.popular-card{
+  height: 380px;
+  margin-top: -26px;
+}
+.popular-card .steller-button{
+  bottom: 70px;
+}
+.testimonial{
+  background-color: #f6f6fd;
+  padding-top: 10rem;
+  padding-bottom: 13rem;
+
+}
+
+.steller-esim-manage{
+  background-color: #0067f8;
+  height: 100%;
+  padding: 5rem;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.manage-btn{
+  margin-top: 25px;
+}
+.manage-btn button{
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.manage-btn button:hover{
+  background-color: white;
+  color: #0067f8;
+}
+.flex-box h3{
+  font-size: 40px;
+}
+.reseller{
+  background-color: #f6f6fd;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* padding: 5rem; */
+  margin-top: -30px;
+  padding-top: 90px;
+}
+.reseller-box{
+  padding: 5rem;
+  border-radius: 48px;
+  border: none;
+}
+.reseller-box h4{
+  font-family: "Poppins", sans-serif;
+  color: #0B0C19;
+  font-size: 25px;
+  font-weight: 700;
+}
+.reseller-box p{
+  font-family: "Poppins", sans-serif;
+  color: #62626A;
+  margin-top: 14px;
+  font-size: 16px;
+}
+.reseller-box button{
+border: 1px solid #0067f8;
+color: #0067f8;
+}
+.reseller-box button:hover{
+  background-color: #0067f8;
+  color: white;
+}
+
+@media (max-width: 575.98px) {
+  .esim-image img {
+    height: 100%;
+    width: 100%;
+}
+.protection-promo{
+  margin: 0 auto;
+  height: 100%;
+  padding: 2rem 0.1rem;
+  margin-top: 30px !important;
+}
+.protection-mob{
+  margin: 0 auto;
+}
+.protection-mob img{
+  height: 100%;
+  width: 100%;
+}
+.protection-mob h5{
+  margin-top: 10px;
+}
+.protection-mob p{
+margin-top: 10px !important;
+}
+.esim-btn{
+  width: auto;
+}
+.esim-btn button{
+  width: auto;
+}
+::ng-deep .owl-nav{
+  display: none !important;
+}
+.view-all{
+  justify-content: center;
+}
+.view-all button{
+  width: auto;
+}
+.testimonial{
+  padding-top: 1rem;
+  padding-bottom: 0;
+}
+.form-group {
+  width: 100%;
+}
+.search-result {
+  gap: 10px 3px;
+}
+.fun-card{
+  width: 95%;
+  margin: 0 auto;
+}
+.fun-card img{
+  height: 100%;
+  width: 100%;
+}
+.fun-card h5{
+  font-size: 4.2rem;
+}
+.popular-plan-card{
+  height: 100%;
+  width: 100%;
+  margin: 10px 0;
+}
+.popular-card {
+  height: 100%;
+  margin-top: 0;
+}
+.popular-plan-card .steller-button {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+.popular-card .steller-button{
+  bottom: 0;
+}
+.nav-item {
+  width: 50%;
+}
+.plan-section ul li button {
+  width: 100%;
+}
+.plan-section ul{
+  justify-content: start !important;
+  width: 80%;
+}
+.esim-testimonial{
+  padding-bottom: 10rem;
+}
+::ng-deep .esim-testimonial .owl-nav{
+  display: flex !important;
+  justify-content: center;
+}
+.steller-esim-manage {
+  padding: 1rem;
+}
+.steller-esim-manage .row{
+  padding: 3rem 0 !important;
+}
+.flex-box h3 {
+  font-size: 23px;
+}
+.manage-btn button {
+  width: auto;
+}
+.esim-image{
+  padding: 6rem 0;
+}
+.reseller{
+  background: white;
+}
+.reseller-box{
+  background-color: #f6f6fd;
+  margin-bottom: 4rem;
+}
 }
