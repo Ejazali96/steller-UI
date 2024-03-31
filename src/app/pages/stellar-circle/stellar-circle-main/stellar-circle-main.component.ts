@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import {v4 as uuidv4} from "uuid";
 import {addCartDto} from "../../../constants/models/product";
 import {ProductService} from "../../../services/product.service";
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-stellar-circle-main',

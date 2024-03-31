@@ -1,3 +1,101 @@
+header{
+    background: #ffffff;
+    height: 76px;
+}
+
+.offcavas_menu {
+    z-index: 999;
+    position: absolute;
+    top: 76px;
+    width: calc(100% - 4px);
+    background: #f7f6fc;
+    text-align: center;
+    transition: 0.3s;
+    margin: 0 3px;
+    display: none;
+    border-top: 2px solid #fff;
+    padding: 3rem 1rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}   
+
+.menu_item li {
+    display: inline-block;
+  }
+  
+  .menu_item li a {
+    padding: 14px 20px;
+    background: #ffffff;
+    border-radius: 0.8rem;
+    font-size: 14px;
+    line-height: 1.4rem;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    color: #0b1319;
+    margin: 0 3px;
+    -webkit-transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
+    border: 0.2rem solid transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+  
+  .menu_item li a:hover,
+  .menu_item li a.active {
+    background: transparent;
+    color: #4364fa !important;
+    border: 0.2rem solid #4364fa;
+  }
+
+  .offcavas_menu.open {
+    display: block;
+  }
+  
+  .offcavas_menu .menu_item {
+    display: none;
+  }
+
+  .offcavas_menu .nav_btn {
+    display: none;
+  }
+  
+  .offcavas_menu a {
+    width: 24.8rem;
+    height: 4rem;
+    border-radius: 0.8rem;
+    background: #ffffff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: #0b1319;
+    text-transform: uppercase;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  
+  .offcavas_menu a:hover,
+  .offcavas_menu a.active {
+    border: 0.1rem solid #4364fa;
+    color: #4364fa;
+  }
+  
+  .offcavas_menu a img {
+    margin-right: 1rem;
+  }
 
 .menuopen{
     cursor: pointer;
@@ -24,7 +122,12 @@
 
 
 .products_wrapper {
-  width: 60%;
-  margin-right: auto;
-  margin-left: auto;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }

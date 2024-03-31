@@ -184,7 +184,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 12%;
+  width: 250px;
   margin: 0 auto;
   border-radius: 32px;
   box-shadow: 0px 2px 3px 1px #acacaf;
@@ -194,6 +194,8 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
+  padding: 0 29px;
+  width: 100%;
 }
 .plan-section .title{
   margin-bottom: 50px;
@@ -335,7 +337,9 @@ color: #0067f8;
   background-color: #0067f8;
   color: white;
 }
-
+#pills-tab li{
+  flex: 1;
+}
 @media (max-width: 575.98px) {
   .esim-image img {
     height: 100%;

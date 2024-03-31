@@ -20,6 +20,8 @@ import { TranslateModule } from '@ngx-translate/core';
 import { MetaTagsDirective } from '../directives/meta-tags.directive';
 import {CustomerReviewsComponent} from "../components/customer-reviews/customer-reviews.component";
 import { FormsModule } from '@angular/forms';
+import { TestimonialComponent } from '../components/testimonial/testimonial.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 
 
@@ -41,7 +43,8 @@ import { FormsModule } from '@angular/forms';
     PrivacyPageComponent,
     CheckoutPageComponent,
     CustomerReviewsComponent,
-    MetaTagsDirective
+    MetaTagsDirective,
+    TestimonialComponent
   ],
   exports:[
     HeaderComponent,
@@ -58,12 +61,14 @@ import { FormsModule } from '@angular/forms';
     YourDevicesSectionComponent,
     CustomerReviewsComponent,
     TranslateModule,
-    MetaTagsDirective
+    MetaTagsDirective,
+    TestimonialComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
+    CarouselModule,
     TranslateModule.forChild(),
   ]
 })

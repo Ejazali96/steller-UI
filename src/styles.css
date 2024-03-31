@@ -1,6 +1,11 @@
 @import './assets/css/bootstrap.min.css';
 @import './assets/css/style.css';
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --primary-color : #2761FC;
+}
+
 .color-purple {
     color: #4364fa;
 }
@@ -35,7 +40,7 @@
 .session-title {
     font-size: 3.2rem;
     font-weight: 500;
-    font-family: "Silka-semibold";
+    font-family: "Poppins", sans-serif;
 }
 
 
@@ -75,4 +80,63 @@
 }
 .gap-3{
     gap: 1rem;
+}
+
+.faded{
+    color: #62626A;
+}
+
+.pr_color{
+    color: var(--primary-color);
+}
+
+.cstm-btn{
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 8px;
+    line-height: 19px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.cstm-btn:hover{
+    background-color: #ffffff;
+    color: var(--primary-color);
+}
+.cstm-btn.small-btn{
+    padding: 8px 16px;
+}
+.cstm-btn.round{
+    border-radius: 40px;
+}
+.cstm-btn.outlined{
+    background: #ffffff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.cstm-btn.outlined:hover{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.header-padding-fix{
+    padding-top: 76px;
+}
+
+.custom-card{
+    padding: 32px;
+    border-radius: 48px;
+    background: #ffffff;
+}
+
+.font-16{
+    font-size: 16px;
+}
+.font-12{
+    font-size: 12px;
+}
+.semi-bold{
+    font-weight: 600;
 }

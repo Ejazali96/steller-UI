@@ -74,6 +74,114 @@
   font-display: swap;
 }
 
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
 /*======================
    02. Basic css
 ========================*/
@@ -106,12 +214,12 @@ section {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.4rem;
-  line-height: 2.4rem;
-  background: #ffffff;
-  color: #0b1319;
-  font-family: silka-regular, sans-serif !important;
+  /* line-height: 2.4rem; */
+  background: #F6F6FD;
+  color: #0B0C19;
+  font-family: "Poppins", sans-serif;
 }
 html {
   font-size: 62.5%;
@@ -174,13 +282,14 @@ textarea:focus {
 
 .head_two {
   font-size: 1.8rem;
-  font-family: "silka-bold" !important;
+  font-family: "Poppins", sans-serif !important;
   line-height: 2.5rem;
+  font-weight: bold;
   /* text-transform: uppercase; */
 }
 
 .head_three {
-  font-family: "silka-regular";
+  font-family: "Poppins", sans-serif;
   font-size: 24px !important;
   font-style: normal;
   font-weight: 400;
@@ -194,11 +303,13 @@ textarea:focus {
 }
 
 .head_text span {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .font_700 {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
 }
 
 .circle-intro-img {
@@ -234,18 +345,15 @@ textarea:focus {
 }
 
 @media (max-width: 575px) {
-  .head_two {
-    font-size: 18px !important;
-    line-height: 28px !important;
-  }
+    .head_two {
+        font-size: 18px !important;
+        line-height: 28px !important;
+    }
 
-  .head_three {
-    font-size: 16px !important;
-    line-height: 28px !important;
-  }
-  .remote-wipe {
-    display: none;
-  }
+    .head_three {
+        font-size: 16px !important;
+        line-height: 28px !important;
+    }
 }
 
 /*======================
@@ -261,7 +369,7 @@ textarea:focus {
 }
 
 .hamburger_menu span {
-  background: white;
+  background: #4364fa;
   width: 3rem;
   height: 0.3rem;
   display: block;
@@ -309,29 +417,15 @@ textarea:focus {
 /*======================
    04. header css
 ========================*/
-.remote-wipe {
-  background: transparent;
-  border: 1px solid white;
-  border-radius: 40px;
-  font-family: Poppins, sans-serif;
-  color: white;
-  text-transform: capitalize;
-  padding: 5px 20px;
-  transition: 0.4s;
-}
-.remote-wipe:hover {
-  background: linear-gradient(135deg, rgb(42, 39, 218), rgb(0, 204, 255));
-  box-shadow: rgba(0, 77, 255, 0.5) 0px 2px 16px;
-}
 header {
   position: fixed;
-  height: 7rem;
+  height: 6rem;
   z-index: 9999;
   width: 100%;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
-  background: #2965f9;
+  background: #f7f6fc;
   top: 0;
   left: 0;
   display: -webkit-box;
@@ -342,9 +436,7 @@ header {
   align-items: center;
 }
 header nav {
-  /* padding: 8px 16px; */
-  width: 90%;
-  margin: 0 auto;
+  padding: 8px 16px;
 }
 header.sticky {
   -webkit-box-shadow: 0 0.8rem 2ren 0 rgba(0, 0, 0, 0.1);
@@ -360,7 +452,8 @@ header.sticky {
   padding: 1rem 2rem;
   font-size: 1.2rem;
   line-height: 2rem;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   color: #ffffff;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
@@ -385,104 +478,8 @@ header.sticky {
   margin-left: 0.7rem;
 }
 
-.menu_item li {
-  display: inline-block;
-  color: white;
-  transition: 0.4s;
-}
-.menu_item li:hover {
-  background: transparent;
-  color: rgb(0, 204, 255);
-}
-
-.menu_item li a {
-  padding: 14px 20px;
-  background: #2965f9;
-  border-radius: 0.8rem;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
-  color: white;
-  font-family: Poppins, sans-serif;
-  margin: 0 1rem;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  border: 0.2rem solid transparent;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.menu_item li a:hover,
-.menu_item li a.active {
-  background: transparent;
-  color: rgb(0, 204, 255);
-}
-
-.offcavas_menu {
-  z-index: 999;
-  position: fixed;
-  top: 6rem;
-  width: calc(100% - 4px);
-  background: #f7f6fc;
-  text-align: center;
-  transition: 0.3s;
-  margin: 0 3px;
-  display: none;
-  border-top: 2px solid #fff;
-}
 .top-padding {
   padding-top: 2.2rem;
-}
-.offcavas_menu.open {
-  display: block;
-}
-
-.offcavas_menu .menu_item {
-  display: none;
-}
-
-.offcavas_menu .nav_btn {
-  display: none;
-}
-
-.offcavas_menu a {
-  width: 24.8rem;
-  height: 4rem;
-  border-radius: 0.8rem;
-  background: #ffffff;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  font-family: silka-bold;
-  color: #0b1319;
-  text-transform: uppercase;
-  margin: 0.8rem 0.6rem;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.offcavas_menu a:hover,
-.offcavas_menu a.active {
-  border: 0.1rem solid #4364fa;
-  color: #4364fa;
-}
-
-.offcavas_menu a img {
-  margin-right: 1rem;
 }
 
 main {
@@ -500,15 +497,10 @@ main {
   font-size: 5.2rem;
   line-height: 6.2rem;
 }
-.bag_btn img {
-  filter: brightness(50);
-}
-.big_headwrap {
-  margin-top: 10rem;
-}
 
 .big_headwrap h1 span {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 /*======================
@@ -550,7 +542,8 @@ main {
   font-size: 1.6rem;
   line-height: 2rem;
   color: #ffffff;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   border-radius: 0.8rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -651,14 +644,16 @@ main {
 }
 
 .footer700 {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   display: block;
 }
 
 .footer_head {
   font-size: 1.4rem;
   line-height: 1.9rem;
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -672,7 +667,7 @@ main {
 }
 
 .footer_social p a {
-  font-family: avenirtd-light;
+  font-family: "Poppins", sans-serif;
   color: #4364fa;
   text-decoration: underline;
 }
@@ -728,7 +723,8 @@ main {
 
 .phone_box h2 {
   font-size: 3.2rem;
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   line-height: 4.4rem;
 }
 
@@ -742,7 +738,8 @@ main {
 }
 
 .phone_para {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   text-transform: uppercase;
 }
 
@@ -768,7 +765,8 @@ main {
 .subscription_btn a.active {
   border: 0.2rem solid #4364fa;
   color: #4364fa;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .phone_para_opacity {
@@ -779,7 +777,8 @@ main {
   background: #60d38e;
   padding: 1.3rem 2rem;
   font-size: 1.6rem;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .phone_box .nav_btn:hover {
@@ -933,7 +932,8 @@ main {
 }
 
 .privacy_matter span {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .offcavas_menu .privacy_matter {
@@ -964,12 +964,14 @@ main {
 }
 
 .form_para span {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .form_label {
   font-size: 1.2rem;
-  font-family: silka-medium;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   line-height: 2rem;
   display: block;
   text-transform: uppercase;
@@ -1121,7 +1123,8 @@ main {
 }
 
 .checkout_link h3 {
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   font-size: 1.4rem;
 }
 
@@ -1204,7 +1207,8 @@ main {
 
 .checkout_box h2 {
   font-size: 3.2rem;
-  font-family: silka-bold;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
   line-height: 4.4rem;
 }
 
@@ -1331,7 +1335,8 @@ main {
 .checkout_tag:hover {
   border: 0.2rem solid #4364fa;
   color: #4364fa;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .checkout_head {
@@ -1347,7 +1352,8 @@ main {
 
 .checkout_head span {
   font-size: 1.2rem;
-  font-family: silka-regular;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }
 
 .checkout_para2 {
@@ -1381,7 +1387,8 @@ main {
   -webkit-appearance: none;
   padding-left: 1rem;
   color: #4364fa;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .delivery_main {
@@ -1423,7 +1430,8 @@ main {
 .delivery_main:hover p,
 .delivery_main.active p {
   color: #4364fa;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 .checkout_input {
@@ -1439,7 +1447,8 @@ main {
   background: #60d38e;
   border-radius: 0.8rem;
   font-size: 1.6rem;
-  font-family: silka-semibold;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
   color: #ffffff;
   border: transparent;
   -webkit-transition: 0.3s;
@@ -1621,7 +1630,7 @@ main {
 }
 
 .mb_100 {
-  margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .mt_85 {
@@ -1629,7 +1638,7 @@ main {
 }
 
 .mt_140 {
-  margin-top: 140px;
+    margin-top: 140px;
 }
 
 .font_16 {
@@ -1642,5 +1651,6 @@ main {
   font-size: 24px;
 }
 .font_medium {
-  font-family: "silka-medium";
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
 }

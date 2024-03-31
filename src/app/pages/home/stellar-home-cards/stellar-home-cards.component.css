@@ -18,7 +18,7 @@
 .font-size-24{
     font-size: 2.4rem;
     line-height: 3.4rem;
-    font-family: silka-regular;
+    font-family: "Poppins", sans-serif;
 }
 .card-glow-img{
     position: absolute;

@@ -380,10 +380,11 @@
         </div>
       </div>
    
+     
     </div>
   </section>
 
-  <!-- Testimonial section --> 
+  <!-- Testimonial section -->
   <div class="testimonial">
     <div class="title">
       Testimonials
@@ -493,18 +494,9 @@
         </div>
       </div>
 
-  
       <div class="steller-button">
-        <button class="get-app" (click)="showAppModal = !showAppModal">Get App</button>
+        <button class="get-app" data-bs-toggle="modal" data-bs-target="#getapp">Get App</button>
         <button class="subscribe-btn" data-bs-toggle="modal" data-bs-target="#subscribe">Subscribe</button>
-        <div class="modal-cstm" id="getapp" *ngIf="showAppModal">
-          <div class="social-modal-dialog">
-            <div class="modal-body app-btn-img">
-              <img src="../../../../assets/img/Aptoide_btn.png" alt="Aptoide-btn">
-              <img src="../../../../assets/img/google-play.png" alt="play-store">
-            </div>
-          </div>
-        </div>
       </div>
 
     </div>
