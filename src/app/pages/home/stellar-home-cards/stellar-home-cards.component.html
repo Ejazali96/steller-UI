@@ -1,4 +1,37 @@
-<div [class]="isRight?'home-card-wrapper position-relative right-side-card':'home-card-wrapper position-relative'">
+<div class="stellar-home-card">
+     <div class="d-flex align-items-center mb-3 justify-content-center">
+          <img class="logo-icon mr-3" [src]="titleIcon" width="48" height="48" alt="">
+          <h3 class="h3 mb-0">{{cardTitle}}</h3>
+        </div>
+        <p class="font-16 mb-5">{{cardDescription}}</p>
+        <button type="button" class="cstm-link-btn icon-button mr-3">
+          <img class="mr-3" src="/assets/images/home/Brand Android.svg" width="20"  alt="" />
+          <span>Get App</span>
+          </button>
+        <button type="button" class="cstm-link-btn mr-3 font">Learn More ></button>
+
+        <div class="home-card-image">
+          <img [src]="cardImage" class="w-100" style="max-width: 320px;" alt="">
+        </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div [class]="isRight?'home-card-wrapper position-relative right-side-card':'home-card-wrapper position-relative'">
      <img loading="lazy" src="./../../../assets/img/card-glow.png" class="card-glow-img img-fluid">
     <div class="home-card-header position-relative">
          <h1 class="head_text head_two">{{stellarCardheading1 | translate}} <span class="color-purple">{{stellarCardheading2 | translate}}</span></h1>
@@ -12,5 +45,5 @@
          </div>
     </div>
     <img loading="lazy" [src]="'./../../../assets/img/'+stellarCardmainImage" [class]="stellarCardmainImage=='card-vpn.png'?'stellar-product-image img-fluid btm-neg':'stellar-product-image img-fluid'" alt="stellar-product-image">
- </div>
+ </div> -->
  

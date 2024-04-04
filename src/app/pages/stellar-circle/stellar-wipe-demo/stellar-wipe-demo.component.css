@@ -1,0 +1,307 @@
+.wipe-phone-action-main{
+    position: relative;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.wf_action_btns{
+    max-width: 280px;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    width: 100%;
+}
+.wf_action_btns ul{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.wf_action_btns ul li{
+    border: 1px solid gainsboro;
+    border-radius: 16px;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #62626A;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.wf_action_btns ul li.active, .wf_action_btns ul li:hover{
+    color: var(--primary-color);
+    box-shadow: 0 6px 12px #00000017;
+}
+.phone-holder-main{
+    width: 324px;
+    height: 645px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.phone-holder-1{
+    background-image: url(/assets/images/ionic-circle/Phone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.phone-holder-1.waiting-screen{
+    transform: scale(0);
+}
+.wipe-phone-waiting{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(100%);
+    transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.wipe-phone-waiting.active{
+    transform: translateX(0);
+}
+.wipe-success-screen .waiting-screen-img{
+    transform: scale(0.8);
+    transition: all 1.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.wipe-phone-waiting .waiting-screen-img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.wipe-phone-waiting .success-modal{
+    position: absolute;
+    top: 190px;
+    left: -70px;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    right: 0;
+    opacity: 0;
+    transform: scale(.5) translateY(100px);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.wipe-success-screen .success-modal{
+    opacity: 1;
+    transform: scale(1) translateY(1px);
+}
+.wipe-phone-waiting .success-modal .restart-btn{
+    position: absolute;
+    top: 188px;
+    left: 137px;
+    cursor: pointer;
+}
+.phone-area{
+    position: absolute;
+    top: 15px;
+    left: 21px;
+    width: calc(100% - 60px);
+    height: calc(100% - 73px);
+    border-radius: 22px;
+    overflow: hidden;
+}
+.select-contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/ionic-circle/Screen-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 22px;
+    opacity: 0;
+}
+.select-contact.active{
+    opacity: 1;
+}
+.phone-area .camera-icon{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    z-index: 2;
+}
+.phone-area .statusbar-icon{
+    position: absolute;
+    top: 8px;
+    left: 57px;
+    z-index: 2;
+}
+.phone-area .statusbar-icon.white-status-bar, .phone-area .bottom-bar.white-bottom-bar{
+    filter: invert(1);
+}
+
+.select-contact .sc_list-item{
+    position: absolute;
+    top: 247px;
+    left: 13px;
+    cursor: pointer;
+}
+.phone-area .bottom-bar{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 2;
+}
+
+.wipe-phone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/ionic-circle/Screen-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 22px;
+    transform: translateX(100%);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.wipe-phone.active{
+    transform: translateX(0);
+}
+.wipe-phone .back-icon{
+    position: absolute;
+    top: 37px;
+    left: 2px;
+    cursor: pointer;
+}
+.wipe-phone .wipe-phone-btn{
+    position: absolute;
+    top: 237px;
+    left: 27px;
+    cursor: pointer;
+}
+
+.select-contact-name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/images/ionic-circle/Screen-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 22px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    opacity: 0;
+    z-index: -1;
+}
+.select-contact-name.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.select-contact-name.modal-three-items .keyboard-btn{
+    transform: translateY(0);
+}
+
+.select-contact-name .cancel-btn{
+    position: absolute;
+    top: 267px;
+    left: 95px;
+    z-index: -1;
+    cursor: pointer;
+    opacity: 0;
+}
+.select-contact-name.modal-three-items .cancel-btn,
+.select-contact-name.modal-three-items .wipe-modal-btn,
+.select-contact-name.modal-three-items .modal-1{
+    opacity: 1;
+    z-index: 2;
+}
+.select-contact-name .wipe-modal-btn{
+    position: absolute;
+    top: 267px;
+    left: 158px;
+    z-index: -1;
+    cursor: pointer;
+    opacity: 0;
+}
+.select-contact-name .modal-1{
+    position: absolute;
+    top: 89px;
+    left: 0;
+    z-index: -1;
+    width: 90%;
+    margin: 0 auto;
+    right: 0;
+    opacity: 0;
+}
+.select-contact-name .modal-2{
+    position: absolute;
+    top: 89px;
+    left: 0;
+    z-index: -1;
+    width: 90%;
+    margin: 0 auto;
+    right: 0;
+    transform: translateY(-100px);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.select-contact-name.modal-three-items .modal-2{
+    opacity: 0;
+}
+.select-contact-name.phone-wiped .modal-2{
+    opacity: 1;
+    transform: translateY(0);
+}
+.select-contact-name .keyboard-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    transform: translateY(100%);
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.click-circle {
+    width: 47px;
+    height: 47px;
+    background-color: #007bff33;
+    border-radius: 50%;
+    animation: breathe 0.8s infinite alternate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.inner-circle{
+    width: 27px;
+    height: 27px;
+    background-color: #007bff;
+    border-radius: 50%;
+}
+.circle-one{
+    position: absolute;
+    z-index: 1;
+    top: 223px;
+    left: 180px;
+}
+.circle-three{
+    position: absolute;
+    z-index: 2;
+    top: 243px;
+    left: 209px;
+}
+
+  @keyframes breathe {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }

@@ -1,0 +1,67 @@
+/* Testimonials */
+/* TEstimonail css start */
+
+.stellar-more-products-slider {
+    position: relative;
+  }
+
+.more_product_card{
+    background: white;
+    padding: 4rem;
+    border-radius: 40px;
+}
+.more_product_card .logo-icon{
+    width: 48px;
+    height: 48px;
+}
+
+  ::ng-deep .stellar-more-products-slider .owl-prev {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1b66f8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 400;
+    color: #1b66f8;
+  }
+  ::ng-deep .stellar-more-products-slider .owl-next {
+    height: 40px;
+    width: 40px;
+    border: 1px solid #1b66f8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    font-weight: 400;
+    color: #1b66f8;
+  }
+  ::ng-deep .stellar-more-products-slider .owl-item:not(.center){
+    opacity: 1;
+  }
+  ::ng-deep .owl-item.center .testimonial_card > p{
+    font-weight: 600;
+  }
+
+  @media (max-width: 767.98px) {
+   
+    ::ng-deep .stellar-more-products-slider .owl-nav {
+        display: flex;
+        justify-content: center;
+        padding-top: 3rem;
+        gap: 16px;
+      }
+}
+
+  @media (min-width: 768px) {
+    ::ng-deep .stellar-more-products-slider .owl-nav {
+      position: absolute;
+      top: -82px;
+      right: 100px;
+      display: flex;
+      gap: 16px;
+      }
+}

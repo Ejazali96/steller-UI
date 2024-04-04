@@ -62,7 +62,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     CustomerReviewsComponent,
     TranslateModule,
     MetaTagsDirective,
-    TestimonialComponent
+    TestimonialComponent,
+    CarouselModule
   ],
   imports: [
     CommonModule,

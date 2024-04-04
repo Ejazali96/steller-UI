@@ -85,11 +85,24 @@
 .faded{
     color: #62626A;
 }
+.faded-light{
+    color: #D6D6E0;
+}
 
 .pr_color{
     color: var(--primary-color);
 }
-
+.cstm-link-btn{
+    background: transparent;
+    border: 0;
+    color: var(--primary-color);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 24px;
+    border-radius: 8px;
+    line-height: 19px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
 .cstm-btn{
     background: var(--primary-color);
     border: 1px solid var(--primary-color);
@@ -120,6 +133,11 @@
     background-color: var(--primary-color);
     color: #ffffff;
 }
+.cstm-btn.transparent{
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
 
 .header-padding-fix{
     padding-top: 76px;
@@ -139,4 +157,24 @@
 }
 .semi-bold{
     font-weight: 600;
+}
+.h1{
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.h2{
+    font-size: 44px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.h3{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 1.5;
+}
+.h4{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
 }

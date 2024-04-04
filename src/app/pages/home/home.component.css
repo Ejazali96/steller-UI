@@ -1,4 +1,4 @@
-.font-size-24{
+/* .font-size-24{
     font-size: 2.4rem;
     line-height: 3.4rem;
     font-family: "Poppins", sans-serif;
@@ -19,5 +19,134 @@
 @media (max-width:991.98px) {
     .stellar-home-card-list{
         grid-template-columns: repeat(auto-fill,minmax(100%,1fr)) !important;
+    }
+} */
+
+.stellar-contact-section{
+    padding: 80px;
+}
+.content-space{
+    height: 104px;
+}
+.content-space-32{
+    height: 32px;
+}
+.header-padding-fix{
+    padding-top: 76px;
+}
+.stellar-more-products-slider{
+    margin-top: 40px;
+    display: block;
+}
+.stellar-home-cards-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.stellar-home-cards-list .app-stellar-home-cards{
+    flex: 1 1 46%;
+}
+
+.stellar-home-card-guard{
+    padding: 88px 80px 0;
+    background-color: #fff;
+    border-radius: 40px;
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.card-guard-2{
+    flex-direction: row;
+    padding: 88px 0 88px 88px;
+}
+.card-guard-2 .card-guard-content{
+    flex: 1 1 auto;
+}
+.stellar-home-card-guard .card-guard-img{
+    margin-top: 6rem;
+}
+.stellar-home-card-guard .card-guard-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.stellar-home-registered-partner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.stellar-home-registered-partner span{
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.stellar-circle-card-wrapper .st-card-content{
+    display: flex;
+    gap: 32px;
+}
+
+.stellar-home-banner-2{
+    border-radius: 48px;
+    height: 520px;
+    overflow: hidden;
+    margin-bottom: 32px;
+}
+
+.stellar-home-banner-2 .banner-2-content{
+    background-color: rgba(0, 0, 0, 0.207);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.home-banner{
+    background-image: url('/assets/images/home/Rectangle\ 157.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 700px;
+}
+
+.home-banner-inner{
+    background-color: rgba(0, 0, 0, 0.207);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 1rem;
+    height: 100%;
+    padding-bottom: 70px;
+}
+
+.banner-inner-content{
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.below-main-banner{
+    border-top-left-radius: 48px;
+    border-top-right-radius: 48px;
+    margin-top: -40px;
+    background-color: #F6F6FD;
+}
+
+@media (max-width:991.98px) {
+    .card-guard-2, .stellar-contact-section, .stellar-home-card-guard{
+        padding: 24px;
+    }
+}
+@media (max-width:574.98px) {
+    .stellar-home-banner-2{
+        height: 220px;
     }
 }

@@ -1,0 +1,52 @@
+<div class="let-see-in-action-wrapper custom-card">
+    <h2 class="h2 text-center">Lets see in action!</h2>
+
+    <div class="wipe-phone-action-main">
+        <div class="wf_action_btns">
+            <ul>
+                <li class="{{activeSection == 1?'active':''}}"><span>1. Select Contact</span></li>
+                <li class="{{activeSection == 2?'active':''}}"><span>2. Wipe Phone</span></li>
+                <li class="{{activeSection == 3?'active':''}}"><span>3. Confirm Wipe</span></li>
+                <li class="{{activeSection == 4?'active':''}}"><span>4. Wipe is Set</span></li>
+            </ul>
+        </div>
+        <div class="phone-demo-wrapper">
+            <div class="phone-holder-main">
+                <div class="phone-holder-1 {{activeSection == 5?'waiting-screen':''}} {{activeSection == 6?'d-none':''}}">
+                    <div class="phone-area">
+                        <img class="camera-icon" src="/assets/images/ionic-circle/Camera.png" width="21" alt="">
+                        <img class="statusbar-icon {{activeSection == 3?'white-status-bar':''}}" src="/assets/images/ionic-circle/Content.png" width="190" alt="">
+                        <div class="click-circle {{activeSection == 1 || activeSection == 2 ?'circle-one':''}} {{activeSection == 3?'circle-three':''}}"><div class="inner-circle"></div></div>
+                        <img class="bottom-bar {{activeSection == 3?'white-bottom-bar':''}}" src="/assets/images/ionic-circle/bottom-bar.png" width="91" alt="">
+                        <div class="select-contact {{activeSection == 1?'active':''}}">
+                            <img (click)="moveToSection(2)" class="sc_list-item" src="/assets/images/ionic-circle/ListItem.png" width="236" alt="">
+                        </div>
+                        <div class="wipe-phone {{activeSection == 2?'active':''}}">
+                            <img (click)="moveToSection(1)" class="back-icon" src="/assets/images/ionic-circle/trailing-icon.png" width="37" alt="">
+                            <img (click)="moveToSection(3)" class="wipe-phone-btn" src="/assets/images/ionic-circle/wipe-button.png" width="208" alt="">
+                        </div>
+                        <div class="select-contact-name {{activeSection == 3?'active modal-three-items':''}} {{activeSection == 4?'active phone-wiped':''}}">
+                            <div>
+                                <img class="modal-1" src="/assets/images/ionic-circle/modal-1.png" width="200" alt="">
+                                <img (click)="moveToSection(2)" class="cancel-btn" src="/assets/images/ionic-circle/cancel-btn.png" width="57" alt="">
+                                <img (click)="moveToSection(4)" class="wipe-modal-btn" src="/assets/images/ionic-circle/wipe-popup-btn.png" width="73" alt="">
+                                <img class="keyboard-btn" src="/assets/images/ionic-circle/Keyboard.png" width="37" alt="">
+                            </div>
+                            <div>
+                                <img class="modal-2" src="/assets/images/ionic-circle/modal-2.png" width="200" alt="">
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="wipe-phone-waiting {{activeSection == 5?'active':''}} {{activeSection == 6?'active wipe-success-screen':''}}">
+                    <img class="waiting-screen-img" src="/assets/images/ionic-circle/Screen-5.png" alt="">
+                    <div class="success-modal">
+                        <img class="success-modal-content" src="/assets/images/ionic-circle/wipe-success.png" alt="">
+                        <img (click)="activeSection = 1" class="restart-btn" src="/assets/images/ionic-circle/Button.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>

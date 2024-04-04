@@ -6,12 +6,9 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./stellar-home-cards.component.css']
 })
 export class StellarHomeCardsComponent {
- @Input() isRight: boolean;
- @Input() stellarCardheading1: string;
- @Input() stellarCardheading2: string;
- @Input() stellarCardheadingIcon: string;
- @Input() stellarCarddescription: string;
- @Input() stellarCardbuttonText: string;
- @Input() stellarCardbuttonLink: string;
- @Input() stellarCardmainImage: string;
+@Input() titleIcon: string;
+@Input() cardTitle: string;
+@Input() cardDescription: string;
+@Input() cardImage: string;
+
 }

@@ -7,12 +7,14 @@ import { SharedModule } from './../../shared/shared.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { StellarHomeCardsComponent } from './stellar-home-cards/stellar-home-cards.component';
 import {AppModule} from "../../app.module";
+import { StellarMoreProductsComponent } from './stellar-more-products/stellar-more-products.component';
 
 
 @NgModule({
   declarations: [
     HomeComponent,
-    StellarHomeCardsComponent
+    StellarHomeCardsComponent,
+    StellarMoreProductsComponent
   ],
     imports: [
         CommonModule,

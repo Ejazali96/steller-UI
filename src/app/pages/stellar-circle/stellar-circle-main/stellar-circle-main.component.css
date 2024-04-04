@@ -67,21 +67,7 @@ ul.stellar-protected-list li {
 .content-space{
     height: 104px;
 }
-h1{
-    font-size: 56px;
-    font-weight: bold;
-    line-height: 1.5;
-}
-h2{
-    font-size: 44px;
-    font-weight: bold;
-    line-height: 1.5;
-}
-h3{
-    font-size: 32px;
-    font-weight: bold;
-    line-height: 1.5;
-}
+
 
 /* Let see in action section */
 .let-see-in-action-wrapper{
@@ -169,13 +155,7 @@ h3{
 
 
 @media (max-width: 767.98px) {
-    h1{
-        font-size: 38px;
-    }
-    h2{
-        font-size: 32px;
-    }
-    
+        
     .custom-card, .stellar-circle-full-card-wrapper .custom-card, .stellar-protect-card{
         padding: 24px;
     }

@@ -7,13 +7,15 @@ import { StellarWipePhoneComponent } from './stellar-wipe-phone/stellar-wipe-pho
 import { StellarCircleFeaturesComponent } from './stellar-circle-features/stellar-circle-features.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import {LaddaModule} from "angular2-ladda";
+import { StellarWipeDemoComponent } from './stellar-wipe-demo/stellar-wipe-demo.component';
 
 
 @NgModule({
   declarations: [
     StellarCircleMainComponent,
     StellarWipePhoneComponent,
-    StellarCircleFeaturesComponent
+    StellarCircleFeaturesComponent,
+    StellarWipeDemoComponent
   ],
   imports: [
     CommonModule,
