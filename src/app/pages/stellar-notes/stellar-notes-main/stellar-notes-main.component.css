@@ -1,21 +1,142 @@
-@import '../../stellar-security-app/security-common.css';
-.amount_duration{
-    font-size: 18px;
-    font-family: silka-medium;
+/* @import "../stellar-security-app/stellar-security/stellar-security.component.css"; */
+
+
+@import "../../stellar-security-app/stellar-security/stellar-security.component.css";
+.notes-bg{
+    background-color: #f6f6fd;
+    background-image: url(../../../../assets/img/esim/gray-arc.png);
+    background-size: contain;
+    overflow: hidden;
 }
-.amount_price{
-    font-size: 30px;
-    font-family: silka-medium;
+.customize_steller{
+    background-color: white;
 }
-ul.stellar-protected-list li {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
+.steller-padding{
+    padding-top: 100px;
 }
-/* .main-mobile-img{
-    max-width: 307px;
-} */
-.protected-icon{
-    max-width: 554px;
+.notes-bg h3{
+    color: #0B0C19;
+}
+.notes-bg p{
+    color: #0B0C19;
+}
+.steller-notes-title h3{
+    width: 40%;
+}
+.steller-notes-title p{
+    width: 50%;
+}
+.steller-content{
+    position: relative;
+}
+.notes-bg .get-steller-card{
+    z-index: 99999;
+    /* margin-top: -193px !important; */
+    /* margin: 0 auto 26px; */
+    width: 50%;
+    position: relative;
+   
+}
+.steller-project{
+    transform: translate(0, -10rem);
+}
+.steller-card{
+    width: 31%;
+}
+.steller-card p{
+    width: 80%;
+    margin-top: 5px;
+}
+.w-80{
+    width: 80% !important;
+}
+.d-md-none .d-lg-none{
+    display: none;
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px){
+    .steller-notes-title h3 {
+        width: 90%;
+    }
+    .steller-notes-title p{
+        width: 100%;
+    }
+    .d-sm-none{
+        display: none;
+    }
+    .mobile-group{
+        display: none;
+    }
+    .notes-bg .get-steller-card {
+        width: 100%;
+    }
+    .notes-bg{
+        background-image: none;
+        background: #e5e5ec;
+    }
+    .get-steller-card{
+        margin-top: 109px !important;
+    }
+    .steller-subscribtion h3{
+        font-size: 2rem;
+    }
+    .get-app{
+        background-color: #2761FC;
+        color: white;
+    }
+    .mobile-wrap{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .font-12 {
+        font-size: 13px;
+    }
+    .andriod-text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .andriod-text p{
+        text-align: initial;
+        font-size: 1.8rem;
+    }
+    .steller-card {
+        width: 100%;
+    }
+    .steller-card p {
+        width: 90%;
+    }
+    .innner-detail-circle img {
+        margin-bottom: -86px;
+        height: 100%;
+        width: 100%;
+    }
+    .promo-card{
+        height: auto;
+        padding: 4rem;
+    }
+    .promo-card h5{
+        font-size: 2.9rem;
+    }
+    ::ng-deep  .owl-next {
+        height: 27px;
+        width: 27px;
+        font-size: 17px;
+      }
+      ::ng-deep  .owl-prev {
+        height: 27px;
+        width: 27px;
+        font-size: 17px;
+      }
+      ::ng-deep .owl-nav {
+        top: -35px;
+        right: 25px;
+        gap: 8px;
+      }
+      .steller-padding {
+        padding-top: 40px;
+    }
+   
 }

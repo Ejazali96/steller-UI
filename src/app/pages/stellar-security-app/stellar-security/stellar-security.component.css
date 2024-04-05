@@ -644,7 +644,7 @@ ul.stellar-protected-list li {
 .promo-card h5 {
   margin: 0;
   /* margin-bottom: px; */
-  line-height: 1;
+  line-height: 150%;
  /* font-size: 3.2rem; */
  font-size: 44px;
  font-family: Poppins, sans-serif;
