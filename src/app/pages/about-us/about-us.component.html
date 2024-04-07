@@ -1,75 +1,152 @@
-<app-main-header title="{{ 'about' | translate }}" boldTitle="{{ 'stellar_security' | translate }}"></app-main-header>
-
-<div class="about_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
-  <div class="container">
-      <div class="row align-items-center">
-          <div class="col-lg-6  mt_50 text-center">
-              <img class="img-fluid about_img" src="./../../../assets/img/about_img.svg" alt="about_img">
-          </div>
-          <div class="col-lg-6 mt_50">
-              <div>
-                  <p>{{ 'about_description_1' | translate }}</p>
-                  <p class="mt_30">{{ 'about_description_2' | translate }}</p>
-                  <p class="mt_30">{{ 'about_description_3' | translate }}</p>
-                  <p class="mt_30">{{ 'about_description_4' | translate }}</p>
-                  <p class="mt_30">{{ 'about_description_5' | translate }}</p>
-                  <p class="mt_30">Stellar Security is located in Norway and Denmark.</p>
+<section class="about-banner">
+    <div class="overlay"></div>
+    <div class="title-content container">
+        <h1 class="h1 text-light"> About Stellar Security</h1>
+        <p  class="font-16 faded-light mb-5 pb-2">Secure your way forward with Stellar Security.</p>
+    </div>
+</section>
+<section class="below-main-banner banner-title">
+    <div class="container">
+        <h3  class="h3 mb-5 text-center ">We are the provider of next-generation modern technologies to enhance your communication and device with high-end security and privacy solutions.</h3>
+        <h2  class="text-center mb-5 ">Why choose Us?</h2>
+        <div class="stellar-circle-card-wrapper">
+            <div class="st-card-content flex-lg-row flex-column">
+              <div class="custom-card">
+                <img class="mb-3" src="../../../assets/img/about-us/tabler-icon-spy.png" width="73" alt="">
+                <h4 class="h4 mb-4 pb-2 font-weight-bold">Anonymity</h4>
+                <p class="font-16">Be private and secure with Stellar Security. We offer maximum protection.</p>
               </div>
+              <div class="custom-card">
+                <img class="mb-3" src="../../../assets/img/about-us/tabler-icon-shield-check.png" width="73" alt="">
+                <h4 class="h4 mb-4 pb-2 font-weight-bold">Security</h4>
+                <p class="font-16">The highest level of security made possible with modern, innovative security solutions to protect your data.</p>
+              </div>
+              <div class="custom-card">
+                <img class="mb-3" src="../../../assets/img/about-us/tabler-icon-cube-send.png" width="73" alt="">
+                <h4 class="h4 mb-4 pb-2 font-weight-bold">Fast Shipping</h4>
+                <p class="font-16">Fast and secure worldwide shipping and delivery service to get your order to you as fast as possible.</p>
+              </div>
+              <div class="custom-card">
+                <img class="mb-3" src="../../../assets/img/about-us/tabler-icon-heart-handshake.png" width="73" alt="">
+                <h4 class="h4 mb-4 pb-2 font-weight-bold">Support</h4>
+                <p class="font-16">In case you need assistance or have any queries, you can reach us by writing. Explore the available contact options.</p>
+              </div>
+            </div>
           </div>
+    </div>
+</section>
+
+    <div class="container">
+        <div class="stellar-home-banner-2 stellar-home-banner-3">
+            <div class=" text-center text-white">
+              <p class="d-sm-none d-md-block d-lg-block">Stellar Security offers not only full-time services and support for security applications but also provides high-tier encrypted secure smartphones.</p>
+            </div>
+          </div>
+          <p class="d-md-none d-sm-block d-lg-none mobile-text">Stellar Security offers not only full-time services and support for security applications but also provides high-tier encrypted secure smartphones.</p>
+
+    </div>
+<!-- Counter section start -->
+<section class="counter-section">
+    <div class="container">
+        <div class="counter_title">
+            <h3>The most convenient way to be maximum secured</h3>
+            <div class="d-flex counter-main mb-4"> 
+              <div class="counter-card">
+                <h1>{{ usersSaved }}</h1>
+                <p>Users saved from data leaking</p>
+              </div>
+              <div class="counter-card">
+                <h1>{{ purchases }}K</h1>
+                <p>Purchases this month</p>
+              </div>
+              <div class="counter-card">
+                <h1>{{ screensProtected }}</h1>
+                <p>Screens protected</p>
+              </div>
+            </div>
+          </div>
+    </div>
+  </section>
+
+  <section class="confidential">
+    <div class=" container">
+        <div class="row">
+            <div class="col-md-5">
+                <img src="../../../assets/img/about-us/office.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 align-items-center d-flex">
+                <div class="confedentail-detail">
+                    <h3>Our philosophy is 'Because your privacy matters the most.' Protect your business or personal confidentiality with strong encryption methods and technology.</h3>
+                    <p>The modern digital world expands and evolves around us every day, and with it, malicious threats of hackers and data thieves.</p>
+                    <p>Secure your way forward with Stellar Security.</p>
+                    <p>Stellar Security is located in Norway and Denmark.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <owl-carousel-o [options]="owlOptions" class="owl-side-effect">
+        <ng-template carouselSlide>
+          <div class="logo-image">
+            <img src="../../../assets/img/about-us/logoipsum.png" alt="" class="logo img-fluid">
+          </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-2.png" alt="" class="logo img-fluid">
+              </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-3.png" alt="" class="logo img-fluid">
+              </div>
+  
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-4.png" alt="" class="logo img-fluid">
+              </div>
+  
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-5.png" alt="" class="logo img-fluid">
+              </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-6.png" alt="" class="logo img-fluid">
+              </div>
+        </ng-template>
+        <ng-template carouselSlide>
+            <div class="logo-image">
+                <img src="../../../assets/img/about-us/logoipsum-7.png" alt="" class="logo img-fluid">
+              </div>
+        </ng-template>
+  
+      </owl-carousel-o>
+      <div class="container">
+        <div  class="stellar-home-registered-partner">
+            <img  src="/assets/images/home/Layer_1.png" width="140" alt="">
+            <span >Registered Partner</span>
+        </div>
       </div>
-  </div>
-</div>
+  </section>
 
-<!-- choose area start -->
-<div class="areas_wrapper choose_wrapper">
-  <div class="container">
-     <div class="row justify-content-center">
-         <div class="col-12 text-center">
-             <h2 class="head_text">{{ 'reasons_to' | translate }} <span>{{ 'choose_us' | translate }}</span></h2>
-         </div>
-         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-             <div class="areas_item text-center">
-                 <h3 class="head_two">{{ 'anonymity' | translate }}</h3>
-                 <img class="img-fluid" src="./../../../assets/img/choose_icon01.svg" alt="areas_icon01">
-                 <p>{{ 'anonymity_description' | translate }}</p>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-             <div class="areas_item text-center">
-                 <h3 class="head_two">{{ 'security' | translate }}</h3>
-                 <img class="img-fluid" src="./../../../assets/img/choose_icon02.svg" alt="choose_icon02">
-                 <p>{{ 'security_description' | translate }}</p>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-             <div class="areas_item text-center">
-                 <h3 class="head_two">{{ 'fast_shipping' | translate }}</h3>
-                 <img class="img-fluid" src="./../../../assets/img/choose_icon03.svg" alt="choose_icon03">
-                 <p>{{ 'fast_shipping_description' | translate }}</p>
-             </div>
-         </div>
-         <div class="col-xl-3 col-lg-4 col-sm-6 col-9 mt_30">
-             <div class="areas_item text-center">
-                 <h3 class="head_two">{{ 'support' | translate }}</h3>
-                 <img class="img-fluid" src="./../../../assets/img/choose_icon04.svg" alt="choose_icon04">
-                 <p>{{ 'support_description' | translate }}</p>
-             </div>
-         </div>
-     </div>
-  </div>
-</div>
-<!-- choose area area end -->
-
-   <!-- choose area area end -->
-  <!-- section customer start end -->
-
-  <app-customer-section></app-customer-section>
-
-  <!-- section customer area end -->
+  <section class="partner-section">
+    <div class="container">
+        <div class="partner-card banner-title mt-0">
+            <h2>Become a Partner</h2>
+            <p>Stellar Security makes it easy to be a reseller. Click on the button below to get started.</p>
+            <div class="pb-5">
+                <button  type="button" class="cstm-btn round mr-3">Contact Us</button>
+                <button  type="button" class="cstm-btn round reseller-btn outlined mr-3 transparent">Become Reseller</button>
+            </div>
+        </div>
+      
+    </div>
+  </section>
 
 
-  <!-- section security area end -->
+  
 
-<app-security-section></app-security-section>
-
-  <!-- section security area end -->

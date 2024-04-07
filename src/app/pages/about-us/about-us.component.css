@@ -1,0 +1,235 @@
+
+@import "../../pages/home/home.component.css";
+.about-banner{
+    background-image: url(../../../assets/img/about-us/banner-about.png);
+    /* background-position: center;
+    background-size: cover; */
+    background-repeat: repeat;
+    height: 650px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+.below-main-banner{
+    z-index: 9;
+    position: relative;
+}
+.banner-title{
+    margin-top: 80px;
+}
+.overlay{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.5;
+}
+.title-content{
+    z-index: 9;
+}
+.banner-title h3{
+    font-size: 45px;
+
+}
+.banner-title h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-top: 80px;
+}
+.custom-card{
+    width: 100%;
+}
+.stellar-home-banner-3{
+    margin-top: 100px;
+    background-image: url(../../../assets/img/about-us/promo-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 7rem;
+    display: flex;
+    align-items: center;
+}
+.stellar-home-banner-3 p{
+    font-size: 46px;
+    font-weight: bold;
+    text-align: initial;
+}
+.counter_title {
+    margin-top: 100px !important;
+   background-color: white;
+   border-radius: 44px;
+   padding: 7rem;
+  }
+  .counter_title h3 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .counter-main {
+    margin-top: 48px;
+    /* gap: 15rem; */
+    margin-bottom: 55px;
+    flex-wrap: wrap;
+    width: 69%;
+    justify-content: space-between;
+  }
+  .counter-card h1 {
+    color: #1b66f8;
+    font-size: 50px;
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+  }
+  
+  .counter-card p {
+    color: #0b0c19;
+    margin-top: 8px;
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+  }
+  .confidential{
+    background-color: white;
+    padding-top: 80px;
+    margin-top: 80px;
+    padding-bottom: 100px;
+  }
+  .confedentail-detail h3{
+    font-size: 32px;
+    color: #0b0c19;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+  .confedentail-detail p{
+    margin: 10px 0;
+    font-size: 16px;
+  }
+  .logo-image{
+    height: 200px;
+    width: 200px;
+  }
+  .logo-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+  .stellar-home-registered-partner{
+    border: 1px solid rgba(234, 234, 240, 1);
+    border-radius: 44px;
+  }
+  .partner-section{
+    background: #f7f6fc;
+  }
+  .partner-card{
+    border: 1px solid rgba(234, 234, 240, 1);
+    border-radius: 44px;
+    height: 380px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .partner-card .reseller-btn{
+    border: 1px solid #1b66f8;
+    color: #1b66f8;
+  }
+  .partner-card .reseller-btn:hover{
+    color: white;
+  }
+  .partner-card button{
+    margin-top: 32px;
+  }
+  .partner-card p{
+    color: #62626A;
+    font-size: 18px;
+    margin: 16px !important;
+    width: 57%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  @media (max-width: 575.98px){
+    .banner-title h3 {
+        font-size: 20px;
+        text-align: initial !important;
+    }
+    .banner-title {
+        margin-top: 18px;
+    }
+    .banner-title h2 {
+        margin-top: 30px;
+    }
+    .d-sm-none{
+        display: none;
+    }
+    .mobile-text{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .stellar-home-banner-3{
+        margin-top: 50px;
+        margin-bottom: 13px;
+    }
+    .counter_title {
+        margin-top: 40px !important;
+        padding: 3rem 3rem;
+    }
+    .counter_title h3{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .counter-main{
+        width: 100%;
+    }
+    .counter-card p{
+        font-size: 15px;
+    }
+    .confidential {
+        padding-top: 20px;
+        margin-top: 60px;
+        padding-bottom: 20px;
+        border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+    }
+    .confedentail-detail h3 {
+        font-size: 21px;
+        margin-top: 7px;
+    }
+    .partner-section{
+        background-color: white;
+    }
+    .partner-card{
+        height: 100%;
+        padding: 1rem;
+    }
+    .partner-card p{
+        color: #62626a;
+        font-size: 16px;
+        margin: 6px !important;
+        width: 100%;
+    }
+    .partner-card h2{
+        font-size: 23px;
+    }
+    .partner-card button{
+        font-size: 13px;
+        padding: 12px 11px;
+    }
+    .about-banner {
+       
+        background-position: center;
+        background-size: cover;
+        padding: 12rem 0rem;
+        height: 400px;
+    }
+    .counter-card {
+        width: 100%;
+    }
+  }
