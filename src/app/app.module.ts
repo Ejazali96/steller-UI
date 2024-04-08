@@ -11,6 +11,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { CustomerReviewsComponent } from './components/customer-reviews/customer-reviews.component';
 import { LaddaModule } from 'angular2-ladda';
 import { TranslatorService } from './services/translator.service';
+
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http);
   }
