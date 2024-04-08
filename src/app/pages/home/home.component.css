@@ -101,6 +101,10 @@
 
 .stellar-home-banner-2 .banner-2-content{
     background-color: rgba(0, 0, 0, 0.207);
+    background-image: url('../../../assets/images/home/Unpralled-stellar.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     height: 100%;
     display: flex;

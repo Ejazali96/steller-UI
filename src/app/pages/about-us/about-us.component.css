@@ -123,9 +123,6 @@
     border: 1px solid rgba(234, 234, 240, 1);
     border-radius: 44px;
   }
-  .partner-section{
-    background: #f7f6fc;
-  }
   .partner-card{
     border: 1px solid rgba(234, 234, 240, 1);
     border-radius: 44px;
@@ -154,7 +151,10 @@
     margin: 0 auto;
     text-align: center;
   }
-
+  .partner-section{
+    background-color: white;
+    padding-bottom: 80px;
+}
   @media (max-width: 575.98px){
     .banner-title h3 {
         font-size: 20px;
@@ -202,9 +202,7 @@
         font-size: 21px;
         margin-top: 7px;
     }
-    .partner-section{
-        background-color: white;
-    }
+    
     .partner-card{
         height: 100%;
         padding: 1rem;
