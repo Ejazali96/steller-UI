@@ -80,8 +80,9 @@
         padding-top: 7rem;
     }
     .menu-detail-section h4 {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 20px;
+        line-height: 150%;
     }
     .menu-detail-section p {
         font-size: 14px;

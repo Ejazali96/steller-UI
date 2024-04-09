@@ -1,33 +1,47 @@
-<app-main-header title="{{ 'contact' | translate }}" boldTitle="{{ 'stellar_security' | translate }}"></app-main-header>
 
-<!-- Contact Form Start -->
-
-<div class="form_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
-  <div class="form_box mt_50">
-      <p class="form_para"><span>{{ 'contact_form_heading' | translate }}</span></p>
-      <br>
-
-      <div *ngIf="sent" class="success">
-        <span class="text-lg-center">Thanks for the message. It has been sent and we will reply soon. Regards, Stellar Security.</span>
-      </div>
-
-      <strong>{{ 'signal' | translate }}</strong> <a href="tel:+59173436721">+591 73 43 67 21</a><br>
-      <strong>Telegram:</strong>  <a href="https://telegram.me/Stellar_Security"> Stellar_Security</a><br>
-
-      <label for="a" class="form_label mt_25">{{ 'name_label' | translate }}</label>
-      <input id="a" [(ngModel)]="name" class="input_info mt_5" type="text" placeholder="{{ 'add_your_full_name' | translate }}">
-      <label for="b" class="form_label mt_15">{{ 'email_label' | translate }}</label>
-      <input id="b" [(ngModel)]="email"  class="input_info mt_5" type="text" placeholder="{{ 'add_your_email' | translate }}">
-      <label for="b" class="form_label mt_15">{{ 'message_label' | translate }}</label>
-      <textarea [(ngModel)]="message"  class="input_info txetarea_info" placeholder="{{ 'message_placeholder' | translate }}"></textarea>
-      <button *ngIf="!loading" (click)="send()" type="submit" class="nav_btn form_btn mt_20" >{{ 'send_message_button' | translate }}</button>
-
-      <span *ngIf="loading">Sending message.. Please wait..</span>
-      <p class="form_border mt_25">{{ 'response_time_message' | translate }}</p>
-      <div class="text-center mt_20">
-          <p><img class="mr_10" src="../../../assets/img/footer_lock.svg" alt="footer_lock"> {{ 'encrypted_security_message' | translate }}</p>
-      </div>
+<div class="contact-banner">
+  <div class="overlay"></div>
+  <div class="title-content container">
+      <h1 class="h1 text-light"> Let’s Connect</h1>
+      <p  class="font-16 faded-light mb-5 pb-2">Contact Stellar Security</p>
   </div>
 </div>
+<div class="container">
+  <div class="d-flex contact-flex">
+    <div class="contact-us-form">
+      <h3>For any questions, please contact us by form.</h3>
+      <p>Typically, we strive to respond within a few hours, although there are occasions when an instant reply is possible.</p>
+    </div>
+    <div class="form_wrapper" appMetaTags [description]="metaDescription" [ogTitle]="metaTitle" [keywords]="metaKeywords">
+      <div class="form_box">
+          <!-- <strong>{{ 'signal' | translate }}</strong> <a href="tel:+59173436721">+591 73 43 67 21</a><br>
+          <strong>Telegram:</strong>  <a href="https://telegram.me/Stellar_Security"> Stellar_Security</a><br> -->
+          <h6>Interested In?</h6>
+          <ul class="selection-box">
+            <li [class.active]="selectedItem === 'Partnership'" (click)="selectItem('Partnership')">Partnership</li>
+            <li [class.active]="selectedItem === 'Customer Support'" (click)="selectItem('Customer Support')">Customer Support</li>
+            <li [class.active]="selectedItem === 'General inquiry'" (click)="selectItem('General inquiry')">General inquiry</li>
+            <li [class.active]="selectedItem === 'Other'" (click)="selectItem('Other')">Other</li>
+          </ul>
+          
+    
+          <label for="a" class="form_label mt_25">{{ 'name_label' | translate }}</label>
+          <input id="a" [(ngModel)]="name" class="input_info mt_5" type="text" placeholder="{{ 'add_your_full_name' | translate }}">
+          <label for="b" class="form_label mt_15">{{ 'email_label' | translate }}</label>
+          <input id="b" [(ngModel)]="email"  class="input_info mt_5" type="text" placeholder="{{ 'add_your_email' | translate }}">
+          <label for="b" class="form_label mt_15">{{ 'message_label' | translate }}</label>
+          <textarea [(ngModel)]="message"  class="input_info txetarea_info" placeholder="{{ 'message_placeholder' | translate }}"></textarea>
+          <button *ngIf="!loading" (click)="send()" type="submit" class="nav_btn form_btn mt_20" >{{ 'send_message_button' | translate }}</button>
+
+          <span *ngIf="loading">Sending message.. Please wait..</span>
+          <p class="form_border mt_25">{{ 'response_time_message' | translate }}</p>
+          <div class="text-center mt_20">
+              <p><img class="mr_10" src="../../../assets/img/footer_lock.svg" alt="footer_lock"> {{ 'encrypted_security_message' | translate }}</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- Contact Form End -->

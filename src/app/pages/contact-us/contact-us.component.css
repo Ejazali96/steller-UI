@@ -1,3 +1,5 @@
+
+@import "../../pages/about-us/about-us.component.css";
 .success {
     background-color: #27ae60;
     padding: 12px;
@@ -5,3 +7,52 @@
     margin-bottom: 15px;
     color: #fff;
 }
+.contact-banner{
+    background-image: url(../../../assets/img/contact-us.png);
+    /* background-position: center;
+    background-size: cover; */
+    background-repeat: no-repeat;
+    height: 640px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 5rem;
+        background-size: cover;
+    background-position: center;
+}
+.contact-flex{
+    margin-top: 60px;
+}
+.contact-us-form h3{
+    font-size: 44px;
+    font-weight: 700;
+    color: #0B0C19;
+    line-height: 150%;
+}
+.contact-us-form p{
+    color: #62626A;
+    font-size: 19px;
+    margin-top: 10px;
+}
+.selection-box{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.selection-box li{
+    list-style: none;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 40px;
+    border: 1px solid #EAEAF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.selection-box li.active {
+    border: 1px solid blue;
+    color: blue;
+  }

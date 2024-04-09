@@ -10,10 +10,8 @@ export class ContactUsComponent {
   metaDescription:string = 'Get help by our support team at StellarSecurity.';
   metaTitle:string = 'Stellar Security - Support';
   metaKeywords:string = 'Stellar Contact, stellar security, and so on';
-
   public sent = false;
   public loading = false;
-
   public name: string = "";
   public email: string = "";
   public message = "";
@@ -27,21 +25,20 @@ export class ContactUsComponent {
     this.http.post<any>('https://stellaruiwebsiteapiprod.azurewebsites.net/api/v1/contactformcontroller/contact',
         { name: this.name, email: this.email, message: this.message })
         .subscribe(data => {
-
         this.loading = false;
         if(data.response_code == 200) {
             this.sent = true;
-
             this.name = "";
             this.email = "";
             this.message = "";
             } else {
             alert('Something went wrong. Did you enter a correct email?');
         }
-
         });
-
-
   }
-
+  // selectedItem: string | null = null;
+  selectedItem: string = 'Partnership';
+  selectItem(item: string): void {
+    this.selectedItem = item;
+  }
 }
